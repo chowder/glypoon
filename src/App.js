@@ -5,6 +5,7 @@ import InputBox from './components/InputBox'
 import Answers from './components/Answers'
 import Score from './components/Score'
 import Timer from './components/Timer'
+import Welcome from './components/Welcome'
 import { useState, useEffect } from 'react'
 
 const GAME_DURATION = 10  // 10 minutes
@@ -13,6 +14,8 @@ function App() {
   const [currentAnswers, setCurrentAnswers] = useState([])
   const [answers, setAnswers] = useState(null)
   const [letters, setLetters] = useState(null)
+  const [gameStarted, setGameStarted] = useState(false)
+  const [startTime, setStartTime] = useState(null)
 
   // Fetching the puzzle
   const fetchPuzzle = async () => {
@@ -46,6 +49,11 @@ function App() {
     }
   }
 
+  const startGame = (e) => {
+    setGameStarted(true)
+    setStartTime(Date.now())
+  }
+
   if (answers === null || letters === null) {
     return <div>
       <p>Loading...</p>
@@ -54,15 +62,16 @@ function App() {
 
   return (
     <div className="min-h-screen bg-gray-100 text-coolGray-800">
+      {gameStarted ? <></> : <Welcome gameDuration={GAME_DURATION} onStart={startGame} />}
       <div className="w-full mx-auto xl:w-4/5 2xl:w-2/3 sm:p-6">
         <div className="flex flex-col w-full justify-center p-6 text-center space-y-8 items-start">
           <Header title={'Glypoon'} />
           <div className="w-full flex flex-col items-start space-y-4 px-2 lg:flex-row lg:justify-between lg:space-y-0">
-            <Timer startTime={Date.now()} gameDuration={GAME_DURATION} />
+            <Timer startTime={startTime} gameDuration={GAME_DURATION} />
             <Score currentScore={currentAnswers.length} totalScore={answers.length} />
           </div>
           <div className="flex w-full flex-col space-y-8 lg:flex-row lg:space-x-8 lg:space-y-0">
-            <Polygon letters={letters} />
+            <Polygon letters={letters} gameStarted={gameStarted} />
             <Answers answers={answers} currentAnswers={currentAnswers} />
           </div>
           <InputBox onSubmit={submitAnswer} />
