@@ -33,7 +33,7 @@ function App() {
 
   // Submitting an answer
   const submitAnswer = (answer) => {
-    answer = answer.trim
+    answer = answer.trim()
     if (currentAnswers.includes(answer)) {
       console.log(`${answer} has already been guessed!`)
       return
