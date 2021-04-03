@@ -3,7 +3,11 @@ import Header from './components/Header'
 import Polygon from './components/Polygon'
 import InputBox from './components/InputBox'
 import Answers from './components/Answers'
+import Score from './components/Score'
+import Timer from './components/Timer'
 import { useState, useEffect } from 'react'
+
+const GAME_DURATION = 10  // 10 minutes
 
 function App() {
   const [currentAnswers, setCurrentAnswers] = useState([])
@@ -29,6 +33,7 @@ function App() {
 
   // Submitting an answer
   const submitAnswer = (answer) => {
+    answer = answer.trim
     if (currentAnswers.includes(answer)) {
       console.log(`${answer} has already been guessed!`)
       return
@@ -49,10 +54,14 @@ function App() {
 
   return (
     <div className="min-h-screen bg-gray-100 text-coolGray-800">
-      <div className="w-full mx-auto 2xl:w-4/6 sm:p-8">
-        <div className="flex flex-col justify-center p-6 text-center space-y-12 items-start">
+      <div className="w-full mx-auto xl:w-4/5 2xl:w-2/3 sm:p-6">
+        <div className="flex flex-col w-full justify-center p-6 text-center space-y-8 items-start">
           <Header title={'Glypoon'} />
-          <div className="flex w-full flex-col space-y-12 lg:flex-row lg:space-x-12 lg:space-y-0">
+          <div className="w-full flex flex-col items-start space-y-4 px-2 lg:flex-row lg:justify-between lg:space-y-0">
+            <Timer startTime={Date.now()} gameDuration={GAME_DURATION} />
+            <Score currentScore={currentAnswers.length} totalScore={answers.length} />
+          </div>
+          <div className="flex w-full flex-col space-y-8 lg:flex-row lg:space-x-8 lg:space-y-0">
             <Polygon letters={letters} />
             <Answers answers={answers} currentAnswers={currentAnswers} />
           </div>
