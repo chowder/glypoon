@@ -8,6 +8,7 @@ const polarToCartesian = (radians, distance) => {
 
 const Polygon = ({ letters }) => {
     let angleBetweenElements = Math.PI * 2 / (letters.length - 1);
+    letters = letters.map((letter) => letter.toUpperCase())
 
     return (
         <div className='flex-shrink-0 w-72 h-72 bg-white rounded-3xl shadow-md' style={{ position: 'relative' }}>

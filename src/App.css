@@ -1,7 +1,7 @@
 .glypoon-cell {
-  width: 100px;
   left: 50%;
   top: 50%;
+  margin: 0;
   -webkit-transform: translate(-50%, -50%);
   position: absolute;
   text-align: center;
