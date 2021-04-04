@@ -1,6 +1,6 @@
 import Answer from './Answer'
 
-const Answers = ({ answers, currentAnswers }) => {
+const Answers = ({ answers, currentAnswers, gameState }) => {
     return (
         <div className='w-full h-full md:h-72 bg-white rounded-3xl shadow-md flex'>
             <div className='grid grid-cols-4 sm:grid-cols-5 md:grid-cols-6 grid-rows-6 grid-flow-row gap-4 p-6 w-full'>
@@ -8,6 +8,7 @@ const Answers = ({ answers, currentAnswers }) => {
                     <Answer
                         text={answer}
                         isVisible={currentAnswers.includes(answer)}
+                        gameState={gameState}
                         key={index}
                     />
                 ))}
