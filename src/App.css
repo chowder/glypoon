@@ -24,6 +24,7 @@
 .spinner {
   animation: spin-animation 6.0s infinite;
   display: inline-block;
+  user-select: none
 }
 
 @keyframes spin-animation {

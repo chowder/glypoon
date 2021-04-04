@@ -6,4 +6,7 @@ Glypoon is a word puzzle where the goal is to create as many words as possible u
 
 A demo can be found [here](https://glypoon.netlify.app).
 
-![screenshot](https://user-images.githubusercontent.com/16789070/113369572-8eace500-9359-11eb-88b4-403b44184bcd.png)
+![ingame-screen](https://user-images.githubusercontent.com/16789070/113514131-cd62bb00-9564-11eb-917b-8a08f3c1c573.png)
+
+
+![win-screen](https://user-images.githubusercontent.com/16789070/113514093-97bdd200-9564-11eb-818c-68936730f992.png)
