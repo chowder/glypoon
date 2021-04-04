@@ -20,3 +20,26 @@
   background-color: rgba(0,0,0, 0.5);
   backdrop-filter: blur(10px);
 }
+
+.spinner {
+  animation: spin-animation 6.0s infinite;
+  display: inline-block;
+}
+
+@keyframes spin-animation {
+  0% {
+    transform: rotate(0deg);
+  }
+  25% {
+    transform: rotate(180deg);
+  }
+  50% {
+    transform: rotate(180deg);
+  }
+  75% {
+    transform: rotate(359deg);
+  }
+  100% {
+    transform: rotate(359deg);
+  }
+}
