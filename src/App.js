@@ -82,7 +82,7 @@ function App() {
         <div className="flex flex-col w-full justify-center p-6 text-center space-y-8 items-start">
           <Header title={'Glypoon'} />
           <div className="w-full flex flex-col items-start space-y-4 px-2 lg:flex-row lg:justify-between lg:space-y-0">
-            <Timer secondsRemaining={secondsRemaining} />
+            <Timer secondsRemaining={secondsRemaining} gameState={gameState} />
             <Score currentScore={currentAnswers.length} totalScore={answers.length} />
           </div>
           <div className="flex w-full flex-col space-y-8 lg:flex-row lg:space-x-8 lg:space-y-0">
