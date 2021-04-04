@@ -12,7 +12,7 @@ const Welcome = ({ gameDuration, onStart }) => {
                             </h3>
                             <div className="mt-3">
                                 <p className="text-gray-600">
-                                    Create as many words as you can in {gameDuration} minutes!
+                                    Create as many words as you can in {Math.floor(gameDuration / 60)} minutes!
                                 </p>
                             </div>
                         </div>
