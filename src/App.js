@@ -6,6 +6,7 @@ import Answers from './components/Answers'
 import Score from './components/Score'
 import Timer from './components/Timer'
 import Welcome from './components/Welcome'
+import Congratulations from './components/Congratulations'
 import GameState from './classes/GameState'
 import { useState, useEffect } from 'react'
 
@@ -51,6 +52,18 @@ function App() {
     }
   }
 
+  // Check if all answers have been guessed
+  useEffect(() => {
+    if (answers !== null) {
+      var answersSet = new Set(answers);
+      var currentAnswersSet = new Set(currentAnswers)
+      // Size checks probably sufficient... but who knows what I might mess up later
+      if (answersSet.size === currentAnswersSet.size && [...answersSet].every(value => currentAnswersSet.has(value))) {
+        setGameState(GameState.COMPLETE);
+      }
+    }
+  }, [answers, currentAnswers])
+
   // Count down the timer
   useEffect(() => {
     if (gameState === GameState.RUNNING) {
@@ -87,6 +100,7 @@ function App() {
   return (
     <div className="min-h-screen bg-gray-100 text-coolGray-800">
       {gameState === GameState.NOT_STARTED ? <Welcome gameDuration={GAME_DURATION} onStart={startGame} /> : <></>}
+      {gameState === GameState.COMPLETE ? <Congratulations secondsRemaining={secondsRemaining} /> : <></>}
       <div className="w-full mx-auto xl:w-4/5 2xl:w-2/3 sm:p-6">
         <div className="flex flex-col w-full justify-center p-6 text-center space-y-8 items-start">
           <Header title={'Glypoon'} />
