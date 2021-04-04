@@ -9,7 +9,8 @@ import Welcome from './components/Welcome'
 import GameState from './classes/GameState'
 import { useState, useEffect } from 'react'
 
-const GAME_DURATION = 10  // 10 minutes
+const GAME_DURATION = process.env.REACT_APP_GAME_DURATION | 10  // in seconds
+const EXTRA_TIME_AMOUNT = process.env.REACT_APP_EXTRA_TIME_AMOUNT | 10  // in seconds
 
 function App() {
   const [currentAnswers, setCurrentAnswers] = useState([])
@@ -64,9 +65,17 @@ function App() {
     }
   }, [gameState, secondsRemaining])
 
+  /* Callbacks */
+
   const startGame = () => {
     setGameState(GameState.RUNNING)
     setSecondsRemaining(GAME_DURATION)
+  }
+
+  const addMoreTime = () => {
+    if (gameState === GameState.RUNNING) {
+      setSecondsRemaining(previous => previous + EXTRA_TIME_AMOUNT)
+    }
   }
 
   if (answers === null || letters === null) {
@@ -82,7 +91,7 @@ function App() {
         <div className="flex flex-col w-full justify-center p-6 text-center space-y-8 items-start">
           <Header title={'Glypoon'} />
           <div className="w-full flex flex-col items-start space-y-4 px-2 lg:flex-row lg:justify-between lg:space-y-0">
-            <Timer secondsRemaining={secondsRemaining} gameState={gameState} />
+            <Timer secondsRemaining={secondsRemaining} gameState={gameState} onClick={addMoreTime} />
             <Score currentScore={currentAnswers.length} totalScore={answers.length} />
           </div>
           <div className="flex w-full flex-col space-y-8 lg:flex-row lg:space-x-8 lg:space-y-0">
