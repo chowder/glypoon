@@ -6,6 +6,7 @@ import Answers from './components/Answers'
 import Score from './components/Score'
 import Timer from './components/Timer'
 import Welcome from './components/Welcome'
+import GameState from './classes/GameState'
 import { useState, useEffect } from 'react'
 
 const GAME_DURATION = 10  // 10 minutes
@@ -14,8 +15,8 @@ function App() {
   const [currentAnswers, setCurrentAnswers] = useState([])
   const [answers, setAnswers] = useState(null)
   const [letters, setLetters] = useState(null)
-  const [gameStarted, setGameStarted] = useState(false)
-  const [startTime, setStartTime] = useState(null)
+  const [gameState, setGameState] = useState(GameState.NOT_STARTED)
+  const [secondsRemaining, setSecondsRemaining] = useState(GAME_DURATION)
 
   // Fetching the puzzle
   const fetchPuzzle = async () => {
@@ -49,9 +50,23 @@ function App() {
     }
   }
 
-  const startGame = (e) => {
-    setGameStarted(true)
-    setStartTime(Date.now())
+  // Count down the timer
+  useEffect(() => {
+    if (gameState === GameState.RUNNING) {
+      const timer = setInterval(() => {
+        if (secondsRemaining === 0) {
+          setGameState(GameState.ENDED)
+        } else {
+          setSecondsRemaining(secondsRemaining - 1)
+        }
+      }, 1000)
+      return () => clearInterval(timer)
+    }
+  }, [gameState, secondsRemaining])
+
+  const startGame = () => {
+    setGameState(GameState.RUNNING)
+    setSecondsRemaining(GAME_DURATION)
   }
 
   if (answers === null || letters === null) {
@@ -62,17 +77,17 @@ function App() {
 
   return (
     <div className="min-h-screen bg-gray-100 text-coolGray-800">
-      {gameStarted ? <></> : <Welcome gameDuration={GAME_DURATION} onStart={startGame} />}
+      {gameState === GameState.NOT_STARTED ? <Welcome gameDuration={GAME_DURATION} onStart={startGame} /> : <></>}
       <div className="w-full mx-auto xl:w-4/5 2xl:w-2/3 sm:p-6">
         <div className="flex flex-col w-full justify-center p-6 text-center space-y-8 items-start">
           <Header title={'Glypoon'} />
           <div className="w-full flex flex-col items-start space-y-4 px-2 lg:flex-row lg:justify-between lg:space-y-0">
-            <Timer startTime={startTime} gameDuration={GAME_DURATION} />
+            <Timer secondsRemaining={secondsRemaining} />
             <Score currentScore={currentAnswers.length} totalScore={answers.length} />
           </div>
           <div className="flex w-full flex-col space-y-8 lg:flex-row lg:space-x-8 lg:space-y-0">
-            <Polygon letters={letters} gameStarted={gameStarted} />
-            <Answers answers={answers} currentAnswers={currentAnswers} />
+            <Polygon letters={letters} gameStarted={gameState} />
+            <Answers answers={answers} currentAnswers={currentAnswers} gameState={gameState} />
           </div>
           <InputBox onSubmit={submitAnswer} />
         </div>
