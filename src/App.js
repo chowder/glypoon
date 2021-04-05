@@ -9,6 +9,7 @@ import Welcome from './components/Welcome'
 import Congratulations from './components/Congratulations'
 import GameState from './classes/GameState'
 import { useState, useEffect } from 'react'
+import PuzzleHint from './components/PuzzleHint';
 
 const GAME_DURATION = parseInt((process.env.REACT_APP_GAME_DURATION | "10"))  // in seconds
 const EXTRA_TIME_AMOUNT = parseInt((process.env.REACT_APP_EXTRA_TIME_AMOUNT | "10"))  // in seconds
@@ -106,6 +107,7 @@ function App() {
       <div className="w-full mx-auto xl:w-4/5 2xl:w-2/3 sm:p-6">
         <div className="flex flex-col w-full justify-center p-6 text-center space-y-8 items-start">
           <Header title={'Glypoon'} />
+          <PuzzleHint answers={answers}/>
           <div className="w-full flex flex-col items-start space-y-4 px-2 lg:flex-row lg:justify-between lg:space-y-0">
             <Timer secondsRemaining={secondsRemaining} gameState={gameState} onClick={addMoreTime} />
             <Score currentScore={currentAnswers.length} totalScore={answers.length} />
