@@ -25,3 +25,8 @@ jobs:
 
       - name: Make puzzle
         run: python tools/make_puzzle.py -c tools/corpuses/glypoon.txt -o puzzle.json
+
+      - name: Upload puzzle
+        uses: actions/upload-artifact@v2
+        with:
+          path: puzzle.json
