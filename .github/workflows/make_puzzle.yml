@@ -33,5 +33,3 @@ jobs:
           git add public/puzzle/puzzle.json
           git commit -m "Generate puzzle for `date +%F`"
           git push
-        with:
-          path: puzzle.json
