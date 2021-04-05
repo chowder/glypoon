@@ -1,6 +1,6 @@
 # Glypoon
 
-[![.github/workflows/make_puzzle.yml](https://github.com/chowder/glypoon/actions/workflows/make_puzzle.yml/badge.svg?branch=main)](https://github.com/chowder/glypoon/actions/workflows/make_puzzle.yml) [![Netlify Status](https://api.netlify.com/api/v1/badges/c5130167-4b76-4964-815c-6de1d838d166/deploy-status)](https://app.netlify.com/sites/glypoon/deploys)
+[![Netlify Status](https://api.netlify.com/api/v1/badges/c5130167-4b76-4964-815c-6de1d838d166/deploy-status)](https://app.netlify.com/sites/glypoon/deploys) [![.github/workflows/make_puzzle.yml](https://github.com/chowder/glypoon/actions/workflows/make_puzzle.yml/badge.svg?branch=main)](https://github.com/chowder/glypoon/actions/workflows/make_puzzle.yml)
 
 Glypoon is a word puzzle where the goal is to create as many words as possible using each letter provided no more than once.
 
@@ -14,7 +14,7 @@ A demo can be found [here](https://glypoon.netlify.app).
 
 ## Rules
 
-The rules of the game can be found in [here](https://github.com/chowder/glypoon/blob/main/README.md).
+The rules of the game can be found in [here](https://github.com/chowder/glypoon/blob/main/RULES.md).
 
 ## Screenshots
 
