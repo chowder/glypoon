@@ -73,7 +73,7 @@ if __name__ == "__main__":
             # For each possible letter to use as the 'center letter'
             solutions_by_key_letter[key_letter] = []
             for word in words:
-                if len(word) <= difficulty["min_length"]:
+                if len(word) < difficulty["min_length"]:
                     continue
                 if key_letter not in word:
                     continue
