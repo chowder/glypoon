@@ -1,3 +1,4 @@
+import GameState from '../classes/GameState';
 import PolygonLetter from './PolygonLetter'
 
 const polarToCartesian = (radians, distance) => {
@@ -6,10 +7,10 @@ const polarToCartesian = (radians, distance) => {
     return [x, y]
 }
 
-const Polygon = ({ letters, gameStarted }) => {
-    letters = gameStarted ?
-        letters.map((letter) => letter.toUpperCase()) :
-        ['N', 'I', 'C', 'E', 'T', 'R', 'Y']  // Cheaters beware!
+const Polygon = ({ letters, gameState }) => {
+    letters = gameState === GameState.NOT_STARTED ?
+        ['N', 'I', 'C', 'E', 'T', 'R', 'Y'] : // Cheaters beware!
+        letters.map((letter) => letter.toUpperCase())
 
     let angleBetweenElements = Math.PI * 2 / (letters.length - 1);
 

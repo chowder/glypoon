@@ -1,8 +1,10 @@
 import { useState } from 'react'
+import PropTypes from 'prop-types'
 
 
 const InputBox = ({ onSubmit }) => {
     const [answer, setAnswer] = useState("")
+    const [wiggleEffect, setWiggleEffect] = useState(false)
 
     const handleChange = (e) => {
         setAnswer(e.target.value)
@@ -11,8 +13,10 @@ const InputBox = ({ onSubmit }) => {
     const handleSubmit = (e) => {
         e.preventDefault()
         if (answer) {
-            onSubmit(answer.toLowerCase())
             setAnswer("")
+            if (onSubmit(answer.toLowerCase()) === false) {
+                setWiggleEffect(true);
+            }
         }
     }
 
@@ -23,12 +27,17 @@ const InputBox = ({ onSubmit }) => {
                     type="text"
                     placeholder="Answer"
                     value={answer}
-                    className="px-5 py-3 placeholder-blueGray-300 text-blueGray-600 bg-white rounded-xl text-base border-0 shadow-md outline-none focus:outline-none focus:ring w-full"
+                    className={`${wiggleEffect && "animate-wiggle"} px-5 py-3 placeholder-blueGray-300 text-blueGray-600 bg-white rounded-xl text-base border-0 shadow-md outline-none focus:outline-none focus:ring w-full`}
                     onChange={handleChange}
+                    onAnimationEnd={() => setWiggleEffect(false)}
                 />
             </form>
         </div>
     )
+}
+
+InputBox.propTypes = {
+    onSubmit: PropTypes.func  // This callback should return `true` if the submission was correct and `false` otherwise
 }
 
 export default InputBox

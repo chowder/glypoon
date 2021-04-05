@@ -42,13 +42,15 @@ function App() {
     answer = answer.trim()
     if (currentAnswers.includes(answer)) {
       console.log(`${answer} has already been guessed!`)
-      return
+      return false;
     }
     if (answers.includes(answer)) {
       console.log(`${answer} was a correct guess!`)
       setCurrentAnswers([...currentAnswers, answer])
+      return true;
     } else {
       console.log(`${answer} was an incorrect guess!`)
+      return false;
     }
   }
 
@@ -109,7 +111,7 @@ function App() {
             <Score currentScore={currentAnswers.length} totalScore={answers.length} />
           </div>
           <div className="flex w-full flex-col space-y-8 lg:flex-row lg:space-x-8 lg:space-y-0">
-            <Polygon letters={letters} gameStarted={gameState} />
+            <Polygon letters={letters} gameState={gameState} />
             <Answers answers={answers} currentAnswers={currentAnswers} gameState={gameState} />
           </div>
           <InputBox onSubmit={submitAnswer} />
