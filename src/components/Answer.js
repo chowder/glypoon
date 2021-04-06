@@ -2,7 +2,7 @@ import GameState from "../classes/GameState"
 import { useEffect, useState, useRef } from 'react'
 
 
-const Answer = ({ text, isVisible, gameState }) => {
+const Answer = ({ text, isVisible, isPangram, gameState }) => {
     const [definition, setDefinition] = useState(null)
     const tooltipRef = useRef(null);
 
@@ -37,11 +37,21 @@ const Answer = ({ text, isVisible, gameState }) => {
         tooltipRef.current.style.marginBottom = "0px"
     }
 
-    let color = isVisible ?
-        "bg-blue-200" :
-        gameState === GameState.ENDED ?
-            "bg-red-200" :
-            "bg-gray-200"
+    const getColor = () => {
+        if (isVisible && isPangram) {
+            return "bg-gradient-to-r from-yellow-400 to-yellow-200"
+        }
+        if (isVisible) {
+            return "bg-blue-200"
+        }
+        if (gameState === GameState.ENDED) {
+            return "bg-red-200"
+        }
+
+        return "bg-gray-200"
+    }
+
+    let color = getColor()
 
     return (
         <div className="relative">
