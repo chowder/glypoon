@@ -47,7 +47,7 @@ const Answer = ({ text, isVisible, gameState }) => {
         <div className="relative">
             <div
                 className="absolute bg-green-500 text-white px-4 py-2 rounded-md flex items-center text-center transition-all duration-150 shadow-md lg:w-max max-w-sm"
-                style={{ bottom: "100%", opacity: 0, visibility: "visible" }}
+                style={{ bottom: "100%", opacity: 0, visibility: "hidden" }}
                 ref={tooltipRef}
             >
                 {definition}
