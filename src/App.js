@@ -43,14 +43,14 @@ function App() {
   const submitAnswer = (answer) => {
     answer = answer.trim()
     if (currentAnswers.includes(answer)) {
-      setError(`${answer} has already been guessed!`)
+      setError(`${answer} was already guessed`)
       return false;
     }
     if (answers.includes(answer)) {
       setCurrentAnswers([...currentAnswers, answer])
       return true;
     } else {
-      setError(`${answer} was an incorrect guess!`)
+      setError(`${answer} was incorrect`)
       return false;
     }
   }
@@ -116,7 +116,7 @@ function App() {
             <Polygon letters={letters} gameState={gameState} />
             <Answers answers={answers} currentAnswers={currentAnswers} gameState={gameState} />
           </div>
-          <InputBox onSubmit={submitAnswer} error={error}/>
+          <InputBox onSubmit={submitAnswer} error={error} />
         </div>
       </div>
     </div>
