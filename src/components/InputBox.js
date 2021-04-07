@@ -6,7 +6,7 @@ const InputBox = ({ onSubmit, error }) => {
     const [answer, setAnswer] = useState("")
     const [wiggleEffect, setWiggleEffect] = useState(false)
     const [bounceEffect, setBounceEffect] = useState(false)
-    const [alertColor, setAlertColor] = useState("")
+    const [alertClass, setAlertClass] = useState("")
     const [showError, setShowError] = useState(false)
 
     const handleChange = (e) => {
@@ -16,7 +16,7 @@ const InputBox = ({ onSubmit, error }) => {
     const resetInput = () => {
         setWiggleEffect(false)
         setBounceEffect(false)
-        setAlertColor("")
+        setAlertClass("")
     }
 
     const handleSubmit = (e) => {
@@ -24,11 +24,11 @@ const InputBox = ({ onSubmit, error }) => {
         if (answer) {
             setAnswer("")
             if (onSubmit(answer.toLowerCase()) === false) {
-                setAlertColor("red");
+                setAlertClass("ring-red-200");
                 setShowError(true);
                 setWiggleEffect(true);
             } else {
-                setAlertColor("green");
+                setAlertClass("ring-green-200");
                 setShowError(false);
                 setBounceEffect(true);
             }
@@ -42,7 +42,7 @@ const InputBox = ({ onSubmit, error }) => {
                     type="text"
                     placeholder="Answer"
                     value={answer}
-                    className={`${wiggleEffect && "animate-wiggle"} ${bounceEffect && "animate-bounce"} ring-${alertColor}-200 px-5 py-3 placeholder-blueGray-300 text-blueGray-600 bg-white rounded-xl text-base border-0 shadow-md outline-none focus:outline-none focus:ring w-full`}
+                    className={`${wiggleEffect && "animate-wiggle"} ${bounceEffect && "animate-bounce"} ${alertClass} px-5 py-3 placeholder-blueGray-300 text-blueGray-600 bg-white rounded-xl text-base border-0 shadow-md outline-none focus:outline-none focus:ring w-full`}
                     onChange={handleChange}
                     onAnimationEnd={() => {
                         resetInput()}
