@@ -3,6 +3,9 @@ module.exports = {
   darkMode: false, // or 'media' or 'class'
   theme: {
     extend: {
+      minHeight: {
+        '72': { height: '18rem' },
+      },
       keyframes: {
         wiggle: {
           '0%, 100%': { transform: 'rotate(-1deg)' },

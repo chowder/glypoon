@@ -102,21 +102,23 @@ function App() {
 
   return (
     <div className="min-h-screen bg-gray-100 text-coolGray-800">
-      {gameState === GameState.NOT_STARTED ? <Welcome gameDuration={GAME_DURATION} onStart={startGame} /> : <></>}
-      {gameState === GameState.COMPLETE ? <Congratulations secondsRemaining={secondsRemaining} /> : <></>}
-      <div className="w-full mx-auto xl:w-4/5 2xl:w-2/3 sm:p-6">
-        <div className="flex flex-col w-full justify-center p-6 text-center space-y-8 items-start">
+      {gameState === GameState.NOT_STARTED && <Welcome gameDuration={GAME_DURATION} onStart={startGame} />}
+      {gameState === GameState.COMPLETE && <Congratulations secondsRemaining={secondsRemaining} />}
+      <div className="mx-auto lg:max-w-screen-lg p-4">
+        <div className="flex flex-col justify-center p-6 text-center space-y-8 items-start">
           <Header title={'Glypoon'} />
           <PuzzleHint answers={answers} />
-          <div className="w-full flex flex-col items-start space-y-4 px-2 lg:flex-row lg:justify-between lg:space-y-0">
+          <div className="w-full flex px-2 flex-row justify-between space-y-0">
             <Timer secondsRemaining={secondsRemaining} gameState={gameState} onClick={addMoreTime} />
             <Score currentScore={currentAnswers.length} totalScore={answers.length} />
           </div>
-          <div className="flex w-full flex-col space-y-8 lg:flex-row lg:space-x-8 lg:space-y-0">
-            <Polygon letters={letters} gameState={gameState} />
+          <div className="flex w-full flex-col space-y-6 md:flex-row md:justify-start md:space-y-0 md:space-x-6">
+            <div className="flex flex-col space-y-6 items-center">
+              <Polygon letters={letters} gameState={gameState} />
+              <InputBox onSubmit={submitAnswer} error={error} />
+            </div>
             <Answers answers={answers} currentAnswers={currentAnswers} gameState={gameState} />
           </div>
-          <InputBox onSubmit={submitAnswer} error={error} />
         </div>
       </div>
     </div>

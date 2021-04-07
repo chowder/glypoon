@@ -14,7 +14,7 @@ const Score = ({ currentScore, totalScore }) => {
     let grade = getGrade(currentScore / totalScore)
     return (
         <div className="flex flex-row">
-            {grade ? <p className="text-xl font-semibold mr-3 text-gray-900">({grade})</p> : <></>}
+            {grade ? <p className="invisible sm:visible text-xl font-semibold mr-3 text-gray-900">({grade})</p> : <></>}
             <p className="text-xl font-semibold">
                 {currentScore} / {totalScore}
             </p>

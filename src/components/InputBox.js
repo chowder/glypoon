@@ -30,7 +30,7 @@ const InputBox = ({ onSubmit, error }) => {
     }
 
     return (
-        <div className="w-72">
+        <div className="w-72 mx-0">
             <form onSubmit={handleSubmit}>
                 <input
                     type="text"
@@ -45,8 +45,8 @@ const InputBox = ({ onSubmit, error }) => {
                     spellCheck="false"
                 />
             </form>
-            <div className="h-4 mx-2 mt-4">
-                {showError && <p className="text-sm text-red-500 text-left font-medium">{error}</p>}
+            <div className="h-4 mx-2 my-4">
+                {showError && <p className="text-md text-red-500 text-left font-medium">{error}</p>}
             </div>
         </div>
     )
