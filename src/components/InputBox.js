@@ -4,9 +4,7 @@ import PropTypes from 'prop-types'
 
 const InputBox = ({ onSubmit, error }) => {
     const [answer, setAnswer] = useState("")
-    const [wiggleEffect, setWiggleEffect] = useState(false)
-    const [bounceEffect, setBounceEffect] = useState(false)
-    const [alertClass, setAlertClass] = useState("")
+    const [inputStyles, setInputStyles] = useState([])
     const [showError, setShowError] = useState(false)
 
     const handleChange = (e) => {
@@ -14,9 +12,7 @@ const InputBox = ({ onSubmit, error }) => {
     }
 
     const resetInput = () => {
-        setWiggleEffect(false)
-        setBounceEffect(false)
-        setAlertClass("")
+        setInputStyles([])
     }
 
     const handleSubmit = (e) => {
@@ -24,13 +20,11 @@ const InputBox = ({ onSubmit, error }) => {
         if (answer) {
             setAnswer("")
             if (onSubmit(answer.toLowerCase()) === false) {
-                setAlertClass("ring-red-200");
-                setShowError(true);
-                setWiggleEffect(true);
+                setInputStyles([...inputStyles, "ring-red-400", "animate-wiggle"])
+                setShowError(true)
             } else {
-                setAlertClass("ring-green-200");
+                setInputStyles([...inputStyles, "ring-green-500", "animate-bounce"])
                 setShowError(false);
-                setBounceEffect(true);
             }
         }
     }
@@ -42,14 +36,18 @@ const InputBox = ({ onSubmit, error }) => {
                     type="text"
                     placeholder="Answer"
                     value={answer}
-                    className={`${wiggleEffect && "animate-wiggle"} ${bounceEffect && "animate-bounce"} ${alertClass} px-5 py-3 placeholder-blueGray-300 text-blueGray-600 bg-white rounded-xl text-base border-0 shadow-md outline-none focus:outline-none focus:ring w-full`}
+                    className={`${inputStyles.join(' ')} transition duration-200 ease-out px-5 py-3 placeholder-blueGray-300 text-blueGray-600 bg-white rounded-xl text-base border-0 shadow-md outline-none focus:outline-none focus:ring w-full`}
                     onChange={handleChange}
-                    onAnimationEnd={() => {
-                        resetInput()}
-                    }
+                    onAnimationEnd={() => resetInput()}
+                    autoCapitalize="off"
+                    autoComplete="off"
+                    autoCorrect="off"
+                    spellCheck="false"
                 />
             </form>
-            { showError ? <div className="text-sm text-red-500 m-1 text-left">{ error }</div> : <></>}
+            <div className="h-4 mx-2 mt-4">
+                {showError && <p className="text-sm text-red-500 text-left font-medium">{error}</p>}
+            </div>
         </div>
     )
 }

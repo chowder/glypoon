@@ -9,8 +9,8 @@ module.exports = {
           '50%': { transform: 'rotate(1deg)' },
         },
         bounce: {
-          '0%, 100%': { transform: 'translateY(-5%)'},
-          '50%': { transform: 'translateY(0)'}
+          '0%, 100%': { transform: 'translateY(0)' },
+          '50%': { transform: 'translateY(-4px)' }
         }
       },
       animation: {
