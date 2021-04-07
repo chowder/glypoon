@@ -10,6 +10,8 @@ import Congratulations from './components/Congratulations'
 import GameState from './classes/GameState'
 import { useState, useEffect } from 'react'
 import PuzzleHint from './components/PuzzleHint';
+import RevealButton from './components/RevealButton';
+import RevealConfirmation from './components/RevealConfirmation';
 
 const GAME_DURATION = parseInt((process.env.REACT_APP_GAME_DURATION | "10"))  // in seconds
 const EXTRA_TIME_AMOUNT = parseInt((process.env.REACT_APP_EXTRA_TIME_AMOUNT | "10"))  // in seconds
@@ -18,8 +20,9 @@ function App() {
   const [currentAnswers, setCurrentAnswers] = useState([])
   const [answers, setAnswers] = useState(null)
   const [letters, setLetters] = useState(null)
-  const [gameState, setGameState] = useState(GameState.NOT_STARTED)
+  const [gameState, setGameState] = useState(GameState.PAUSED)
   const [secondsRemaining, setSecondsRemaining] = useState(GAME_DURATION)
+  const [showRevealConfirmation, setShowRevealConfirmation] = useState(false)
   const [error, setError] = useState()
 
   // Fetching the puzzle
@@ -88,6 +91,15 @@ function App() {
     setSecondsRemaining(GAME_DURATION)
   }
 
+  const continueGame = () => {
+    setShowRevealConfirmation(false)
+  }
+
+  const quitGame = () => {
+    setShowRevealConfirmation(false)
+    setGameState(GameState.ENDED)
+  }
+
   const addMoreTime = () => {
     if (gameState === GameState.RUNNING) {
       setSecondsRemaining(previous => previous + EXTRA_TIME_AMOUNT)
@@ -102,12 +114,22 @@ function App() {
 
   return (
     <div className="min-h-screen bg-gray-100 text-coolGray-800">
-      {gameState === GameState.NOT_STARTED && <Welcome gameDuration={GAME_DURATION} onStart={startGame} />}
-      {gameState === GameState.COMPLETE && <Congratulations secondsRemaining={secondsRemaining} />}
+      {gameState === GameState.PAUSED &&
+        <Welcome gameDuration={GAME_DURATION} onStart={startGame} />}
+      {gameState === GameState.COMPLETE &&
+        <Congratulations secondsRemaining={secondsRemaining} />}
+      {showRevealConfirmation &&
+        <RevealConfirmation
+          onContinue={continueGame}
+          onQuit={quitGame}
+        />}
       <div className="mx-auto lg:max-w-screen-lg p-4">
         <div className="flex flex-col justify-center p-6 text-center space-y-8 items-start">
           <Header title={'Glypoon'} />
-          <PuzzleHint answers={answers} />
+          <div className="w-full flex flex-row justify-between items-center">
+            <PuzzleHint answers={answers} />
+            <RevealButton gameState={gameState} onClick={() => setShowRevealConfirmation(true)} />
+          </div>
           <div className="w-full flex px-2 flex-row justify-between space-y-0">
             <Timer secondsRemaining={secondsRemaining} gameState={gameState} onClick={addMoreTime} />
             <Score currentScore={currentAnswers.length} totalScore={answers.length} />
