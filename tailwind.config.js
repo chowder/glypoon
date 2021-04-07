@@ -7,10 +7,15 @@ module.exports = {
         wiggle: {
           '0%, 100%': { transform: 'rotate(-1deg)' },
           '50%': { transform: 'rotate(1deg)' },
+        },
+        bounce: {
+          '0%, 100%': { transform: 'translateY(-5%)'},
+          '50%': { transform: 'translateY(0)'}
         }
       },
       animation: {
         wiggle: 'wiggle 200ms ease-in-out',
+        bounce: 'bounce 300ms ease-in-out'
       }
     },
   },

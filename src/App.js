@@ -20,6 +20,7 @@ function App() {
   const [letters, setLetters] = useState(null)
   const [gameState, setGameState] = useState(GameState.NOT_STARTED)
   const [secondsRemaining, setSecondsRemaining] = useState(GAME_DURATION)
+  const [error, setError] = useState()
 
   // Fetching the puzzle
   const fetchPuzzle = async () => {
@@ -42,15 +43,14 @@ function App() {
   const submitAnswer = (answer) => {
     answer = answer.trim()
     if (currentAnswers.includes(answer)) {
-      console.log(`${answer} has already been guessed!`)
+      setError(`${answer} has already been guessed!`)
       return false;
     }
     if (answers.includes(answer)) {
-      console.log(`${answer} was a correct guess!`)
       setCurrentAnswers([...currentAnswers, answer])
       return true;
     } else {
-      console.log(`${answer} was an incorrect guess!`)
+      setError(`${answer} was an incorrect guess!`)
       return false;
     }
   }
@@ -116,7 +116,7 @@ function App() {
             <Polygon letters={letters} gameState={gameState} />
             <Answers answers={answers} currentAnswers={currentAnswers} gameState={gameState} />
           </div>
-          <InputBox onSubmit={submitAnswer} />
+          <InputBox onSubmit={submitAnswer} error={error}/>
         </div>
       </div>
     </div>
