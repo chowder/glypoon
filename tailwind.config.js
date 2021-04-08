@@ -1,10 +1,12 @@
+const colors = require('tailwindcss/colors')
+
 module.exports = {
   purge: ['./src/**/*.{js,jsx,ts,tsx}', './public/index.html'],
   darkMode: false, // or 'media' or 'class'
   theme: {
     extend: {
-      minHeight: {
-        '72': { height: '18rem' },
+      colors: {
+        orange: colors.orange,
       },
       keyframes: {
         wiggle: {
@@ -23,6 +25,7 @@ module.exports = {
     },
   },
   variants: {
+    opacity: ({ after }) => after(['disabled']),
     extend: {},
   },
   plugins: [],

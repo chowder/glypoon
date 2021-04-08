@@ -8,7 +8,7 @@ const polarToCartesian = (radians, distance) => {
 }
 
 const Polygon = ({ letters, gameState }) => {
-    letters = gameState === GameState.NOT_STARTED ?
+    letters = gameState === GameState.PAUSED ?
         ['N', 'I', 'C', 'E', 'T', 'R', 'Y'] : // Cheaters beware!
         letters.map((letter) => letter.toUpperCase())
 
