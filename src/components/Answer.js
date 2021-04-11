@@ -1,8 +1,10 @@
 import GameState from "../classes/GameState"
 import { useEffect, useState, useRef } from 'react'
+import { useStoreState } from "easy-peasy"
 
 
-const Answer = ({ text, isVisible, isPangram, gameState }) => {
+const Answer = ({ text, isVisible, isPangram }) => {
+    const gameState = useStoreState(store => store.gameState)
     const [definition, setDefinition] = useState(null)
     const tooltipRef = useRef(null);
 
