@@ -53,7 +53,7 @@ const InputBox = () => {
                     type="text"
                     placeholder={gameState === GameState.RUNNING ? "Answer" : "Game over"}
                     value={gameState === GameState.RUNNING ? currentInput : ""}
-                    className={`transition-colors input-box ${inputStyles.join(' ')}`}
+                    className={`transition-all input-box ${inputStyles.join(' ')}`}
                     onChange={handleChange}
                     onAnimationEnd={() => resetInputStyles()}
                     autoCapitalize="off"
