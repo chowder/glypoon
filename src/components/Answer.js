@@ -40,17 +40,18 @@ const Answer = ({ text, isVisible, isPangram }) => {
     }
 
     const getColor = () => {
+        // TODO: Turn these into CSS components
         if (isVisible && isPangram) {
-            return "bg-gradient-to-r from-yellow-400 to-yellow-200"
+            return "bg-gradient-to-r from-yellow-400 to-yellow-200 dark:from-yellow-600 dark:to-yellow-500"
         }
         if (isVisible) {
-            return "bg-blue-200"
+            return "bg-blue-200 dark:bg-blue-500"
         }
         if (gameState === GameState.ENDED) {
-            return "bg-red-200"
+            return "bg-red-200 dark:bg-red-400"
         }
 
-        return "bg-gray-200"
+        return "bg-gray-200 dark:bg-gray-600"
     }
 
     let color = getColor()
