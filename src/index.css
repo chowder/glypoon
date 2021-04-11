@@ -53,7 +53,7 @@
     }
 
     .puzzle-hint {
-        @apply text-lg font-medium text-left text-gray-900 dark:text-gray-50
+        @apply text-lg font-medium text-left text-gray-900 dark:text-gray-50 transition-colors
     }
 
     .input-box {
