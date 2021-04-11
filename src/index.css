@@ -1,3 +1,86 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer components {
+    .header {
+        @apply text-5xl font-bold leading-none sm:text-6xl text-gray-900
+    }
+
+    .blur-background {
+        @apply filter bg-gray-700 bg-opacity-75;
+        backdrop-filter: blur(10px);
+    }
+
+    .pop-up-panel {
+        @apply inline-block align-middle bg-white rounded-lg text-left overflow-hidden shadow-xl transform transition-all w-full max-w-xs sm:max-w-md
+    }
+
+    .pop-up-text-subpanel {
+        @apply bg-white px-4 pt-5 pb-4 sm:p-6
+    }
+
+    .pop-up-title {
+        @apply text-xl font-medium text-gray-900
+    }
+
+    .pop-up-subtext {
+        @apply mt-3 text-gray-600
+    }
+
+    .pop-up-buttons-subpanel {
+        @apply bg-gray-50 px-4 py-3 sm:px-6
+    }
+
+    .pop-up-button {
+        @apply mt-0 w-full inline-flex justify-center rounded-md border shadow-sm px-4 py-2 text-base font-medium focus:outline-none focus:ring-2 focus:ring-offset-2 sm:text-sm
+    }
+
+    .timer {
+        @apply text-xl font-semibold text-gray-900
+    }
+
+    .score-description {
+        @apply invisible sm:visible text-xl font-semibold mr-3 text-gray-900
+    }
+
+    .score {
+        @apply text-xl font-semibold
+    }
+
+    .reveal-button {
+        @apply bg-blue-400 focus:outline-none text-white font-medium h-10 w-24 rounded-lg shadow-md disabled:opacity-40
+    }
+
+    .puzzle-hint {
+        @apply text-lg font-medium text-gray-900 text-left
+    }
+
+    .input-box {
+        @apply px-5 py-3 bg-white placeholder-blueGray-300 text-blueGray-600 disabled:bg-gray-200 rounded-xl text-base border-0 shadow-md disabled:shadow-inner outline-none focus:outline-none focus:ring w-full appearance-none
+    }
+
+    .polygon {
+        @apply bg-white rounded-3xl shadow-md
+    }
+
+    .polygon-letter-bg {
+        @apply bg-gray-200 rounded-full shadow
+    }
+
+    .polygon-letter-text {
+        @apply text-4xl font-bold text-gray-800
+    }
+
+    .answers-container {
+        @apply bg-white rounded-3xl shadow-md
+    }
+
+    .answer-bg {
+        @apply rounded-md h-8 align-middle flex justify-center items-center
+    }
+
+    .answer-text {
+        @apply text-gray-800 font-medium truncate
+    }
+}

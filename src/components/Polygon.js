@@ -24,7 +24,7 @@ const Polygon = () => {
     let angleBetweenElements = Math.PI * 2 / (lettersToDisplay.length - 1);
 
     return (
-        <div className='flex-shrink-0 w-72 h-72 bg-white rounded-3xl shadow-md' style={{ position: 'relative' }}>
+        <div className='flex-shrink-0 w-72 h-72 polygon' style={{ position: 'relative' }}>
             <PolygonLetter top={50} left={50} text={lettersToDisplay[0]} />
             {lettersToDisplay.slice(1).map((element, index) => {
                 let [x, y] = polarToCartesian(angleBetweenElements * index, 32);

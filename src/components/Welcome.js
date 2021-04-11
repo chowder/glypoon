@@ -16,24 +16,24 @@ const Welcome = () => {
         <div className={`${visible ? "" : "ease-in duration-200 invisible"} fixed z-10 inset-0`}>
             <div className="flex items-center justify-center min-h-screen px-6 pb-20 text-center">
                 {/* Blurred background */}
-                <div className={`${visible ? "" : "ease-in duration-200 opacity-0"} fixed inset-0 filter bg-blur bg-gray-700 bg-opacity-75 transition-opacity`}></div>
+                <div className={`${visible ? "" : "ease-in duration-200 opacity-0"} transition-opacity fixed inset-0 blur-background`}></div>
                 <span className="hidden align-middle h-screen">&#8203;</span>
                 {/* Modal panel */}
-                <div className={`${visible ? "" : "ease-in duration-100 opacity-0 -translate-y-4 sm:translate-y-0 sm:scale-95"} inline-block align-middle bg-white rounded-lg text-left overflow-hidden shadow-xl transform transition-all w-full max-w-xs sm:max-w-md`}>
-                    <div className="bg-white px-4 pt-5 pb-4 sm:p-6">
+                <div className={`${visible ? "" : "ease-in duration-100 opacity-0 -translate-y-4 sm:translate-y-0 sm:scale-95"} pop-up-panel`}>
+                    <div className="pop-up-text-subpanel">
                         <div className="text-center">
-                            <h3 className="text-xl leading-6 font-medium text-gray-900">
+                            <p className="pop-up-title">
                                 Glypoon
-                            </h3>
-                            <p className="mt-3 text-gray-600">
+                            </p>
+                            <p className="pop-up-subtext">
                                 Create as many words as you can in {Math.floor(gameDuration / 60)} minutes!
                             </p>
                         </div>
                     </div>
-                    <div className="bg-gray-50 px-4 py-3 sm:px-6">
+                    <div className="pop-up-buttons-subpanel">
                         <button
                             type="button"
-                            className="mt-0 w-full inline-flex justify-center rounded-md border border-gray-300 shadow-sm px-4 py-2 bg-white text-base font-medium text-gray-700 hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500 sm:text-sm"
+                            className="pop-up-button border-gray-300 bg-white text-gray-700 hover:bg-gray-50 focus:ring-indigo-500"
                             onClick={handleClick}
                         >
                             Play

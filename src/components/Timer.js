@@ -22,7 +22,7 @@ const Timer = () => {
 
     return (
         <div>
-            <p className="text-xl font-semibold text-gray-900">
+            <p className="timer">
                 <span
                     className={`mr-3.5 ${gameState === GameState.RUNNING && "spinner"}`}
                     onClick={addExtraTime}>

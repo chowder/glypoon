@@ -19,8 +19,8 @@ const Score = () => {
     let description = getScoreDescription(currentScore / totalScore)
     return (
         <div className="flex flex-row">
-            {description && <p className="invisible sm:visible text-xl font-semibold mr-3 text-gray-900">({description})</p>}
-            <p className="text-xl font-semibold">
+            {description && <p className="score-description">({description})</p>}
+            <p className="score">
                 {currentScore} / {totalScore}
             </p>
         </div>

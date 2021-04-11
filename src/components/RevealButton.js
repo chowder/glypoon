@@ -8,7 +8,7 @@ const RevealButton = () => {
 
     return (
         <button
-            className="bg-blue-400 focus:outline-none text-white font-medium h-10 w-24 rounded-lg shadow-md disabled:opacity-40"
+            className="reveal-button"
             disabled={disabled}
             onClick={() => setRevealConfirmation(true)}
         >
