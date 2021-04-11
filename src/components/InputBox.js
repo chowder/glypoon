@@ -1,32 +1,48 @@
 import { useState } from 'react'
 import PropTypes from 'prop-types'
+import { useStoreActions, useStoreState } from 'easy-peasy'
+import GameState from '../classes/GameState'
 
 
-const InputBox = ({ onSubmit, error }) => {
-    const [answer, setAnswer] = useState("")
+const InputBox = () => {
+    const answers = useStoreState(store => store.solution.answers)
+    const currentAnswers = useStoreState(store => store.currentAnswers)
+    const currentInput = useStoreState(store => store.currentInput)
+    const gameState = useStoreState(store => store.gameState)
+
+    const submitAnswer = useStoreActions(actions => actions.submitAnswer)
+    const setCurrentInput = useStoreActions(actions => actions.setCurrentInput)
+
     const [inputStyles, setInputStyles] = useState([])
-    const [showError, setShowError] = useState(false)
+    const [error, setError] = useState("")
+    // const [showError, setShowError] = useState(false)
 
     const handleChange = (e) => {
-        setAnswer(e.target.value)
+        setCurrentInput(e.target.value)
     }
 
-    const resetInput = () => {
+    const resetInputStyles = () => {
         setInputStyles([])
     }
 
     const handleSubmit = (e) => {
         e.preventDefault()
-        if (answer) {
-            setAnswer("")
-            if (onSubmit(answer.toLowerCase()) === false) {
-                setInputStyles([...inputStyles, "ring-red-400", "animate-wiggle"])
-                setShowError(true)
-            } else {
+        if (currentInput) {
+            let answer = currentInput.trim()
+            if (answers.includes(answer) === true && currentAnswers.includes(answer) === false) {
                 setInputStyles([...inputStyles, "ring-green-500", "animate-bounce"])
-                setShowError(false);
+                submitAnswer(answer)
+                setError("")
+            } else {
+                setInputStyles([...inputStyles, "ring-red-400", "animate-wiggle"])
+                if (currentAnswers.includes(answer) === true) {
+                    setError(`${answer} was already guessed`)
+                } else {
+                    setError(`${answer} was incorrect`)
+                }
             }
         }
+        setCurrentInput("")
     }
 
     return (
@@ -34,19 +50,20 @@ const InputBox = ({ onSubmit, error }) => {
             <form onSubmit={handleSubmit}>
                 <input
                     type="text"
-                    placeholder="Answer"
-                    value={answer}
-                    className={`${inputStyles.join(' ')} transition duration-200 ease-out px-5 py-3 placeholder-blueGray-300 text-blueGray-600 bg-white rounded-xl text-base border-0 shadow-md outline-none focus:outline-none focus:ring w-full`}
+                    placeholder={gameState === GameState.RUNNING ? "Answer" : "Game over"}
+                    value={gameState === GameState.RUNNING ? currentInput : ""}
+                    className={`${inputStyles.join(' ')} transition duration-200 ease-out px-5 py-3 placeholder-blueGray-300 text-blueGray-600 bg-white rounded-xl text-base border-0 shadow-md outline-none focus:outline-none focus:ring w-full appearance-none`}
                     onChange={handleChange}
-                    onAnimationEnd={() => resetInput()}
+                    onAnimationEnd={() => resetInputStyles()}
                     autoCapitalize="off"
                     autoComplete="off"
                     autoCorrect="off"
                     spellCheck="false"
+                    disabled={gameState !== GameState.RUNNING}
                 />
             </form>
             <div className="h-4 mx-2 my-4">
-                {showError && <p className="text-md text-red-500 text-left font-medium">{error}</p>}
+                {error.length > 1 && <p className="text-md text-red-500 text-left font-medium">{error}</p>}
             </div>
         </div>
     )

@@ -1,5 +1,6 @@
 const GameState = Object.freeze({
-    PAUSED: Symbol("not started"),
+    NOT_STARTED: Symbol("not started"),
+    PAUSED: Symbol("paused"),
     RUNNING: Symbol("started"),
     ENDED: Symbol("ended"),
     COMPLETE: Symbol("complete")

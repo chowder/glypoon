@@ -1,4 +1,6 @@
-const getGrade = (score) => {
+import { useStoreState } from "easy-peasy"
+
+const getScoreDescription = (score) => {
     if (score <= 0.25) {
         return undefined
     } else if (score <= 0.50) {
@@ -10,11 +12,14 @@ const getGrade = (score) => {
     }
 }
 
-const Score = ({ currentScore, totalScore }) => {
-    let grade = getGrade(currentScore / totalScore)
+const Score = () => {
+    const currentScore = useStoreState(store => store.currentAnswers.length)
+    const totalScore = useStoreState(store => store.solution.answers.length)
+
+    let description = getScoreDescription(currentScore / totalScore)
     return (
         <div className="flex flex-row">
-            {grade ? <p className="invisible sm:visible text-xl font-semibold mr-3 text-gray-900">({grade})</p> : <></>}
+            {description && <p className="invisible sm:visible text-xl font-semibold mr-3 text-gray-900">({description})</p>}
             <p className="text-xl font-semibold">
                 {currentScore} / {totalScore}
             </p>

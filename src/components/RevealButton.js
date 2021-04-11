@@ -1,18 +1,16 @@
-import React, { useState, useEffect } from 'react'
+import { useStoreActions, useStoreState } from 'easy-peasy'
 import GameState from '../classes/GameState'
 
-const RevealButton = ({ gameState, onClick }) => {
-    const [disabled, setDisabled] = useState(false)
-
-    useEffect(() => {
-        setDisabled(gameState !== GameState.RUNNING)
-    }, [gameState])
+const RevealButton = () => {
+    const gameState = useStoreState(store => store.gameState)
+    const disabled = gameState !== GameState.RUNNING
+    const setRevealConfirmation = useStoreActions(actions => actions.setRevealConfirmation)
 
     return (
         <button
             className="bg-blue-400 focus:outline-none text-white font-medium h-10 w-24 rounded-lg shadow-md disabled:opacity-40"
-            onClick={onClick}
             disabled={disabled}
+            onClick={() => setRevealConfirmation(true)}
         >
             Solution
         </button>
