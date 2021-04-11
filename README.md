@@ -1,10 +1,20 @@
 # Glypoon
 
-[![Netlify Status](https://api.netlify.com/api/v1/badges/c5130167-4b76-4964-815c-6de1d838d166/deploy-status)](https://app.netlify.com/sites/glypoon/deploys) [![.github/workflows/make_puzzle.yml](https://github.com/chowder/glypoon/actions/workflows/make_puzzle.yml/badge.svg?branch=main)](https://github.com/chowder/glypoon/actions/workflows/make_puzzle.yml)
+[![Netlify Status](https://api.netlify.com/api/v1/badges/c5130167-4b76-4964-815c-6de1d838d166/deploy-status)](https://app.netlify.com/sites/glypoon/deploys)
 
 Glypoon is a word puzzle where the goal is to create as many words as possible using each letter provided no more than once.
 
-A demo can be found [here](https://glypoon.netlify.app).
+## Deployments
+
+### `main`
+
+[![Netlify Status](https://api.netlify.com/api/v1/badges/c5130167-4b76-4964-815c-6de1d838d166/deploy-status)](https://app.netlify.com/sites/glypoon/deploys)  [![.github/workflows/make_puzzle.yml](https://github.com/chowder/glypoon/actions/workflows/make_puzzle.yml/badge.svg?branch=main)](https://github.com/chowder/glypoon/actions/workflows/make_puzzle.yml)
+
+- URL: https://glypoon.netlify.app
+
+### `develop`
+
+- URL: https://develop--glypoon.netlify.app
 
 ## Table of Contents
 
