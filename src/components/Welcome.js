@@ -19,7 +19,7 @@ const Welcome = () => {
                 <div className={`${visible ? "" : "ease-in duration-200 opacity-0"} fixed inset-0 filter bg-blur bg-gray-700 bg-opacity-75 transition-opacity`}></div>
                 <span className="hidden align-middle h-screen">&#8203;</span>
                 {/* Modal panel */}
-                <div className={`${visible ? "" : "ease-in duration-100 opacity-0 -translate-y-4 sm:translate-y-0 sm:scale-95"} inline-block align-middle bg-white rounded-lg text-left overflow-hidden shadow-xl transform transition-all w-full max-w-xs sm:max-w-sm`}>
+                <div className={`${visible ? "" : "ease-in duration-100 opacity-0 -translate-y-4 sm:translate-y-0 sm:scale-95"} inline-block align-middle bg-white rounded-lg text-left overflow-hidden shadow-xl transform transition-all w-full max-w-xs sm:max-w-md`}>
                     <div className="bg-white px-4 pt-5 pb-4 sm:p-6">
                         <div className="text-center">
                             <h3 className="text-xl leading-6 font-medium text-gray-900">
