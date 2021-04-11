@@ -30,11 +30,12 @@ const InputBox = () => {
         if (currentInput) {
             let answer = currentInput.trim()
             if (answers.includes(answer) === true && currentAnswers.includes(answer) === false) {
-                setInputStyles([...inputStyles, "ring-green-500", "animate-bounce"])
+                // TODO: Turn these into CSS components
+                setInputStyles([...inputStyles, "ease-out", "duration-300", "ring-green-400 dark:ring-green-500", "animate-bounce"])
                 submitAnswer(answer)
                 setError("")
             } else {
-                setInputStyles([...inputStyles, "ring-red-400", "animate-wiggle"])
+                setInputStyles([...inputStyles, "ease-out", "duration-300", "ring-red-400 dark:ring-red-500", "animate-wiggle"])
                 if (currentAnswers.includes(answer) === true) {
                     setError(`${answer} was already guessed`)
                 } else {
@@ -52,7 +53,7 @@ const InputBox = () => {
                     type="text"
                     placeholder={gameState === GameState.RUNNING ? "Answer" : "Game over"}
                     value={gameState === GameState.RUNNING ? currentInput : ""}
-                    className={`${inputStyles.join(' ')} transition duration-200 ease-out input-box`}
+                    className={`transition-all input-box ${inputStyles.join(' ')}`}
                     onChange={handleChange}
                     onAnimationEnd={() => resetInputStyles()}
                     autoCapitalize="off"
@@ -63,7 +64,7 @@ const InputBox = () => {
                 />
             </form>
             <div className="h-4 mx-2 my-4">
-                {error.length > 1 && <p className="text-md text-red-500 text-left font-medium">{error}</p>}
+                {error.length > 1 && <p className="text-left font-medium text-red-500 dark:text-red-400">{error}</p>}
             </div>
         </div>
     )
