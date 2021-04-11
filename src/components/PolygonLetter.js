@@ -1,8 +1,8 @@
 const PolygonLetter = ({ top, left, text }) => {
     return (
-        <div className='glypoon-cell bg-gray-200 flex items-center justify-center h-16 w-16 rounded-full shadow'
+        <div className='glypoon-cell polygon-letter-bg flex items-center justify-center h-16 w-16'
             style={{ margin: 'auto', position: 'absolute', top: `${top}%`, left: `${left}%` }}>
-            <p className='text-4xl font-bold text-gray-800'>
+            <p className='polygon-letter-text'>
                 {text}
             </p>
         </div>

@@ -52,7 +52,7 @@ const InputBox = () => {
                     type="text"
                     placeholder={gameState === GameState.RUNNING ? "Answer" : "Game over"}
                     value={gameState === GameState.RUNNING ? currentInput : ""}
-                    className={`${inputStyles.join(' ')} transition duration-200 ease-out px-5 py-3 placeholder-blueGray-300 text-blueGray-600 bg-white rounded-xl text-base border-0 shadow-md outline-none focus:outline-none focus:ring w-full appearance-none`}
+                    className={`${inputStyles.join(' ')} transition duration-200 ease-out input-box`}
                     onChange={handleChange}
                     onAnimationEnd={() => resetInputStyles()}
                     autoCapitalize="off"

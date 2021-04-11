@@ -7,6 +7,7 @@ module.exports = {
     extend: {
       colors: {
         orange: colors.orange,
+        blueGray: colors.blueGray,
       },
       keyframes: {
         wiggle: {
@@ -25,8 +26,11 @@ module.exports = {
     },
   },
   variants: {
-    opacity: ({ after }) => after(['disabled']),
-    extend: {},
+    extend: {
+      opacity: ['disabled'],
+      backgroundColor: ['disabled'],
+      boxShadow: ['disabled'],
+    },
   },
   plugins: [],
 }

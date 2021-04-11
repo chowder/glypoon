@@ -65,10 +65,10 @@ const Answer = ({ text, isVisible, isPangram }) => {
                 {definition}
             </div>
             <div
-                className={`rounded-md h-8 align-middle flex justify-center items-center ${color}`}
+                className={`answer-bg ${color}`}
                 onMouseEnter={handleMouseEnter}
                 onMouseLeave={handleMouseLeave}>
-                <p className='text-gray-800 font-medium truncate'>{isVisible || gameState === GameState.ENDED ? text : ""}</p>
+                <p className='answer-text'>{isVisible || gameState === GameState.ENDED ? text : ""}</p>
             </div >
         </div>
     )
