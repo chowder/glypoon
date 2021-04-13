@@ -1,23 +1,32 @@
 import { useStoreActions, useStoreState } from "easy-peasy"
 import GameState from "../classes/GameState"
+import { useMemo } from 'react'
 
 
-const PolygonLetter = ({ top, left, letter, isActive, index }) => {
+
+const PolygonLetter = ({ top, left, letter, index }) => {
     const currentInput = useStoreState(store => store.currentInput)
     const gameState = useStoreState(store => store.gameState)
     const lastSelectedIndex = useStoreState(store => store.lastSelectedIndex)
+    const letterAvailability = useStoreState(store => store.letterAvailability)
 
     const setCurrentInput = useStoreActions(actions => actions.setCurrentInput)
     const setLastSelectedIndex = useStoreActions(actions => actions.setLastSelectedIndex)
+    const setLetterAvailability = useStoreActions(actions => actions.setLetterAvailability)
     const submitAnswer = useStoreActions(actions => actions.submitAnswer)
 
+    const isActive = useMemo(() => letterAvailability[index], [letterAvailability, index])
+
     const handleClick = () => {
-        if (isActive && gameState === GameState.RUNNING) {
-            setCurrentInput(currentInput + letter)
-            setLastSelectedIndex(index)
-        }
-        if (!isActive && lastSelectedIndex === index) {
-            submitAnswer()
+        if (gameState === GameState.RUNNING) {
+            if (isActive) {
+                setCurrentInput(currentInput + letter)
+                setLastSelectedIndex(index)
+                letterAvailability[index] = false;
+                setLetterAvailability([...letterAvailability]);
+            } else if (lastSelectedIndex === index) {
+                submitAnswer()
+            }
         }
     }
 

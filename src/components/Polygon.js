@@ -1,6 +1,5 @@
 import PolygonLetter from './PolygonLetter'
 import { useStoreState } from 'easy-peasy'
-import { useMemo } from 'react'
 
 
 const polarToCartesian = (radians, distance) => {
@@ -11,28 +10,6 @@ const polarToCartesian = (radians, distance) => {
 
 const Polygon = () => {
     const letters = useStoreState(store => store.solution.letters)
-    const currentInput = useStoreState(store => store.currentInput)
-
-    const letterAvailability = useMemo(() => {
-        let inputLetterCount = {}
-        for (var i = 0; i < currentInput.length; i++) {
-            let l = currentInput[i].toLowerCase()
-            if (l in inputLetterCount) {
-                inputLetterCount[l]++
-            } else {
-                inputLetterCount[l] = 1
-            }
-        }
-        let result = letters.map((l) => {
-            if (l in inputLetterCount && inputLetterCount[l] > 0) {
-                inputLetterCount[l]--
-                return false;
-            } else {
-                return true;
-            }
-        })
-        return result;
-    }, [letters, currentInput])
 
     let angleBetweenElements = Math.PI * 2 / (letters.length - 1);
 
@@ -41,7 +18,6 @@ const Polygon = () => {
             <PolygonLetter
                 top={50} left={50}
                 letter={letters[0]}
-                isActive={letterAvailability[0]}
                 index={0}
                 key={0}
             />
@@ -50,7 +26,6 @@ const Polygon = () => {
                 return <PolygonLetter
                     top={50 + x} left={50 + y}
                     letter={element}
-                    isActive={letterAvailability[index + 1]}
                     index={index + 1}
                     key={index + 1}
                 />

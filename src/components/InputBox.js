@@ -11,6 +11,7 @@ const InputBox = () => {
 
     const submitAnswer = useStoreActions(actions => actions.submitAnswer)
     const setCurrentInput = useStoreActions(actions => actions.setCurrentInput)
+    const recalculateLetterAvailability = useStoreActions(actions => actions.recalculateLetterAvailability)
 
     const inputBoxRef = useRef(null)
     const [inputStyles, setInputStyles] = useState([])
@@ -42,6 +43,7 @@ const InputBox = () => {
             }
         }
         setCurrentInput(e.target.value)
+        recalculateLetterAvailability()
     }
 
     const lastSubmissionResult = useStoreState(store => store.lastSubmissionResult)
