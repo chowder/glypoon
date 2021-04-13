@@ -33,7 +33,7 @@ const PolygonLetter = ({ top, left, letter, index }) => {
     // TODO: Clean up the CSS here
     return (
         <div
-            className={`${isActive ? "polygon-letter" : "polygon-letter-disabled"} ${!isActive && lastSelectedIndex === index ? "ring-4" : ""} flex items-center justify-center h-16 w-16`}
+            className={`transition-all ${isActive ? "polygon-letter" : "polygon-letter-disabled"} ${!isActive && lastSelectedIndex === index ? "ring-4" : ""} flex items-center justify-center h-16 w-16`}
             style={{ margin: 'auto', position: 'absolute', top: `${top}%`, left: `${left}%` }}
             onClick={handleClick}
         >
