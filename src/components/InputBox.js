@@ -6,6 +6,7 @@ import { useStoreActions, useStoreState } from 'easy-peasy'
 
 const InputBox = () => {
     const letters = useStoreState(store => store.solution.letters)
+    const currentAnswers = useStoreState(store => store.currentAnswers)
     const currentInput = useStoreState(store => store.currentInput)
     const gameState = useStoreState(store => store.gameState)
 
@@ -54,7 +55,11 @@ const InputBox = () => {
             setError("")
             setInputStyles([...inputStyles, "input-box-correct"])
         } else if (lastSubmissionResult === false) {
-            setError(`${lastSubmissionAnswer} was incorrect`)
+            if (currentAnswers.includes(lastSubmissionAnswer)) {
+                setError(`${lastSubmissionAnswer} was already guessed`)
+            } else {
+                setError(`${lastSubmissionAnswer} was incorrect`)
+            }
             setInputStyles([...inputStyles, "input-box-wrong"])
         }
         // eslint-disable-next-line
