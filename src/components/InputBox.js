@@ -1,7 +1,7 @@
-import { useState, useEffect, useRef } from 'react'
-import PropTypes from 'prop-types'
-import { useStoreActions, useStoreState } from 'easy-peasy'
 import GameState from '../classes/GameState'
+import PropTypes from 'prop-types'
+import { useState, useEffect, useRef } from 'react'
+import { useStoreActions, useStoreState } from 'easy-peasy'
 
 
 const InputBox = () => {
@@ -56,7 +56,7 @@ const InputBox = () => {
             <form onSubmit={handleSubmit}>
                 <input
                     type="text"
-                    placeholder={gameState === GameState.RUNNING ? "Answer" : "Game over"}
+                    placeholder="Answer"
                     value={gameState === GameState.RUNNING ? currentInput : ""}
                     className={`transition-all input-box ${inputStyles.join(' ')}`}
                     onChange={handleChange}
@@ -66,7 +66,7 @@ const InputBox = () => {
                     autoCorrect="off"
                     spellCheck="false"
                     autoFocus="true"
-                    disabled={gameState !== GameState.RUNNING}
+                    disabled={gameState !== GameState.RUNNING && gameState !== GameState.PAUSED}
                     ref={inputBoxRef}
                 />
             </form>
