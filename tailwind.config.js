@@ -2,11 +2,12 @@ const colors = require('tailwindcss/colors')
 
 module.exports = {
   purge: ['./src/**/*.{js,jsx,ts,tsx}', './public/index.html'],
-  darkMode: false, // or 'media' or 'class'
+  darkMode: 'class',
   theme: {
     extend: {
       colors: {
         orange: colors.orange,
+        blueGray: colors.blueGray,
       },
       keyframes: {
         wiggle: {
@@ -25,8 +26,12 @@ module.exports = {
     },
   },
   variants: {
-    opacity: ({ after }) => after(['disabled']),
-    extend: {},
+    extend: {
+      opacity: ['disabled'],
+      backgroundColor: ['disabled'],
+      boxShadow: ['disabled'],
+      placeholderColor: ['disabled'],
+    },
   },
   plugins: [],
 }

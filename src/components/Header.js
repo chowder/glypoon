@@ -1,8 +1,11 @@
-const Header = ({ title }) => {
+import DarkModeToggle from "./DarkModeToggle"
+
+const Header = ({ title, onToggle }) => {
     return (
-        <>
-            <h1 className="text-5xl font-bold leading-none sm:text-6xl text-gray-900">{title}</h1>
-        </>
+        <div className="flex flex-row w-full items-center justify-between">
+            <h1 className="header">{title}</h1>
+            <DarkModeToggle onToggle={onToggle} />
+        </div>
     )
 }
 
