@@ -1,12 +1,11 @@
 import GameState from '../classes/GameState'
 import PropTypes from 'prop-types'
-import { useState, useEffect, useRef } from 'react'
+import { useState, useMemo, useRef, useEffect } from 'react'
 import { useStoreActions, useStoreState } from 'easy-peasy'
 
 
 const InputBox = () => {
-    const answers = useStoreState(store => store.solution.answers)
-    const currentAnswers = useStoreState(store => store.currentAnswers)
+    const letters = useStoreState(store => store.solution.letters)
     const currentInput = useStoreState(store => store.currentInput)
     const gameState = useStoreState(store => store.gameState)
 
@@ -17,38 +16,55 @@ const InputBox = () => {
     const [inputStyles, setInputStyles] = useState([])
     const [error, setError] = useState("")
 
-    useEffect(() => {
+    useMemo(() => {
         if (gameState === GameState.RUNNING) {
             inputBoxRef.current.focus()
         }
     }, [gameState])
 
     const handleChange = (e) => {
+        // TODO: Memoise this
+        let countByLetters = {}
+        letters.forEach((letter) => {
+            if (letter in countByLetters) {
+                countByLetters[letter]++
+            } else {
+                countByLetters[letter] = 1
+            }
+        })
+        console.log({ countByLetters })
+        for (let letter of e.target.value) {
+            letter = letter.toLowerCase()
+            if (letter in countByLetters && countByLetters[letter] > 0) {
+                countByLetters[letter]--
+            } else {
+                return
+            }
+        }
         setCurrentInput(e.target.value)
+    }
+
+    const lastSubmissionResult = useStoreState(store => store.lastSubmissionResult)
+    const lastSubmissionAnswer = useStoreState(store => store.lastSubmissionAnswer)
+
+    useEffect(() => {
+        if (lastSubmissionResult === true) {
+            setError("")
+            setInputStyles([...inputStyles, "input-box-correct"])
+        } else if (lastSubmissionResult === false) {
+            setError(`${lastSubmissionAnswer} was incorrect`)
+            setInputStyles([...inputStyles, "input-box-wrong"])
+        }
+        // eslint-disable-next-line
+    }, [lastSubmissionResult, lastSubmissionAnswer])
+
+    const handleSubmit = (e) => {
+        e.preventDefault()
+        submitAnswer();
     }
 
     const resetInputStyles = () => {
         setInputStyles([])
-    }
-
-    const handleSubmit = (e) => {
-        e.preventDefault()
-        if (currentInput) {
-            let answer = currentInput.trim()
-            if (answers.includes(answer) === true && currentAnswers.includes(answer) === false) {
-                setInputStyles([...inputStyles, "input-box-correct"])
-                submitAnswer(answer)
-                setError("")
-            } else {
-                setInputStyles([...inputStyles, "input-box-wrong"])
-                if (currentAnswers.includes(answer) === true) {
-                    setError(`${answer} was already guessed`)
-                } else {
-                    setError(`${answer} was incorrect`)
-                }
-            }
-        }
-        setCurrentInput("")
     }
 
     return (
@@ -65,7 +81,7 @@ const InputBox = () => {
                     autoComplete="off"
                     autoCorrect="off"
                     spellCheck="false"
-                    autoFocus="true"
+                    autoFocus={true}
                     disabled={gameState !== GameState.RUNNING && gameState !== GameState.PAUSED}
                     ref={inputBoxRef}
                 />

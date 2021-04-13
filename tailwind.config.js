@@ -29,7 +29,7 @@ module.exports = {
     extend: {
       opacity: ['disabled'],
       backgroundColor: ['disabled'],
-      boxShadow: ['disabled'],
+      boxShadow: ['disabled', 'dark'],
       placeholderColor: ['disabled'],
     },
   },

@@ -11,9 +11,12 @@ const model = {
         letters: []
     },
     currentAnswers: [],
-    gameState: GameState.PAUSED,
+    gameState: GameState.NOT_STARTED,
     secondsRemaining: GAME_DURATION,
     currentInput: "",
+    lastSelectedIndex: -1,
+    lastSubmissionResult: null,
+    lastSubmissionAnswer: "",
     revealConfirmationVisible: false,
 
     // Thunks
@@ -29,13 +32,24 @@ const model = {
         state.solution.letters = solution.letters
     }),
 
-    submitAnswer: action((state, answer) => {
-        state.currentAnswers = [...state.currentAnswers, answer]
+    submitAnswer: action((state) => {
+        let answer = state.currentInput.toLowerCase().trim()
+        state.currentInput = ""
+        state.lastSelectedIndex = -1
+        state.lastSubmissionAnswer = answer
+        if (state.solution.answers.includes(answer) && !state.currentAnswers.includes(answer)) {
+            state.lastSubmissionResult = true
+            state.currentAnswers = [...state.currentAnswers, answer]
+        } else {
+            state.lastSubmissionResult = false
+        }
     }),
 
     progressTimer: action((state) => {
         if (state.secondsRemaining === 0) {
             state.gameState = GameState.ENDED
+            state.currentInput = ""
+            state.lastSelectedIndex = -1
         } else {
             state.secondsRemaining = state.secondsRemaining - 1
         }
@@ -51,13 +65,25 @@ const model = {
         state.currentInput = value
     }),
 
+    setLastSelectedIndex: action((state, value) => {
+        state.lastSelectedIndex = value
+    }),
+
+    setLastSubmissionResult: action((state, value) => {
+        state.lastSubmissionResult = value
+    }),
+
     setGameState: action((state, value) => {
+        if (value === GameState.COMPLETE || value === GameState.ENDED) {
+            state.currentInput = "";
+            state.lastSelectedIndex = -1;
+        }
         state.gameState = value
     }),
 
     setRevealConfirmation: action((state, value) => {
         state.revealConfirmationVisible = value
-    })
+    }),
 }
 
 export default model

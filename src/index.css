@@ -72,12 +72,30 @@
         @apply rounded-3xl shadow-md bg-white dark:bg-gray-700 transition-colors
     }
 
-    .polygon-letter-bg {
-        @apply bg-gray-200 rounded-full shadow dark:bg-gray-600 transition-colors
+    .polygon-letter-base {
+        left: 50%;
+        top: 50%;
+        margin: 0;
+        -webkit-transform: translate(-50%, -50%);
+        position: absolute;
+        text-align: center;
+        @apply rounded-full select-none transition-colors;
+    }
+
+    .polygon-letter {
+        @apply polygon-letter-base bg-gray-200 dark:bg-gray-600 shadow
+    }
+
+    .polygon-letter-disabled {
+        @apply polygon-letter-base bg-gray-300 dark:bg-gray-500 shadow-inner
     }
 
     .polygon-letter-text {
         @apply text-4xl font-bold text-gray-800 dark:text-gray-50 transition-colors
+    }
+
+    .polygon-letter-text-disabled {
+        @apply text-4xl font-bold text-gray-500 dark:text-gray-400 transition-colors
     }
 
     .answers-container {
