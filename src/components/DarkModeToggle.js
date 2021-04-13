@@ -1,7 +1,11 @@
-import { useState } from 'react'
+import { useState, useEffect } from 'react'
 
-const DarkModeToggle = ({ onToggle }) => {
-    const [toggleActive, setToggleActive] = useState(false)
+const DarkModeToggle = ({ onToggle, isDarkMode }) => {
+    const [toggleActive, setToggleActive] = useState(isDarkMode)
+
+    useEffect(() => {
+        setToggleActive(isDarkMode)
+    }, [isDarkMode])
 
     const handleClick = () => {
         setToggleActive(!toggleActive)

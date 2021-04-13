@@ -1,13 +1,14 @@
 import { useStoreActions, useStoreState } from "easy-peasy"
 import GameState from "../classes/GameState"
 
-const RevealConfirmation = ({ onQuit, onContinue }) => {
+const RevealConfirmation = () => {
     const revealConfirmationVisible = useStoreState(store => store.revealConfirmationVisible)
     const setRevealConfirmation = useStoreActions(actions => actions.setRevealConfirmation)
     const setGameState = useStoreActions(actions => actions.setGameState)
 
     const handleContinue = () => {
         setRevealConfirmation(false)
+        setGameState(GameState.RUNNING)
     }
 
     const handleChicken = () => {

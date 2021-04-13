@@ -60,6 +60,14 @@
         @apply px-5 py-3 bg-white dark:bg-gray-600 disabled:bg-gray-200 dark:disabled:bg-gray-700 placeholder-blueGray-300 dark:disabled:placeholder-gray-500 text-blueGray-600 dark:text-gray-50 rounded-xl text-base border-0 shadow-md disabled:shadow-inner outline-none focus:outline-none dark:ring-blue-200 focus:ring w-full appearance-none transition-colors;
     }
 
+    .input-box-correct {
+        @apply ease-out duration-300 ring-green-400 dark:ring-green-500 animate-bounce
+    }
+
+    .input-box-wrong {
+        @apply ease-out duration-300 ring-red-400 dark:ring-red-500 animate-wiggle
+    }
+
     .polygon {
         @apply rounded-3xl shadow-md bg-white dark:bg-gray-700 transition-colors
     }
