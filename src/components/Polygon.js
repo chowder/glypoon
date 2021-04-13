@@ -18,7 +18,7 @@ const Polygon = () => {
         for (var i = 0; i < currentInput.length; i++) {
             let l = currentInput[i].toLowerCase()
             if (l in inputLetterCount) {
-                inputLetterCount++
+                inputLetterCount[l]++
             } else {
                 inputLetterCount[l] = 1
             }
