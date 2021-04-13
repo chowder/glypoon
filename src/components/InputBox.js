@@ -1,4 +1,4 @@
-import { useState } from 'react'
+import { useState, useEffect, useRef } from 'react'
 import PropTypes from 'prop-types'
 import { useStoreActions, useStoreState } from 'easy-peasy'
 import GameState from '../classes/GameState'
@@ -13,9 +13,15 @@ const InputBox = () => {
     const submitAnswer = useStoreActions(actions => actions.submitAnswer)
     const setCurrentInput = useStoreActions(actions => actions.setCurrentInput)
 
+    const inputBoxRef = useRef(null)
     const [inputStyles, setInputStyles] = useState([])
     const [error, setError] = useState("")
-    // const [showError, setShowError] = useState(false)
+
+    useEffect(() => {
+        if (gameState === GameState.RUNNING) {
+            inputBoxRef.current.focus()
+        }
+    }, [gameState])
 
     const handleChange = (e) => {
         setCurrentInput(e.target.value)
@@ -30,12 +36,11 @@ const InputBox = () => {
         if (currentInput) {
             let answer = currentInput.trim()
             if (answers.includes(answer) === true && currentAnswers.includes(answer) === false) {
-                // TODO: Turn these into CSS components
-                setInputStyles([...inputStyles, "ease-out", "duration-300", "ring-green-400 dark:ring-green-500", "animate-bounce"])
+                setInputStyles([...inputStyles, "input-box-correct"])
                 submitAnswer(answer)
                 setError("")
             } else {
-                setInputStyles([...inputStyles, "ease-out", "duration-300", "ring-red-400 dark:ring-red-500", "animate-wiggle"])
+                setInputStyles([...inputStyles, "input-box-wrong"])
                 if (currentAnswers.includes(answer) === true) {
                     setError(`${answer} was already guessed`)
                 } else {
@@ -60,7 +65,9 @@ const InputBox = () => {
                     autoComplete="off"
                     autoCorrect="off"
                     spellCheck="false"
+                    autoFocus="true"
                     disabled={gameState !== GameState.RUNNING}
+                    ref={inputBoxRef}
                 />
             </form>
             <div className="h-4 mx-2 my-4">
