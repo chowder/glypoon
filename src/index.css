@@ -77,6 +77,7 @@
         top: 50%;
         margin: 0;
         -webkit-transform: translate(-50%, -50%);
+        -webkit-tap-highlight-color: rgba(0,0,0,0);
         position: absolute;
         text-align: center;
         @apply rounded-full select-none transition-colors;
