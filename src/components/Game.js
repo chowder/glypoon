@@ -5,12 +5,14 @@ import Score from './Score'
 import Timer from './Timer'
 import PuzzleHint from './PuzzleHint'
 import RevealButton from './RevealButton'
+import NewGameButton from './NewGameButton'
 import Welcome from './Welcome'
 import Congratulations from './Congratulations'
 import RevealDialog from './RevealDialog'
 import GameState from '../classes/GameState'
 import { useStoreActions, useStoreState } from 'easy-peasy'
 import { useMemo, useEffect } from 'react'
+import NewGameDialog from './NewGameDialog'
 
 
 const Game = () => {
@@ -44,9 +46,13 @@ const Game = () => {
             <Welcome />
             <Congratulations />
             <RevealDialog />
-            <div className="w-full flex flex-row justify-between items-center">
+            <NewGameDialog />
+            <div className="flex flex-col sm:flex-row sm:justify-between sm:w-full">
                 <PuzzleHint />
-                <RevealButton />
+                <div className="mt-4 sm:mt-0">
+                    <NewGameButton />
+                    <RevealButton />
+                </div>
             </div>
             <div className="w-full flex px-2 flex-row justify-between space-y-0">
                 <Timer />
