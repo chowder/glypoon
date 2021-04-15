@@ -30,7 +30,6 @@ const model = {
     }),
 
     fetchNewSolution: thunk(async actions => {
-        console.log(`Using url: ${GLYPOON_API_URL}/get_puzzle`)
         const res = await fetch(`${GLYPOON_API_URL}/get_puzzle`)
         const solution = await res.json()
         actions.setSolution(solution)
