@@ -5,8 +5,6 @@ const GAME_DURATION = parseInt(process.env.REACT_APP_GAME_DURATION || "600")  //
 const EXTRA_TIME_AMOUNT = parseInt(process.env.REACT_APP_EXTRA_TIME_AMOUNT || "10")  // in seconds
 const GLYPOON_API_URL = process.env.REACT_APP_GLYPOON_API_URL || "http://localhost:5000"
 
-console.log({ GAME_DURATION, EXTRA_TIME_AMOUNT })
-
 
 const model = {
     solution: {
