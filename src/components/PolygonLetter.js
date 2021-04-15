@@ -38,7 +38,7 @@ const PolygonLetter = ({ top, left, letter, index }) => {
             onClick={handleClick}
         >
             <p className={isActive ? "polygon-letter-text" : "polygon-letter-text-disabled"}>
-                {gameState === GameState.NOT_STARTED ? "" : letter.toUpperCase()}
+                {gameState === GameState.NOT_STARTED ? "" : letter?.toUpperCase()}
             </p>
         </div>
     )

@@ -1,8 +1,8 @@
 import { action, thunk } from 'easy-peasy'
 import GameState from './GameState';
 
-const GAME_DURATION = parseInt((process.env.REACT_APP_GAME_DURATION | "10"))  // in seconds
-const EXTRA_TIME_AMOUNT = parseInt((process.env.REACT_APP_EXTRA_TIME_AMOUNT | "10"))  // in seconds
+const GAME_DURATION = process.env.REACT_APP_GAME_DURATION | 600  // in seconds
+const EXTRA_TIME_AMOUNT = process.env.REACT_APP_EXTRA_TIME_AMOUNT | 10  // in seconds
 
 
 const model = {

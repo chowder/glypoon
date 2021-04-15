@@ -7,33 +7,9 @@
         @apply transition-colors text-5xl font-bold leading-none sm:text-6xl text-gray-900 dark:text-gray-50
     }
 
-    .blur-background {
-        @apply filter bg-gray-700 bg-opacity-75;
+    .blur-bg {
+        @apply filter bg-gray-900 bg-opacity-75;
         backdrop-filter: blur(10px);
-    }
-
-    .pop-up-panel {
-        @apply inline-block align-middle bg-white rounded-lg text-left overflow-hidden shadow-xl transform transition-all w-full max-w-xs sm:max-w-md
-    }
-
-    .pop-up-text-subpanel {
-        @apply bg-white px-4 pt-5 pb-4 sm:p-6
-    }
-
-    .pop-up-title {
-        @apply text-xl font-medium text-gray-900
-    }
-
-    .pop-up-subtext {
-        @apply mt-3 text-gray-600
-    }
-
-    .pop-up-buttons-subpanel {
-        @apply bg-gray-50 px-4 py-3 sm:px-6
-    }
-
-    .pop-up-button {
-        @apply mt-0 w-full inline-flex justify-center rounded-md border shadow-sm px-4 py-2 text-base font-medium focus:outline-none focus:ring-2 focus:ring-offset-2 sm:text-sm
     }
 
     .timer {
@@ -57,7 +33,7 @@
     }
 
     .input-box {
-        @apply px-5 py-3 bg-white dark:bg-gray-600 disabled:bg-gray-200 dark:disabled:bg-gray-700 placeholder-blueGray-300 dark:disabled:placeholder-gray-500 text-blueGray-600 dark:text-gray-50 rounded-xl text-base border-0 shadow-md disabled:shadow-inner outline-none focus:outline-none dark:ring-blue-200 focus:ring w-full appearance-none;
+        @apply px-5 py-3 bg-white dark:bg-gray-600 disabled:bg-gray-200 dark:disabled:bg-gray-700 placeholder-blueGray-300 dark:disabled:placeholder-gray-500 text-blueGray-600 dark:text-gray-50 rounded-xl text-base border-0 shadow-md disabled:shadow-inner outline-none focus:outline-none dark:ring-blue-300 focus:ring w-full appearance-none;
     }
 
     .input-box-correct {

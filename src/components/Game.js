@@ -7,7 +7,7 @@ import PuzzleHint from './PuzzleHint'
 import RevealButton from './RevealButton'
 import Welcome from './Welcome'
 import Congratulations from './Congratulations'
-import RevealConfirmation from './RevealConfirmation'
+import RevealDialog from './RevealDialog'
 import GameState from '../classes/GameState'
 import { useStoreActions, useStoreState } from 'easy-peasy'
 import { useMemo, useEffect } from 'react'
@@ -43,7 +43,7 @@ const Game = () => {
         <>
             <Welcome />
             <Congratulations />
-            <RevealConfirmation />
+            <RevealDialog />
             <div className="w-full flex flex-row justify-between items-center">
                 <PuzzleHint />
                 <RevealButton />

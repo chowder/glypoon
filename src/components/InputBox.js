@@ -1,6 +1,6 @@
 import GameState from '../classes/GameState'
 import PropTypes from 'prop-types'
-import { useState, useMemo, useRef, useEffect } from 'react'
+import { useState, useRef, useEffect } from 'react'
 import { useStoreActions, useStoreState } from 'easy-peasy'
 
 
@@ -18,7 +18,7 @@ const InputBox = () => {
     const [inputStyles, setInputStyles] = useState([])
     const [error, setError] = useState("")
 
-    useMemo(() => {
+    useEffect(() => {
         if (gameState === GameState.RUNNING) {
             inputBoxRef.current.focus()
         }
