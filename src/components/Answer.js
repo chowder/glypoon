@@ -17,7 +17,7 @@ const Answer = ({ text, isVisible, isPangram }) => {
     useEffect(() => {
         const fetchDefinition = async () => {
             console.log(`Fetching definition for: ${text}`)
-            const res = await fetch(`https://api.dictionaryapi.dev/api/v2/entries/en_GB/${text}`)
+            const res = await fetch(`https://api.dictionaryapi.dev/api/v2/entries/en_US/${text}`)
             const data = await res.json()
             try {
                 const entry = data.find(element => element.meanings.length > 0);
