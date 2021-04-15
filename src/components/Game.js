@@ -7,10 +7,10 @@ import PuzzleHint from './PuzzleHint'
 import RevealButton from './RevealButton'
 import Welcome from './Welcome'
 import Congratulations from './Congratulations'
-import RevealConfirmation from './RevealConfirmation'
+import RevealDialog from './RevealDialog'
 import GameState from '../classes/GameState'
 import { useStoreActions, useStoreState } from 'easy-peasy'
-import { useEffect } from 'react'
+import { useMemo, useEffect } from 'react'
 
 
 const Game = () => {
@@ -27,7 +27,7 @@ const Game = () => {
     const currentAnswers = useStoreState(state => state.currentAnswers)
     const setGameState = useStoreActions(actions => actions.setGameState)
 
-    useEffect(() => {
+    useMemo(() => {
         if (answers.length !== 0) {
             var answersSet = new Set(answers);
             var currentAnswersSet = new Set(currentAnswers)
@@ -43,7 +43,7 @@ const Game = () => {
         <>
             <Welcome />
             <Congratulations />
-            <RevealConfirmation />
+            <RevealDialog />
             <div className="w-full flex flex-row justify-between items-center">
                 <PuzzleHint />
                 <RevealButton />

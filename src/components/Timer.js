@@ -11,7 +11,7 @@ const Timer = () => {
     const addExtraTime = useStoreActions(actions => actions.addExtraTime)
 
     useEffect(() => {
-        if (gameState === GameState.RUNNING && revealConfirmationVisible === false) {
+        if (gameState === GameState.RUNNING) {
             const timer = setInterval(() => {
                 progressTimer()
             }, 1000)

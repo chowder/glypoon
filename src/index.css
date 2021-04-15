@@ -7,33 +7,9 @@
         @apply transition-colors text-5xl font-bold leading-none sm:text-6xl text-gray-900 dark:text-gray-50
     }
 
-    .blur-background {
-        @apply filter bg-gray-700 bg-opacity-75;
+    .blur-bg {
+        @apply filter bg-gray-900 bg-opacity-75;
         backdrop-filter: blur(10px);
-    }
-
-    .pop-up-panel {
-        @apply inline-block align-middle bg-white rounded-lg text-left overflow-hidden shadow-xl transform transition-all w-full max-w-xs sm:max-w-md
-    }
-
-    .pop-up-text-subpanel {
-        @apply bg-white px-4 pt-5 pb-4 sm:p-6
-    }
-
-    .pop-up-title {
-        @apply text-xl font-medium text-gray-900
-    }
-
-    .pop-up-subtext {
-        @apply mt-3 text-gray-600
-    }
-
-    .pop-up-buttons-subpanel {
-        @apply bg-gray-50 px-4 py-3 sm:px-6
-    }
-
-    .pop-up-button {
-        @apply mt-0 w-full inline-flex justify-center rounded-md border shadow-sm px-4 py-2 text-base font-medium focus:outline-none focus:ring-2 focus:ring-offset-2 sm:text-sm
     }
 
     .timer {
@@ -57,27 +33,46 @@
     }
 
     .input-box {
-        @apply px-5 py-3 bg-white dark:bg-gray-600 disabled:bg-gray-200 dark:disabled:bg-gray-700 placeholder-blueGray-300 dark:disabled:placeholder-gray-500 text-blueGray-600 dark:text-gray-50 rounded-xl text-base border-0 shadow-md disabled:shadow-inner outline-none focus:outline-none dark:ring-blue-200 focus:ring w-full appearance-none transition-colors;
+        @apply px-5 py-3 bg-white dark:bg-gray-600 disabled:bg-gray-200 dark:disabled:bg-gray-700 placeholder-blueGray-300 dark:disabled:placeholder-gray-500 text-blueGray-600 dark:text-gray-50 rounded-xl text-base border-0 shadow-md disabled:shadow-inner outline-none focus:outline-none dark:ring-blue-300 focus:ring w-full appearance-none;
     }
 
     .input-box-correct {
-        @apply ease-out duration-300 ring-green-400 dark:ring-green-500 animate-bounce
+        @apply ease-out duration-300 ring ring-green-400 dark:ring-green-500 animate-bounce
     }
 
     .input-box-wrong {
-        @apply ease-out duration-300 ring-red-400 dark:ring-red-500 animate-wiggle
+        @apply ease-out duration-300 ring ring-red-400 dark:ring-red-500 animate-wiggle
     }
 
     .polygon {
         @apply rounded-3xl shadow-md bg-white dark:bg-gray-700 transition-colors
     }
 
-    .polygon-letter-bg {
-        @apply bg-gray-200 rounded-full shadow dark:bg-gray-600 transition-colors
+    .polygon-letter-base {
+        left: 50%;
+        top: 50%;
+        margin: 0;
+        -webkit-transform: translate(-50%, -50%);
+        -webkit-tap-highlight-color: rgba(0,0,0,0);
+        position: absolute;
+        text-align: center;
+        @apply rounded-full select-none transition-colors;
+    }
+
+    .polygon-letter {
+        @apply polygon-letter-base bg-gray-200 dark:bg-gray-600 shadow
+    }
+
+    .polygon-letter-disabled {
+        @apply polygon-letter-base bg-gray-300 dark:bg-gray-500 shadow-inner
     }
 
     .polygon-letter-text {
         @apply text-4xl font-bold text-gray-800 dark:text-gray-50 transition-colors
+    }
+
+    .polygon-letter-text-disabled {
+        @apply text-4xl font-bold text-gray-500 dark:text-gray-400 transition-colors
     }
 
     .answers-container {
