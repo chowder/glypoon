@@ -8,6 +8,12 @@ const Answer = ({ text, isVisible, isPangram }) => {
     const [definition, setDefinition] = useState(null)
     const tooltipRef = useRef(null);
 
+    // Reset the definition every time the text changes
+    useEffect(() => {
+        setDefinition(null)
+        // eslint-disable-next-line react-hooks/exhaustive-deps
+    }, [text])
+
     useEffect(() => {
         const fetchDefinition = async () => {
             console.log(`Fetching definition for: ${text}`)
@@ -23,6 +29,7 @@ const Answer = ({ text, isVisible, isPangram }) => {
         if ((isVisible || gameState === GameState.ENDED) && definition === null) {
             fetchDefinition()
         }
+        // eslint-disable-next-line react-hooks/exhaustive-deps
     }, [text, isVisible, gameState, definition])
 
     function handleMouseEnter() {
@@ -48,7 +55,7 @@ const Answer = ({ text, isVisible, isPangram }) => {
             return "bg-blue-200 dark:bg-blue-500"
         }
         if (gameState === GameState.ENDED) {
-            return "bg-red-200 dark:bg-red-400"
+            return "bg-red-200 dark:bg-indigo-400"
         }
 
         return "bg-gray-200 dark:bg-gray-600"

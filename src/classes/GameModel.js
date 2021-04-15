@@ -1,8 +1,11 @@
 import { action, thunk } from 'easy-peasy'
 import GameState from './GameState';
 
-const GAME_DURATION = process.env.REACT_APP_GAME_DURATION | 600  // in seconds
-const EXTRA_TIME_AMOUNT = process.env.REACT_APP_EXTRA_TIME_AMOUNT | 10  // in seconds
+const GAME_DURATION = parseInt(process.env.REACT_APP_GAME_DURATION || "600")  // in seconds
+const EXTRA_TIME_AMOUNT = parseInt(process.env.REACT_APP_EXTRA_TIME_AMOUNT || "10")  // in seconds
+const GLYPOON_API_URL = process.env.REACT_APP_GLYPOON_API_URL || "http://localhost:5000"
+
+console.log({ GAME_DURATION, EXTRA_TIME_AMOUNT })
 
 
 const model = {
@@ -19,15 +22,34 @@ const model = {
     lastSubmissionResult: null,
     lastSubmissionAnswer: "",
     revealConfirmationVisible: false,
+    newGameDialogVisible: false,
 
     // Thunks
     fetchSolution: thunk(async actions => {
         const res = await fetch('/puzzle/puzzle.json')
         const solution = await res.json()
-        actions.setSolution(solution);
+        actions.setSolution(solution)
+    }),
+
+    fetchNewSolution: thunk(async actions => {
+        console.log(`Using url: ${GLYPOON_API_URL}/get_puzzle`)
+        const res = await fetch(`${GLYPOON_API_URL}/get_puzzle`)
+        const solution = await res.json()
+        actions.setSolution(solution)
+        actions.resetGame()
     }),
 
     // Actions
+    resetGame: action((state) => {
+        state.currentAnswers = []
+        state.gameState = GameState.RUNNING
+        state.secondsRemaining = GAME_DURATION
+        state.currentInput = ""
+        state.lastSelectedIndex = -1
+        state.lastSubmissionResult = null
+        state.lastSubmissionAnswer = ""
+    }),
+
     setSolution: action((state, solution) => {
         state.solution.answers = solution.answers
         state.solution.letters = solution.letters
@@ -123,6 +145,10 @@ const model = {
     setRevealConfirmation: action((state, value) => {
         state.revealConfirmationVisible = value
     }),
+
+    setNewGameDialogVisible: action((state, value) => {
+        state.newGameDialogVisible = value
+    })
 }
 
 export default model

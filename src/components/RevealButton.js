@@ -14,7 +14,7 @@ const RevealButton = () => {
 
     return (
         <button
-            className="reveal-button"
+            className="reveal-button h-9 w-24"
             disabled={disabled}
             onClick={handleClick}
         >
