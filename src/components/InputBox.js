@@ -1,6 +1,6 @@
 import GameState from '../classes/GameState'
 import PropTypes from 'prop-types'
-import { useState, useRef, useEffect } from 'react'
+import { useState, useRef, useEffect, useMemo } from 'react'
 import { useStoreActions, useStoreState } from 'easy-peasy'
 
 
@@ -24,8 +24,7 @@ const InputBox = () => {
         }
     }, [gameState])
 
-    const handleChange = (e) => {
-        // TODO: Memoise this
+    const countByLetters = useMemo(() => {
         let countByLetters = {}
         letters.forEach((letter) => {
             if (letter in countByLetters) {
@@ -34,11 +33,15 @@ const InputBox = () => {
                 countByLetters[letter] = 1
             }
         })
-        console.log({ countByLetters })
+        return countByLetters
+    }, [letters])
+
+    const handleChange = (e) => {
+        let _countByLetters = Object.assign({}, countByLetters)
         for (let letter of e.target.value) {
             letter = letter.toLowerCase()
-            if (letter in countByLetters && countByLetters[letter] > 0) {
-                countByLetters[letter]--
+            if (letter in _countByLetters && _countByLetters[letter] > 0) {
+                _countByLetters[letter]--
             } else {
                 return
             }
