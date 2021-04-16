@@ -84,6 +84,6 @@
     }
 
     .answer-text {
-        @apply text-gray-800 font-medium truncate dark:text-gray-50 transition-colors
+        @apply select-none text-gray-800 font-medium truncate dark:text-gray-50 transition-colors
     }
 }
