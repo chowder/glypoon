@@ -76,7 +76,7 @@ const Welcome = () => {
                                             <ul className="list-disc px-4">
                                                 <li>Each letter may only be used once</li>
                                                 <li>Each word must use the center letter</li>
-                                                <li>The rules for word acceptability can be found <a href="https://github.com/chowder/glypoon/blob/main/RULES.md" target="_blank" className="underline text-blue-500">here</a></li>
+                                                <li>The rules for word acceptability can be found <a href="https://github.com/chowder/glypoon/blob/main/RULES.md" target="_blank" rel="noopener" className="underline text-blue-500">here</a></li>
                                             </ul>
                                         </Disclosure.Panel>
                                     </>
