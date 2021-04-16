@@ -28,7 +28,7 @@ const Welcome = () => {
                 className="fixed inset-0 z-10 overflow-y-auto"
                 static
                 open={open}
-                onClose={handlePractice}
+                onClose={() => {}}
             >
                 <div className="min-h-screen px-8 text-center">
                     <Transition.Child
