@@ -65,7 +65,7 @@ const Answer = ({ text, isVisible, isPangram }) => {
     return (
         <div className="relative">
             <div
-                className="absolute bg-green-500 text-white px-4 py-2 rounded-md transition-all duration-150 shadow-md w-max max-w-xs"
+                className="absolute bg-green-500 text-white px-4 py-2 rounded-md transition-all duration-150 shadow-md lg:w-max max-w-xs"
                 style={{ bottom: "100%", opacity: 0, visibility: "hidden" }}
                 ref={tooltipRef}
             >
