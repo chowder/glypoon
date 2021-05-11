@@ -26,7 +26,7 @@ jobs:
           python-version: 3.8
 
       - name: Make puzzle
-        run: python tools/make_puzzle_lettergon.py -o public/puzzle/puzzle.json
+        run: python tools/make_puzzle.py -c tools/corpuses/glypoon.txt -o public/puzzle/puzzle.json
 
       - name: Commit puzzle
         run: |
