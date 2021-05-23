@@ -10,10 +10,6 @@ Glypoon is a word puzzle where the goal is to create as many words as possible u
 
 - https://glypoon.netlify.app
 
-### `develop`
-
-- https://develop--glypoon.netlify.app
-
 ## Table of Contents
 
 1. :notebook_with_decorative_cover: [Rules](#Rules)
