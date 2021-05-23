@@ -29,6 +29,14 @@ DIFFICULTY_BY_DAY = {
         "max_length": 9,
         "min_length": 4,
     },
+    "Saturday": {
+        "max_length": 10,
+        "min_length": 4,
+    },
+    "Sunday": {
+        "max_length": 10,
+        "min_length": 4,
+    },
 }
 
 
