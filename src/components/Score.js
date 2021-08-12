@@ -1,14 +1,14 @@
 import { useStoreState } from "easy-peasy"
 
 const getScoreDescription = (score) => {
-    if (score <= 0.25) {
+    if (score <= 0.5) {
         return undefined
-    } else if (score <= 0.50) {
-        return "Average"
     } else if (score <= 0.75) {
         return "Good"
-    } else {
+    } else if (score <= 0.9) {
         return "Very good"
+    } else {
+        return "Excellent"
     }
 }
 
