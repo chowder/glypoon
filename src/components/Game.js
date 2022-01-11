@@ -58,7 +58,7 @@ const Game = () => {
                 <Timer />
                 <Score />
             </div>
-            <div className="flex w-full flex-col space-y-6 md:flex-row md:justify-start md:space-y-0 md:space-x-6 z-10">
+            <div className="flex w-full flex-col space-y-6 md:flex-row md:justify-start md:space-y-0 md:space-x-6">
                 <div className="flex flex-col space-y-6 items-center">
                     <Polygon />
                     <InputBox />
