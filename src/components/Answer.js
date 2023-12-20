@@ -1,12 +1,43 @@
 import GameState from "../classes/GameState"
-import { useEffect, useState, useRef } from 'react'
-import { useStoreState } from "easy-peasy"
+import {useEffect, useState} from 'react'
+import {useStoreState} from "easy-peasy"
+import {
+    useFloating,
+    useHover,
+    useInteractions,
+    shift,
+    offset,
+    flip,
+    autoUpdate,
+    useTransitionStyles
+} from '@floating-ui/react';
 
-
-const Answer = ({ text, isVisible, isPangram }) => {
+const Answer = ({text, isVisible, isPangram}) => {
     const gameState = useStoreState(store => store.gameState)
+
     const [definition, setDefinition] = useState(null)
-    const tooltipRef = useRef(null);
+    const [isTooltipOpen, setTooltipOpen] = useState(false);
+
+    const {refs, floatingStyles, context} = useFloating({
+        open: isTooltipOpen,
+        onOpenChance: setTooltipOpen,
+        placement: "top",
+        middleware: [offset(10), flip(), shift({padding: 5})],
+        whileElementsMounted: autoUpdate,
+    })
+
+    const hover = useHover(context);
+
+    const {getReferenceProps, getFloatingProps} = useInteractions([
+        hover,
+    ]);
+
+    const tooltipTransition = useTransitionStyles(context, {
+        initial: {
+            opacity: 0,
+            transform: "translateX(0) translateY(5px)",
+        },
+    });
 
     // Reset the definition every time the text changes
     useEffect(() => {
@@ -33,16 +64,12 @@ const Answer = ({ text, isVisible, isPangram }) => {
 
     function handleMouseEnter() {
         if (isVisible || gameState === GameState.ENDED) {
-            tooltipRef.current.style.opacity = 1
-            tooltipRef.current.style.visibility = "visible"
-            tooltipRef.current.style.marginBottom = "5px"
+            setTooltipOpen(true)
         }
     }
 
     function handleMouseLeave() {
-        tooltipRef.current.style.opacity = 0
-        tooltipRef.current.style.visibility = "hidden"
-        tooltipRef.current.style.marginBottom = "0px"
+        setTooltipOpen(false)
     }
 
     const getColor = () => {
@@ -63,21 +90,27 @@ const Answer = ({ text, isVisible, isPangram }) => {
     let color = getColor()
 
     return (
-        <div className="relative">
-            <div
-                className="absolute bg-green-500 text-white px-4 py-2 rounded-md transition-all duration-150 shadow-md lg:w-max max-w-xs"
-                style={{ bottom: "100%", opacity: 0, visibility: "hidden" }}
-                ref={tooltipRef}
-            >
-                {definition}
-            </div>
+        <>
+            {isTooltipOpen &&
+                <div
+                    style={floatingStyles}
+                    ref={refs.setFloating}
+                    {...getFloatingProps()}
+                >
+                    <div style={tooltipTransition.styles} className="answer-definition">
+                        {definition}
+                    </div>
+                </div>
+            }
             <div
                 className={`answer-bg ${color}`}
                 onMouseEnter={handleMouseEnter}
-                onMouseLeave={handleMouseLeave}>
+                onMouseLeave={handleMouseLeave}
+                ref={refs.setReference}
+                {...getReferenceProps()}>
                 <p className='answer-text'>{isVisible || gameState === GameState.ENDED ? text : ""}</p>
-            </div >
-        </div>
+            </div>
+        </>
     )
 }
 

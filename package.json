@@ -4,6 +4,7 @@
   "private": true,
   "dependencies": {
     "@craco/craco": "^6.4.2",
+    "@floating-ui/react": "^0.26.4",
     "@headlessui/react": "^1.0.0",
     "@heroicons/react": "^1.0.1",
     "@testing-library/jest-dom": "^5.11.10",
