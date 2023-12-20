@@ -86,4 +86,8 @@
     .answer-text {
         @apply select-none text-gray-800 font-medium truncate dark:text-gray-50 transition-colors
     }
+
+    .answer-definition {
+        @apply bg-green-500 text-white px-4 py-2 rounded-md shadow-md lg:w-max max-w-xs
+    }
 }
