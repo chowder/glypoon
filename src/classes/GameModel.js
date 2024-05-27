@@ -24,7 +24,7 @@ const model = {
 
     // Thunks
     fetchSolution: thunk(async actions => {
-        const res = await fetch('/puzzle/puzzle.json')
+        const res = await fetch('https://raw.githubusercontent.com/chowder/glypoon/main/public/puzzle/puzzle.json')
         const solution = await res.json()
         actions.setSolution(solution)
     }),
