@@ -69,8 +69,8 @@ const Welcome = () => {
                                         <Disclosure.Panel className="px-4 pt-4 pb-2 text-sm text-left text-gray-500 dark:text-gray-300 space-y-3">
                                             <p>Hi friends! (especially those at Macquarie)</p>
                                             <p>I finally took the time to give Glypoon a little more love, mostly because AI has now made it so easy to do so.</p>
-                                            <p>I've updated the Glypoon word list, which should now more accurately reflect Polygon's acceptability criteria.</p>
-                                            <p>Please let me know if you feel like the new word list is better, or worse. You can reach me at <a href="mailto:andrew@cho.io" className="underline text-blue-500 dark:text-blue-300">andrew@cho.io</a>; hope you guys have been well!</p>
+                                            <p>I've given the word list a refresh, which should match Polygon's rules much more closely.</p>
+                                            <p>Let me know if you think it's better (or worse!). I'm reachable at <a href="mailto:andrew@cho.io" className="underline text-blue-500 dark:text-blue-300">andrew@cho.io</a>. Hope you've all been well.</p>
                                             <p>Andrew</p>
                                         </Disclosure.Panel>
                                     </>
