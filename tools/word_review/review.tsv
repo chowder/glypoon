@@ -28,9 +28,9 @@ abdomen	A
 abdominal	A
 abduct	A
 abeam	B
-abed	A
+abed	B
 abelia	B
-abelian	A
+abelian	B
 aberrant	A
 aberration	A
 abet	A
@@ -133,7 +133,7 @@ acarine	B
 acarology	B
 acausal	B
 accede	A
-accelerant	A
+accelerant	B
 accelerate	A
 accent	A
 accentor	B
@@ -247,7 +247,7 @@ acromion	B
 acronym	A
 acropetal	B
 acrophobia	B
-acropolis	A
+acropolis	B
 across	A
 acrostic	A
 acrylamide	B
@@ -315,8 +315,8 @@ adduct	B
 adenine	A
 adenoids	A
 adenoma	A
-adenosine	A
-adenovirus	A
+adenosine	B
+adenovirus	B
 adept	A
 adequate	A
 adhere	A
@@ -449,7 +449,7 @@ aesthete	A
 aesthetic	A
 aesthetics	A
 aestival	B
-aether	A
+aether	B
 aetiology	B
 afar	A
 afeared	B
@@ -493,8 +493,8 @@ afloat	A
 aflood	B
 aflutter	B
 afoot	A
-afore	A
-afoul	A
+afore	B
+afoul	B
 afraid	A
 afreet	B
 afresh	A
@@ -620,7 +620,7 @@ airburst	B
 aircraft	A
 aircrew	A
 airdrome	B
-airdrop	A
+airdrop	B
 airer	B
 airfare	A
 airfield	A
@@ -646,7 +646,7 @@ airship	A
 airsick	A
 airside	B
 airspace	A
-airspeed	A
+airspeed	B
 airstream	A
 airstrip	A
 airtight	A
@@ -688,7 +688,7 @@ alb	A
 alba	B
 albacore	B
 albatross	A
-albedo	A
+albedo	B
 albeit	A
 albert	B
 albescent	B
@@ -731,7 +731,7 @@ aleurone	B
 alevin	B
 alewife	B
 alexanders	B
-alexia	A
+alexia	B
 alfalfa	A
 alfresco	A
 alga	A
@@ -793,7 +793,7 @@ allegory	A
 allegretto	B
 allegro	A
 allele	A
-alleluia	A
+alleluia	B
 allemande	B
 allergen	A
 allergic	A
@@ -855,7 +855,7 @@ alongshore	B
 alongside	A
 aloo	B
 aloof	A
-alopecia	A
+alopecia	B
 aloud	A
 alow	B
 alp	A
@@ -868,7 +868,7 @@ alphabet	A
 alphorn	B
 alpine	A
 alpinist	B
-alprazolam	A
+alprazolam	B
 already	A
 alright	A
 alsike	B
@@ -909,7 +909,7 @@ amah	B
 amalgam	A
 amalgamate	A
 amanuensis	A
-amaranth	A
+amaranth	B
 amaretti	B
 amaretto	A
 amaryllis	A
@@ -1035,10 +1035,10 @@ amuck	B
 amulet	A
 amuse	A
 amusement	A
-amygdala	A
+amygdala	B
 amygdalin	B
 amyl	B
-amylase	A
+amylase	B
 amyloid	B
 amylose	B
 amyotrophy	B
@@ -1114,7 +1114,7 @@ andesite	B
 andiron	B
 andouille	B
 androecium	B
-androgen	A
+androgen	B
 androgyne	B
 android	A
 andromeda	B
@@ -1152,9 +1152,9 @@ anglepoise	A
 anglerfish	B
 anglice	B
 anglicize	B
-anglophone	A
+anglophone	B
 angora	A
-angostura	A
+angostura	B
 angry	A
 angst	A
 angstrom	B
@@ -1174,7 +1174,7 @@ anhydrous	A
 ani	B
 aniline	A
 anilingus	B
-anima	A
+anima	B
 animadvert	B
 animal	A
 animalcule	B
@@ -1263,7 +1263,7 @@ antbear	B
 antbird	B
 ante	A
 anteater	A
-antebellum	A
+antebellum	B
 antecedent	A
 antechapel	B
 antechinus	B
@@ -1343,7 +1343,7 @@ anuria	B
 anus	A
 anvil	A
 anxiety	A
-anxiolytic	A
+anxiolytic	B
 anxious	A
 any	A
 anybody	A
@@ -1426,7 +1426,7 @@ apophysis	B
 apoplectic	A
 apoplexy	A
 apoprotein	B
-apoptosis	A
+apoptosis	B
 aporia	B
 aposematic	B
 apostasy	A
@@ -1525,7 +1525,7 @@ aquilegia	B
 aquiline	A
 aquiver	B
 arabesque	A
-arabica	A
+arabica	B
 arabinose	B
 arabis	B
 arable	A
@@ -1559,7 +1559,7 @@ arcade	A
 arcana	A
 arcane	A
 arch	A
-archaea	A
+archaea	B
 archaic	A
 archaism	A
 archaize	B
@@ -1605,7 +1605,7 @@ arginine	B
 argol	B
 argon	A
 argonaut	B
-argosy	A
+argosy	B
 argot	A
 arguable	A
 argue	A
@@ -1642,7 +1642,7 @@ armillaria	B
 armistice	A
 armlet	A
 armlock	B
-armoire	A
+armoire	B
 armor	B
 armorer	B
 armory	B
@@ -1653,7 +1653,7 @@ armpit	A
 armrest	A
 arms	A
 army	A
-arnica	A
+arnica	B
 aroid	B
 aroma	A
 aromatic	A
@@ -1702,7 +1702,7 @@ arterial	A
 arteriole	B
 arteritis	B
 artery	A
-artesian	A
+artesian	B
 artful	A
 arthralgia	B
 arthritis	A
@@ -1745,7 +1745,7 @@ ascetic	A
 ascidian	B
 ascites	B
 ascomycete	B
-ascorbate	A
+ascorbate	B
 ascribe	A
 ascus	B
 aseismic	B
@@ -1864,7 +1864,7 @@ astonish	A
 astound	A
 astragal	B
 astragalus	B
-astrakhan	A
+astrakhan	B
 astral	A
 astrantia	B
 astray	A
@@ -1890,7 +1890,7 @@ asyndeton	B
 asystole	B
 ataraxy	B
 atavistic	A
-ataxia	A
+ataxia	B
 atelier	A
 atenolol	B
 athanor	B
@@ -1936,7 +1936,7 @@ attain	A
 attainder	B
 attainment	A
 attaint	B
-attar	A
+attar	B
 attempt	A
 attend	A
 attendance	A
@@ -1961,7 +1961,7 @@ attrition	A
 attune	A
 atypical	A
 aubade	B
-auberge	A
+auberge	B
 aubergine	A
 aubretia	B
 auburn	A
@@ -1973,7 +1973,7 @@ audible	A
 audience	A
 audiobook	A
 audiogram	B
-audiology	A
+audiology	B
 audiometry	B
 audiophile	A
 audit	A
@@ -1982,14 +1982,14 @@ auditor	A
 auditorium	A
 auditory	A
 auger	A
-aught	A
+aught	B
 augite	B
 augment	A
 augur	A
 augury	A
 august	A
 auk	A
-auld	A
+auld	B
 aumbry	B
 aunt	A
 auntie	A
@@ -2023,7 +2023,7 @@ autism	A
 auto	A
 autochrome	B
 autochthon	B
-autoclave	A
+autoclave	B
 autocracy	A
 autocrat	A
 autocrine	B
@@ -2040,7 +2040,7 @@ autograft	B
 autograph	A
 autoharp	B
 autoimmune	A
-autologous	A
+autologous	B
 autolysis	B
 automatic	A
 automation	A
@@ -2072,7 +2072,7 @@ available	A
 avalanche	A
 avarice	A
 avascular	B
-avast	A
+avast	B
 avatar	A
 avaunt	B
 ave	A
@@ -2142,7 +2142,7 @@ axle	A
 axolotl	A
 axon	A
 ayah	B
-ayahuasca	A
+ayahuasca	B
 ayatollah	A
 aye	A
 azalea	A
@@ -2177,7 +2177,7 @@ babymother	B
 babysit	A
 bacalao	B
 baccarat	A
-bacchanal	A
+bacchanal	B
 bacchant	B
 baccy	B
 bach	B
@@ -2282,7 +2282,7 @@ bailiff	A
 bailiwick	A
 bailment	B
 bailor	B
-bairn	A
+bairn	B
 bait	A
 baiza	B
 baize	B
@@ -2409,7 +2409,7 @@ banksman	B
 banner	A
 banneret	B
 bannister	A
-bannock	A
+bannock	B
 banns	A
 banquet	A
 banquette	B
@@ -2505,7 +2505,7 @@ baroque	A
 barotitis	B
 barotrauma	B
 barouche	B
-barque	A
+barque	B
 barrack	A
 barracks	A
 barracoon	B
@@ -2525,9 +2525,9 @@ barrette	B
 barricade	A
 barrier	A
 barring	A
-barrio	A
+barrio	B
 barrister	A
-barroom	A
+barroom	B
 barrow	A
 barry	B
 bartender	A
@@ -2894,7 +2894,7 @@ benne	B
 bent	A
 benthos	B
 bento	A
-bentonite	A
+bentonite	B
 bentwood	B
 benumb	B
 benzene	A
@@ -3038,7 +3038,7 @@ bigamy	A
 bigeye	B
 bigha	B
 bighorn	B
-bight	A
+bight	B
 bigot	A
 bigwig	A
 bijou	A
@@ -3060,11 +3060,11 @@ biliary	A
 bilinear	B
 bilingual	A
 bilious	A
-bilirubin	A
+bilirubin	B
 biliverdin	B
 bilk	A
 bill	A
-billabong	A
+billabong	B
 billboard	A
 billet	A
 billfish	B
@@ -3116,11 +3116,11 @@ biocide	B
 biocircuit	B
 biocontrol	B
 biodata	B
-biodiesel	A
-bioethics	A
+biodiesel	B
+bioethics	B
 biofuel	A
 biog	B
-biogas	A
+biogas	B
 biogenesis	B
 biogenic	B
 biographee	B
@@ -3130,14 +3130,14 @@ biological	A
 biologism	B
 biology	A
 biomass	A
-biome	A
+biome	B
 biomedical	A
 biometry	B
 biomimetic	B
 biomorph	B
 bionic	A
 bionomics	B
-biophysics	A
+biophysics	B
 biopic	A
 biopiracy	B
 biopolymer	B
@@ -3153,8 +3153,8 @@ biosphere	A
 biota	A
 biotech	A
 biotic	A
-biotin	A
-biotite	A
+biotin	B
+biotite	B
 biotope	B
 biotype	B
 biowarfare	B
@@ -3263,7 +3263,7 @@ blackbutt	B
 blackcap	B
 blackcock	B
 blacken	A
-blackface	A
+blackface	B
 blackfish	B
 blackfly	A
 blackguard	A
@@ -3316,7 +3316,7 @@ blather	A
 blatter	B
 blaze	A
 blazer	A
-blazon	A
+blazon	B
 blazonry	B
 bleach	A
 bleacher	A
@@ -3516,7 +3516,7 @@ bobtail	A
 bobweight	B
 bobwhite	B
 bocage	B
-bocce	A
+bocce	B
 bock	B
 bod	A
 bodach	B
@@ -3591,7 +3591,7 @@ boloney	B
 bolshie	A
 bolster	A
 bolt	A
-bolus	A
+bolus	B
 boma	B
 bomb	A
 bombard	A
@@ -3627,7 +3627,7 @@ bonfire	A
 bong	A
 bongo	A
 bonhomie	A
-bonito	A
+bonito	B
 bonk	B
 bonkbuster	B
 bonkers	A
@@ -3761,7 +3761,7 @@ bother	A
 bothersome	A
 bothy	A
 botryoidal	B
-botrytis	A
+botrytis	B
 botte	B
 bottle	A
 bottleneck	A
@@ -3801,7 +3801,7 @@ bouquet	A
 bourbon	A
 bourdon	B
 bourgeois	A
-bourn	A
+bourn	B
 bourse	B
 bout	A
 boutade	B
@@ -3863,7 +3863,7 @@ bracteate	B
 brad	B
 bradawl	A
 bradykinin	B
-brae	A
+brae	B
 brag	A
 braggart	A
 braid	A
@@ -3970,7 +3970,7 @@ brekkie	A
 bresaola	B
 brethren	A
 breve	B
-brevet	A
+brevet	B
 breviary	A
 brevity	A
 brew	A
@@ -4009,7 +4009,7 @@ brigade	A
 brigadier	A
 brigalow	B
 brigand	A
-brigantine	A
+brigantine	B
 bright	A
 brightwork	B
 brill	B
@@ -4073,7 +4073,7 @@ bronchitis	A
 bronchus	B
 bronco	A
 bronze	A
-bronzer	A
+bronzer	B
 bronzewing	B
 broo	B
 brooch	A
@@ -4091,7 +4091,7 @@ brose	B
 broth	A
 brothel	A
 brother	A
-brougham	A
+brougham	B
 brouhaha	A
 brow	A
 browbeat	A
@@ -4104,7 +4104,7 @@ browse	A
 browser	A
 brrr	B
 brucite	B
-bruin	A
+bruin	B
 bruise	A
 bruiser	A
 bruising	A
@@ -4226,7 +4226,7 @@ bullion	A
 bullish	A
 bullock	A
 bullocky	B
-bullpen	A
+bullpen	B
 bullring	A
 bullrush	B
 bullseye	A
@@ -4330,11 +4330,11 @@ burrawang	B
 burrito	A
 burro	B
 burrow	A
-bursa	A
+bursa	B
 bursar	A
 bursary	A
 burse	B
-bursitis	A
+bursitis	B
 burst	A
 burster	B
 bursty	B
@@ -4499,7 +4499,7 @@ caducity	B
 caducous	B
 caecilian	B
 caecum	B
-caesium	A
+caesium	B
 caesura	B
 cafard	B
 cafe	A
@@ -4561,7 +4561,7 @@ caleche	B
 calendar	A
 calender	B
 calends	B
-calendula	A
+calendula	B
 calenture	B
 calf	A
 calfskin	A
@@ -4579,7 +4579,7 @@ callaloo	B
 callback	A
 calligraph	B
 calling	A
-calliope	A
+calliope	B
 calliper	A
 callop	B
 callosity	B
@@ -4603,7 +4603,7 @@ calutron	B
 calve	A
 calx	B
 calypso	A
-calyx	A
+calyx	B
 calzone	A
 cam	A
 camarilla	B
@@ -4779,7 +4779,7 @@ capricious	A
 caprine	B
 capriole	B
 caproate	B
-capsaicin	A
+capsaicin	B
 capsicum	A
 capsid	B
 capsize	A
@@ -4798,7 +4798,7 @@ capybara	A
 car	A
 carabid	B
 carabineer	B
-carabiner	A
+carabiner	B
 caracal	A
 caracara	B
 caracole	B
@@ -4892,7 +4892,7 @@ carnallite	B
 carnassial	B
 carnation	A
 carnauba	B
-carnelian	A
+carnelian	B
 carnet	B
 carnival	A
 carnivore	A
@@ -4945,7 +4945,7 @@ cartophily	B
 cartouche	A
 cartridge	A
 cartwheel	A
-cartwright	A
+cartwright	B
 caruncle	B
 carve	A
 carvel	B
@@ -4962,7 +4962,7 @@ cascara	A
 case	A
 caseation	B
 casebook	A
-casein	A
+casein	B
 caseload	A
 casemate	B
 casement	A
@@ -5252,7 +5252,7 @@ cert	B
 certain	A
 certainty	A
 certify	A
-certiorari	A
+certiorari	B
 certitude	A
 cerulean	B
 cerumen	B
@@ -5298,13 +5298,13 @@ chairman	A
 chaise	A
 chakra	A
 chalaza	B
-chalcedony	A
+chalcedony	B
 chalcid	B
 chalet	A
 chalice	A
 chalk	A
 chalkboard	A
-challah	A
+challah	B
 challenge	A
 challenged	A
 challis	B
@@ -5312,7 +5312,7 @@ chalumeau	B
 chalybeate	B
 chamaeleon	B
 chamber	A
-chambray	A
+chambray	B
 chamcha	B
 chameleon	A
 chametz	B
@@ -5345,7 +5345,7 @@ changeover	A
 channa	B
 channel	A
 channelize	B
-chanson	A
+chanson	B
 chant	A
 chanter	A
 chanteuse	A
@@ -5357,7 +5357,7 @@ chaos	A
 chaotic	A
 chap	A
 chaparajos	B
-chaparral	A
+chaparral	B
 chapatti	B
 chapbook	B
 chape	B
@@ -5452,7 +5452,7 @@ checklist	A
 checkmate	A
 checkout	A
 checkpoint	A
-checksum	A
+checksum	B
 cheder	B
 cheek	A
 cheekbone	A
@@ -5490,7 +5490,7 @@ cherish	A
 chernozem	B
 cheroot	A
 cherry	A
-chert	A
+chert	B
 cherub	A
 chervil	A
 chess	A
@@ -5565,7 +5565,7 @@ chin	A
 china	A
 chinaberry	B
 chinchilla	A
-chine	A
+chine	B
 ching	B
 chink	O
 chinkapin	B
@@ -5601,7 +5601,7 @@ chisel	A
 chit	A
 chital	B
 chitarrone	B
-chitin	A
+chitin	B
 chiton	B
 chitter	B
 chitty	B
@@ -5616,7 +5616,7 @@ chloracne	B
 chloral	B
 chlorate	A
 chlordane	B
-chlorella	A
+chlorella	B
 chloride	A
 chlorinate	A
 chlorine	A
@@ -5762,7 +5762,7 @@ cicatrix	B
 cicatrize	B
 cicely	B
 cicerone	B
-cichlid	A
+cichlid	B
 cicisbeo	B
 cider	A
 cigar	A
@@ -5792,7 +5792,7 @@ cineraria	B
 cinerarium	B
 cinereous	B
 cingulum	B
-cinnabar	A
+cinnabar	B
 cinnamon	A
 cinque	B
 cinquefoil	B
@@ -5815,7 +5815,7 @@ circumflex	A
 circumfuse	B
 circumvent	A
 circus	A
-cirque	A
+cirque	B
 cirrhosis	A
 cirriped	B
 cirrus	A
@@ -5839,7 +5839,7 @@ citole	B
 citral	B
 citrate	A
 citric	A
-citrine	A
+citrine	B
 citron	A
 citronella	A
 citrus	A
@@ -5963,7 +5963,7 @@ clement	A
 clementine	A
 clench	A
 clepsydra	B
-clerestory	A
+clerestory	B
 clergy	A
 clergyman	A
 cleric	A
@@ -6173,7 +6173,7 @@ cod	A
 coda	A
 coddle	A
 code	A
-codec	A
+codec	B
 codeine	A
 codex	A
 codfish	A
@@ -6183,7 +6183,7 @@ codicology	B
 codify	A
 codling	B
 codomain	B
-codon	A
+codon	B
 codpiece	A
 codswallop	A
 coecilian	B
@@ -6310,7 +6310,7 @@ colonist	A
 colonize	A
 colonnade	A
 colony	A
-colophon	A
+colophon	B
 colophony	B
 color	B
 coloration	A
@@ -6321,7 +6321,7 @@ colossal	A
 colosseum	B
 colossus	A
 colostomy	A
-colostrum	A
+colostrum	B
 colour	A
 colourable	B
 colourant	A
@@ -6505,7 +6505,7 @@ conacre	B
 conation	B
 concave	A
 conceal	A
-concealer	A
+concealer	B
 concede	A
 conceit	A
 conceited	A
@@ -6526,7 +6526,7 @@ concertino	B
 concerto	A
 concession	A
 concessive	B
-conch	A
+conch	B
 concha	B
 conchie	O
 conchoidal	B
@@ -6842,7 +6842,7 @@ coping	A
 copious	A
 copita	B
 coplanar	B
-copolymer	A
+copolymer	B
 copper	A
 copperas	B
 copperhead	A
@@ -6924,7 +6924,7 @@ cornel	B
 cornelian	B
 corneous	B
 corner	A
-cornerback	A
+cornerback	B
 cornerman	B
 cornerwise	B
 cornet	A
@@ -6934,7 +6934,7 @@ cornflakes	A
 cornflour	A
 cornflower	A
 cornice	A
-corniche	A
+corniche	B
 cornmeal	A
 cornrows	A
 cornstarch	A
@@ -7030,7 +7030,7 @@ cot	A
 cotangent	B
 cote	B
 coterie	A
-cotillion	A
+cotillion	B
 cotinga	B
 cotta	B
 cottage	A
@@ -7095,7 +7095,7 @@ courgette	A
 courier	A
 course	A
 coursebook	A
-courser	A
+courser	B
 courseware	B
 coursework	A
 court	A
@@ -7222,7 +7222,7 @@ cranny	A
 crap	O
 crape	B
 crapper	O
-crappie	A
+crappie	B
 craps	A
 crapshoot	B
 crapulent	B
@@ -7481,7 +7481,7 @@ cuatro	B
 cub	A
 cubage	B
 cubature	B
-cubby	A
+cubby	B
 cubbyhole	A
 cube	A
 cubeb	B
@@ -7591,7 +7591,7 @@ curiosity	A
 curious	A
 curium	B
 curl	A
-curler	A
+curler	B
 curlew	A
 curlicue	A
 curling	A
@@ -7734,7 +7734,7 @@ cystotomy	B
 cytidine	B
 cytisus	B
 cytochrome	A
-cytokine	A
+cytokine	B
 cytology	A
 cytolysis	B
 cytoplasm	A
@@ -7832,7 +7832,7 @@ dank	A
 danseur	B
 dap	B
 daphne	B
-daphnia	A
+daphnia	B
 dapper	A
 dapple	A
 dapsone	B
@@ -8219,7 +8219,7 @@ dementia	A
 demerge	B
 demerit	A
 demersal	B
-demesne	A
+demesne	B
 demigod	A
 demijohn	B
 demilune	B
@@ -8228,7 +8228,7 @@ demise	A
 demist	A
 demit	B
 demitasse	B
-demiurge	A
+demiurge	B
 demo	A
 demob	B
 demobilize	B
@@ -8264,7 +8264,7 @@ denarius	B
 denary	B
 denature	B
 dendrimer	B
-dendrite	A
+dendrite	B
 dendrogram	B
 dendroid	B
 dendrology	B
@@ -8359,7 +8359,7 @@ deputize	A
 deputy	A
 deracinate	B
 derail	A
-derailleur	A
+derailleur	B
 derange	A
 derate	B
 deregister	B
@@ -8382,7 +8382,7 @@ dermis	A
 derogate	A
 derogatory	A
 derrick	A
-derringer	A
+derringer	B
 derris	B
 derry	B
 derv	B
@@ -8669,7 +8669,7 @@ didicoi	B
 dido	B
 didymium	B
 die	A
-dieback	A
+dieback	B
 diegesis	B
 diehard	A
 diel	B
@@ -8702,7 +8702,7 @@ digestif	A
 digestion	A
 digestive	A
 digger	A
-diggings	A
+diggings	B
 dight	B
 digit	A
 digital	A
@@ -8840,7 +8840,7 @@ dirigisme	B
 dirk	B
 dirndl	B
 dirt	A
-dirtbag	A
+dirtbag	B
 dirty	A
 dis	B
 disability	A
@@ -9346,7 +9346,7 @@ dowd	B
 dowdy	A
 dowel	A
 dowelling	A
-dower	A
+dower	B
 dowitcher	B
 down	A
 downbeat	A
@@ -9355,7 +9355,7 @@ downcomer	B
 downcurved	B
 downer	A
 downfall	A
-downfield	A
+downfield	B
 downfold	B
 downforce	A
 downgrade	A
@@ -9511,7 +9511,7 @@ drivel	A
 driveline	B
 driver	A
 driveshaft	B
-drivetrain	A
+drivetrain	B
 driveway	A
 driving	A
 drizzle	A
@@ -9752,11 +9752,11 @@ dyslexia	A
 dysmorphia	B
 dyspepsia	A
 dyspeptic	A
-dysphagia	A
+dysphagia	B
 dysphasia	B
 dysphemism	B
 dysphonia	B
-dysphoria	A
+dysphoria	B
 dysplasia	B
 dyspnoea	B
 dyspraxia	A
@@ -9852,7 +9852,7 @@ echolalia	B
 echovirus	B
 echt	B
 eclair	A
-eclampsia	A
+eclampsia	B
 eclectic	A
 eclipse	A
 ecliptic	A
@@ -10009,7 +10009,7 @@ elderberry	A
 eldercare	B
 elderly	A
 eldest	A
-eldritch	A
+eldritch	B
 elecampane	B
 elect	A
 election	A
@@ -10262,7 +10262,7 @@ endpaper	B
 endplay	B
 endue	B
 endure	A
-enduro	A
+enduro	B
 endways	B
 enema	A
 enemy	A
@@ -10624,7 +10624,7 @@ escritoire	B
 escrow	A
 escudo	A
 esculent	B
-escutcheon	A
+escutcheon	B
 esker	B
 esoteric	A
 esoterica	A
@@ -10650,7 +10650,7 @@ essential	A
 est	B
 establish	A
 estaminet	B
-estancia	A
+estancia	B
 estate	A
 esteem	A
 ester	A
@@ -10917,7 +10917,7 @@ exodus	A
 exogamy	B
 exogenic	B
 exogenous	A
-exon	A
+exon	B
 exonerate	A
 exoplanet	A
 exorbitant	A
@@ -11125,12 +11125,12 @@ fag	O
 faggot	O
 faggoting	B
 fah	B
-faience	A
+faience	B
 fail	A
 failing	A
 faille	B
 failure	A
-fain	A
+fain	B
 faint	A
 fair	A
 fairground	A
@@ -11146,10 +11146,10 @@ faithless	A
 fajitas	A
 fake	A
 fakie	B
-fakir	A
+fakir	B
 falafel	A
 falcate	B
-falchion	A
+falchion	B
 falciform	B
 falciparum	B
 falcon	A
@@ -11227,7 +11227,7 @@ fardel	B
 fare	A
 farewell	A
 farfalle	B
-farina	A
+farina	B
 farl	B
 farm	A
 farman	B
@@ -11252,7 +11252,7 @@ fasces	B
 fascia	A
 fasciated	B
 fascicle	B
-fasciitis	A
+fasciitis	B
 fascinate	A
 fascine	B
 fascism	A
@@ -11385,7 +11385,7 @@ fenestrate	B
 fenland	A
 fennec	B
 fennel	A
-fentanyl	A
+fentanyl	B
 fenugreek	A
 feoffee	B
 feoffment	B
@@ -11468,7 +11468,7 @@ fibrescope	B
 fibril	B
 fibrillate	B
 fibrin	B
-fibrinogen	A
+fibrinogen	B
 fibro	B
 fibroblast	A
 fibroid	A
@@ -11497,7 +11497,7 @@ fidelity	A
 fidget	A
 fiducial	B
 fiduciary	A
-fie	A
+fie	B
 fief	A
 field	A
 fieldcraft	B
@@ -11534,7 +11534,7 @@ filament	A
 filaria	B
 filariasis	B
 filature	B
-filbert	A
+filbert	B
 filch	A
 file	A
 filefish	B
@@ -11959,7 +11959,7 @@ fluorine	A
 fluorite	B
 fluorosis	B
 fluorspar	B
-fluoxetine	A
+fluoxetine	B
 flurried	A
 flurry	A
 flush	A
@@ -12030,7 +12030,7 @@ folkie	B
 folkish	B
 folklore	A
 folksy	A
-folkways	A
+folkways	B
 folkweave	B
 folky	B
 follicle	A
@@ -12120,7 +12120,7 @@ forebode	B
 foreboding	A
 forebrain	A
 forecast	A
-forecastle	A
+forecastle	B
 forecheck	B
 foreclose	A
 forecourt	A
@@ -12269,7 +12269,7 @@ fourscore	B
 foursome	A
 fourteen	A
 fourth	A
-fovea	A
+fovea	B
 fowl	A
 fox	A
 foxed	B
@@ -12336,7 +12336,7 @@ freebase	B
 freebie	A
 freeboard	B
 freebooter	B
-freeborn	A
+freeborn	B
 freedman	B
 freedom	A
 freehand	A
@@ -12532,7 +12532,7 @@ fund	A
 fundal	B
 fundament	B
 fundie	B
-fundus	A
+fundus	B
 funeral	A
 funerary	A
 funereal	A
@@ -12656,7 +12656,7 @@ gaiter	A
 gal	A
 gala	A
 galactic	A
-galactose	A
+galactose	B
 galago	B
 galah	B
 galangal	A
@@ -12676,7 +12676,7 @@ gallant	A
 gallantry	A
 gallate	B
 galleon	A
-galleria	A
+galleria	B
 gallery	A
 galley	A
 galliambic	B
@@ -12718,7 +12718,7 @@ gambrel	B
 game	A
 gamecock	A
 gamekeeper	A
-gamelan	A
+gamelan	B
 gameplay	A
 gamer	A
 gamesome	B
@@ -12846,7 +12846,7 @@ gaudy	A
 gauge	A
 gaunt	A
 gauntlet	A
-gaur	A
+gaur	B
 gauss	B
 gauze	A
 gavage	B
@@ -12948,9 +12948,9 @@ genotype	A
 genre	A
 gens	B
 gent	A
-gentamicin	A
+gentamicin	B
 genteel	A
-gentian	A
+gentian	B
 gentile	A
 gentility	A
 gentle	A
@@ -12982,7 +12982,7 @@ geophagy	B
 geophysics	A
 georgette	B
 georgic	B
-geoscience	A
+geoscience	B
 geothermal	A
 geotropism	B
 geranium	A
@@ -13018,7 +13018,7 @@ gharana	B
 gharial	B
 ghastly	A
 ghat	B
-ghazal	A
+ghazal	B
 ghee	A
 gherao	B
 gherkin	A
@@ -13066,7 +13066,7 @@ gill	A
 gillie	A
 gilt	A
 giltwood	B
-gimbal	A
+gimbal	B
 gimcrack	A
 gimlet	A
 gimme	A
@@ -13169,7 +13169,7 @@ glim	B
 glimmer	A
 glimpse	A
 glint	A
-glioma	A
+glioma	B
 glissade	B
 glissando	A
 glisten	A
@@ -13186,7 +13186,7 @@ globe	A
 globefish	B
 globular	A
 globule	A
-globulin	A
+globulin	B
 glochidium	B
 glom	B
 glomerulus	B
@@ -13213,7 +13213,7 @@ glow	A
 glower	A
 gloxinia	B
 gloze	B
-glucagon	A
+glucagon	B
 glucose	A
 glucoside	B
 glue	A
@@ -13223,7 +13223,7 @@ glume	B
 gluon	A
 glut	A
 glutamate	A
-glutamine	A
+glutamine	B
 glute	A
 gluten	A
 gluteus	B
@@ -13235,13 +13235,13 @@ glycerine	A
 glycerol	A
 glyceryl	B
 glycine	A
-glycogen	A
+glycogen	B
 glycol	A
-glycolysis	A
+glycolysis	B
 glycoside	B
 glycosuria	B
 glyph	A
-glyphosate	A
+glyphosate	B
 glyptic	B
 glyptodont	B
 gnamma	B
@@ -13288,7 +13288,7 @@ gobony	B
 gobshite	O
 gobsmacked	A
 gobstopper	A
-goby	A
+goby	B
 godchild	A
 goddam	O
 goddess	A
@@ -13321,7 +13321,7 @@ goldfish	A
 goldilocks	A
 goldsmith	A
 goldwork	B
-golem	A
+golem	B
 golf	A
 golliwog	O
 gollop	B
@@ -13506,7 +13506,7 @@ granular	A
 granulate	B
 granule	A
 granulite	B
-granuloma	A
+granuloma	B
 grape	A
 grapefruit	A
 grapeshot	A
@@ -13646,7 +13646,7 @@ grim	A
 grimace	A
 grimalkin	B
 grime	A
-grimoire	A
+grimoire	B
 grin	A
 grind	A
 grindstone	A
@@ -13920,7 +13920,7 @@ gypsum	A
 gyral	B
 gyrate	A
 gyratory	B
-gyre	A
+gyre	B
 gyrfalcon	B
 gyro	A
 gyrocopter	B
@@ -14030,7 +14030,7 @@ halfpenny	A
 halfway	A
 halfwit	A
 halibut	A
-halide	A
+halide	B
 halier	B
 halite	A
 halitosis	A
@@ -14150,14 +14150,14 @@ hap	B
 haphazard	A
 hapkido	B
 hapless	A
-haploid	A
+haploid	B
 haplology	B
 happen	A
 happening	A
 happi	B
 happy	A
 hapten	B
-haptic	A
+haptic	B
 haram	B
 harangue	A
 harass	A
@@ -14478,7 +14478,7 @@ helpline	A
 helpmate	A
 helve	B
 hem	A
-heme	A
+heme	B
 hemianopia	B
 hemicycle	B
 hemipenis	B
@@ -14510,7 +14510,7 @@ heparin	A
 hepatic	A
 hepatica	B
 hepatitis	A
-hepatocyte	A
+hepatocyte	B
 hepatoma	B
 hepcat	B
 heptad	B
@@ -14529,7 +14529,7 @@ herbage	A
 herbal	A
 herbalism	A
 herbalist	A
-herbarium	A
+herbarium	B
 herbary	B
 herbed	A
 herbert	B
@@ -14620,14 +14620,14 @@ hiccup	A
 hick	A
 hickey	A
 hickory	A
-hidalgo	A
+hidalgo	B
 hide	A
 hideaway	A
 hidebound	A
 hideous	A
 hideout	A
 hiding	A
-hie	A
+hie	B
 hierarch	A
 hierarchy	A
 hieratic	A
@@ -14693,7 +14693,7 @@ hippogriff	B
 hippy	A
 hipshot	B
 hipster	A
-hiragana	A
+hiragana	B
 hircine	B
 hire	A
 hireling	A
@@ -15235,7 +15235,7 @@ hydropower	A
 hydrospeed	B
 hydrous	B
 hydroxide	A
-hydroxyl	A
+hydroxyl	B
 hydrozoan	B
 hyena	A
 hygiene	A
@@ -15260,7 +15260,7 @@ hypallage	B
 hype	A
 hyper	A
 hyperaemia	B
-hyperbaric	A
+hyperbaric	B
 hyperbaton	B
 hyperbola	A
 hyperbole	A
@@ -15411,7 +15411,7 @@ ileostomy	B
 ileum	B
 ileus	B
 ilex	B
-iliac	A
+iliac	B
 ilium	B
 ilk	A
 ill	A
@@ -15445,7 +15445,7 @@ imaginal	B
 imaginary	A
 imagine	A
 imagineer	B
-imaginings	A
+imaginings	B
 imagism	B
 imago	A
 imam	A
@@ -15474,7 +15474,7 @@ immemorial	A
 immense	A
 immerse	A
 immersion	A
-immersive	A
+immersive	B
 immigrant	A
 imminent	A
 immiscible	A
@@ -15521,7 +15521,7 @@ impedance	A
 impede	A
 impediment	A
 impel	A
-impeller	A
+impeller	B
 impend	A
 impenitent	B
 imperative	A
@@ -15738,7 +15738,7 @@ indispose	A
 indisposed	A
 indistinct	A
 indite	A
-indium	A
+indium	B
 individual	A
 indocile	B
 indole	A
@@ -15874,7 +15874,7 @@ ingenious	A
 ingenuity	A
 ingenuous	A
 ingest	A
-ingle	A
+ingle	B
 inglenook	A
 inglorious	A
 ingoing	B
@@ -15910,7 +15910,7 @@ inimitable	A
 iniquity	A
 initial	A
 initialism	B
-initialize	A
+initialize	B
 initiate	A
 initiative	A
 initiator	A
@@ -15962,7 +15962,7 @@ inordinate	A
 inorganic	A
 inosculate	B
 inosine	B
-inositol	A
+inositol	B
 inpatient	A
 input	A
 inquest	A
@@ -16130,7 +16130,7 @@ interpose	A
 interpret	A
 interrupt	A
 intersect	A
-intersex	A
+intersex	B
 interspace	B
 interstate	A
 interstice	B
@@ -16172,7 +16172,7 @@ intrinsic	A
 intro	A
 introduce	A
 introit	B
-intron	A
+intron	B
 introrse	B
 introspect	B
 introvert	A
@@ -16335,7 +16335,7 @@ isophote	B
 isopleth	B
 isopod	B
 isoprene	B
-isopropyl	A
+isopropyl	B
 isosceles	A
 isoseismal	B
 isospin	B
@@ -16365,7 +16365,7 @@ itinerary	A
 itinerate	B
 its	A
 itself	A
-ivermectin	A
+ivermectin	B
 ivied	B
 ivory	A
 ivy	A
@@ -16414,7 +16414,7 @@ jadeite	B
 jaeger	B
 jag	A
 jagged	A
-jaggery	A
+jaggery	B
 jaggy	B
 jaguar	A
 jaguarundi	B
@@ -16545,7 +16545,7 @@ jingoism	A
 jings	B
 jink	B
 jinker	B
-jinn	A
+jinn	B
 jinx	A
 jird	B
 jism	O
@@ -16706,7 +16706,7 @@ jute	A
 juvenile	A
 juvenilia	B
 juxtapose	A
-kabaddi	A
+kabaddi	B
 kabob	B
 kabuki	A
 kachina	B
@@ -16723,7 +16723,7 @@ kail	B
 kainite	B
 kairos	B
 kaiser	A
-kaizen	A
+kaizen	B
 kaka	B
 kakapo	B
 kakemono	B
@@ -16766,14 +16766,14 @@ karoshi	B
 karri	B
 karst	A
 kart	A
-karyotype	A
+karyotype	B
 kasbah	B
 kasha	B
 kashrut	B
 kata	B
 katabatic	B
 katabolism	B
-katakana	A
+katakana	B
 katana	A
 katsina	B
 katsura	B
@@ -16944,7 +16944,7 @@ kilowatt	A
 kilt	A
 kilter	A
 kiltie	B
-kimberlite	A
+kimberlite	B
 kimchi	A
 kimono	A
 kin	A
@@ -17125,7 +17125,7 @@ kowtow	A
 kraal	A
 kraft	B
 krait	B
-kraken	A
+kraken	B
 krantz	B
 kremlin	A
 kreplach	B
@@ -17156,7 +17156,7 @@ kumite	B
 kumkum	B
 kumquat	A
 kuna	B
-kundalini	A
+kundalini	B
 kurbash	B
 kurdaitcha	B
 kurgan	B
@@ -17232,7 +17232,7 @@ lacking	A
 lacklustre	A
 laconic	A
 lacquer	A
-lacrimal	A
+lacrimal	B
 lacrimator	B
 lacrosse	A
 lacrymal	B
@@ -17323,10 +17323,10 @@ lamplight	A
 lampoon	A
 lamprey	A
 lampshade	A
-lanai	A
+lanai	B
 lance	A
 lancelet	B
-lanceolate	A
+lanceolate	B
 lancer	A
 lancet	A
 lancewood	B
@@ -17378,13 +17378,13 @@ lansquenet	B
 lantana	B
 lantern	A
 lanthanide	B
-lanthanum	A
+lanthanum	B
 lanthorn	B
 lanugo	B
 lanyard	A
 laogai	B
 lap	A
-laparotomy	A
+laparotomy	B
 lapdog	A
 lapel	A
 lapidary	A
@@ -17424,7 +17424,7 @@ laser	A
 laserdisc	B
 lash	A
 lashing	A
-lashings	A
+lashings	B
 lass	A
 lassi	B
 lassitude	A
@@ -17560,7 +17560,7 @@ lech	O
 lecher	A
 lecherous	A
 lechwe	B
-lecithin	A
+lecithin	B
 lectern	A
 lectin	B
 lection	B
@@ -17667,7 +17667,7 @@ leporine	B
 leprechaun	A
 leprosy	A
 leprous	A
-leptin	A
+leptin	B
 lepton	B
 leptotene	B
 lesbian	A
@@ -17712,7 +17712,7 @@ levin	B
 levirate	B
 levitate	A
 levity	A
-levodopa	A
+levodopa	B
 levulose	B
 levy	A
 lewd	A
@@ -17730,7 +17730,7 @@ liability	A
 liable	A
 liaise	A
 liaison	A
-liana	A
+liana	B
 liar	A
 lias	B
 lib	B
@@ -17764,12 +17764,12 @@ lickerish	A
 licorice	A
 lictor	B
 lid	A
-lidar	A
+lidar	B
 lido	A
-lidocaine	A
+lidocaine	B
 lie	A
 lied	B
-lief	A
+lief	B
 liege	A
 liegeman	B
 lien	A
@@ -17814,7 +17814,7 @@ lightship	A
 lightsome	B
 ligneous	B
 lignify	B
-lignin	A
+lignin	B
 lignite	A
 lignocaine	B
 lignotuber	B
@@ -17833,7 +17833,7 @@ liking	A
 lilac	A
 lilangeni	B
 liliaceous	B
-lilo	A
+lilo	B
 lilt	A
 lily	A
 limb	A
@@ -18105,7 +18105,7 @@ logarithm	A
 logbook	A
 loge	B
 loggerhead	B
-loggia	A
+loggia	B
 logic	A
 logical	A
 login	A
@@ -18195,7 +18195,7 @@ loquacious	A
 loquat	B
 loquitur	B
 lor	B
-lorazepam	A
+lorazepam	B
 lord	A
 lordling	B
 lordly	A
@@ -18206,13 +18206,13 @@ lorgnette	B
 lorica	B
 lorikeet	A
 loris	B
-lorn	A
+lorn	B
 lorry	A
 lory	B
 lose	A
 loser	A
 loss	A
-lossless	A
+lossless	B
 lossy	B
 lost	A
 lot	A
@@ -18273,7 +18273,7 @@ lubricant	A
 lubricate	A
 lubricious	A
 luce	B
-lucent	A
+lucent	B
 lucerne	B
 lucid	A
 lucite	B
@@ -18349,7 +18349,7 @@ lunkhead	B
 lunula	B
 lupara	B
 lupin	A
-lupine	A
+lupine	B
 lupus	A
 lur	B
 lurch	A
@@ -18381,7 +18381,7 @@ lutein	B
 lutenist	B
 luteous	B
 lutetium	B
-luthier	A
+luthier	B
 luting	B
 lutino	B
 lutist	B
@@ -18398,7 +18398,7 @@ lwei	B
 lychee	A
 lychgate	B
 lychnis	B
-lycopene	A
+lycopene	B
 lycopodium	B
 lyddite	B
 lye	A
@@ -18533,7 +18533,7 @@ magnox	B
 magnum	A
 magpie	A
 maguey	B
-magus	A
+magus	B
 maha	B
 mahant	B
 maharaja	A
@@ -18739,7 +18739,7 @@ manifesto	A
 manifold	A
 manikin	A
 manilla	B
-manioc	A
+manioc	B
 maniple	B
 manipulate	A
 manitou	B
@@ -18771,7 +18771,7 @@ mantel	A
 mantelet	B
 manteltree	B
 mantic	B
-manticore	A
+manticore	B
 mantid	B
 mantilla	A
 mantis	A
@@ -18874,7 +18874,7 @@ marquee	A
 marquess	A
 marquetry	A
 marquis	A
-marquise	A
+marquise	B
 marriage	A
 married	A
 marron	B
@@ -18939,7 +18939,7 @@ mastermind	A
 masterwork	A
 mastery	A
 masthead	A
-mastic	A
+mastic	B
 masticate	A
 mastiff	A
 mastitis	A
@@ -19017,7 +19017,7 @@ mawashi	B
 mawkish	A
 max	A
 maxi	A
-maxilla	A
+maxilla	B
 maxim	A
 maximal	A
 maximalist	B
@@ -19087,7 +19087,7 @@ medallion	A
 medallist	A
 meddle	A
 meddlesome	A
-medevac	A
+medevac	B
 medfly	B
 media	A
 mediaeval	B
@@ -19105,7 +19105,7 @@ medication	A
 medicinal	A
 medicine	A
 medick	B
-medico	A
+medico	B
 medieval	A
 medina	B
 mediocre	A
@@ -19289,7 +19289,7 @@ mesmerize	A
 mesne	B
 mesoblast	B
 mesocarp	B
-mesoderm	A
+mesoderm	B
 mesomerism	B
 mesomorph	B
 meson	A
@@ -19311,9 +19311,9 @@ messuage	B
 messy	A
 mestizo	A
 metabolism	A
-metabolite	A
+metabolite	B
 metabolize	A
-metacarpal	A
+metacarpal	B
 metacarpus	B
 metacentre	B
 metadata	A
@@ -19337,7 +19337,7 @@ metatarsal	A
 metatarsus	B
 metathesis	B
 metazoan	B
-mete	A
+mete	B
 meteor	A
 meteoric	A
 meteorite	A
@@ -19397,7 +19397,7 @@ mic	A
 mica	A
 micelle	B
 mickey	B
-mickle	A
+mickle	B
 micro	A
 microbe	A
 microbiota	B
@@ -19450,7 +19450,7 @@ midden	A
 middle	A
 middlebrow	A
 middleman	A
-middleware	A
+middleware	B
 middling	A
 middy	B
 midfield	A
@@ -19494,7 +19494,7 @@ migraine	A
 migrant	A
 migrate	A
 mihrab	B
-mikado	A
+mikado	B
 mike	A
 mil	B
 milady	A
@@ -19635,7 +19635,7 @@ minuet	A
 minus	A
 minuscule	A
 minute	A
-minuteman	A
+minuteman	B
 minutiae	A
 minx	A
 minyan	B
@@ -19784,10 +19784,10 @@ mixer	A
 mixologist	B
 mixture	A
 mizuna	B
-mizzen	A
+mizzen	B
 mizzle	B
 mnemonic	A
-mnemonics	A
+mnemonics	B
 moa	B
 moan	A
 moat	A
@@ -19914,7 +19914,7 @@ monic	B
 monied	B
 moniker	A
 moniliform	B
-monism	A
+monism	B
 monition	B
 monitor	A
 monitory	B
@@ -20224,7 +20224,7 @@ mucinous	B
 muck	A
 muckamuck	B
 mucker	B
-muckle	A
+muckle	B
 muckraking	B
 mucky	A
 mucosa	A
@@ -20286,7 +20286,7 @@ mullion	B
 mullock	B
 mulloway	B
 multiaxial	B
-multicast	A
+multicast	B
 multifid	B
 multiflora	B
 multifocal	B
@@ -20337,7 +20337,7 @@ muniments	B
 munition	A
 munshi	B
 muntjac	A
-muon	A
+muon	B
 muppet	A
 murage	B
 mural	A
@@ -20364,7 +20364,7 @@ muscatel	A
 muscle	A
 muscleman	A
 muscovado	B
-muscovite	A
+muscovite	B
 muscular	A
 muse	A
 museology	B
@@ -20429,8 +20429,8 @@ myalgia	B
 myalism	B
 myall	B
 myasthenia	B
-mycelium	A
-mycology	A
+mycelium	B
+mycology	B
 mycoplasma	B
 mycorrhiza	B
 mycosis	B
@@ -20439,10 +20439,10 @@ mydriasis	B
 myelin	A
 myelitis	B
 myeloid	B
-myeloma	A
+myeloma	B
 myelopathy	B
 mynah	A
-myocardium	A
+myocardium	B
 myoclonus	B
 myofibril	B
 myogenic	B
@@ -20451,7 +20451,7 @@ myology	B
 myopathy	B
 myope	A
 myopia	A
-myosin	A
+myosin	B
 myosis	B
 myositis	B
 myosotis	B
@@ -20508,7 +20508,7 @@ naive	A
 naked	A
 naker	B
 nakfa	B
-naloxone	A
+naloxone	B
 naltrexone	B
 namaskar	B
 namaste	A
@@ -20528,7 +20528,7 @@ nanobe	B
 nanobot	A
 nanometre	B
 nanosecond	A
-nanotube	A
+nanotube	B
 naos	B
 nap	A
 napa	B
@@ -20545,7 +20545,7 @@ nappe	B
 napped	A
 napper	B
 nappy	A
-naproxen	A
+naproxen	B
 narc	A
 narcissism	A
 narcissus	A
@@ -20580,7 +20580,7 @@ natal	A
 natality	B
 natant	B
 natatorium	B
-natch	A
+natch	B
 nates	B
 natheless	B
 nation	A
@@ -20666,7 +20666,7 @@ needlework	A
 needy	A
 neem	B
 neep	B
-nefarious	A
+nefarious	B
 negate	A
 negation	A
 negative	A
@@ -20695,8 +20695,8 @@ nemesia	B
 nemesis	A
 nene	B
 neocon	A
-neocortex	A
-neodymium	A
+neocortex	B
+neodymium	B
 neoliberal	A
 neologism	A
 neomycin	B
@@ -20767,11 +20767,11 @@ neurogenic	B
 neurology	A
 neuroma	B
 neuron	A
-neuropathy	A
+neuropathy	B
 neurosis	A
 neurotic	A
 neurotomy	B
-neurotoxin	A
+neurotoxin	B
 neuston	B
 neuter	A
 neutral	A
@@ -20779,7 +20779,7 @@ neutralism	B
 neutralize	A
 neutrino	A
 neutron	A
-neutrophil	A
+neutrophil	B
 never	A
 nevermore	A
 nevus	B
@@ -20803,13 +20803,13 @@ newsie	B
 newsletter	A
 newsman	A
 newspaper	A
-newspeak	A
+newspeak	B
 newsprint	A
 newsreader	A
 newsreel	A
 newsroom	A
 newsvendor	B
-newswire	A
+newswire	B
 newsworthy	A
 newsy	A
 newt	A
@@ -20858,7 +20858,7 @@ nightclub	A
 nightdress	A
 nightfall	A
 nightgown	A
-nighthawk	A
+nighthawk	B
 nightie	A
 nightjar	A
 nightlife	A
@@ -20891,7 +20891,7 @@ ninjutsu	B
 ninny	A
 ninon	B
 ninth	A
-niobium	A
+niobium	B
 nip	A
 nipa	B
 nipper	A
@@ -20914,7 +20914,7 @@ nitric	A
 nitride	B
 nitrify	B
 nitrile	B
-nitrite	A
+nitrite	B
 nitro	B
 nitrogen	A
 nitrous	A
@@ -20985,7 +20985,7 @@ nonesuch	B
 nonet	B
 nong	B
 noni	B
-nonpareil	A
+nonpareil	B
 nonplus	A
 nonsense	A
 nonsuch	B
@@ -21153,7 +21153,7 @@ numerator	A
 numerical	A
 numerology	A
 numerous	A
-numinous	A
+numinous	B
 numismatic	A
 nummulite	B
 numnah	B
@@ -21203,7 +21203,7 @@ nymph	A
 nymphaeum	B
 nymphet	B
 nympho	O
-nystagmus	A
+nystagmus	B
 nystatin	B
 oaf	A
 oak	A
@@ -21294,7 +21294,7 @@ obvert	B
 obviate	A
 obvious	A
 oca	B
-ocarina	A
+ocarina	B
 occasion	A
 occasional	A
 occidental	A
@@ -21416,7 +21416,7 @@ offtake	B
 offy	B
 oft	A
 often	A
-oftentimes	A
+oftentimes	B
 ogam	B
 ogdoad	B
 ogee	B
@@ -21471,14 +21471,14 @@ oligarch	A
 oligarchy	A
 oligoclase	B
 oligomer	B
-oligopoly	A
+oligopoly	B
 oligopsony	B
 oliguria	B
 olio	B
 olivaceous	B
 olivary	B
 olive	A
-olivine	A
+olivine	B
 olm	B
 oloroso	B
 omadhaun	B
@@ -21505,7 +21505,7 @@ onager	A
 onanism	B
 once	A
 oncer	B
-oncogene	A
+oncogene	B
 oncogenic	B
 oncology	A
 oncoming	A
@@ -21537,7 +21537,7 @@ ontology	A
 onus	A
 onward	A
 onyx	A
-oocyte	A
+oocyte	B
 oodles	A
 oogamous	B
 oogenesis	B
@@ -21673,7 +21673,7 @@ orf	B
 orfe	B
 organ	A
 organdie	B
-organelle	A
+organelle	B
 organic	A
 organicism	B
 organism	A
@@ -21689,7 +21689,7 @@ orgone	B
 orgulous	B
 orgy	A
 oribi	B
-oriel	A
+oriel	B
 orient	A
 oriental	O
 orientalia	B
@@ -21712,7 +21712,7 @@ ornate	A
 ornery	A
 ornithine	B
 ornithosis	B
-orogeny	A
+orogeny	B
 orographic	B
 oropendola	B
 oropharynx	B
@@ -21734,7 +21734,7 @@ orthogonal	A
 orthoptics	B
 orthosis	B
 orthotic	B
-orthotics	A
+orthotics	B
 ortolan	B
 orts	B
 oryx	A
@@ -21780,7 +21780,7 @@ otherwhere	B
 otherwise	A
 otic	B
 otiose	B
-otitis	A
+otitis	B
 otolith	B
 otology	B
 otoplasty	B
@@ -21796,7 +21796,7 @@ ought	A
 ouguiya	B
 ounce	A
 our	A
-ouroboros	A
+ouroboros	B
 ours	A
 ourself	B
 ourselves	A
@@ -22184,7 +22184,7 @@ oxtail	A
 oxter	B
 oxyacid	B
 oxyanion	B
-oxycodone	A
+oxycodone	B
 oxygen	A
 oxygenate	A
 oxygenator	B
@@ -22302,7 +22302,7 @@ palea	B
 paleface	B
 palestra	B
 palette	A
-palfrey	A
+palfrey	B
 palilalia	B
 palimony	A
 palimpsest	A
@@ -22374,8 +22374,8 @@ pander	A
 pandit	B
 pandowdy	B
 pane	A
-paneer	A
-panegyric	A
+paneer	B
+panegyric	B
 panegyrize	B
 panel	A
 panellist	A
@@ -22398,7 +22398,7 @@ pannist	B
 pannus	B
 panoply	A
 panoptic	B
-panopticon	A
+panopticon	B
 panorama	A
 pansexual	B
 panslavism	B
@@ -22442,7 +22442,7 @@ paperknife	B
 paperwork	A
 papilla	B
 papilloma	B
-papillon	A
+papillon	B
 papist	O
 papoose	O
 pappus	B
@@ -22706,7 +22706,7 @@ patriotic	A
 patriotism	A
 patristic	B
 patrol	A
-patrolman	A
+patrolman	B
 patrology	B
 patron	A
 patronage	A
@@ -22831,7 +22831,7 @@ pedlar	A
 pedogenic	B
 pedology	B
 pedometer	A
-peduncle	A
+peduncle	B
 pee	A
 peek	A
 peekaboo	A
@@ -23038,7 +23038,7 @@ pericope	B
 pericycle	B
 periderm	B
 peridium	B
-peridot	A
+peridot	B
 peridotite	B
 perigee	A
 perigynous	B
@@ -23137,7 +23137,7 @@ perturb	A
 pertussis	A
 peruke	B
 peruse	A
-perv	A
+perv	B
 pervade	A
 pervasive	A
 perverse	A
@@ -23168,7 +23168,7 @@ peter	A
 peterman	B
 petersham	B
 pethidine	A
-petiole	A
+petiole	B
 petit	B
 petite	A
 petitgrain	B
@@ -23195,8 +23195,8 @@ pewit	B
 pewter	A
 peyote	A
 pfennig	B
-phaeton	A
-phage	A
+phaeton	B
+phage	B
 phagocyte	B
 phalange	B
 phalangeal	B
@@ -23233,7 +23233,7 @@ phenomenal	A
 phenomenon	A
 phenotype	A
 phenyl	B
-phenytoin	A
+phenytoin	B
 pheromone	A
 phew	A
 phi	B
@@ -23251,7 +23251,7 @@ phlebitis	A
 phlebotomy	A
 phlegm	A
 phlegmatic	A
-phloem	A
+phloem	B
 phlogiston	A
 phlox	A
 phobia	A
@@ -23356,7 +23356,7 @@ picador	A
 picante	B
 picaresque	A
 picaroon	B
-picayune	A
+picayune	B
 piccalilli	A
 piccaninny	O
 piccolo	A
@@ -23493,7 +23493,7 @@ pinky	A
 pinna	B
 pinnace	B
 pinnacle	A
-pinnate	A
+pinnate	B
 pinniped	B
 pinnule	B
 pinny	B
@@ -23660,7 +23660,7 @@ plank	A
 plankton	A
 plant	A
 plantain	A
-plantar	A
+plantar	B
 plantation	A
 planter	A
 plantsman	B
@@ -23670,7 +23670,7 @@ plash	B
 plasma	A
 plasmid	A
 plasmin	B
-plasmodium	A
+plasmodium	B
 plasteel	B
 plaster	A
 plastered	A
@@ -23831,7 +23831,7 @@ pluvial	B
 ply	A
 plywood	A
 pneumatic	A
-pneumatics	A
+pneumatics	B
 pneumonia	A
 poach	A
 poblano	B
@@ -23946,7 +23946,7 @@ polyclinic	B
 polyclonal	B
 polycotton	B
 polycyclic	A
-polycystic	A
+polycystic	B
 polydactyl	B
 polydipsia	B
 polyester	A
@@ -24021,7 +24021,7 @@ pongo	B
 poniard	B
 pons	B
 pont	B
-pontifex	A
+pontifex	B
 pontiff	A
 pontifical	A
 pontil	B
@@ -24094,7 +24094,7 @@ porkling	B
 porky	A
 porn	A
 porous	A
-porphyria	A
+porphyria	B
 porphyrin	B
 porphyry	A
 porpoise	A
@@ -24190,7 +24190,7 @@ pother	B
 pothole	A
 pothunter	B
 potion	A
-potlatch	A
+potlatch	B
 potoo	B
 potoroo	B
 potpourri	A
@@ -24334,7 +24334,7 @@ prediction	A
 predigest	B
 predikant	B
 predispose	A
-prednisone	A
+prednisone	B
 predorsal	B
 preemie	B
 preen	A
@@ -24351,7 +24351,7 @@ prefigure	A
 prefix	A
 preflight	A
 preform	B
-prefrontal	A
+prefrontal	B
 pregenital	B
 preggers	A
 preglacial	B
@@ -24626,7 +24626,7 @@ prog	B
 progenitor	A
 progeny	A
 progeria	B
-progestin	A
+progestin	B
 proglottid	B
 prognosis	A
 prognostic	B
@@ -24649,7 +24649,7 @@ prole	O
 proleg	B
 prolepsis	B
 prolific	A
-proline	A
+proline	B
 prolix	A
 prolocutor	B
 prologue	A
@@ -24772,7 +24772,7 @@ protector	A
 protein	A
 proteinase	B
 proteome	B
-proteomics	A
+proteomics	B
 protest	A
 proteus	B
 prothallus	B
@@ -24849,7 +24849,7 @@ pseudonym	A
 pseudopod	A
 pshaw	A
 psi	B
-psilocybin	A
+psilocybin	B
 psionic	B
 psittacine	B
 psoas	B
@@ -25092,7 +25092,7 @@ pyridine	A
 pyridoxal	B
 pyridoxine	B
 pyriform	B
-pyrimidine	A
+pyrimidine	B
 pyrites	B
 pyrogallol	B
 pyrogenic	B
@@ -25107,7 +25107,7 @@ pyrotechny	B
 pyroxene	B
 pyrrhic	A
 pyrrole	B
-pyruvate	A
+pyruvate	B
 python	A
 pythoness	B
 pyuria	B
@@ -25193,7 +25193,7 @@ quatrefoil	B
 quaver	A
 quay	A
 quayside	A
-qubit	A
+qubit	B
 quean	B
 queasy	A
 queen	A
@@ -25213,7 +25213,7 @@ query	A
 quesadilla	A
 quest	A
 question	A
-quetzal	A
+quetzal	B
 queue	A
 quibble	A
 quiche	A
@@ -25295,7 +25295,7 @@ quota	A
 quotable	A
 quotation	A
 quote	A
-quoth	A
+quoth	B
 quotidian	A
 quotient	A
 qursh	B
@@ -25483,7 +25483,7 @@ rankle	A
 ransack	A
 ransom	A
 rant	A
-ranunculus	A
+ranunculus	B
 rap	A
 rapacious	A
 rape	A
@@ -25577,7 +25577,7 @@ ray	A
 rayon	A
 raze	A
 razor	A
-razorback	A
+razorback	B
 razorbill	A
 razorfish	B
 razz	B
@@ -25589,7 +25589,7 @@ reach	A
 reacquaint	B
 reacquire	B
 react	A
-reactance	A
+reactance	B
 reactant	A
 reaction	A
 reactivate	A
@@ -25902,7 +25902,7 @@ refraction	A
 refractor	B
 refractory	A
 refrain	A
-reframe	A
+reframe	B
 refreeze	A
 refresh	A
 refresher	A
@@ -25952,7 +25952,7 @@ registry	A
 reglet	B
 regnal	B
 regnant	B
-regolith	A
+regolith	B
 regrade	B
 regress	A
 regression	A
@@ -26190,7 +26190,7 @@ repose	A
 reposition	A
 repository	A
 repossess	A
-repost	A
+repost	B
 repot	B
 repp	B
 reprehend	A
@@ -26427,7 +26427,7 @@ retype	A
 reunify	A
 reunion	A
 reunite	A
-reuptake	A
+reuptake	B
 reuse	A
 reutilize	B
 rev	A
@@ -26543,7 +26543,7 @@ rial	A
 rib	A
 ribald	A
 ribaldry	A
-riband	A
+riband	B
 ribbed	A
 ribbing	A
 ribbon	A
@@ -26580,7 +26580,7 @@ riddle	A
 riddling	B
 ride	A
 rider	A
-ridership	A
+ridership	B
 ridge	A
 ridgeback	A
 ridgeway	B
@@ -26654,7 +26654,7 @@ rinse	A
 riot	A
 riotous	A
 rip	A
-riparian	A
+riparian	B
 ripcord	A
 ripe	A
 ripen	A
@@ -26793,7 +26793,7 @@ rone	B
 rongorongo	B
 ronin	B
 roo	A
-rood	A
+rood	B
 roof	A
 roofscape	B
 rooftop	A
@@ -27072,7 +27072,7 @@ saccharin	A
 saccharine	A
 saccule	B
 sacerdotal	A
-sachem	A
+sachem	B
 sachet	A
 sack	A
 sackbut	B
@@ -27108,7 +27108,7 @@ safe	A
 safeguard	A
 safelight	B
 safety	A
-safflower	A
+safflower	B
 saffron	A
 sag	A
 saga	A
@@ -27121,7 +27121,7 @@ saggar	B
 sagittal	B
 sagittate	B
 sago	A
-saguaro	A
+saguaro	B
 sahib	A
 said	A
 saiga	B
@@ -27166,7 +27166,7 @@ saleslady	B
 salesman	A
 salicin	B
 salicional	B
-salicylate	A
+salicylate	B
 salient	A
 salina	B
 saline	A
@@ -27236,10 +27236,10 @@ samosa	A
 samovar	A
 samp	B
 sampan	A
-samphire	A
+samphire	B
 sample	A
 sampler	A
-samsara	A
+samsara	B
 samskara	B
 samurai	A
 san	B
@@ -27297,7 +27297,7 @@ sanguine	A
 sanicle	B
 sanidine	B
 sanitarian	B
-sanitarium	A
+sanitarium	B
 sanitary	A
 sanitation	A
 sanitize	A
@@ -27390,14 +27390,14 @@ sateen	B
 satellite	A
 sati	B
 satiate	A
-satiety	A
+satiety	B
 satin	A
 satinette	B
 satinwood	A
 satire	A
 satiric	A
 satirical	A
-satirize	A
+satirize	B
 satisfy	A
 satnav	A
 satori	B
@@ -27593,7 +27593,7 @@ schmooze	A
 schmuck	O
 schmutter	B
 schnapps	A
-schnauzer	A
+schnauzer	B
 schnitzel	A
 schnook	B
 schnorrer	B
@@ -27634,7 +27634,7 @@ scientist	A
 scilicet	B
 scilla	B
 scimitar	A
-scintilla	A
+scintilla	B
 sciolist	B
 scion	A
 scirocco	B
@@ -27718,7 +27718,7 @@ screed	A
 screel	B
 screen	A
 screenplay	A
-screenshot	A
+screenshot	B
 screw	A
 screwball	B
 screwy	A
@@ -27733,7 +27733,7 @@ scrip	B
 script	A
 scriptural	A
 scripture	A
-scrivener	A
+scrivener	B
 scrod	B
 scrofula	B
 scroll	A
@@ -27811,7 +27811,7 @@ seafaring	A
 seafood	A
 seafront	A
 seagoing	A
-seagrass	A
+seagrass	B
 seagull	A
 seakale	B
 seakeeping	B
@@ -27852,7 +27852,7 @@ seaweed	A
 seaworthy	A
 sebaceous	A
 seborrhoea	B
-sebum	A
+sebum	B
 sec	A
 secant	A
 secateurs	A
@@ -27983,7 +27983,7 @@ semicircle	A
 semicolon	A
 semilunar	B
 semimetal	B
-seminal	A
+seminal	B
 seminar	A
 seminary	A
 semiology	B
@@ -28048,7 +28048,7 @@ separation	A
 separatism	A
 sepia	A
 sepoy	B
-seppuku	A
+seppuku	B
 sepsis	A
 sept	B
 septal	B
@@ -28086,7 +28086,7 @@ serang	B
 serape	B
 seraph	A
 seraskier	B
-sere	A
+sere	B
 serenade	A
 serenata	B
 serene	A
@@ -28279,7 +28279,7 @@ sharkskin	B
 sharp	A
 sharpen	A
 sharper	A
-sharpie	A
+sharpie	B
 sharpish	B
 shashlik	B
 shastra	B
@@ -28527,7 +28527,7 @@ shriek	A
 shrieval	B
 shrievalty	B
 shrift	A
-shrike	A
+shrike	B
 shrill	A
 shrimp	A
 shrine	A
@@ -28559,7 +28559,7 @@ shuriken	B
 shush	A
 shut	A
 shutdown	A
-shutout	A
+shutout	B
 shutter	A
 shutterbug	B
 shuttle	A
@@ -28587,7 +28587,7 @@ sickie	B
 sickle	A
 sickly	A
 sickness	A
-sicko	A
+sicko	B
 sickroom	A
 sidalcea	B
 siddha	B
@@ -28637,7 +28637,7 @@ sigh	A
 sight	A
 sightless	A
 sightly	A
-sigil	A
+sigil	B
 siglum	B
 sigma	A
 sigmate	B
@@ -28795,7 +28795,7 @@ sixteen	A
 sixteenmo	B
 sixth	A
 sixty	A
-sizable	A
+sizable	B
 sizar	B
 size	A
 sizeable	A
@@ -29073,7 +29073,7 @@ smell	A
 smelly	A
 smelt	A
 smew	B
-smidge	A
+smidge	B
 smidgen	A
 smilax	B
 smile	A
@@ -29133,7 +29133,7 @@ snappy	A
 snapshot	A
 snare	A
 snarf	B
-snark	A
+snark	B
 snarky	A
 snarl	A
 snash	B
@@ -29387,7 +29387,7 @@ sook	B
 sool	B
 soon	A
 soot	A
-sooth	A
+sooth	B
 soothe	A
 soothsayer	A
 sooty	A
@@ -29405,7 +29405,7 @@ sora	B
 sorb	B
 sorbent	B
 sorbet	A
-sorbitol	A
+sorbitol	B
 sorcerer	A
 sordid	A
 sordino	B
@@ -29450,7 +29450,7 @@ soundcheck	A
 soundhole	B
 sounding	A
 soundproof	A
-soundscape	A
+soundscape	B
 soundtrack	A
 soup	A
 soupy	A
@@ -29601,7 +29601,7 @@ speech	A
 speechify	B
 speechless	A
 speed	A
-speedball	A
+speedball	B
 speedboat	A
 speedo	A
 speedster	A
@@ -29706,7 +29706,7 @@ spirograph	B
 spirogyra	B
 spirometer	B
 spirt	B
-spirulina	A
+spirulina	B
 spit	A
 spitball	B
 spitchcock	B
@@ -29864,7 +29864,7 @@ sputum	A
 spy	A
 spyglass	A
 spyhole	A
-spymaster	A
+spymaster	B
 spyware	A
 squab	B
 squabble	A
@@ -29874,7 +29874,7 @@ squadron	A
 squalid	A
 squall	A
 squalor	A
-squamous	A
+squamous	B
 squamule	B
 squander	A
 square	A
@@ -30331,7 +30331,7 @@ stovepipe	A
 stovies	B
 stow	A
 stowaway	A
-strabismus	A
+strabismus	B
 straddle	A
 strafe	A
 straggle	A
@@ -30395,7 +30395,7 @@ strewth	A
 stria	B
 striate	B
 striated	A
-striatum	A
+striatum	B
 stricken	A
 strickle	B
 strict	A
@@ -30408,7 +30408,7 @@ strife	A
 strigil	B
 strigose	B
 strike	A
-strikeout	A
+strikeout	B
 striker	A
 striking	A
 strimmer	A
@@ -30486,7 +30486,7 @@ stunning	A
 stunsail	B
 stunt	A
 stuntman	A
-stupa	A
+stupa	B
 stupe	B
 stupefy	A
 stupendous	A
@@ -30539,7 +30539,7 @@ subdivide	A
 subduction	A
 subdue	A
 subdued	A
-subdural	A
+subdural	B
 subedit	A
 subfamily	A
 subfloor	B
@@ -30557,7 +30557,7 @@ subjoin	B
 subjugate	A
 subkingdom	B
 sublate	B
-sublease	A
+sublease	B
 sublet	A
 sublimate	A
 sublime	A
@@ -30667,7 +30667,7 @@ suckhole	O
 sucking	A
 suckle	A
 suckling	A
-sucky	A
+sucky	B
 sucre	B
 sucrose	A
 suction	A
@@ -30773,7 +30773,7 @@ sundowner	B
 sundress	A
 sundry	A
 sunfast	B
-sunfish	A
+sunfish	B
 sunflower	A
 sunglasses	A
 sunken	A
@@ -30805,7 +30805,7 @@ superable	B
 superadd	B
 superaltar	B
 superb	A
-superbike	A
+superbike	B
 superbug	A
 supercar	A
 supercargo	B
@@ -30819,7 +30819,7 @@ superfly	B
 supergiant	B
 superglue	A
 supergrass	A
-supergroup	A
+supergroup	B
 superheat	A
 superhero	A
 superhuman	A
@@ -30947,8 +30947,8 @@ swag	A
 swage	B
 swagger	A
 swagman	B
-swain	A
-swale	A
+swain	B
+swale	B
 swallow	A
 swami	A
 swamp	A
@@ -30965,7 +30965,7 @@ swaption	B
 sward	A
 swarf	B
 swarm	A
-swart	A
+swart	B
 swarthy	A
 swash	B
 swastika	A
@@ -31109,7 +31109,7 @@ synchronic	B
 synchrony	A
 syncline	B
 syncopate	A
-syncope	A
+syncope	B
 syncretism	B
 syncretize	B
 syncytium	B
@@ -31119,7 +31119,7 @@ syndic	B
 syndicate	A
 syndrome	A
 syne	B
-synecdoche	A
+synecdoche	B
 synecology	B
 syneresis	B
 synergist	B
@@ -31163,7 +31163,7 @@ systole	B
 syzygy	B
 taal	A
 tab	A
-tabard	A
+tabard	B
 tabaret	B
 tabbouleh	A
 tabby	A
@@ -31195,7 +31195,7 @@ tachi	B
 tachism	B
 tacho	B
 tachograph	B
-tachometer	A
+tachometer	B
 tachymeter	B
 tachyon	A
 tacit	A
@@ -31311,7 +31311,7 @@ tambourin	B
 tambourine	A
 tamburitza	B
 tame	A
-tamoxifen	A
+tamoxifen	B
 tamp	A
 tamper	A
 tampion	B
@@ -31347,7 +31347,7 @@ tannia	B
 tannin	A
 tannoy	A
 tanpura	B
-tansy	A
+tansy	B
 tantalite	B
 tantalize	A
 tantalum	A
@@ -31447,7 +31447,7 @@ tatty	A
 tau	A
 taunt	A
 taupe	A
-taurine	A
+taurine	B
 tauromachy	B
 taut	A
 tautog	B
@@ -31506,7 +31506,7 @@ teatime	A
 teazle	B
 tech	A
 techie	A
-technetium	A
+technetium	B
 technic	B
 technical	A
 technician	A
@@ -31515,7 +31515,7 @@ techno	A
 technology	A
 techy	B
 tectonic	A
-tectonics	A
+tectonics	B
 tectorial	B
 tectrices	B
 ted	B
@@ -31584,10 +31584,10 @@ tellurate	B
 tellurian	B
 telluric	B
 telluride	B
-tellurium	A
+tellurium	B
 telly	A
 telnet	B
-telomere	A
+telomere	B
 telophase	B
 telos	B
 telson	B
@@ -31596,7 +31596,7 @@ temblor	B
 temenos	B
 temerity	A
 temp	A
-tempeh	A
+tempeh	B
 temper	A
 tempera	A
 temperance	A
@@ -31751,7 +31751,7 @@ testaceous	B
 testament	A
 testate	B
 testation	B
-testator	A
+testator	B
 testatrix	B
 tester	A
 testicle	A
@@ -31836,7 +31836,7 @@ then	A
 thenar	B
 thence	A
 theocracy	A
-theodicy	A
+theodicy	B
 theodolite	A
 theogony	B
 theologian	A
@@ -31889,9 +31889,9 @@ thesis	A
 thespian	A
 theta	A
 theurgy	B
-thew	A
+thew	B
 they	A
-thiamine	A
+thiamine	B
 thiazide	B
 thiazole	B
 thick	A
@@ -31979,8 +31979,8 @@ thrive	A
 throat	A
 throaty	A
 throb	A
-throes	A
-thrombin	A
+throes	B
+thrombin	B
 thrombose	B
 thrombosis	A
 thrombus	A
@@ -32035,7 +32035,7 @@ thylacine	B
 thyme	A
 thymic	B
 thymidine	B
-thymine	A
+thymine	B
 thymol	B
 thymus	A
 thyristor	B
@@ -32064,7 +32064,7 @@ tideland	B
 tideline	B
 tidemark	B
 tidewaiter	B
-tidewater	A
+tidewater	B
 tideway	B
 tidings	A
 tidy	A
@@ -32106,7 +32106,7 @@ tilth	B
 timbal	B
 timbale	B
 timber	A
-timberland	A
+timberland	B
 timberline	B
 timberman	B
 timbre	A
@@ -32135,7 +32135,7 @@ tinctorial	B
 tincture	A
 tinder	A
 tinderbox	A
-tine	A
+tine	B
 tinea	B
 tinfoil	A
 ting	B
@@ -32197,7 +32197,7 @@ titmouse	A
 titrate	A
 titre	B
 titter	A
-tittle	A
+tittle	B
 tittup	B
 titty	O
 titubation	B
@@ -32366,7 +32366,7 @@ topside	B
 topsoil	A
 topspin	A
 topstitch	B
-toque	A
+toque	B
 tor	B
 torc	B
 torch	A
@@ -32726,7 +32726,7 @@ tricorne	B
 tricot	B
 tricuspid	B
 tricycle	A
-tricyclic	A
+tricyclic	B
 tridactyl	B
 trident	A
 triduum	B
@@ -32765,7 +32765,7 @@ trilingual	A
 trilithon	B
 trill	A
 trillion	A
-trillium	A
+trillium	B
 trilobite	A
 trilogy	A
 trim	A
@@ -32812,7 +32812,7 @@ trisect	B
 trishaw	B
 triskelion	B
 trismus	B
-trisomy	A
+trisomy	B
 tristesse	B
 tritanope	B
 tritanopia	B
@@ -32847,7 +32847,7 @@ troika	A
 troilism	B
 troll	A
 trolley	A
-trolleybus	A
+trolleybus	B
 trollius	B
 trollop	A
 trombone	A
@@ -32869,7 +32869,7 @@ tropology	B
 tropopause	A
 troppo	B
 trot	A
-troth	A
+troth	B
 trotter	A
 trotting	A
 troubadour	A
@@ -32929,7 +32929,7 @@ truthful	A
 try	A
 trying	A
 tryout	A
-trypsin	A
+trypsin	B
 tryptophan	B
 trysail	B
 tryst	A
@@ -33019,7 +33019,7 @@ tunnel	A
 tunny	A
 tup	B
 tupelo	B
-tuple	A
+tuple	B
 tuppence	A
 tuppenny	B
 tuque	B
@@ -33033,7 +33033,7 @@ turbinate	B
 turbine	A
 turbit	B
 turbo	A
-turbofan	A
+turbofan	B
 turbojet	A
 turboprop	A
 turboshaft	B
@@ -33055,7 +33055,7 @@ turmoil	A
 turn	A
 turnabout	A
 turnaround	A
-turnbuckle	A
+turnbuckle	B
 turncoat	A
 turndown	A
 turnery	B
@@ -33153,7 +33153,7 @@ tympan	B
 tympani	B
 tympanic	B
 tympanites	B
-tympanum	A
+tympanum	B
 tympany	B
 type	A
 typecast	A
@@ -33199,7 +33199,7 @@ ukulele	A
 ulama	B
 ulcer	A
 ulcerate	A
-ulema	A
+ulema	B
 ullage	B
 ulna	A
 ulster	B
@@ -33457,7 +33457,7 @@ underfur	B
 undergird	B
 underglaze	B
 undergo	A
-undergrad	A
+undergrad	B
 underhand	A
 underhung	B
 underlay	A
@@ -33501,7 +33501,7 @@ underspend	B
 understaff	B
 understand	A
 understate	A
-understeer	A
+understeer	B
 understudy	A
 underswell	B
 undertake	A
@@ -33618,7 +33618,7 @@ unfetter	B
 unfettered	A
 unfilial	B
 unfilled	A
-unfiltered	A
+unfiltered	B
 unfinished	A
 unfired	A
 unfit	A
@@ -33660,7 +33660,7 @@ ungird	B
 ungiving	B
 unglazed	A
 ungloved	B
-unglued	A
+unglued	B
 ungodly	A
 ungraceful	A
 ungracious	A
@@ -34315,7 +34315,7 @@ uptrend	B
 upturn	A
 upward	A
 upwarp	B
-upwelling	A
+upwelling	B
 upwind	A
 uracil	B
 uraemia	B
@@ -34466,7 +34466,7 @@ vamplate	B
 van	A
 vanadate	B
 vanadium	A
-vancomycin	A
+vancomycin	B
 vandal	A
 vandalize	A
 vane	A
@@ -34496,7 +34496,7 @@ variant	A
 variate	B
 variation	A
 variceal	B
-varicella	A
+varicella	B
 varicocele	B
 varicose	A
 varied	A
@@ -34698,7 +34698,7 @@ vesical	B
 vesicant	B
 vesicate	B
 vesicle	A
-vesper	A
+vesper	B
 vespers	A
 vespertine	B
 vessel	A
@@ -34715,7 +34715,7 @@ vestment	A
 vestry	A
 vesture	B
 vet	A
-vetch	A
+vetch	B
 vetchling	B
 veteran	A
 veterinary	A
@@ -34742,7 +34742,7 @@ vibrato	A
 vibrator	A
 vibrio	B
 vibrissae	B
-viburnum	A
+viburnum	B
 vicar	A
 vicarage	A
 vicarial	B
@@ -34784,7 +34784,7 @@ vielle	B
 view	A
 viewdata	B
 viewer	A
-viewership	A
+viewership	B
 viewfinder	A
 viewgraph	B
 viewpoint	A
@@ -34819,7 +34819,7 @@ vinaceous	B
 vinca	B
 vincible	B
 vinculum	B
-vindaloo	A
+vindaloo	B
 vindicate	A
 vindictive	A
 vine	A
@@ -34859,7 +34859,7 @@ virgin	A
 virginal	A
 virginity	A
 virgule	B
-viridian	A
+viridian	B
 virile	A
 virilocal	B
 viroid	B
@@ -34908,7 +34908,7 @@ vitellin	B
 vitelline	B
 vitellus	B
 vitiate	A
-vitiligo	A
+vitiligo	B
 vitreous	A
 vitriform	B
 vitrify	B
@@ -35061,7 +35061,7 @@ wahoo	B
 waiata	B
 waif	A
 wail	A
-wain	A
+wain	B
 wainscot	A
 wainwright	B
 waist	A
@@ -35108,7 +35108,7 @@ walnut	A
 walrus	A
 waltz	A
 waltzer	B
-wampum	A
+wampum	B
 wan	A
 wand	A
 wander	A
@@ -35138,7 +35138,7 @@ wardroom	B
 ware	A
 warehouse	A
 warfare	A
-warfarin	A
+warfarin	B
 warhead	A
 warhorse	A
 warlike	A
@@ -35507,7 +35507,7 @@ whisky	A
 whisper	A
 whist	A
 whistle	A
-whit	A
+whit	B
 white	A
 whitebait	A
 whitebeam	B
@@ -35735,7 +35735,7 @@ witchery	A
 witchetty	B
 witchweed	B
 with	A
-withal	A
+withal	B
 withdraw	A
 withdrawal	A
 withdrawn	A
@@ -35919,7 +35919,7 @@ worship	A
 worshipful	A
 worst	A
 worsted	A
-wort	A
+wort	B
 worth	A
 worthless	A
 worthwhile	A
@@ -35977,7 +35977,7 @@ writing	A
 wrong	A
 wrongdoing	A
 wrongful	A
-wroth	A
+wroth	B
 wrought	A
 wry	A
 wrybill	B
@@ -36010,7 +36010,7 @@ xerophyte	B
 xiphoid	B
 xoanon	B
 xylem	A
-xylene	A
+xylene	B
 xylophone	A
 xylose	B
 yaar	B
@@ -36043,7 +36043,7 @@ yardarm	A
 yardbird	B
 yardman	B
 yardstick	A
-yare	A
+yare	B
 yarmulke	A
 yarn	A
 yarran	B
@@ -36206,13 +36206,13 @@ zinger	A
 zinnia	A
 zip	A
 zipless	B
-ziplock	A
+ziplock	B
 zipper	A
 zippo	B
 zippy	A
 zircon	A
 zirconia	A
-zirconium	A
+zirconium	B
 zit	A
 zither	A
 ziti	A

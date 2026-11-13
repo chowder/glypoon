@@ -28,7 +28,7 @@ Every word that passes the rules was reviewed and given a decision in `review.ts
 
 | | Meaning | In corpus? |
 |---|---|---|
-| `A` | Well known, or obscure enough that finding it makes a player feel smart (tocsin, surd, quorate, synecdoche) | yes |
+| `A` | Well known, or obscure enough that finding it makes a player feel smart (tocsin, surd, quorate, sylph) | yes |
 | `B` | Specialist jargon, proper-noun look-alikes (york, henry), regional slang, rare spelling variants | no |
 | `O` | Offensive: slurs, vulgar words, and words whose best-known sense is either | no |
 
@@ -38,21 +38,22 @@ The aim was to keep today's experience, including its level of rareness: the rev
 
 Rareness was checked against word frequency (`wordfreq` Zipf scores, where about 3 is a typical
 word and under 2 is rare). The old and new lists have the same share of rare words, with the new
-list leaning slightly more obscure:
+list leaning slightly more obscure. Rarer words were only kept if they were already in the old
+list; words added that the old list didn't have are all well known.
 
 | | Rarer than 2.0 | Rarer than 1.5 |
 |---|---|---|
 | Old list | 11.0% | 3.4% |
-| New list | 11.4% | 3.2% |
+| New list | 11.7% | 3.3% |
 
 ## Result
 
 | | Words |
 |---|---|
 | Old list | 20,711 |
-| New list | 22,278 |
+| New list | 21,839 |
 | Removed | 1,560: 932 by rule, 609 jargon/look-alikes/variants (`B`), 19 offensive (`O`) |
-| Added | 3,126 words the old list was missing, from everyday (cookie, daily, people, scissors) to smart (synecdoche, eldritch, scintilla, demesne) |
+| Added | 2,687 well-known words the old list was missing (cookie, daily, people, scissors, traipse, workaround) |
 
 - **Removed by rule:** hands, groceries, greetings, antennae, bade, worried, thatched,
   committed, appalling.
@@ -62,7 +63,7 @@ list leaning slightly more obscure:
 - **Removed as offensive:** spastic, retard, squaw, midget, poof, golliwog, kinky.
 
 Puzzle generation still works on every day of the week. In a simulation, a random starting word
-gives a valid puzzle 56–70% of the time (it was 62–73%), and the generator retries until it gets
+gives a valid puzzle 59–74% of the time (it was 62–73%), and the generator retries until it gets
 one.
 
 ## Changing a decision
