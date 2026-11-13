@@ -1,23 +1,31 @@
 # Review decisions for definitions.tsv; see build_definitions.py.
 # word<TAB>ok|fix<TAB>definition<TAB>note
 abet	ok	(usu. aid and abet) encourage or assist (someone) to do something wrong, in particular to commit a crime.	self,phrase
+abrasion	fix	the process of scraping or wearing something away; an area of scraped skin.	full review: only restates via rare verb abrade
+abscissa	fix	the distance from a point on a graph to the vertical or y-axis; the x-coordinate.	full review: stray spaces in y -axis and x -coordinate
 abstain	ok	(often abstain from) restrain oneself from doing something.	self
 accordance	ok	(in accordance with) in a manner conforming with.	self,phrase
 according	ok	(according to) as stated by or in.	self,phrase
 acquaint	ok	(acquaint someone with) make someone aware of or familiar with.	self,phrase
 acrylic	ok	denoting a synthetic resin or textile fibre made from polymers of acrylic acid or acrylates.	self
+addiction	fix	dependence on a particular substance, thing, or activity.	full review: circular: being addicted
 adios	ok	used to express good wishes when parting or ending a conversation.	xref
+adjunct	fix	a thing added to something else as a supplementary rather than an essential part.	full review: garbled: stray word participle
 adverb	ok	a word or phrase that modifies the meaning of an adjective, verb, or other adverb, or of a sentence (e.g. gently, very, fortunately).	self
 aging	fix	the process of growing old.	COED points to "ageing" under "age", which has no entry of its own
 alcohol	fix	a colourless volatile flammable liquid which is the intoxicating constituent of wine, beer, and spirits.	dropped "Also called ethanol, ethyl alcohol."
+alkyl	fix	a hydrocarbon radical derived from an alkane by removal of a hydrogen atom.	full review: adjectival wording under noun
 alleyway	ok	a narrow passageway between or behind buildings.	xref
 almond	ok	the oval edible nut-like kernel of the almond tree, growing in a woody shell.	self
 alpha	ok	the first letter of the Greek alphabet (Α, α), transliterated as ‘a’.	format
 alright	ok	satisfactory; acceptable.	xref
 alum	ok	(also potash alum) a colourless astringent compound which is a hydrated double sulphate of aluminium and potassium, used in solution in dyeing and tanning.	self
+alveolar	fix	(of a consonant) pronounced with the tip of the tongue on or near the bony ridge containing the alveoli of the upper teeth (e.g. n, s, d, t).	full review: only points to obscure alveolus
+ambitious	fix	having or showing a strong desire and determination to succeed.	full review: restated headword (having ambition)
 amends	ok	(make amends) compensate for a wrongdoing.	self,phrase
 amidst	ok	surrounded by; in the middle of.	xref
 amir	ok	a title of various Muslim (mainly Arab) rulers.	xref
+ammonium	fix	the positively charged ion NH4+, present in solutions of ammonia and in salts derived from ammonia.	full review: noun defined adjectivally ("of or denoting") with broken formula spacing
 amok	ok	(run amok) behave uncontrollably and disruptively.	self,phrase
 amp	ok	the SI base unit of electric current, equal to a flow of one coulomb per second.	xref
 ampersand	ok	the sign & (standing for and, as in Smith & Co., or the Latin et, as in &c.).	format
@@ -25,35 +33,57 @@ analytic	ok	relating to or using analysis or logical reasoning.	xref
 anemia	ok	a condition in which there is a deficiency of red cells or haemoglobin in the blood, resulting in pallor and weariness.	xref
 anemic	ok	suffering from anaemia.	xref
 angina	ok	(also angina pectoris) a condition marked by severe pain in the chest, arising from an inadequate blood supply to the heart.	self
+angry	fix	feeling or showing strong annoyance, displeasure, or hostility.	full review: restated headword (anger)
+anguished	fix	experiencing or expressing severe mental or physical pain or suffering.	full review: restated headword (anguish)
+annex	fix	add (territory) to one's own territory by appropriation.	full review: garbled ("subordinate participle")
 anorexia	fix	an emotional disorder characterized by an obsessive desire to lose weight by refusing to eat (anorexia nervosa).	first sense was general loss of appetite with the main meaning in brackets
+anxiety	fix	a feeling of worry, nervousness, or unease about something with an uncertain outcome.	full review: restated headword (being anxious)
 anyhow	ok	used to confirm or support a point.	xref
 anymore	fix	to any further extent; any longer.	points to "any more" under "any"
 anyplace	ok	in or to any place.	xref
 anytime	fix	at whatever time; whenever.	points to "any time" under "any"
 anyways	ok	used to confirm or support a point.	xref
+apostrophe	fix	a punctuation mark (') used to indicate either possession (e.g. Harry's book) or the omission of letters or numbers (e.g. can't; 1 Jan. '99).	full review: broken spacing around apostrophes in examples
+apparition	fix	a ghost or ghostlike image of a person.	full review: shown sense obscure; ghost is main meaning
 appendix	ok	(also vermiform appendix) a tube-shaped sac attached to the lower end of the large intestine.	self
+applesauce	fix	a purée of stewed apples, often served with pork.	full review: shown slang sense when main meaning is apple purée
+approval	fix	the action of officially agreeing to something or accepting it as satisfactory.	full review: restated headword (action of approving)
 arak	ok	an alcoholic spirit made from the sap of the coco palm or from rice.	xref
+arbor	fix	a garden alcove with the sides and roof formed by trees or climbing plants.	full review: specialist axle sense shown; familiar sense is US spelling of arbour
+arrester	fix	a device that prevents or stops something, such as a spark or an electrical surge.	full review: truncated (stops what)
 asp	ok	(also asp viper) a small viper with an upturned snout.	self
+assistant	fix	a person who helps in particular work.	full review: more familiar valid sense available
+assuming	fix	(assuming that) on the basis that; supposing.	full review: truncated ("based on the assumption")
+attainment	fix	the action or fact of achieving a goal; an achievement.	full review: restates the headword
+attendance	fix	the action or state of being present at a place or event.	full review: restates the headword
+auntie	fix	the sister of one's father or mother or the wife of one's uncle.	full review: only points to aunt
 aurora	ok	the northern lights (aurora borealis) or southern lights (aurora australis), a natural phenomenon characterized by the appearance of streamers of coloured light in the sky near the earth's magnetic poles and caused by the interaction of charged particles from the sun with atoms in the upper atmosphere.	self
 autarchy	ok	a system of government by one person with absolute power.	xref
 autopilot	ok	a device for keeping an aircraft on a set course.	xref
+baldy	fix	having a scalp wholly or partly lacking hair.	full review: only points to bald
 balk	ok	thwart or hinder (a plan or person).	xref
 balsa	ok	(also balsa wood) very lightweight timber used chiefly for making models and rafts.	self
 bannister	ok	the uprights and handrail at the side of a staircase.	xref
 banyan	ok	(also banyan tree) an Indian fig tree, whose branches produce wide-ranging aerial roots which later become accessory trunks.	self
 bated	ok	(with bated breath) in great suspense.	self,phrase
 beachfront	ok	the part of a coastal town next to and directly facing the sea.	xref
+beatify	fix	(in the Roman Catholic Church) declare (a dead person) to be in a state of bliss, the first step towards canonization.	full review: restates the headword (beatification)
 bee	ok	(also honeybee or hive bee) a stinging social insect which collects nectar and pollen from flowers and produces wax and honey.	self
 beeline	ok	(make a beeline for) hurry directly to.	self,phrase
 behalf	ok	(on (also in) behalf of or on someone's behalf) in the interests of a person, group, or principle.	self,phrase
 bellhop	ok	a porter in a hotel or club.	xref
+bequest	fix	a legacy; money or property left to someone in a will.	full review: restates the headword (the action of bequeathing)
+bereave	fix	(be bereaved) be deprived of a close relation or friend through their death.	full review: shown text is passive sense without its set phrase; verb as listed doesn't mean "be deprived"
 betel	ok	an Asian evergreen climbing plant, whose leaves and astringent seeds (betel nuts) are chewed as a mild stimulant.	self
+betroth	fix	(be betrothed) be formally engaged to be married.	full review: passive sense missing its set phrase
 better	fix	improve on or surpass.	noun sense "that which is better" defines the word by itself
 betwixt	ok	at, into, or across the space separating (two objects, places, or points).	xref
 bimbo	ok	an attractive but unintelligent or frivolous young woman.	offensive
 biotech	ok	the exploitation of biological processes for industrial and other purposes, especially the genetic manipulation of microorganisms for the production of antibiotics, hormones, etc.	xref
 biryani	ok	an Indian dish made with highly seasoned rice and meat, fish, or vegetables.	xref
 biz	fix	business, especially a particular industry such as show business.	COED: short for business; first sense of business doesn't fit
+blackleg	fix	a person who continues working when fellow workers are on strike.	full review: cattle disease is specialist; strikebreaker sense is far more familiar and listed
+bleacher	fix	a cheap bench seat in an uncovered part of a sports ground.	full review: shown sense just restates the verb; familiar seating sense is listed
 blimp	ok	(also Colonel Blimp) a pompous, reactionary person.	self
 blowlamp	ok	a portable device producing a hot flame which can be directed on to a surface, typically to burn off paint.	xref
 bluegrass	ok	(also Kentucky bluegrass) a European meadow grass introduced into North America and grown for fodder.	self
@@ -63,18 +93,27 @@ bodysuit	ok	a woman's close-fitting stretch garment for the upper body, usually 
 boho	ok	a socially unconventional person, especially an artist or writer.	xref
 boiling	ok	at or near boiling point.	self
 bosun	ok	a ship's officer in charge of equipment and the crew.	xref
+bowline	fix	a simple knot for forming a non-slipping loop at the end of a rope.	full review: knot is the familiar sense; sail rope is specialist
 bowls	ok	a game played with heavy wooden bowls, the object of which is to propel one's bowl as close as possible to a small white ball (the jack).	self
 bracket	ok	each of a pair of marks { } < > used to enclose words or figures and separate them from the surrounding context.	format
+brainstorm	fix	a spontaneous group discussion to produce ideas and solutions to problems.	full review: group discussion is the familiar sense
+brainwash	fix	indoctrinate systematically and so completely as to effect a radical transformation of attitudes and beliefs.	full review: typo systemically for systematically
 brassiere	ok	a woman's undergarment worn to support the breasts.	xref
 brat	ok	a badly behaved child.	offensive
+breadboard	fix	a wooden board on which bread is cut.	full review: main sense is the kitchen board; electronics sense is specialist
 breathing	ok	a sign in Greek (̔ or ̕) indicating the presence of an aspirate (rough breathing) or the absence of an aspirate (smooth breathing) at the beginning of a word.	self
 bruiser	ok	a tough, aggressive person.	offensive
 brunt	ok	(usu. bear the brunt) the chief impact of something bad.	self,phrase
+brutalism	fix	a stark style of functionalist architecture that makes use of steel and concrete in massive blocks.	full review: architecture is the familiar sense
 budgie	ok	a small gregarious Australian parakeet which is green with a yellow head in the wild, but has been bred in a variety of colours as a pet.	xref
 bungee	ok	a long nylon-cased rubber band used for securing luggage and in the sport of bungee jumping.	self
+bunker	fix	a reinforced underground shelter for use in wartime.	full review: shelter is more familiar than fuel store
+bur	fix	a prickly seed case or flower head that clings to clothing and animal fur.	full review: only pointed to burr
 burgundy	ok	a red wine from Burgundy in east central France.	self
+burnout	fix	physical or mental collapse.	full review: collapse from overwork is the familiar sense
 burqa	ok	a long, loose garment covering the whole body, worn in public by some Muslim women.	xref
 bushing	ok	a metal lining for a round hole, especially one in which an axle revolves.	xref
+bystander	fix	a person who is present at an event or incident but does not take part.	full review: garbled: participle for part
 cab	ok	(also taxi cab) a taxi.	self
 caboodle	ok	(the whole caboodle or the whole kit and caboodle) the whole number or quantity of people or things in question.	self,phrase
 caftan	ok	a man's long belted tunic, worn in the Near East.	xref
@@ -84,111 +123,232 @@ calliper	ok	an instrument for measuring external or internal dimensions, typical
 calorie	ok	(also small calorie) the energy needed to raise the temperature of 1 gram of water through 1°C (now usually defined as 4.1868 joules).	self
 camomile	ok	an aromatic plant of the daisy family, with white and yellow flowers.	xref
 campground	ok	a place used for camping, especially one equipped for holidaymakers.	xref
+cannon	fix	a large, heavy piece of artillery formerly used in warfare.	full review: leftover label (usu. same)
 carb	ok	a device in an internal-combustion engine for mixing air with a fine spray of liquid fuel.	xref
 carbolic	ok	(also carbolic acid) phenol, especially when used as a disinfectant.	self
+carbonate	fix	a salt containing the anion formed from carbon dioxide (one carbon and three oxygen atoms), typically produced by reaction of carbon dioxide with bases.	full review: garbled chemical formula (CO 3 2-)
+carbonyl	fix	the divalent radical C=O, present in aldehydes, ketones, and many other organic compounds.	full review: adjectival wording for noun and garbled formula
+carboxyl	fix	the radical -COOH, present in organic acids.	full review: adjectival wording for noun and stray dash character
 caregiver	ok	a family member or paid helper who regularly looks after a sick, elderly, or disabled person.	xref
 carotene	ok	an orange or red plant pigment found notably in carrots and of which one form (beta-carotene) is important in the diet as a precursor of vitamin A.	self
 casbah	ok	a North African citadel.	xref
 cashew	ok	(also cashew nut) an edible kidney-shaped nut, rich in oil and protein.	self
 cashpoint	ok	a machine that automatically provides cash and performs other banking services on insertion of a special card.	xref
 catnip	ok	a plant with downy leaves, purple-spotted white flowers, and a pungent smell attractive to cats.	xref
+cavalier	fix	showing a lack of proper concern.	full review: archaic sense shown when familiar adjective sense is listed	adjective
 cayman	ok	a semiaquatic tropical American reptile similar to an alligator, with a heavily armoured belly.	xref
 celandine	ok	(also lesser celandine) a common plant of the buttercup family, which produces yellow flowers in the early spring.	self
 chalkboard	ok	a large board with a smooth dark surface for writing on with chalk.	xref
+chamois	fix	an agile goat-antelope with short hooked horns, found in mountainous areas of southern Europe.	full review: leftover '(same)' plural label
 champagne	ok	a white sparkling wine from Champagne, a region in NE France.	self
 chandler	ok	(also ship chandler) a dealer in supplies and equipment for ships and boats.	self
+chap	fix	a man or a boy.	full review: familiar noun sense listed; skin-cracking verb less familiar	noun
+cherub	fix	an angelic being described in biblical tradition as attending on God, conventionally represented as a chubby child with wings.	full review: leftover plural-forms label in brackets
 chickadee	fix	a small North American songbird of the tit family.	target gave "a titmouse (songbird)"
 chili	ok	a small hot-tasting pod of a variety of capsicum, used in sauces, relishes, and spice powders.	xref
 chimaera	ok	a fire-breathing female monster with a lion's head, a goat's body, and a serpent's tail.	xref
 chimp	ok	an anthropoid ape with large ears, mainly black coloration, and lighter skin on the face, native to west and central Africa.	xref
+chronology	fix	the arrangement of events or dates in the order of their occurrence.	full review: familiar sense listed; study-of-records sense is specialist
 city	ok	a large town, in particular a town created a city by charter and typically containing a cathedral.	self
 clavicle	ok	either of the pair of bones joining the breastbone to the shoulder blades.	xref
+clearance	fix	official authorization for something to proceed or take place.	full review: shown sense only restates clear
+cleavage	fix	the cleft between a woman's breasts.	full review: much more familiar valid sense available
 cockatrice	ok	a mythical reptile with a lethal gaze or breath, hatched by a serpent from a cock's egg.	xref
 coconut	ok	the large oval brown seed of a tropical palm, consisting of a hard woody husk surrounded by fibre, lined with edible white flesh and containing a clear liquid (coconut milk).	self
 codfish	ok	a large marine fish with a small barbel on the chin, important as a food fish.	xref
 codger	ok	an elderly man.	offensive
 cognac	ok	a high-quality brandy, strictly speaking that distilled in Cognac in western France.	self
+cohort	fix	a group of people with a shared characteristic.	full review: Roman military unit is obscure next to familiar sense
 cola	ok	a brown carbonated drink that is flavoured with an extract of cola nuts, or with a similar flavouring.	self
+collation	fix	the collection and combination of texts or information.	full review: only restates collate
+collection	fix	a group of things collected or accumulated.	full review: only restates collect
 collegial	ok	belonging or relating to a college or its students.	xref
+collision	fix	an instance of one moving object or person striking violently against another.	full review: only restates collide
 cologne	ok	eau de cologne or similarly scented toilet water.	self
 colonel	ok	a rank of officer in the army and in the US air force, above a lieutenant colonel and below a brigadier or brigadier general.	self
+commission	fix	a sum paid to an agent in a commercial transaction.	full review: obscure sense shown when familiar one listed
 compare	ok	(often compare something to/with) estimate, measure, or note the similarity or dissimilarity between.	self
+comparison	fix	an assessment of the similarities and differences between two or more things.	full review: only restates compare
+compendium	fix	a book or other publication containing a collection of information about a subject.	full review: garbled doubled article
+competence	fix	the ability to do something successfully or efficiently.	full review: only restates competent
+complaint	fix	a statement that a situation is unsatisfactory or unacceptable.	full review: only restates complain
+completion	fix	the action of finishing something, or the state of being finished.	full review: only restates complete
+compliance	fix	the action or fact of obeying a wish, command, or set of rules.	full review: only restates compliant
 comport	fix	(comport oneself) conduct oneself; behave.	noun sense points to compote; the verb is the familiar one
+compulsion	fix	an irresistible urge to behave in a certain way.	full review: shown sense restates compel; familiar sense listed
+concession	fix	something given up or allowed in order to settle a dispute or reach agreement.	full review: only restates concede
 concur	ok	(often concur with) agree.	self
 condo	ok	a building or complex containing a number of individually owned flats or houses.	xref
 confer	ok	(often confer something on) grant (a title, degree, benefit, or right).	self
 confess	ok	(often confess to/that) admit to a crime or wrongdoing.	self
 confide	ok	(often confide in) tell someone about a secret or private matter in confidence.	self
+configure	fix	arrange or put together in a particular form or layout.	full review: restates headword via configuration
 conform	ok	(often conform to/with) comply with rules, standards, or laws.	self
 conjure	ok	(often conjure something up) call upon (a spirit) to appear by means of a magic ritual.	self
+connective	fix	serving to connect or join things together.	full review: restates headword
+connubial	fix	relating to marriage or the relationship between husband and wife.	full review: bare synonym pointing elsewhere
+conquest	fix	the subjugation and assumption of control of a place or people by military force.	full review: restates headword
+consist	fix	(consist of) be composed of.	full review: obscure railway sense shown over main verb sense	verb
+contiguity	fix	the state of sharing a common border or being in contact.	full review: restates headword via contiguous
 contrail	ok	a trail of condensed water from an aircraft or rocket at high altitude, seen as a white streak against the sky.	xref
 contrary	ok	(often contrary to) opposite in nature, direction, or meaning.	self
+contrition	fix	the state of feeling remorseful and penitent.	full review: restates headword via contrite
 convenor	ok	a person who convenes meetings of a committee.	xref
+conversion	fix	the process of changing or causing something to change from one form to another.	full review: restates headword
+converter	fix	a device for changing something, such as electrical current or signals, from one form to another.	full review: restates headword
+conveyance	fix	the action or process of transporting or carrying someone or something.	full review: restates headword
+convincing	fix	capable of causing someone to believe that something is true or real.	full review: restates headword
+convulse	fix	suffer violent involuntary contractions of the muscles.	full review: restates headword via convulsions
 cony	ok	a rabbit.	xref
 cork	ok	a buoyant, light brown substance obtained from the outer layer of the bark of the cork oak.	self
+corky	fix	resembling cork, especially in texture.	full review: restates headword
 cornstarch	ok	finely ground maize flour, used for thickening sauces.	xref
 corporal	ok	a rank of non-commissioned officer in the army, above lance corporal or private first class and below sergeant.	self
+correction	fix	the action or process of putting right an error or fault.	full review: restates headword
+corrosion	fix	the process of being gradually destroyed by chemical action, as when metal rusts.	full review: restates headword
+corrosive	fix	tending to destroy or wear away metal or other materials slowly by chemical action.	full review: restates headword via corrosion
+corruption	fix	dishonest or fraudulent conduct by those in power, typically involving bribery.	full review: restates headword
 cortisol	ok	a steroid hormone produced by the adrenal cortex, used medicinally to treat inflammation and rheumatism.	xref
 cotton	ok	a soft white fibrous substance which surrounds the seeds of the cotton plant and is used as textile fibre and thread for sewing.	self
 cougar	ok	a large American wild cat with a plain tawny to greyish coat, found from Canada to Patagonia.	xref
 coup	ok	(also coup d'état) a sudden violent seizure of power from a government.	self
 coupling	ok	a device for coupling railway vehicles or parts of machinery together.	self
 court	ok	(also court of law) a body of people before whom judicial cases are heard.	self
+courtesy	fix	polite, respectful, and considerate behaviour.	full review: restates headword via courteous
 cousin	ok	(also first cousin) a child of one's uncle or aunt.	self
+covalent	fix	relating to or denoting chemical bonds formed by the sharing of electrons between atoms.	full review: leftover usage note
 craic	ok	enjoyable entertainment; a good time.	xref
 crawfish	ok	a large edible crustacean with a spiny shell and long, heavy antennae, but without large claws.	xref
+creator	fix	a person or thing that brings something into existence.	full review: restates headword
 cred	ok	acceptability among fashionable young urban people.	xref
+crescendo	fix	a gradual increase in loudness in a piece of music.	full review: leftover plural-forms markup
 crim	ok	a person who has committed a crime.	xref
 crony	ok	a close friend or companion.	offensive
 cronyism	ok	the improper appointment of friends and associates to positions of authority.	offensive
 crosier	ok	a hooked staff carried by a bishop as a symbol of pastoral office.	xref
 crossbones	fix	(skull and crossbones) a picture of a skull above two crossed thigh bones, used as a symbol of death or piracy.	COED: "see skull and crossbones at skull"
+cruelty	fix	behaviour that causes pain or suffering to others, or takes pleasure in doing so.	full review: restates headword via cruel
 culminate	ok	(usu. culminate in) reach or be a climax or point of highest development.	self
 cypher	ok	a code.	xref
+dado	fix	the lower part of the wall of a room, when decorated differently from the upper part.	full review: garbled: "upper participle"
 daikon	ok	a radish of a variety with a large slender white root, used especially in Eastern cuisine.	xref
 darts	ok	an indoor game in which darts are thrown at a dartboard to score points.	self
+dawning	fix	the beginning or first appearance of something.	full review: shown sense just restates root "dawn"
+deadbeat	fix	an idle or feckless person.	full review: obscure horology sense shown over familiar one	noun
+deciduous	fix	(of a tree or shrub) shedding its leaves annually.	full review: leftover label "Often contrasted with evergreen"
+declarer	fix	(in bridge) the player whose bid establishes the suit of the contract.	full review: missing context; meaningless alone
+deflation	fix	reduction of the general level of prices in an economy.	full review: shown sense restates headword; familiar sense available
 defrag	ok	reduce the fragmentation of (a file) by concatenating parts stored in separate locations.	xref
+depend	fix	(depend on) rely on.	full review: obscure "hang down" shown over main meaning
+depressive	fix	tending to cause depression.	full review: garbled grammar
+derivative	fix	imitative of the work of another artist, writer, etc.	full review: financial sense obscure; familiar sense listed
 derive	ok	(derive something from) obtain something from (a specified source).	self,phrase
+dermis	fix	the thick layer of living tissue below the epidermis of the skin.	full review: too vague/inaccurate
 deserts	ok	(often get (or receive) one's just deserts) what a person deserves with regard to reward or (more usually) punishment.	self,phrase
 despatch	ok	send off to a destination or for a purpose.	xref
+determiner	fix	a modifying word that determines the kind of reference a noun or noun group has, for example a, the, every.	full review: restates headword
+detox	fix	a process or period of ridding the body of toxic or unhealthy substances.	full review: only points elsewhere
 detriment	ok	(often to the detriment of) the state of being harmed or damaged.	self,phrase
+deviation	fix	departure from an established course or from usual or accepted standards.	full review: restates headword
 devil	ok	(usu. the Devil) (in Christian and Jewish belief) the supreme spirit of evil; Satan.	self
+devote	fix	(devote something to) give time or resources to (a person or activity).	full review: archaic sense shown over familiar one
 dextrous	ok	showing or having dexterity; adroit.	xref
 diapason	ok	(also open diapason or stopped diapason) an organ stop sounding a main register of flue pipes, typically of eight-foot pitch.	self
+diaspora	fix	the dispersion of a people from their original homeland.	full review: Jewish sense is the capitalized Diaspora
 dibs	ok	(often have first dibs) the right to share or choose something.	self
+diffusion	fix	the spreading of something more widely, or the intermingling of substances by the natural movement of their particles.	full review: restates headword
+digestion	fix	the process of breaking down food in the stomach and intestines into substances the body can use.	full review: restates headword
+dilatation	fix	the widening or enlarging of a vessel or opening in the body.	full review: restates headword
 dimmer	ok	(also dimmer switch) a device for varying the brightness of an electric light.	self
+dinar	fix	the basic monetary unit of certain countries of the Middle East and North Africa.	full review: dated obscure sense; familiar one listed
+discovery	fix	the finding of something unexpectedly or for the first time.	full review: restates headword
+discussion	fix	the action of talking about something in order to reach a decision or exchange ideas.	full review: restates headword
+disease	fix	a disorder of structure or function in a human, animal, or plant, especially one that produces specific symptoms or that affects a specific location.	full review: garbled word 'participle'
+dishrag	fix	a cloth for washing dishes.	full review: only points elsewhere
+disk	fix	an information storage device for a computer comprising a rotatable disc on which data is stored magnetically or optically.	full review: variant-spelling cross-reference
 diskette	ok	a flexible removable magnetic disk used for storing data.	xref
 disorient	ok	cause (someone) to lose their sense of direction or feel confused.	xref
+dispersion	fix	the spreading of things or people over a wide area.	full review: restates headword
+disposal	fix	the action or process of getting rid of something.	full review: restates headword
 diss	ok	speak disrespectfully to.	xref
+distortion	fix	the pulling or twisting of something out of shape, or a misleading account or impression.	full review: restates headword
 ditsy	ok	silly or scatterbrained.	xref
 ditto	ok	the same thing again (used in lists and often indicated by a ditto mark under the word or figure to be repeated).	self
+divergent	fix	tending to differ or develop in different directions.	full review: restates headword
+diversion	fix	an alternative route for use by traffic when the usual road is temporarily closed.	full review: restates headword
+diversity	fix	the quality of including many different types or varieties; variety.	full review: restates headword
 divider	ok	(also room divider) a screen or piece of furniture that divides a room into two parts.	self
+divinity	fix	a god or goddess.	full review: restates headword
+division	fix	each of the parts into which something is divided.	full review: restates headword
 doggie	ok	a child's word for a dog.	xref
 dole	ok	(often on the dole) benefit paid by the state to the unemployed.	self
 donut	ok	a small fried cake or ring of sweetened dough.	xref
+doomsayer	fix	a person who predicts disaster.	full review: only points to doomster
+dote	fix	(dote on/upon) be extremely and uncritically fond of.	full review: obscure sense shown; familiar sense available
 downswing	ok	a decline in economic or other activity.	xref
+dozen	fix	a group or set of twelve.	full review: leftover "(same)" markup
+drear	fix	dull, bleak, and depressing.	full review: restates the word (dreary)
 dredge	ok	clean out the bed of (a harbour, river, etc.) with a dredge.	self
 dressing	ok	(also salad dressing) a sauce for salads, usually consisting of oil and vinegar with herbs or other flavourings.	self
 drier	ok	a machine or device for drying something, especially the hair or laundry.	xref
+driveway	fix	a short private road leading to a house.	full review: cross-reference only
+dropsy	fix	an abnormal accumulation of fluid in the body's tissues; oedema.	full review: only points to oedema
+duh	fix	used to express the view that something is obvious or that someone has said something stupid.	full review: cross-reference only
 dumps	ok	((down) in the dumps) depressed or unhappy.	self,phrase
+dynamism	fix	the quality of being characterized by vigorous activity and progress.	full review: restates the word
 earth	ok	(also Earth) the planet on which we live, the third planet of the solar system in order of distance from the sun.	self
+ectoplasm	fix	a viscous substance that supposedly exudes from the body of a medium during a spiritualistic trance and forms the material for the manifestation of spirits.	full review: specialist cytology sense shown; familiar sense available
 edema	ok	a condition characterized by an excess of watery fluid collecting in the cavities or tissues of the body.	xref
 effeminate	ok	(of a man) having characteristics regarded as typical of a woman.	offensive
+efficiency	fix	the ability to work productively with minimum wasted effort or expense.	full review: restates the word
 eggplant	ok	the purple egg-shaped fruit of a tropical plant, eaten as a vegetable.	xref
 egoism	ok	the quality of being excessively conceited or absorbed in oneself.	xref
+eight	fix	equivalent to the product of two and four; one more than seven, or two less than ten; 8.	full review: garbled trailing punctuation from Roman numeral note
+eighteen	fix	equivalent to the product of two and nine; one more than seventeen, or eight more than ten; 18.	full review: garbled trailing punctuation from Roman numeral note
+eighty	fix	equivalent to the product of eight and ten; ten less than ninety; 80.	full review: garbled trailing punctuation from Roman numeral note
 eldest	ok	(of one out of a group of people) oldest.	fallback
 electro	fix	a style of dance music with a fast beat and synthesized backing track.	"short for electrotype or electroplate" resolved to a dependent subsense
+element	fix	a basic constituent part.	full review: garbled ("participle")
+elevation	fix	height above a given level, especially sea level.	full review: restates the word
 elevator	ok	a platform or compartment housed in a shaft for raising and lowering people or things.	xref
+eleven	fix	equivalent to the sum of six and five; one more than ten; 11.	full review: garbled trailing punctuation from Roman numeral note
 eligible	ok	(often eligible for/to do something) satisfying the appropriate conditions.	self
 elixir	ok	a magical or medicinal potion, especially (in former times) either one supposedly able to change metals into gold or (also elixir of life) supposedly able to prolong life indefinitely.	self
+eloquent	fix	fluent or persuasive in speaking or writing.	full review: restates the word (eloquence)
+emanation	fix	something which issues or spreads out from a source.	full review: restates headword
+embroidery	fix	decorative needlework sewn on cloth, or the art of producing it.	full review: restates headword
+emergence	fix	the process of coming into view or into existence.	full review: restates headword
+emission	fix	the production and discharge of something, especially heat, light, gas, or radiation.	full review: restates headword
+emitter	fix	a thing which sends out or gives off something, such as light or radiation.	full review: restates headword
 emphysema	ok	(also pulmonary emphysema) a condition in which the air sacs of the lungs are damaged and enlarged, causing breathlessness.	self
+enactment	fix	a law that has been passed.	full review: restates headword
+ending	fix	an end or final part of something.	full review: garbled: participle for part
+endowment	fix	an income or property given or bequeathed to support an institution or person.	full review: restates headword
 engrained	ok	(of a habit or attitude) firmly established.	xref
+enrolment	fix	the official registration of a person as a member or student.	full review: restates headword
 eon	ok	an indefinite and very long period.	xref
+equation	fix	a statement that the values of two mathematical expressions are equal (indicated by the sign =).	full review: familiar maths sense available
+erection	fix	a building or other upright structure.	full review: restates headword
+eroticism	fix	the quality or character of being erotic.	full review: typo: or for of
+eruption	fix	a sudden outbreak of something, especially the ejection of lava, rocks, ash, or gases from a volcano.	full review: typo and restates headword
 etching	fix	the art of making pictures by engraving a metal plate with acid; a print made this way.	"the art or process of etching" defines the word by itself
 ethanol	ok	a colourless volatile flammable liquid which is the intoxicating constituent of wine, beer, spirits, etc.	xref
 ether	ok	(also diethyl ether) a pleasant-smelling, volatile, highly flammable liquid used as an anaesthetic and as a solvent.	self
+ethyl	fix	the alkyl radical -C2H5, derived from ethane.	full review: adjectival wording for noun and broken formula spacing
+evasion	fix	the action of escaping or avoiding something, especially by guile or trickery.	full review: restates headword
 exam	ok	a formal test of knowledge or proficiency in a subject or skill.	xref
+exclusion	fix	the process or state of keeping out or being kept out.	full review: restates headword
+execution	fix	the carrying out of a plan, order, legal instrument, etc.	full review: restates headword
+exhaustion	fix	a state of extreme physical or mental tiredness.	full review: restates headword
+expansion	fix	the action of becoming or making larger or more extensive.	full review: restates headword
 expat	ok	a person who lives outside their native country.	xref
+expiry	fix	the end of the period for which something is valid.	full review: definition only restated the headword's verb
+explosion	fix	a violent and destructive shattering or blowing apart of something, as caused by a bomb.	full review: restated the headword (act of exploding)
+expression	fix	a word or phrase expressing an idea.	full review: restated the headword; used listed sense
+expulsion	fix	the action of forcing someone to leave a school, organization, or country.	full review: restated the headword (action of expelling)
+extender	fix	a substance added to paint, ink, or glue to dilute its colour or increase its bulk.	full review: restated the headword
+extension	fix	a part added to something to enlarge or prolong it.	full review: restated the headword; used listed sense
+extraction	fix	the removal of something, especially by effort or force.	full review: restated the headword (action of extracting)
 extremist	ok	a person who holds extreme political or religious views.	offensive
 factorial	ok	the product of an integer and all the integers below it; e.g. factorial four (4!) is equal to 24. (Symbol: !).	self
 faraday	ok	a unit of electric charge equal to Faraday's constant.	self
@@ -198,36 +358,59 @@ fave	ok	a favourite person or thing.	xref
 fend	ok	(fend for oneself) look after and provide for oneself.	self,phrase
 fiche	ok	a flat piece of film containing microphotographs of the pages of a newspaper, catalogue, etc.	xref
 fief	ok	an estate of land, especially one held on condition of feudal service.	xref
+fighter	fix	a fast military aircraft designed for attacking other aircraft.	full review: restated the headword; used listed sense
 figural	ok	departing from a literal use of words; metaphorical.	xref
 filet	ok	a fleshy boneless piece of meat from near the loins or the ribs of an animal.	xref
+finder	fix	a person who discovers or comes across someone or something.	full review: restated the headword
+finisher	fix	a person or thing that completes a task, race, or process.	full review: restated the headword
 fiord	ok	a long, narrow, deep inlet of the sea between high cliffs, typically formed by submergence of a glaciated valley and found predominantly in Norway.	xref
+fisher	fix	a fisherman.	full review: marten sense obscure when fisherman sense is listed
+fitness	fix	the condition of being physically healthy and strong.	full review: restated the headword (state of being fit)
+fixation	fix	an obsessive interest in or feeling about someone or something.	full review: restated the headword (condition of fixating)
 fixing	fix	(fixings) the ingredients or extras needed for a dish or meal.	"the action of fixing" defines the word by itself
 flagstone	ok	a flat rectangular or square stone slab, used for paving.	xref
+flaxen	fix	(especially of hair) of the pale yellow colour of dressed flax.	full review: shown sense is minimal; hair-colour sense is the familiar one
 flier	ok	a person or thing that flies.	xref
+flossy	fix	excessively showy.	full review: 'of or like floss' restates the word; familiar sense available
 flunkey	ok	a liveried manservant or footman.	offensive
 flutist	ok	a flute player.	xref
 flyweight	ok	a weight in boxing and other sports intermediate between light flyweight and bantamweight.	self
 foetus	ok	an unborn or unhatched offspring of a mammal, in particular an unborn human more than eight weeks after conception.	xref
+foliate	fix	decorated with leaves or leaf-like motifs.	full review: shown definition only points to 'foliated'
+fond	fix	(fond of) having an affection or liking for.	full review: archaic 'naive' sense shown over the main familiar meaning
 football	ok	any of a number of forms of team game involving kicking a ball, in particular (in the UK) soccer or (in the US) American football.	self
+footer	fix	a line or block of text appearing at the foot of each page of a book or document.	full review: obscure sense shown; page-footer sense is far more familiar
 footie	fix	football, especially soccer.	target gave every kind of football
 footsie	ok	(usu. play footsie) the action of touching someone's feet lightly with one's own feet as a playful expression of romantic interest.	self,phrase
 forego	ok	go without (something desirable).	xref
 forename	ok	a personal name given to someone at birth or baptism and used before a family name.	xref
+formula	fix	a mathematical relationship or rule expressed in symbols.	full review: leftover plural-form label '(formulae)'
+found	fix	establish (an institution or organization).	full review: obscure 'found object' art sense shown over main verb meaning	verb
 fowl	ok	(also domestic fowl) a domesticated bird derived from a junglefowl and kept for its eggs or flesh; a cock or hen.	self
+frazzle	fix	cause to feel completely exhausted.	full review: definition 'completely exhausted' does not fit verb part of speech
 freak	ok	(also freak of nature) a person, animal, or plant with a physical abnormality.	self
 fritter	ok	(often fritter something away) waste time, money, or energy on trifling matters.	self
 fro	fix	(to and fro) in a constantly repeated movement from side to side or backwards and forwards.	COED: "see to and fro"
 furze	ok	a yellow-flowered shrub of the pea family, the leaves of which have the form of spines.	xref
+future	fix	(the future) time that is still to come.	full review: secondary sense shown over the main meaning
 gallon	ok	a unit of volume for liquid measure equal to eight pints: in Britain (also imperial gallon), equivalent to 4.55 litres; in the US, equivalent to 3.79 litres.	self
 gamey	ok	(of meat) having the strong flavour or smell of game, especially when it is high.	xref
 gaol	ok	a place for the confinement of people accused or convicted of a crime.	xref
 gasoline	ok	a light fuel oil that is obtained by distilling petroleum and used in internal-combustion engines.	xref
 gavial	ok	a large fish-eating crocodile with a long, narrow snout that widens at the nostrils, native to the Indian subcontinent.	xref
+generator	fix	a dynamo or similar machine for converting mechanical energy into electricity.	full review: shown sense restates the word
+genome	fix	the complete set of genetic material of an organism.	full review: specialist sense shown; familiar sense listed
+genotype	fix	the genetic constitution of an individual organism.	full review: leftover usage note "Often contrasted with phenotype"
+gentile	fix	a person who is not Jewish.	full review: obscure Mormon-use sense shown; familiar sense listed	noun
+german	fix	(of a sibling) having the same parents.	full review: only points to germane
 gibe	ok	an insulting or mocking remark.	xref
+gig	fix	a live performance by a musician or other performer.	full review: obscure carriage sense shown; familiar sense listed
+girlie	fix	characteristic of or appropriate to a girl.	full review: familiar sense listed; shown sense is narrow
 girt	ok	the measurement around the middle of something, especially a person's waist.	xref
 glute	ok	any of three muscles in each buttock which move the thigh, the largest of which is the gluteus maximus.	xref
 glycerine	ok	a colourless, sweet, viscous liquid formed as a by-product in soap manufacture, used as an emollient and laxative and for making explosives and antifreeze.	xref
 glycol	ok	a colourless viscous hygroscopic liquid used in antifreeze and in wood preservatives; ethanediol.	xref
+gnarly	fix	dangerous or difficult.	full review: shown sense only points to gnarled
 godhead	ok	(usu. the Godhead) God.	self
 goodie	ok	a good or favoured person, especially a hero in a story or film.	xref
 goods	ok	(goods) merchandise or possessions.	self,phrase
@@ -238,6 +421,7 @@ gramophone	ok	an apparatus for reproducing sound from gramophone records, with a
 granddad	ok	one's grandfather.	xref
 gratin	fix	a dish with a light browned crust of breadcrumbs or melted cheese.	"a dish cooked au gratin"
 gravitate	ok	(usu. gravitate to/towards) be drawn towards a person or thing.	self
+greybeard	fix	an old man.	full review: shown sense (stoneware jug) obscure; familiar sense listed
 groundhog	ok	a North American marmot with a heavy body and short legs.	xref
 groundnut	ok	the oval seed of a South American plant, eaten as a snack or used for making oil or animal feed.	xref
 gryphon	ok	a mythical creature with the head and wings of an eagle and the body of a lion.	xref
@@ -245,113 +429,212 @@ guilty	ok	(often guilty of) culpable of a specified wrongdoing.	self
 gunpoint	ok	(at gunpoint) while threatening someone or being threatened with a gun.	self,phrase
 gyro	ok	a device, used to provide stability or maintain a fixed orientation, consisting of a wheel or disc spinning rapidly about an axis which is itself free to alter in direction.	xref
 hallway	ok	the room or space just inside the front entrance of a house.	xref
+hanger	fix	(also coat hanger) a shaped piece of wood, plastic, or metal with a hook at the top, for hanging clothes from a rail.	full review: coat hanger is the familiar sense
 hanging	ok	the practice of hanging condemned people as a form of capital punishment.	self
 hardcover	ok	a book bound in stiff covers.	xref
+hardware	fix	the machines, wiring, and other physical components of a computer.	full review: military sense less familiar than computer/tools senses
+harlequin	fix	in varied colours; variegated.	full review: duck sense obscure; familiar lowercase sense listed	adjective
 have	ok	(also have got) possess, own, or hold.	self
+headhunt	fix	identify and approach (someone employed elsewhere) to fill a business position.	full review: shown text is a noun definition under verb
+headstock	fix	a set of bearings in a machine, supporting a revolving part.	full review: garbled: 'participle' for 'part'
+heathen	fix	not belonging to a widely held religion, as regarded by those who do; pagan.	full review: restates the word
 heaven	ok	(often Heaven) a place regarded in various religions as the abode of God or the gods and of the good after death, often depicted as being above the sky.	self
 hell	ok	(often Hell) a place regarded in various religions as a spiritual realm of evil and suffering, often depicted as a place of perpetual fire beneath the earth to which the wicked are consigned after death.	self
 hemp	ok	(also Indian hemp) the cannabis plant.	self
+henchman	fix	a faithful follower or political supporter, especially one prepared to engage in crime or dishonest practices.	full review: shown sense is historical; familiar sense listed
+hesitation	fix	a pause before saying or doing something, especially through uncertainty or reluctance.	full review: restated the headword
+hickey	fix	a love bite.	full review: gadget sense obscure; love bite listed
 highbrow	ok	intellectual or rarefied in taste.	offensive
+hindrance	fix	a thing that provides resistance, delay, or obstruction to something or someone.	full review: restated the headword
 hippie	ok	(especially in the 1960s) a young person associated with a subculture which rejected traditional social values, advocated peace and free love, and favoured long hair and unconventional dress.	xref
 hippo	ok	a large thick-skinned semiaquatic African mammal, with massive jaws.	xref
+hipster	fix	a person who follows the latest trends and fashions.	full review: garment sense less familiar; person sense listed	noun
 hireling	ok	a person employed to undertake menial work, especially on a casual basis.	offensive
 hives	ok	a rash of round, red weals on the skin which itch intensely, caused by an allergic reaction.	xref
 hmm	ok	expressing the sound made when coughing or clearing the throat to attract someone's attention or show hesitation.	xref
 hodgepodge	ok	a confused mixture.	xref
+holism	fix	the theory that certain wholes are greater than the sum of their parts.	full review: leftover cross-reference note
 homebody	ok	a person who likes to stay at home.	xref
+homeopathy	fix	a system of complementary medicine in which symptoms are treated with minute doses of disease-causing natural substances.	full review: leftover cross-reference note
 homogenous	fix	of the same kind; alike.	COED's first sense (homologous) is the obscure one
+homonym	fix	each of two or more words having the same spelling or pronunciation but different meanings and origins.	full review: leftover homograph-number markup in example
+honesty	fix	the quality of being truthful and sincere; freedom from deceit.	full review: restated the headword
+honeybee	fix	a stinging social insect that collects nectar and pollen and produces wax and honey.	full review: only a cross-reference
 hoodie	ok	a hooded sweatshirt, jacket, or other top.	xref
+horde	fix	a large group of people.	full review: nomadic-warrior sense less familiar; familiar sense listed
 hosepipe	ok	a flexible tube conveying water, used chiefly for watering plants and in firefighting.	xref
+hostility	fix	unfriendliness or opposition.	full review: restated the headword
 houseman	ok	a recent medical graduate receiving supervised training in a hospital and acting as an assistant physician or surgeon.	xref
 huff	ok	(often huff and puff) blow out air noisily.	self
+humidity	fix	the amount of water vapour in the atmosphere or a gas.	full review: restated the headword
 humpback	ok	a back deformed by a sharp forward angle, forming a hump, typically caused by collapse of a vertebra.	xref
+hundred	fix	the number equivalent to the product of ten and ten; ten more than ninety; 100.	full review: shown sense is the 24-hour-clock use, not the main meaning
 hunting	ok	the activity of hunting wild animals or game.	self
 hydroxide	ok	a compound containing the hydroxide ion OH - or the group ‒OH.	self
+hyperbolic	fix	(of language) deliberately exaggerated.	full review: familiar sense available
 ichneumon	ok	(also ichneumon wasp or ichneumon fly) a slender parasitic wasp with long antennae, which deposits its eggs in or on the larvae of other insects.	self
+ideology	fix	a system of ideas and ideals forming the basis of an economic or political theory.	full review: leftover plural label
+idler	fix	a person who avoids work; a lazy person.	full review: restates headword
+ignition	fix	the process of starting the combustion of fuel in the cylinders of an internal-combustion engine.	full review: restates headword
+imitation	fix	a copy of an authentic article.	full review: restates headword
+immersion	fix	the action of dipping or submerging something in a liquid.	full review: restates headword
+impeach	fix	charge with treason or another crime against the state.	full review: familiar sense available
+imposition	fix	an unwelcome demand or burden.	full review: restates headword
 improv	ok	improvisation, especially as a theatrical technique.	xref
+impurity	fix	a constituent which impairs the purity of something.	full review: restates headword
 impute	ok	(usu. impute something to) attribute (something, especially something bad) to someone.	self
+inaccurate	fix	not correct or exact; containing errors.	full review: restates headword
 inasmuch	ok	(inasmuch as) to the extent that; in so far as.	self,phrase
+inbuilt	fix	existing as an original or essential part.	full review: garbled: participle for part
+inclusion	fix	the action of making something part of a whole or set.	full review: restates headword
+incomplete	fix	not having all the necessary or appropriate parts.	full review: restates headword
+indirect	fix	not going straight to the point or by the shortest route; roundabout.	full review: restates headword
+indulgence	fix	the action of yielding freely to a desire or allowing oneself a pleasure.	full review: restates headword
+inelastic	fix	(of a material) not able to stretch and return to its original shape.	full review: restates headword
+ineligible	fix	not meeting the conditions required to take part or be chosen.	full review: restates headword
+infamy	fix	the state of being well known for some bad quality or deed.	full review: restates headword
+infection	fix	an infectious disease.	full review: restates headword
+infinity	fix	unlimited extent of time, space, or quantity.	full review: restates headword
+inflation	fix	a general increase in prices and fall in the purchasing value of money.	full review: familiar sense available; shown restates headword
+inflect	fix	(of a word) change in form, typically in its ending, to express a grammatical function.	full review: circular definition
 info	ok	facts or knowledge provided or learned.	xref
+ingenuity	fix	the quality of being clever, original, and inventive.	full review: restates headword
+inhibition	fix	a feeling that makes one unable to act in a relaxed and natural way.	full review: restates headword
+initiator	fix	a person or thing that starts a process or action.	full review: restates headword
+injection	fix	an act of introducing a liquid, especially a drug or vaccine, into the body with a syringe.	full review: restates headword
+injury	fix	an instance of physical harm or damage to the body.	full review: restates headword
+inmost	fix	furthest in; closest to the centre.	full review: only points to another word
 inoculate	ok	treat with a vaccine to produce immunity against a disease.	xref
 inquire	ok	ask for information.	xref
 inquiry	ok	an act of asking for information.	xref
+insertion	fix	the action of placing or fitting something into something else.	full review: restates headword
 insofar	fix	(insofar as) to the extent that.	points to "in so far" under "far"
+insulation	fix	material used to insulate something.	full review: restates headword
+insurance	fix	an arrangement by which a company provides compensation for loss, damage, or injury in return for regular payments.	full review: restates headword
+inure	fix	accustom (someone) to something, especially something unpleasant.	full review: leftover usage label (usu. ...)
 ism	ok	an unspecified system, philosophy, or ideological movement.	offensive
+isotonic	fix	(of a drink) containing essential salts and minerals in the same concentration as in the body.	full review: specialist muscle sense shown; drink sense more familiar
+isthmus	fix	a narrow strip of land with sea on either side, linking two larger areas of land.	full review: leftover plural-form label in brackets
 japan	ok	a black glossy varnish of a type originating in Japan.	self
 jell	ok	(of jelly or a similar substance) set or become firmer.	xref
+jerboa	fix	a desert-dwelling rodent with very long hind legs that enable it to jump long distances, found from North Africa to central Asia.	full review: garbled text: 'perform jump'
+jigger	fix	a measure or small glass of spirits or wine.	full review: obscure machine sense shown; drinks measure more familiar
 jimmy	ok	a short crowbar.	xref
 jingo	ok	a vociferous supporter of a patriotic war policy.	offensive
 jingoism	ok	extreme patriotism, especially in the form of aggressive foreign policy.	offensive
+jitter	fix	(the jitters) a feeling of extreme nervousness.	full review: specialist electronics sense shown; nervousness sense more familiar
+jock	fix	an enthusiastic male athlete or sports fan.	full review: disc jockey sense less familiar than athlete sense
 jojoba	ok	(also jojoba oil) an oil extracted from the seeds of a North American shrub, used in cosmetics.	self
 keeping	fix	(in keeping with) in harmony or agreement with.	"the action or fact of keeping something" defines the word by itself
+kickback	fix	a payment made to someone who has facilitated a transaction or appointment, especially illicitly.	full review: recoil sense less familiar than illicit payment
 kilter	ok	(out of kilter) out of harmony or balance.	self,phrase
 kinfolk	ok	(in anthropological or formal use) a person's blood relations, regarded collectively.	xref
+kingpin	fix	a person or thing that is essential to the success of an organization or operation.	full review: bolt sense less familiar than key person sense
 kith	ok	(kith and kin) one's relations.	self,phrase
+kneeler	fix	a cushion or bench for kneeling on.	full review: more familiar sense available
 knitting	fix	the craft of making fabric by interlocking loops of yarn with needles; work being knitted.	"the craft or action of knitting" defines the word by itself
+knockout	fix	a blow that renders a boxer unconscious or unable to rise, ending the fight.	full review: only restated the word
+knotweed	fix	a plant of the dock family with jointed stems, some kinds being invasive weeds.	full review: only pointed to knotgrass
 kowtow	ok	(often kowtow to) be excessively subservient towards someone.	self
 ladybug	ok	a small beetle with a domed back, typically red or yellow with black spots.	xref
 ladyfinger	ok	a finger-shaped sponge cake with a sugar topping.	xref
+laughter	fix	the act or sound of expressing amusement vocally, with chuckles or louder outbursts.	full review: only restated the word
 layabout	ok	a person who habitually does little or no work.	offensive
+lecher	fix	a man with excessive or offensive sexual desire.	full review: only restated the word
 lee	ok	(also lee side) the sheltered side; the side away from the wind. Contrasted with weather.	self
 leftie	ok	a left-wing person.	xref
+legality	fix	the condition of being permitted by or in accordance with the law.	full review: only restated the word
+legitimacy	fix	conformity to the law or to rules; the condition of being justifiable or valid.	full review: only restated the word
+lengthwise	fix	in a direction parallel with a thing's length.	full review: only pointed to a variant
 lesser	ok	not so great or important as the other or the rest.	fallback
+liability	fix	legal responsibility for something; the state of being answerable in law.	full review: only restated the word
 libero	ok	a player stationed behind the other defenders, free to defend at any point across the field.	xref
 licorice	ok	a sweet, chewy, aromatic black substance made from the juice of a root and used as a sweet and in medicine.	xref
 lieu	ok	(in lieu (of)) instead (of).	self,phrase
 likable	ok	pleasant; easy to like.	xref
+likelihood	fix	the chance of something happening; probability.	full review: only restated the word
+likeness	fix	the fact or quality of being alike; resemblance.	full review: typo garbled the definition
 lime	fix	a rounded green citrus fruit similar to a lemon.	COED's first homograph is the calcium compound
+limelight	fix	(the limelight) the focus of public attention.	full review: more familiar sense available
 linden	fix	a deciduous tree with heart-shaped leaves and fragrant yellowish blossom; the lime tree.	points to "lime 3" by name
+linkage	fix	a connection or association between things or ideas.	full review: only restated the word
 links	fix	a golf course, especially one on sandy ground near the sea.	linksland sense is obscure
+lion	fix	a large tawny-coloured cat of Africa and NW India, of which the male has a shaggy mane.	full review: stray (lioness) label
 lit	ok	written works, especially those regarded as having artistic merit.	xref
 litchi	ok	a small rounded fruit with sweet white scented flesh, a large stone, and thin rough skin.	xref
 livable	ok	worth living.	xref
+liveable	fix	fit or suitable to live in.	full review: main familiar sense is fit to live in, not worth living
+lockdown	fix	a state of isolation or restricted movement imposed as a security or public health measure.	full review: prison-only sense; general sense is now the main meaning
 lockjaw	ok	spasm of the jaw muscles, causing the mouth to remain tightly closed, typically as a symptom of tetanus.	xref
 locum	ok	a temporary deputy, especially one acting for a cleric or doctor.	xref
 logbook	ok	an official record of events during the voyage of a ship or aircraft.	xref
 logon	ok	an act of logging in to a computer system.	xref
 loth	ok	reluctant; unwilling.	xref
+lotto	fix	a lottery.	full review: lottery is the familiar sense
+louse	fix	a small wingless parasitic insect which infests human skin and hair.	full review: leftover plural label (lice)
 loveable	ok	inspiring love or affection.	xref
+lowball	fix	offer (someone) an unrealistically low bid or estimate.	full review: baseball pitch sense obscure; familiar verb sense listed	verb
 lowbrow	ok	not highly intellectual or cultured.	offensive
+lox	fix	smoked salmon.	full review: smoked salmon far more familiar than liquid oxygen
+lupus	fix	any of various chronic diseases causing inflammation of the skin or other tissues, especially the autoimmune disease systemic lupus erythematosus.	full review: tuberculous skin sense is specialist; autoimmune disease is main meaning
 lynchpin	ok	a pin through the end of an axle keeping a wheel in position.	xref
 macintosh	ok	a full-length waterproof coat.	xref
 macro	ok	(also macro instruction) a single instruction that expands automatically into a set of instructions to perform a task.	self
+mainstay	fix	the chief support or basis.	full review: nautical stay obscure; figurative sense listed
 majorette	ok	the female leader of a marching band, who twirls a baton.	xref
 making	ok	the process of making or producing something.	self
 maneuver	ok	a physical movement or series of moves requiring skill and care.	xref
 marge	ok	a butter substitute made from vegetable oils or animal fats.	xref
+mariachi	fix	a type of traditional Mexican folk music performed by small groups of strolling musicians.	full review: adjectival 'denoting' wording for a noun
 marjoram	ok	(also sweet marjoram) an aromatic southern European plant of the mint family, the leaves of which are used as a herb.	self
 martin	ok	used in names of small short-tailed swallows, e.g. house martin.	self
 mastoid	fix	the bony prominence behind the ear (the mastoid process).	"relating to the mastoid process"
+matte	fix	(of a colour or surface) dull and flat, without a shine.	full review: shown smelting sense is obscure; familiar sense is matt finish	adjective
 mayo	ok	a thick creamy dressing consisting of egg yolks beaten with oil and vinegar.	xref
 meanwhile	ok	(also in the meanwhile) in the intervening period of time.	self
+megapixel	fix	a unit of graphic resolution equivalent to one million or (strictly) 1,048,576 pixels.	full review: garbled: 2^20 and 1,048,576 are the same number
 meow	ok	the characteristic crying sound of a cat.	xref
+methyl	fix	the alkyl radical -CH3, derived from methane.	full review: adjectival wording on noun and broken formula spacing
+methylene	fix	the divalent radical -CH2-, derived from methane.	full review: adjectival wording on noun and broken formula spacing
 metric	ok	of or based on the metre; relating to or using the metric system.	self
 midships	ok	in the middle of a ship, either longitudinally or laterally.	xref
+might	fix	great power or strength.	full review: shown sense is past tense of may (an inflection)	noun
 mile	ok	(also statute mile) a unit of linear measure equal to 1,760 yards (approximately 1.609 kilometres).	self
+militate	fix	(militate against) (of a fact or circumstance) be a powerful or conclusive factor in preventing.	full review: truncated: needs set phrase militate against
+million	fix	the number equivalent to the product of a thousand and a thousand; 1,000,000 or 10⁶.	full review: main meaning is the number itself
 mindful	ok	(often mindful of) conscious or aware of something.	self
 minx	ok	an impudent, cunning, or boldly flirtatious girl or young woman.	offensive
 mister	ok	a title used before a surname or full name to address or refer to a man without a higher or honorific or professional title.	xref
+modality	fix	a means of attaining an end; a method.	full review: shown sense restates the headword
 modulus	ok	the magnitude of a real number without regard to its sign.	xref
 mold	ok	a hollow container used to give shape to molten or hot liquid material when it cools and hardens.	xref
 moldy	ok	covered with mould.	xref
 mom	ok	one's mother.	xref
+monkfish	fix	an anglerfish.	full review: anglerfish is the familiar food-fish sense
 moon	ok	(also Moon) the natural satellite of the earth, visible (chiefly at night) by reflected light from the sun.	self
 moose	ok	a large northern deer with palmate antlers and a growth of skin hanging from the neck.	xref
+mortar	fix	a mixture of lime with cement, sand, and water, used in building to bond bricks or stones.	full review: building mortar is the more familiar sense
 motorsport	ok	the sport of racing motor vehicles, especially cars.	xref
 mousey	ok	of or like a mouse.	xref
 moveable	ok	capable of being moved.	xref
 muffin	ok	(English muffin) a thick, flattened spongy bread roll made from yeast dough and eaten split, toasted, and buttered.	self
+multiverse	fix	a hypothetical space or realm consisting of a number of universes, of which our own universe is only one.	full review: shown sense is obscure; the multiple-universes meaning is the main one
+munition	fix	supply with munitions.	full review: shown sense defines the plural munitions	verb
 musk	ok	a strong-smelling reddish-brown substance secreted by the male musk deer, used as an ingredient in perfumery.	self
 mustache	ok	a strip of hair left to grow above the upper lip.	xref
 naan	ok	(in Indian cookery) a type of leavened bread, typically of a teardrop shape.	xref
+naff	fix	lacking taste or style.	full review: shown sense is for the intensifier naffing, not the main meaning	adjective
 napoleon	ok	a gold twenty-franc French coin minted in the reign of Napoleon I.	self
 nary	fix	not a; no (as in "nary a word").	resolved to a sense of "not" that doesn't fit
+nay	fix	no.	full review: 'no' is the main familiar meaning
 necropsy	ok	a post-mortem examination to discover the cause of death or the extent of disease.	xref
 negative	fix	undesirable or unwelcome; (of a number) less than zero.	COED lists the photographic noun first
 nett	ok	(of an amount, value, or price) remaining after the deduction of tax or other contributions. Often contrasted with gross.	xref
+network	fix	a group or system of interconnected people or things.	full review: shown sense is the obscure grid sense
 newfangled	ok	newly developed and unfamiliar.	offensive
 niacin	ok	a vitamin of the B complex which occurs in milk, wheat germ, meat, and other foods and is involved in many metabolic processes.	xref
 nightshade	ok	used in the names of a group of poisonous or narcotic plants, e.g. deadly nightshade.	self
+nobleman	fix	a man who belongs to the aristocracy; a peer.	full review: garbled: leftover (or woman)/(or peeress) from combined entry
 nope	ok	used to give a negative response.	xref
 nosey	ok	showing too much curiosity about other people's affairs.	xref
 noun	ok	a word (other than a pronoun) used to identify any of a class of people, places, or things (common noun), or to name a particular one of these (proper noun).	self
@@ -359,45 +642,77 @@ nouveau	fix	newly rich; a person who has recently acquired wealth.	target sense 
 novelette	ok	a short novel, typically a light romantic one.	offensive
 novocaine	ok	a synthetic compound used as a local anaesthetic.	xref
 null	ok	(usu. null and void) having no legal force; invalid.	self
+nutcracker	fix	a device for cracking nuts.	full review: obscure bird sense shown; familiar device sense listed
+oligarchy	fix	a small group of people having control of a country or organization.	full review: typo organizaton
+omnivore	fix	an animal that feeds on a variety of food of both plant and animal origin.	full review: only pointed to omnivorous
 onto	fix	moving to a location on (the surface of something).	points to "on to" under "on"
 operculum	ok	a flap of skin protecting a fish's gills, typically stiffened by bony plates.	xref
 optician	ok	a person qualified to prescribe and dispense glasses and contact lenses, and to detect eye diseases (ophthalmic optician), or to make and supply glasses and contact lenses (dispensing optician).	self
+oratory	fix	the art or practice of formal public speaking.	full review: chapel sense less familiar than public speaking sense
 orca	ok	a large toothed whale with distinctive black-and-white markings and a prominent dorsal fin.	xref
 ordinal	ok	a number defining a thing's position in a series, such as ‘first’ or ‘second’.	xref
+ordinate	fix	a straight line from a point on a graph drawn parallel to the vertical axis and meeting the other; the y-coordinate.	full review: stray space in y- coordinate
+orient	fix	align or position relative to the points of a compass or other specified positions.	full review: obscure pearl-lustre sense shown; familiar verb sense listed	verb
+ouster	fix	dismissal from a position.	full review: familiar sense over legal specialist sense
+pacer	fix	a competitor who sets the pace at the beginning of a race.	full review: only pointed to pacemaker
 pacesetter	ok	a competitor who sets the pace at the beginning of a race or competition.	xref
 pacey	ok	fast-moving.	xref
+pacifier	fix	a baby's dummy.	full review: shown sense just restates the word
 paeony	ok	a herbaceous or shrubby plant of north temperate regions, long cultivated for its showy flowers.	xref
+paginate	fix	assign numbers to the pages of a book, journal, etc.	full review: part of speech should be verb, not noun	verb
 painting	fix	a picture produced with paint.	"the action or process of painting" defines the word by itself
+pallet	fix	a portable platform on which goods can be moved, stacked, and stored.	full review: familiar sense over straw mattress
 palm	ok	(also palm tree) an unbranched evergreen tree with a crown of very long feathered or fan-shaped leaves, growing in tropical and warm regions.	self
+palomino	fix	a pale golden or tan-coloured horse with a white mane and tail, originally bred in the south-western US.	full review: leftover plural label (palominos)
 panda	ok	(also giant panda) a large bear-like black-and-white mammal native to bamboo forests in China.	self
 papaw	ok	a fruit shaped like an elongated melon, with edible orange flesh and small black seeds.	xref
 paraffin	fix	a flammable oil used as fuel, especially in heaters and lamps; kerosene.	alkane sense is old-fashioned and technical
+parliament	fix	a legislative assembly of a country or state.	full review: fragment referring to a removed sense
 partake	ok	(partake of) eat or drink.	self,phrase
 parvenu	ok	a person of obscure origin who has gained wealth, influence, or celebrity.	offensive
 pawpaw	ok	a fruit shaped like an elongated melon, with edible orange flesh and small black seeds.	xref
 peacenik	ok	a member of a pacifist movement.	offensive
+pedantic	fix	excessively concerned with minor details or rules.	full review: restates headword via pedant
 peddler	ok	an itinerant trader in small goods.	xref
 peekaboo	ok	a game played with a young child, which involves hiding and suddenly reappearing, saying ‘peekaboo’.	self
+penny	fix	a British bronze coin and monetary unit equal to one hundredth of a pound.	full review: leftover abbreviation label
 pent	ok	closely confined or held back.	xref
 pentathlon	ok	an athletic event comprising five different events for each competitor, in particular (also modern pentathlon) an event involving fencing, shooting, swimming, riding, and cross-country running.	self
+peon	fix	a Spanish-American day labourer or unskilled farm worker.	full review: stray leading 'also'
+perfection	fix	the state of being free from all flaws or defects.	full review: restates headword
+peroxide	fix	hydrogen peroxide, especially as used as a bleach for the hair.	full review: garbled chemical formula markup
+persistent	fix	continuing or recurring; prolonged.	full review: restates headword
+persuasion	fix	the action of causing someone to do or believe something through reasoning or argument.	full review: restates headword
+pertain	fix	(pertain to) be appropriate, related, or applicable to.	full review: more familiar sense available
 pertussis	ok	a contagious bacterial disease chiefly affecting children, characterized by convulsive coughs followed by a whoop.	xref
+perversion	fix	the distortion or corruption of the original course, meaning, or state of something.	full review: restates headword
+phalanx	fix	a body of troops or police officers in close formation.	full review: odd plural label; more familiar sense available
 pharma	ok	(often big pharma) pharmaceutical companies collectively as a sector of industry.	self
 phony	ok	not genuine.	xref
+phosphate	fix	a salt or ester of phosphoric acid.	full review: garbled chemical formula markup
 phosphorus	ok	the chemical element of atomic number 15, a poisonous, combustible non-metal which exists as a yellowish waxy solid which ignites spontaneously in air and glows in the dark (white phosphorus), and as a less reactive form used in making matches (red phosphorus). (Symbol: P).	self
 photocell	ok	a device using a photoelectric effect to generate current.	xref
 pianoforte	ok	a large keyboard musical instrument with a wooden case enclosing a soundboard and metal strings, which are struck by hammers when the keys are depressed.	xref
 pickaxe	ok	a tool headed by a curved bar with a point at one end and a chisel edge or point at the other, used for breaking up hard ground or rock.	xref
 pickup	ok	(also pickup truck) a small van or truck with low sides.	self
+pigeonhole	fix	each of a set of small compartments where letters or messages may be left for individuals.	full review: more familiar sense available
 pimento	ok	a red sweet pepper.	xref
 pinafore	ok	(also pinafore dress) a collarless, sleeveless dress worn over a blouse or jumper.	self
 pine	ok	(also pine tree) an evergreen coniferous tree having clusters of long needle-shaped leaves, grown for its soft wood or for tar and turpentine.	self
 pinkie	ok	the little finger.	xref
 pita	ok	flat, hollow slightly leavened bread which can be split open to hold a filling.	xref
+pithy	fix	(of language or style) terse and vigorously expressive.	full review: more familiar sense available
+pivotal	fix	of crucial or central importance.	full review: more familiar sense available
+placement	fix	the temporary posting of someone in a workplace, especially to gain work experience.	full review: restates headword
+placer	fix	a deposit of sand or gravel in the bed of a river or lake, containing particles of valuable minerals.	full review: restates headword
 placing	fix	a position in a ranking, such as a competitor's finishing place in a race.	"the action or fact of placing" defines the word by itself
 plague	ok	a contagious bacterial disease characterized by fever and delirium, typically with the formation of buboes (see bubonic plague) and sometimes infection of the lungs (pneumonic plague).	xref-unresolved,self
 plainchant	ok	unaccompanied church music sung in unison in medieval modes and in free rhythm corresponding to the accentuation of the words, which are taken from the liturgy.	xref
 pleb	ok	a member of the lower social classes.	offensive
+plenary	fix	(of a meeting) to be attended by all participants at a conference or assembly.	full review: obscure sense shown; familiar plenary meeting sense available
+plethora	fix	(a plethora of) an excess of.	full review: medical sense shown instead of familiar meaning
 plumbago	ok	a grey, crystalline, electrically conducting form of carbon which is used as a solid lubricant, as pencil lead, and as a moderator in nuclear reactors.	xref
+plummy	fix	(of a person's voice) typical of the English upper classes.	full review: familiar voice sense preferred over 'resembling a plum'
 plutocrat	ok	a person whose power derives from their wealth.	offensive
 podiatry	ok	the treatment of the feet and their ailments.	xref
 pogo	ok	jump up and down as if on a pogo stick as a form of dancing to rock music, especially punk.	self
@@ -406,56 +721,126 @@ politico	ok	a politician or person with strong political views.	offensive
 poo	ok	expressing disgust at an unpleasant smell.	xref
 poorhouse	ok	(in the UK) a public institution in which the destitute of a parish received board and lodging in return for work.	xref
 pope	fix	a parish priest of the Orthodox Church in Russia and the Balkans.	COED's first sense is a fish; "the Pope" is capitalized, so RULES.md doesn't count it
+portentous	fix	ominously significant or indicative.	full review: restated the headword (of or like a portent)
 postgrad	ok	relating to or denoting a course of study undertaken after completing a first degree.	xref
+pothole	fix	a depression or hollow in a road surface caused by wear or subsidence.	full review: road sense is far more familiar than cave sense
+pound	fix	a unit of weight equal to 16 oz avoirdupois (0.4536 kg), or 12 oz troy (0.3732 kg).	full review: leftover abbreviation label
+practical	fix	concerned with the actual doing or use of something rather than with theory and ideas.	full review: circular/truncated definition
+pragmatism	fix	an approach that deals with things sensibly and realistically, based on practical rather than theoretical considerations.	full review: restated the headword (a pragmatic attitude)
 preamp	ok	an electronic device that amplifies a very weak signal and transmits it to a main amplifier.	xref
+precision	fix	the quality of being exact and accurate.	full review: restated the headword (being precise)
+presage	fix	be a sign or warning of (an imminent event).	full review: stray word 'also'
 pressie	ok	a present.	xref
+primate	fix	a mammal of an order (Primates) including the lemurs, bushbabies, tarsiers, marmosets, monkeys, apes, and humans.	full review: mammal sense far more familiar than bishop sense
+primavera	fix	(of a pasta dish) made with lightly sautéed spring vegetables.	full review: obscure timber sense shown; familiar culinary sense available	adjective
 priming	ok	a substance used for priming something; a primer.	self
+printer	fix	a machine for printing text or pictures.	full review: machine sense is the main familiar meaning
+prion	fix	a submicroscopic protein particle believed to be the cause of certain brain diseases such as BSE.	full review: obscure bird sense shown; protein sense better known
+production	fix	the process of making or manufacturing goods, or of growing crops.	full review: shown sense only restates the word
 professor	ok	(also full professor) a university academic of the highest rank; the holder of a university chair.	self
 prom	ok	a paved public walk, especially one along a seafront.	xref
+prominence	fix	the state of being important, famous, or particularly noticeable.	full review: shown sense only restates the word
+prosaic	fix	commonplace; unromantic.	full review: familiar sense available
+prosthesis	fix	an artificial body part.	full review: garbled: 'participle' for 'part'
+protection	fix	the action of keeping someone or something safe from harm or injury.	full review: shown sense only restates the word
 pseudopod	ok	a temporary protrusion of the surface of an amoeboid cell for movement and feeding.	xref
 psych	ok	(usu. psych someone up) mentally prepare (someone) for something challenging.	self
 puffed	ok	(also puffed out) out of breath.	self
+punishment	fix	a penalty inflicted as retribution for an offence.	full review: shown sense only restates the word
 punk	ok	(also punk rock) a loud, fast-moving, and aggressive form of rock music, popular in the late 1970s.	self
+purity	fix	freedom from adulteration or contamination.	full review: shown sense only restates the word
+pursuit	fix	the action of following or chasing someone or something.	full review: shown sense only restates the word
+purveyance	fix	the action of providing or supplying food or other goods.	full review: shown sense only restates the word
+pygmy	fix	a very small person or thing.	full review: more familiar valid sense available
 pylon	ok	(also electricity pylon) a tall tower-like structure for carrying electricity cables.	self
 qualify	ok	(often qualify for) be entitled to a benefit or privilege by fulfilling a necessary condition.	self
 quango	ok	a semi-public administrative body outside the civil service but receiving financial support from the government, which makes senior appointments to it.	offensive
 racquet	ok	a bat with a round or oval frame strung with catgut, nylon, etc., used especially in tennis, badminton, and squash.	xref
+radiation	fix	energy emitted as electromagnetic waves or subatomic particles.	full review: shown sense only restates the word
+radiator	fix	a heating device consisting of a metal case through which hot water is pumped by a central heating system.	full review: familiar sense available
 radio	ok	the transmission and reception of radio waves, especially those carrying audio messages.	self
+raffia	fix	the fibre from raffia leaves, used for making hats, baskets, etc.	full review: fibre is the familiar sense
 railroad	ok	a track made of rails along which trains run.	xref
 rappel	ok	descend a near-vertical surface using a doubled rope running through a friction device or coiled round the body and fixed at a higher point.	xref
 reactor	ok	(also nuclear reactor) an apparatus or structure in which fissile material can be made to undergo a controlled, self-sustaining nuclear reaction with the consequent release of energy.	self
 reading	ok	the action or skill of reading.	self
+rebel	fix	a person who rises in opposition or armed resistance to an established government or ruler.	full review: restates headword
+recap	fix	summarize and restate the main points of.	full review: only points to another word
+receipt	fix	a written or printed statement acknowledging that something has been paid for or received.	full review: main familiar sense missing
 recon	ok	military observation of a region to locate an enemy or ascertain strategic features.	xref
 redound	ok	(redound to) contribute greatly to (a person's credit or honour).	self,phrase
+refer	fix	(refer to) mention or allude to.	full review: obscure sense shown over familiar one
+relativity	fix	a description of matter, energy, space, and time according to Einstein's theories based on the importance of relative motion and the principle that the speed of light is constant for all observers.	full review: familiar sense available
+remains	fix	the parts left over after others have been used, removed, or destroyed.	full review: restates headword
+reminisce	fix	indulge in enjoyable recollection of past events.	full review: restates headword
+repressed	fix	(of a thought, feeling, or desire) kept suppressed and unconscious in one's mind.	full review: familiar sense available
+resistance	fix	the refusal to accept or comply with something; the attempt to prevent something by action or argument.	full review: restates headword
+resonance	fix	the reinforcement or prolongation of sound by reflection or synchronous vibration.	full review: restates headword
+resonate	fix	produce or be filled with a deep, full, reverberating sound.	full review: restates headword
+restraint	fix	dispassionate or moderate behaviour; self-control.	full review: restates headword
+retention	fix	the continued possession, use, or control of something.	full review: restates headword
+retirement	fix	the period of one's life after retiring from work.	full review: restates headword
+retread	fix	go back over (a path or one's steps).	full review: leftover inflection markup
+reverend	fix	used as a title or form of address to members of the clergy.	full review: noun-style wording for adjective
+revision	fix	the examination and amendment of written or printed matter.	full review: restates headword
 ridgeback	ok	a large dog of a breed having a short coat and a ridge of hair growing along the back in the opposite direction to the rest of the coat.	xref
 riding	ok	the sport or activity of riding horses.	self
+rigger	fix	a person who attends to the rigging of a sailing ship, aircraft, or parachute.	full review: shown sense is a combining-form fragment
+rigour	fix	the quality of being extremely thorough and careful.	full review: restates headword
 rink	ok	(also ice rink) an enclosed area of ice for skating, ice hockey, or curling.	self
 river	ok	a large natural flow of water travelling along a channel to the sea, a lake, or another river.	self
 roe	ok	(also hard roe) the mass of eggs contained in the ovaries of a female fish or shellfish, especially when ripe and used as food.	self
+rotation	fix	the action or process of moving in a circle round an axis or centre.	full review: restates headword
+router	fix	a device which forwards data packets to the appropriate parts of a network.	full review: more familiar sense available
 roving	ok	a piece of fibre drawn out and twisted, especially preparatory to spinning.	xref
 rubbing	fix	an impression of a design made by rubbing paper laid over it with chalk or crayon.	"the action of rubbing" defines the word by itself
+ruination	fix	the action of destroying something utterly or the state of being destroyed.	full review: restates headword
+runaround	fix	(the runaround) deceitful or evasive treatment.	full review: shown sense only a synonym pointer
 rutabaga	ok	a large, round yellow-fleshed root vegetable originally introduced into Scotland from Sweden.	xref
 sabbath	ok	(often the Sabbath) a day of religious observance and abstinence from work, kept by Jews from Friday evening to Saturday evening, and by most Christians on Sunday.	self
 saber	ok	a heavy cavalry sword with a curved blade and a single cutting edge.	xref
 saccharine	ok	a sweet-tasting synthetic compound used as a substitute for sugar.	xref
 sacking	fix	a coarse fabric woven from hemp or jute, used for sacks.	"an act of sacking someone" defines the word by itself
+safety	fix	the condition of being protected from danger, risk, or injury.	full review: restates the word
 sailboat	ok	a boat propelled by sails.	xref
 salt	ok	(also common salt) sodium chloride, a white crystalline substance which gives seawater its characteristic taste and is used for seasoning or preserving food.	self
 saltpetre	ok	potassium nitrate or (Chile saltpetre) sodium nitrate.	self
+sandbox	fix	a children's sandpit.	full review: obscure railway sense shown; familiar sense listed
+sanity	fix	the ability to think and behave in a normal and rational manner; sound mental health.	full review: restates the word
 satiate	ok	satisfy fully.	xref
 satiric	ok	containing or using satire.	xref
+saturation	fix	the state of being thoroughly soaked, or filled to the point where no more can be absorbed or added.	full review: restates the word
 scapula	ok	either of the large, flat, triangular bones which lie against the ribs in the upper back.	xref
+scavenger	fix	an animal that feeds on carrion or refuse, or a person who searches through waste for usable items.	full review: restates the word
+schwa	fix	the unstressed central vowel, as in the first syllable of 'about'.	full review: garbled example and missing symbol
 scissors	ok	(also a pair of scissors) an instrument used for cutting cloth and paper, consisting of two crossing blades pivoted in the middle and operated by thumb and fingers inserted in rings at each end.	self
 scooter	ok	(also motor scooter) a light two-wheeled motorcycle.	self
+scrambler	fix	a device that makes a broadcast transmission or telephone conversation unintelligible without a decoder.	full review: restates the word
 scrambling	ok	the leisure activity of scrambling over rough or steep ground.	self
+scrubber	fix	a person or thing that cleans by rubbing hard.	full review: restates the word
+secession	fix	the formal withdrawal from membership of a federation or organization, especially a political state.	full review: restates the word
 sedan	ok	(also sedan chair) an enclosed chair for conveying one person, carried between horizontal poles by two porters, common in the 17th and 18th centuries.	self
+seduction	fix	the act of enticing someone into sexual activity, or of persuading someone to do something inadvisable.	full review: restates the word
+seizure	fix	a sudden attack of illness, especially a stroke or an epileptic fit.	full review: restates the word; familiar sense listed
+selection	fix	the action of carefully choosing the best or most suitable; a number of things so chosen.	full review: restates the word
 semi	ok	a semi-detached house.	self
+separation	fix	the action of moving or coming apart, or the state of being kept apart.	full review: restates the word
 serai	ok	an inn with a central courtyard for travellers in the desert regions of Asia or North Africa.	xref
 sergeant	ok	a rank of non-commissioned officer in the army or air force, above corporal and below staff sergeant.	self
+serif	fix	a slight projection finishing off a stroke of a letter in certain typefaces.	full review: garbled example lost its typeface contrast
+serrate	fix	having a jagged, saw-like edge.	full review: definition only restated the headword form
+server	fix	a computer or computer program which manages access to a centralized resource or service in a network.	full review: shown sense just restated the word; computer sense is the familiar one
+service	fix	the action of helping or doing work for someone.	full review: shown definition restated the word
+settlement	fix	an official agreement intended to resolve a dispute or conflict.	full review: shown definition restated the word
+shank	fix	a person's leg, especially the lower part.	full review: garbled: 'lower participle'
+shaven	fix	(of a person or part of the body) having had the hair cut off with a razor.	full review: definition only restated the headword form
 sheriff	ok	(also high sheriff) (in England and Wales) the chief executive officer of the Crown in a county, having administrative and judicial functions.	self
+shiner	fix	a black eye.	full review: shown sense just restated the word; black eye is the familiar sense
 shopworn	ok	(of an article) made dirty or imperfect by being displayed or handled in a shop.	xref
 showbiz	ok	the theatre, films, television, and pop music as a profession or industry.	xref
+shrimp	fix	a small free-swimming, typically marine edible crustacean with ten legs.	full review: leftover plural label '(same or shrimps)'
 sienna	ok	a kind of ferruginous earth used as a pigment in painting, normally yellowish-brown in colour (raw sienna) or deep reddish-brown when roasted (burnt sienna).	self
+sigmoid	fix	S-shaped.	full review: shown sense obscure (uncial sigma); S-shaped is the familiar listed sense
 sitting	ok	a period or spell of sitting.	self
 skate	ok	an ice skate or roller skate.	self
 skeptic	ok	a person inclined to question or doubt accepted opinions.	xref
@@ -464,70 +849,118 @@ sleight	ok	(sleight of hand) manual dexterity, typically in performing conjuring
 sloe	ok	a thorny shrub which bears white flowers before the leaves appear, followed by astringent blue-black fruits (sloes).	xref
 slowpoke	ok	a person who acts or moves slowly.	xref
 sluice	ok	(also sluice gate) a sliding gate or other device for controlling the flow of water, especially in a lock gate.	self
+smarten	fix	make or become neater or more stylish in appearance.	full review: restates the word
 smolder	ok	burn slowly with smoke but no flame.	xref
+smoothie	fix	a thick, smooth drink of fresh fruit puréed with milk, yogurt, or ice cream.	full review: familiar sense listed
+snakebite	fix	a bite inflicted by a snake, especially a venomous one.	full review: main meaning is the bite, not the drink
+snicker	fix	laugh in a half-suppressed, typically scornful way.	full review: only points to snigger
+snobbish	fix	having an exaggerated respect for high social position or wealth and looking down on those regarded as inferior.	full review: restates the word
 soapsuds	ok	froth made from soap and water.	xref
 soda	ok	(also soda water) carbonated water (originally made with sodium bicarbonate).	self
 softy	ok	a weak or soft-hearted person.	xref
+solo	fix	a piece of music, song, or dance for one performer.	full review: leftover plural-form markup
+somebody	fix	an unknown or unspecified person.	full review: only points to someone
+souffle	fix	a light, spongy baked dish made by mixing egg yolks and other ingredients with stiffly beaten egg whites.	full review: obscure medical sense shown instead of the dish
 sounding	ok	the action of sounding the depth of water.	self
 soy	ok	(also soy sauce) a sauce made with fermented soya beans, used in Chinese and Japanese cooking.	self
+spam	fix	irrelevant or inappropriate messages sent on the Internet to a large number of newsgroups or users.	full review: shown sense is the capitalized trademark Spam
+spat	fix	a petty quarrel.	full review: familiar sense listed
 spec	fix	a detailed description of the design and materials used to make something.	resolved to "the action of specifying"
 specialize	ok	(often specialize in) concentrate on and become expert in a particular skill or area.	self
 specialty	ok	a pursuit, area of study, or skill to which someone has devoted themselves and in which they are expert.	xref
 speedo	ok	an instrument on a vehicle's dashboard indicating its speed.	xref
+spinning	fix	the action or process of converting fibres into thread or yarn.	full review: specialist exercise sense shown over main meaning
 spinster	ok	an unmarried woman, typically an older woman beyond the usual age for marriage.	offensive
+splat	fix	a sound of something soft and wet or heavy striking a surface.	full review: familiar sense listed
 splodge	ok	a spot, splash, or smear.	xref
 springer	ok	(also springer spaniel) a small spaniel of a breed originally used to spring game.	self
+stabilizer	fix	a device used to reduce the rolling of a ship.	full review: tailplane sense is a specialist US usage
 staging	fix	the way a play or other performance is presented on stage.	"an instance or method of staging" defines the word by itself
+starboard	fix	the side of a ship or aircraft on the right when one is facing forward.	full review: leftover cross-reference 'The opposite of port 3'
 starfruit	ok	a golden-yellow fruit with a star-shaped cross section.	xref
+startling	fix	very surprising or remarkable.	full review: main familiar sense
+steamed	fix	(of food) cooked by steaming.	full review: slang drunk sense shown over familiar one
+stint	fix	an allotted period of work.	full review: noun sense is the main familiar one	noun
 storefront	ok	the facade of a shop.	xref
+stowaway	fix	a person who hides on a ship, aircraft, etc. so as to travel without paying or surreptitiously.	full review: only restated the word
+straiten	fix	make or become narrow.	full review: shown definition is adjectival, wrong part of speech
+streaming	fix	a method of relaying data (especially video and audio material) over a network as a steady continuous stream.	full review: much more familiar sense available	noun
 strep	ok	a bacterium of a genus including the agents of souring of milk and dental decay and the pathogens causing scarlet fever and pneumonia.	xref
+stress	fix	a state of mental, emotional, or other strain.	full review: physics sense shown over familiar one
+strobe	fix	a lamp that produces regular bright flashes of light.	full review: only pointed to stroboscope
+stubble	fix	short, stiff hairs growing on a man's face when he has not shaved for a while.	full review: more familiar sense available
+subfamily	fix	a taxonomic category that ranks below family and above genus.	full review: shown definition was generic and duplicated subgroup
+submission	fix	the action of accepting or yielding to a superior force or to the will of another person.	full review: only restated the word
 subscribe	ok	(usu. subscribe to) arrange to receive something, especially a periodical, regularly by paying in advance.	self
 succumb	ok	(often succumb to) fail to resist (pressure, temptation, etc.).	self
 sugar	ok	a sweet crystalline substance obtained especially from sugar cane and sugar beet, consisting essentially of sucrose and used as a sweetener in food and drink.	self
 suggestive	ok	(often suggestive of) tending to suggest or evoke something.	self
 sulphuric	ok	containing sulphur or sulphuric acid.	self
 sun	ok	(also Sun) the star round which the earth orbits.	self
+sunken	fix	at a lower level than the surrounding area.	full review: shown sense only restates the verb
+superman	fix	a man with exceptional physical or mental ability.	full review: shown sense only points to another term
+suspension	fix	the system of springs and shock absorbers by which a vehicle is supported on its wheels.	full review: shown sense restates the word
+swine	fix	a pig.	full review: leftover plural label (same)
 synth	ok	an electronic musical instrument, typically operated by a keyboard, producing sounds by generating and combining signals of different frequencies.	xref
+synthesis	fix	the combination of components to form a connected whole.	full review: leftover 'Often contrasted with' label
 syphon	ok	a tube used to convey liquid upwards from a container and then down to a lower level, the flow being forced initially by suction or immersion and maintained by the different fluid pressures at the tube openings.	xref
 taal	ok	a traditional rhythmic pattern in classical Indian music.	xref
 taking	fix	(takings) the amount of money earned by a business from sales.	"the action or process of taking" defines the word by itself
+tamp	fix	firmly ram or pack (a substance) down or into something.	full review: blast-hole sense is specialist; familiar sense listed
+tattoo	fix	a design made by inserting pigment into punctures in the skin.	full review: drum signal obscure vs familiar skin design sense
+taxis	fix	a motion or orientation of a cell, organism, or part in response to an external stimulus.	full review: surgical sense very obscure
 tea	ok	a hot drink made by infusing the dried, crushed leaves of the tea plant in boiling water.	self
+tech	fix	technology.	full review: technical college less familiar than technology
 teddy	ok	(also teddy bear) a soft toy bear.	self
 teepee	ok	a conical tent made of skins or cloth on a frame of poles, used by American Indians of the Plains and Great Lakes regions.	xref
 telework	ok	work from home, communicating with the workplace by telephone, fax, and email.	xref
 telly	fix	a television set.	resolved to television as a system
+ten	fix	equivalent to the product of five and two; one more than nine; 10.	full review: garbled Roman numeral bracket
 tenpin	ok	a skittle used in tenpin bowling.	self
+terminator	fix	a person or thing that brings something to an end.	full review: restated the headword
 the	ok	denoting one or more people or things already mentioned or assumed to be common knowledge; the definite article.	self
 thee	fix	archaic form of "you", as the object of a verb or preposition, addressing one person.	target definition lost the "archaic singular" point
 theta	ok	the eighth letter of the Greek alphabet (Θ, θ), transliterated as ‘th’.	format
 thingy	ok	a person or thing whose name one has forgotten, does not know, or does not wish to mention.	xref
 thou	fix	archaic form of "you", as the subject of a verb, addressing one person.	same
 thousand	ok	(a/one thousand) the number equivalent to the product of a hundred and ten; 1,000. (Roman numeral: m or M.).	self,phrase
+thrasher	fix	a thrush-like American songbird of the mockingbird family, with a long tail and a downcurved bill.	full review: restated headword; real sense listed
+thruster	fix	a small rocket engine on a spacecraft, used to make alterations in its flight path or altitude.	full review: restated headword; familiar sense listed
 thumbtack	ok	a short, flat-headed pin for fastening paper to a surface.	xref
 thunk	ok	a dull, heavy sound, such as that made by a large object falling to the ground.	xref
 thy	fix	archaic form of "your", addressing one person.	same
 thyroid	ok	(also thyroid gland) a large ductless gland in the neck which secretes hormones regulating growth and development through the rate of metabolism.	self
 thyself	fix	archaic form of "yourself", addressing one person.	resolved to "(yourselves)"
+tick	fix	a mark used to indicate that an item in a list or text is correct or has been chosen.	full review: stray image filename in definition
 tidbit	ok	a small piece of tasty food.	xref
 tiro	ok	a beginner or novice.	xref
 toff	ok	a rich or upper-class person.	offensive
 toilette	ok	the process of washing oneself, dressing, and attending to one's appearance.	xref
 tolbooth	ok	a roadside kiosk where tolls are paid.	xref
+tolerant	fix	showing willingness to allow the existence of opinions or behaviour that one does not necessarily agree with.	full review: two senses run together
 ton	fix	a unit of weight equal to 2,240 lb in Britain or 2,000 lb in the US; also, a metric ton (1,000 kg).	COED sense chosen was metric ton only
 tonne	ok	a unit of weight equal to 1,000 kilograms (2,205 lb).	xref
+topper	fix	a top hat.	full review: restated headword
 tore	ok	a surface or solid resembling a ring doughnut, formed by rotating a closed curve about a line which lies in the same plane but does not intersect it.	xref
+tortellini	fix	small rings of pasta stuffed with meat, cheese, or vegetables.	full review: only pointed to tortelli
 touristy	ok	relating to, appealing to, or visited by tourists.	offensive
 toward	ok	in the direction of.	xref
 townie	ok	a person who lives in a town, especially as distinct from one who lives in the country.	offensive
 tracing	ok	a copy of a drawing, map, etc. made by tracing.	self
+tracking	fix	the alignment of the wheels of a vehicle.	full review: obscure electronics sense shown
+tragedian	fix	a tragic actor or actress.	full review: leftover (tragedienne) label
 trammel	ok	(also trammel net) a three-layered net, designed so that a pocket forms when fish attempt to swim through, thus trapping them.	self
+transform	fix	make or become thoroughly or dramatically different in form, nature, or appearance.	full review: restated the headword
 trapeze	ok	(also flying trapeze) a horizontal bar hanging by two ropes and free to swing, used by acrobats in a circus.	self
 travelled	ok	having travelled to many places.	self
 trawl	ok	fish or catch with a trawl net or seine.	self
+treadmill	fix	a device used for exercise consisting of a continuous moving belt on which to walk or run.	full review: obscure historical sense shown; exercise machine is familiar
 treason	ok	(also high treason) the crime of betraying one's country, especially by attempting to kill or overthrow the sovereign or government.	self
 tribune	ok	(also tribune of the people) an official in ancient Rome chosen by the plebeians to protect their interests.	self
 trice	ok	(in a trice) very quickly.	self,phrase
 triceps	ok	any of several muscles having three points of attachment at one end, particularly (also triceps brachii) the large muscle at the back of the upper arm.	self
+trigram	fix	a group of three consecutive letters, especially one representing a single sound.	full review: only pointed to trigraph
+troop	fix	a group of people or animals of a particular kind.	full review: specialist cavalry sense shown over familiar general sense
 tropic	ok	the parallel of latitude 23°26ʻ north (tropic of Cancer) or south (tropic of Capricorn) of the equator.	self
 trotting	ok	racing for trotting horses pulling a two-wheeled vehicle (a sulky) and driver.	self
 tuppence	ok	the sum of two pence, especially before decimalization (1971).	xref
@@ -536,14 +969,27 @@ turpentine	ok	(also crude or gum turpentine) an oleoresin secreted by certain pi
 tut	ok	expressing disapproval or annoyance.	xref
 tutu	ok	a female ballet dancer's costume consisting of a bodice and an attached skirt incorporating numerous layers of fabric, this being either short and stiff and projecting horizontally from the waist (the classical tutu) or long, soft, and bell-shaped (the romantic tutu).	self
 twain	ok	equivalent to the sum of one and one; one less than three; 2. (Roman numeral: ii or II.).	xref
+twister	fix	a tornado.	full review: tornado is the far more familiar sense
 umber	ok	a natural pigment resembling but darker than ochre, normally dark yellowish-brown in colour (raw umber) or dark brown when roasted (burnt umber).	self
 umbilical	ok	relating to or affecting the navel or umbilical cord.	self
+unalloyed	fix	complete and unreserved.	full review: figurative sense is the familiar one
+uncleanly	fix	not clean in habits or person; dirty.	full review: only restated unclean
 underling	ok	a subordinate.	offensive
+undermine	fix	make less powerful or effective, especially in a gradual or insidious way.	full review: literal rock-erosion sense shown over familiar sense
 underscore	ok	draw a line under (a word or phrase) to give emphasis or indicate special type.	xref
 undertow	ok	a current of water below the surface and moving in a different direction from any surface current.	xref
 underway	fix	having started and in progress; (of a boat) moving through the water.	points to "under way" under "under"
+unit	fix	an individual thing or person regarded as single and complete, which can also form part of a larger whole.	full review: garbled ("a individual component")
+universe	fix	(the universe) all existing matter and space considered as a whole; the cosmos.	full review: main meaning available
+unshaved	fix	not having shaved or been shaved.	full review: only pointed to unshaven
 unto	ok	expressing direction or position in relation to a location, point, or condition.	xref
+upbeat	fix	cheerful; optimistic.	full review: obscure music sense shown over familiar adjective	adjective
+upmost	fix	highest in place, rank, or importance.	full review: only pointed to uppermost
 upon	ok	physically in contact with and supported by (a surface).	xref
+upper	fix	situated above another part.	full review: garbled ("another participle")
+upscale	fix	towards or relating to the more expensive or affluent sector of the market.	full review: only pointed to upmarket
+upstart	fix	a person who has risen suddenly to prominence, especially one who behaves arrogantly.	full review: obscure gymnastics sense shown
+upstate	fix	of, in, or to a part of a state remote from its large cities, especially the northern part.	full review: garbled ("northern participle")
 used	ok	having already been used.	self
 uttermost	ok	most extreme; greatest.	xref
 valence	ok	the combining power of an element, especially as measured by the number of hydrogen atoms it can displace or combine with.	xref
@@ -551,33 +997,58 @@ valentine	ok	a card sent, often anonymously, on St Valentine's Day (14 February)
 vanilla	ok	a substance obtained from vanilla pods or produced artificially and used to flavour sweet foods or to impart a fragrant scent to cosmetic preparations.	self
 variance	ok	(usu. at variance with) the fact or quality of being different or inconsistent.	self
 veggie	ok	a person who does not eat meat or fish for moral, religious, or health reasons.	xref
+velar	fix	(of a speech sound) pronounced with the back of the tongue near the soft palate, as in k and g in English.	full review: obscure sense shown; phonetic sense is the familiar one
 venereal	ok	relating to venereal disease.	self
+vibration	fix	a continuous rapid shaking or quivering movement.	full review: restated the headword
 vid	fix	a video recording.	resolved to video as a system
+viscosity	fix	the thickness and stickiness of a fluid; its resistance to flowing.	full review: restated the headword
 vise	ok	a metal tool with movable jaws which are used to hold an object firmly in place while work is done on it.	xref
+visibility	fix	the state of being able to see or be seen, especially the distance one can see in given weather conditions.	full review: restated the headword
+vitriol	fix	extreme bitterness or malice.	full review: chemical sense obscure; familiar sense available
+vogue	fix	the prevailing fashion or style at a particular time.	full review: dance verb shown; fashion noun is the main meaning	noun
 volition	ok	(often of one's own volition) the faculty or power of using one's will.	self,phrase
 vulcanism	ok	volcanic activity or phenomena.	xref
 wager	ok	an act of betting.	xref
+waiver	fix	an act of voluntarily giving up a right or claim, or a document recording this.	full review: defined via the headword's verb
 wake	ok	(often wake up) emerge or cause to emerge from a state of sleep; stop sleeping.	self
 wannabe	ok	a person who tries to be like someone else or to fit in with a particular group of people.	offensive
 warpath	ok	(on the warpath) in an angry and aggressive state.	self,phrase
 warren	ok	(also rabbit warren) a network of interconnecting rabbit burrows.	self
+washer	fix	a small flat ring fixed between two joining surfaces or between a nut and bolt to spread the pressure or act as a spacer.	full review: restated the headword; better sense available
+wastage	fix	the loss of something through carelessness, damage, or use; the amount lost in this way.	full review: restated the headword
+waster	fix	a person who does little or nothing of value.	full review: restated the headword; better sense available
+weakness	fix	lack of physical strength, power, or energy.	full review: restated the headword
+wedgie	fix	an act of pulling up someone's underwear tightly between their buttocks as a practical joke.	full review: shoe sense obscure; familiar sense available
 wellie	ok	a knee-length waterproof rubber or plastic boot.	xref
 welly	ok	a knee-length waterproof rubber or plastic boot.	xref
 wheatgrass	ok	a coarse grass with long creeping roots.	xref
 whiles	ok	at the same time as.	xref
+whilst	fix	during the time that; at the same time as.	full review: only a one-word synonym
 whir	ok	a whirring sound.	xref
+whoops	fix	used to express mild dismay or apology on making a mistake or having a minor accident.	full review: only pointed to oops
 whosoever	ok	the person or people who; any person who.	xref
 widgeon	ok	a dabbling duck with mainly reddish-brown and grey plumage, the male having a whistling call.	xref
 wildebeest	ok	a large African antelope with a long head, a beard and mane, and a sloping back.	xref
+wildfire	fix	a large, destructive fire that spreads quickly over woodland or brush.	full review: shown historical sense instead of main meaning
+willowy	fix	(of a person) tall, slim, and lithe.	full review: more familiar sense available
+willpower	fix	control exerted to do something or to restrain impulses.	full review: cross-reference only
+windward	fix	facing the wind or on the side facing the wind.	full review: leftover cross-reference label
 wiper	ok	a windscreen wiper.	self
+withdrawal	fix	the action of taking something back or away, or of leaving a place or situation.	full review: restated the headword
 womanish	ok	suitable for or characteristic of a woman.	offensive
 wonk	ok	a studious or hard-working person.	offensive
+world	fix	the earth, together with all of its countries and peoples.	full review: main sense available
 worse	ok	a worse event or circumstance.	self
 worst	ok	the worst event or circumstance.	self
 worthy	ok	(often worthy of) deserving.	self
 wrack	fix	cause extreme physical or mental pain to; torment.	resolved to "place in or on a rack"
+wristband	fix	a band worn round the wrist, especially for identity purposes or as a sweatband.	full review: typo word for worn
 writing	ok	the activity or skill of writing.	self
+yang	fix	(in Chinese philosophy) the active male principle of the universe, characterized as male and creative and associated with heaven, heat, and light.	full review: leftover cross-reference label
 yeah	ok	used to give an affirmative response.	xref
+yin	fix	(in Chinese philosophy) the passive female principle of the universe, characterized as female and sustaining and associated with earth, dark, and cold.	full review: leftover cross-reference label
+yobbo	fix	a rude, noisy, and aggressive youth.	full review: only pointed to yob
 yore	ok	(of yore) of former times or long ago.	self,phrase
 yuppie	ok	a well-paid young middle-class professional working in a city.	offensive
 zebu	ok	an ox of a humped breed originally domesticated in India.	xref
+zeta	fix	the sixth letter of the Greek alphabet (Ζ, ζ), transliterated as ‘z’.	full review: garbled duplicated letter forms

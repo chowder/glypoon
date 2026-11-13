@@ -31,7 +31,8 @@ of them count. The definition shown should be one that does:
    that use the word itself, set-phrase-only, offensive-only or capitalized-only senses,
    irregular-comparative fallbacks, and leftover markup.
 3. **Review** (`review.tsv`) has a decision for every flagged word: `ok` with the exact
-   text approved, or `fix` with a replacement. If extraction later changes an approved
+   text approved, or `fix` with a replacement (and a part of speech, if the fix switches
+   to a sense with a different one). If extraction later changes an approved
    definition, the decision is stale and the word has to be looked at again.
 
 `build_definitions.py` refuses to write `definitions.tsv` while any flagged word is
@@ -64,3 +65,25 @@ alongside all of its valid COED senses:
   nested inflection brackets ("billion: same)"), lost set phrases ("kilter" without
   "out of"), cross-references followed to the wrong part of speech ("elevator" → the
   verb "lift"), and trailing "Compare with …" pointers.
+
+## Full review (November 2026)
+
+Every remaining word (21,259 of them) was then reviewed once, in 40 chunks of about 530
+words, each read by an LLM against the same written guidelines: approve by default, fix
+only definitions that are garbled, only point elsewhere or restate the word, show an
+obscure sense when a much more familiar valid one exists, or are wrong under the rules.
+
+- **471 fixed** (2.2%), about 5 to 30 per chunk. All fixes were read again before being
+  merged. Roughly: 158 definitions that restated the word ("the action of attending",
+  "a person or thing that generates"); about 150 obscure senses replaced by familiar ones
+  (`gig` as a carriage, `cohort` as a Roman unit, `router` as a woodworking tool);
+  leftover labels and markup ("(lice)", "(same)", broken chemical formulas, a stray image
+  filename in `tick`); words COED itself has damaged ("part" printed as "participle" in
+  `element`, `ending`, `bystander` and others, typos such as "a band word round the
+  wrist"); and a few that the rules exclude (`might` shown as the past of "may", `spam`
+  as the trademark Spam).
+- **20,788 approved** as extracted. These have no row in `review.tsv`; only flagged words
+  and fixes do.
+
+Altogether, 519 of the 21,840 definitions are hand fixes and the rest are COED's text as
+extracted.
