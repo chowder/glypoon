@@ -14,7 +14,7 @@ const FoundWords = ({ onClick }) => {
         if (gameState === GameState.ENDED) {
             return "Tap to see the answers"
         }
-        return "Words you find appear here"
+        return "No words found yet"
     }
 
     return (
