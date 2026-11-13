@@ -1,13 +1,18 @@
-const colors = require('tailwindcss/colors')
+import colors from 'tailwindcss/colors'
 
-module.exports = {
-  purge: ['./src/**/*.{js,jsx,ts,tsx}', './public/index.html'],
+/** @type {import('tailwindcss').Config} */
+export default {
+  content: ['./index.html', './src/**/*.{js,jsx}'],
   darkMode: 'class',
   theme: {
     extend: {
       colors: {
-        orange: colors.orange,
-        blueGray: colors.blueGray,
+        // Keep Tailwind 2's default palette, which mapped these names to
+        // different colour scales than Tailwind 3 does.
+        green: colors.emerald,
+        yellow: colors.amber,
+        purple: colors.violet,
+        blueGray: colors.slate,
       },
       keyframes: {
         wiggle: {
@@ -23,14 +28,6 @@ module.exports = {
         wiggle: 'wiggle 200ms ease-in-out',
         bounce: 'bounce 300ms ease-in-out'
       }
-    },
-  },
-  variants: {
-    extend: {
-      opacity: ['disabled'],
-      backgroundColor: ['disabled'],
-      boxShadow: ['disabled', 'dark'],
-      placeholderColor: ['disabled'],
     },
   },
   plugins: [],

@@ -1,9 +1,9 @@
 import { action, thunk } from 'easy-peasy'
 import GameState from './GameState';
 
-const GAME_DURATION = parseInt(process.env.REACT_APP_GAME_DURATION || "600")  // in seconds
-const EXTRA_TIME_AMOUNT = parseInt(process.env.REACT_APP_EXTRA_TIME_AMOUNT || "10")  // in seconds
-const GLYPOON_API_URL = process.env.REACT_APP_GLYPOON_API_URL || "http://localhost:5000"
+const GAME_DURATION = parseInt(import.meta.env.REACT_APP_GAME_DURATION || "600")  // in seconds
+const EXTRA_TIME_AMOUNT = parseInt(import.meta.env.REACT_APP_EXTRA_TIME_AMOUNT || "10")  // in seconds
+const GLYPOON_API_URL = import.meta.env.REACT_APP_GLYPOON_API_URL || "http://localhost:5000"
 
 
 const model = {
@@ -25,6 +25,9 @@ const model = {
     lastSubmissionAnswer: "",
     revealConfirmationVisible: false,
     newGameDialogVisible: false,
+    // Incremented to ask the answer input to take focus, e.g. once a dialog has
+    // finished closing (the dialog returns focus to the page when it closes).
+    inputFocusRequests: 0,
 
     // Thunks
     fetchSolution: thunk(async actions => {
@@ -150,6 +153,10 @@ const model = {
 
     setNewGameDialogVisible: action((state, value) => {
         state.newGameDialogVisible = value
+    }),
+
+    requestInputFocus: action((state) => {
+        state.inputFocusRequests += 1
     })
 }
 

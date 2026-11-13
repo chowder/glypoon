@@ -9,6 +9,7 @@ const Welcome = () => {
     const setGameState = useStoreActions(actions => actions.setGameState)
     const fetchNewSolution = useStoreActions(actions => actions.fetchNewSolution)
     const [open, setOpen] = useState(true)
+    const requestInputFocus = useStoreActions(actions => actions.requestInputFocus)
 
     const handlePractice = () => {
         setOpen(false)
@@ -21,7 +22,7 @@ const Welcome = () => {
     }
 
     return (
-        <Transition show={open} as={Fragment}>
+        <Transition show={open} as={Fragment} afterLeave={() => requestInputFocus()}>
             <Dialog
                 as="div"
                 id="modal"

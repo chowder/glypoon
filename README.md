@@ -28,10 +28,10 @@ The rules of the game can be found in [here](https://github.com/chowder/glypoon/
 
 ### Getting Started
 
-Clone this repository. You will need [`node` and `npm`](https://nodejs.org/en/download/) installed on your machine.
+Clone this repository. You will need [`node` and `npm`](https://nodejs.org/en/download/) installed on your machine (Node 24 or newer; see `.nvmrc`).
 
 - Installation: `npm install`
-- Run: `npm run start`
+- Run: `npm run start` (serves the app at http://localhost:3000)
 - Build: `npm run build`
 
 ### Puzzle Generation

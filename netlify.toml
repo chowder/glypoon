@@ -1,4 +1,8 @@
-[context.production]
-  environment = { GENERATE_SOURCEMAP = "false" }
 [build]
+  command = "npm run build"
+  publish = "build"
+  # Skip deploys when only the daily puzzle changed: the app fetches it from GitHub at runtime
   ignore = "git diff --quiet $CACHED_COMMIT_REF $COMMIT_REF -- . ':!public/puzzle/puzzle.json'"
+
+[build.environment]
+  NODE_VERSION = "24"

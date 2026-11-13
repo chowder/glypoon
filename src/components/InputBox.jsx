@@ -9,6 +9,7 @@ const InputBox = () => {
     const currentAnswers = useStoreState(store => store.currentAnswers)
     const currentInput = useStoreState(store => store.currentInput)
     const gameState = useStoreState(store => store.gameState)
+    const inputFocusRequests = useStoreState(store => store.inputFocusRequests)
 
     const submitAnswer = useStoreActions(actions => actions.submitAnswer)
     const setCurrentInput = useStoreActions(actions => actions.setCurrentInput)
@@ -20,9 +21,12 @@ const InputBox = () => {
 
     useEffect(() => {
         if (gameState === GameState.RUNNING) {
-            inputBoxRef.current.focus()
+            // Deferred so that it runs after any closing dialog has unmounted:
+            // until then the dialog's focus trap would pull focus back into it.
+            const timeout = setTimeout(() => inputBoxRef.current?.focus())
+            return () => clearTimeout(timeout)
         }
-    }, [gameState])
+    }, [gameState, inputFocusRequests])
 
     const countByLetters = useMemo(() => {
         let countByLetters = {}
