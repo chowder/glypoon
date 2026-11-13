@@ -28,7 +28,6 @@ const CurrentWord = () => {
     const currentInput = useStoreState(store => store.currentInput)
     const gameState = useStoreState(store => store.gameState)
     const lastSubmissionAnswer = useStoreState(store => store.lastSubmissionAnswer)
-    const secondsRemaining = useStoreState(store => store.secondsRemaining)
     const deleteLetter = useStoreActions(actions => actions.deleteLetter)
     const { result, error, clearResult } = useSubmissionFeedback()
 
@@ -40,23 +39,12 @@ const CurrentWord = () => {
         // eslint-disable-next-line react-hooks/exhaustive-deps
     }, [result])
 
-    const getGameOverMessage = () => {
-        if (gameState === GameState.COMPLETE) {
-            return "All words found!"
-        } else if (gameState === GameState.ENDED) {
-            return secondsRemaining === 0 ? "Time's up" : "Solution revealed"
-        }
-        return null
-    }
-
-    const gameOverMessage = getGameOverMessage()
+    const isOver = gameState === GameState.ENDED || gameState === GameState.COMPLETE
     const showResult = result && currentInput.length === 0 && lastSubmissionAnswer.length > 0
     const word = showResult ? lastSubmissionAnswer : currentInput
 
     const renderContent = () => {
-        if (gameOverMessage) {
-            return <p className="current-word-game-over">{gameOverMessage}</p>
-        } else if (word.length > 0) {
+        if (word.length > 0 && !isOver) {
             return <p className={`current-word ${getWordSize(word.length)} ${showResult ? resultStyles[result] : ""}`}>{word.toUpperCase()}</p>
         }
         return <p className="current-word-placeholder">{placeholders.get(gameState) || ""}</p>
@@ -77,7 +65,7 @@ const CurrentWord = () => {
                     </button>}
             </div>
             <div className="h-5">
-                {error && !gameOverMessage && <p className="text-sm font-medium text-red-500 dark:text-red-400">{error}</p>}
+                {error && !isOver && <p className="text-sm font-medium text-red-500 dark:text-red-400">{error}</p>}
             </div>
         </div>
     )
