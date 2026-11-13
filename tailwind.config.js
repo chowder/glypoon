@@ -26,12 +26,18 @@ export default {
         shuffle: {
           '0%': { transform: 'rotate(0deg)' },
           '100%': { transform: 'rotate(180deg)' }
+        },
+        found: {
+          '0%': { transform: 'scale(1)', boxShadow: '0 0 0 0 rgba(96, 165, 250, 0.7)' },
+          '30%': { transform: 'scale(1.12)' },
+          '100%': { transform: 'scale(1)', boxShadow: '0 0 0 12px rgba(96, 165, 250, 0)' }
         }
       },
       animation: {
         wiggle: 'wiggle 200ms ease-in-out',
         bounce: 'bounce 300ms ease-in-out',
-        shuffle: 'shuffle 500ms cubic-bezier(0.65, 0, 0.35, 1)'
+        shuffle: 'shuffle 500ms cubic-bezier(0.65, 0, 0.35, 1)',
+        found: 'found 700ms ease-out'
       }
     },
   },
