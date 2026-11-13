@@ -132,7 +132,7 @@
     }
 
     .current-word {
-        @apply text-4xl font-bold tracking-widest text-gray-900 dark:text-gray-50 transition-colors
+        @apply font-bold tracking-widest whitespace-nowrap text-gray-900 dark:text-gray-50 transition-colors
     }
 
     .current-word-placeholder {

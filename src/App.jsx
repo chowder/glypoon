@@ -49,7 +49,7 @@ function App() {
   return (
     <StoreProvider store={store}>
       <div className={darkMode ? "dark" : ""}>
-        <div className="transition-colors ease-in-out min-h-screen bg-gray-100 dark:bg-gray-800">
+        <div className="transition-colors ease-in-out min-h-[100dvh] bg-gray-100 dark:bg-gray-800">
           {compact ?
             <Game compact title={title} settings={settings} /> :
             <div className="mx-auto lg:max-w-screen-lg p-4">

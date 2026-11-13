@@ -53,9 +53,6 @@ const AnswersSheet = ({ open, onClose }) => {
                                 <XIcon className="h-6 w-6" />
                             </button>
                         </div>
-                        <p className="px-6 text-sm text-gray-500 dark:text-gray-400">
-                            Tap a word to see its definition
-                        </p>
                         <div className="overflow-y-auto">
                             <Answers className="w-full" />
                         </div>
