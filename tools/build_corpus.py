@@ -43,7 +43,7 @@ NON_WORD_POS = {
 # Valid words the dictionary files have no headword for. "lots" (adverb) is
 # given as an allowed example in RULES.md but only appears under "lot".
 EXTRA_WORDS = {
-    "lots": "■ adverb informal a great deal; much.",
+    "lots": '<blockquote>■ <c c="green">adverb</c> <c c="slateblue">informal</c> a great deal; much. </blockquote>',
 }
 
 POS_RE = re.compile(r'■ <c c="green">(.*?)</c>')
