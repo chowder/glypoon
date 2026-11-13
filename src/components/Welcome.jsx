@@ -59,6 +59,23 @@ const Welcome = () => {
                                     Create as many words as you can in {Math.floor(gameDuration / 60)} minutes!
                                 </p>
                             </div>
+                            <Disclosure defaultOpen>
+                                {({ open }) => (
+                                    <>
+                                        <Disclosure.Button className="mt-4 flex justify-between w-full px-4 py-2 text-sm font-medium text-left text-amber-900 bg-amber-100 rounded-lg hover:bg-amber-200 dark:text-amber-100 dark:bg-amber-500/20 dark:hover:bg-amber-500/30 focus:outline-none focus-visible:ring focus-visible:ring-amber-500 focus-visible:ring-opacity-75">
+                                            <span>Updates</span>
+                                            <ChevronUpIcon className={`${open ? "transform rotate-180" : ""} w-5 h-5 text-amber-500`} />
+                                        </Disclosure.Button>
+                                        <Disclosure.Panel className="px-4 pt-4 pb-2 text-sm text-left text-gray-500 dark:text-gray-300 space-y-3">
+                                            <p>Hi friends! (especially those at Macquarie)</p>
+                                            <p>I finally took the time to give Glypoon a little more love, mostly because AI has now made it so easy to do so.</p>
+                                            <p>I've updated the Glypoon word list, which should now more accurately reflect Polygon's acceptability criteria.</p>
+                                            <p>Please let me know if you feel like the new word list is better, or worse. You can reach me at <a href="mailto:andrew@cho.io" className="underline text-blue-500 dark:text-blue-300">andrew@cho.io</a>; hope you guys have been well!</p>
+                                            <p>Andrew</p>
+                                        </Disclosure.Panel>
+                                    </>
+                                )}
+                            </Disclosure>
                             <Disclosure>
                                 {({ open }) => (
                                     <>
