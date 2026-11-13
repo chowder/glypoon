@@ -12,8 +12,11 @@ import {
     useTransitionStyles
 } from '@floating-ui/react';
 
+const NO_DEFINITION = "Could not find definition!"
+
 const Answer = ({text, isVisible, isPangram}) => {
     const gameState = useStoreState(store => store.gameState)
+    const definitions = useStoreState(store => store.solution.definitions)
 
     const [definition, setDefinition] = useState(null)
     const [isTooltipOpen, setTooltipOpen] = useState(false);
@@ -47,20 +50,26 @@ const Answer = ({text, isVisible, isPangram}) => {
 
     useEffect(() => {
         const fetchDefinition = async () => {
-            const res = await fetch(`https://api.dictionaryapi.dev/api/v2/entries/en_US/${text}`)
-            const data = await res.json()
             try {
+                const res = await fetch(`https://api.dictionaryapi.dev/api/v2/entries/en_US/${text}`)
+                const data = await res.json()
                 const entry = data.find(element => element.meanings.length > 0);
                 setDefinition(entry.meanings[0].definitions[0].definition)
             } catch (e) {
-                setDefinition("Could not find definition!")
+                setDefinition(NO_DEFINITION)
             }
         }
         if ((isVisible || gameState === GameState.ENDED) && definition === null) {
-            fetchDefinition()
+            if (definitions && text in definitions) {
+                // Use the definition embedded in the puzzle
+                setDefinition(definitions[text] || NO_DEFINITION)
+            } else {
+                // Older puzzles don't embed definitions, so fall back to the API
+                fetchDefinition()
+            }
         }
         // eslint-disable-next-line react-hooks/exhaustive-deps
-    }, [text, isVisible, gameState, definition])
+    }, [text, isVisible, gameState, definition, definitions])
 
     function handleMouseEnter() {
         if (isVisible || gameState === GameState.ENDED) {

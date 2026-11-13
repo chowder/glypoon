@@ -2,11 +2,18 @@ import argparse
 import json
 import random
 import sys
+import time
+import urllib.error
+import urllib.parse
+import urllib.request
 from collections import Counter
 from datetime import datetime
 
 MIN_NUM_SOLUTIONS = 20
 MAX_NUM_SOLUTIONS = 35
+
+DICTIONARY_API_URL = "https://api.dictionaryapi.dev/api/v2/entries/en_US/{}"
+DICTIONARY_API_RETRIES = 3
 
 DIFFICULTY_BY_DAY = {
     "Monday": {
@@ -38,6 +45,41 @@ DIFFICULTY_BY_DAY = {
         "min_length": 4,
     },
 }
+
+
+def fetch_definition(word):
+    """Return the first definition of `word`, or None if none can be found.
+
+    Never raises: a missing definition must not stop a puzzle being generated.
+    """
+    url = DICTIONARY_API_URL.format(urllib.parse.quote(word))
+    request = urllib.request.Request(url, headers={"User-Agent": "glypoon"})
+    for attempt in range(DICTIONARY_API_RETRIES):
+        try:
+            with urllib.request.urlopen(request, timeout=10) as response:
+                entries = json.load(response)
+            for entry in entries:
+                for meaning in entry.get("meanings", []):
+                    for definition in meaning.get("definitions", []):
+                        if definition.get("definition"):
+                            return definition["definition"]
+            return None
+        except urllib.error.HTTPError as e:
+            if e.code == 404:  # The API's response for an unknown word
+                return None
+        except (urllib.error.URLError, OSError, ValueError):
+            pass
+        time.sleep(2**attempt)
+    return None
+
+
+def fetch_definitions(words):
+    definitions = {}
+    for word in words:
+        definitions[word] = fetch_definition(word)
+        if definitions[word] is None:
+            print(f"No definition found for: {word}")
+    return definitions
 
 
 def parse_arguments(argv):
@@ -113,6 +155,7 @@ if __name__ == "__main__":
                 solution_json = {
                     "letters": letters,
                     "answers": solution[1],
+                    "definitions": fetch_definitions(solution[1]),
                 }
                 json.dump(solution_json, args.output, indent=4)
                 print(f"Wrote to: {args.output.name}")
