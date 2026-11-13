@@ -1,0 +1,30 @@
+name: Check Definitions
+
+# The daily puzzle takes its definitions from tools/definitions/definitions.tsv.
+# Fail if a word list change leaves a word without a definition, a flagged
+# definition unreviewed, or the file out of date.
+on:
+  push:
+    paths:
+      - "tools/**"
+  pull_request:
+    paths:
+      - "tools/**"
+  workflow_dispatch:
+
+jobs:
+  check:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repo content
+        uses: actions/checkout@v4
+
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Run definition tests
+        working-directory: tools
+        run: python -m unittest test_coed_definitions test_build_definitions
