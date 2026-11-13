@@ -32,15 +32,19 @@ const PolygonLetter = ({ top, left, letter, index }) => {
 
     // TODO: Clean up the CSS here
     return (
-        <div
-            className={`transition-all ${isActive ? "polygon-letter" : "polygon-letter-disabled"} ${!isActive && lastSelectedIndex === index ? "ring-4" : ""} flex items-center justify-center h-16 w-16`}
+        <button
+            type="button"
+            className={`transition-all ${isActive ? "polygon-letter" : "polygon-letter-disabled"} ${!isActive && lastSelectedIndex === index ? "ring-4" : ""} flex items-center justify-center h-[22%] w-[22%]`}
             style={{ margin: 'auto', position: 'absolute', top: `${top}%`, left: `${left}%` }}
             onClick={handleClick}
+            onMouseDown={(e) => e.preventDefault()}
+            aria-label={gameState === GameState.NOT_STARTED ? "Hidden letter" : letter?.toUpperCase()}
+            aria-pressed={!isActive}
         >
-            <p className={isActive ? "polygon-letter-text" : "polygon-letter-text-disabled"}>
+            <span className={isActive ? "polygon-letter-text" : "polygon-letter-text-disabled"}>
                 {gameState === GameState.NOT_STARTED ? "" : letter?.toUpperCase()}
-            </p>
-        </div>
+            </span>
+        </button>
     )
 }
 

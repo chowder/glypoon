@@ -4,6 +4,8 @@ import {useStoreState} from "easy-peasy"
 import {
     useFloating,
     useHover,
+    useClick,
+    useDismiss,
     useInteractions,
     shift,
     offset,
@@ -21,18 +23,24 @@ const Answer = ({text, isVisible, isPangram}) => {
     const [definition, setDefinition] = useState(null)
     const [isTooltipOpen, setTooltipOpen] = useState(false);
 
+    const canShowDefinition = isVisible || gameState === GameState.ENDED
+
     const {refs, floatingStyles, context} = useFloating({
         open: isTooltipOpen,
-        onOpenChance: setTooltipOpen,
+        onOpenChange: (open) => setTooltipOpen(open && canShowDefinition),
         placement: "top",
         middleware: [offset(10), flip(), shift({padding: 5})],
         whileElementsMounted: autoUpdate,
     })
 
-    const hover = useHover(context);
+    const hover = useHover(context, {mouseOnly: true});
+    const click = useClick(context, {ignoreMouse: true});
+    const dismiss = useDismiss(context);
 
     const {getReferenceProps, getFloatingProps} = useInteractions([
         hover,
+        click,
+        dismiss,
     ]);
 
     const tooltipTransition = useTransitionStyles(context, {
@@ -59,7 +67,7 @@ const Answer = ({text, isVisible, isPangram}) => {
                 setDefinition(NO_DEFINITION)
             }
         }
-        if ((isVisible || gameState === GameState.ENDED) && definition === null) {
+        if (canShowDefinition && definition === null) {
             if (definitions && text in definitions) {
                 // Use the definition embedded in the puzzle
                 setDefinition(definitions[text] || NO_DEFINITION)
@@ -70,16 +78,6 @@ const Answer = ({text, isVisible, isPangram}) => {
         }
         // eslint-disable-next-line react-hooks/exhaustive-deps
     }, [text, isVisible, gameState, definition, definitions])
-
-    function handleMouseEnter() {
-        if (isVisible || gameState === GameState.ENDED) {
-            setTooltipOpen(true)
-        }
-    }
-
-    function handleMouseLeave() {
-        setTooltipOpen(false)
-    }
 
     const getColor = () => {
         // TODO: Turn these into CSS components
@@ -102,6 +100,7 @@ const Answer = ({text, isVisible, isPangram}) => {
         <>
             {isTooltipOpen &&
                 <div
+                    className="z-20"
                     style={floatingStyles}
                     ref={refs.setFloating}
                     {...getFloatingProps()}
@@ -113,11 +112,9 @@ const Answer = ({text, isVisible, isPangram}) => {
             }
             <div
                 className={`answer-bg ${color}`}
-                onMouseEnter={handleMouseEnter}
-                onMouseLeave={handleMouseLeave}
                 ref={refs.setReference}
                 {...getReferenceProps()}>
-                <p className='answer-text'>{isVisible || gameState === GameState.ENDED ? text : ""}</p>
+                <p className='answer-text'>{canShowDefinition ? text : ""}</p>
             </div>
         </>
     )

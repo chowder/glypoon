@@ -5,6 +5,30 @@ const GAME_DURATION = parseInt(import.meta.env.REACT_APP_GAME_DURATION || "600")
 const EXTRA_TIME_AMOUNT = parseInt(import.meta.env.REACT_APP_EXTRA_TIME_AMOUNT || "10")  // in seconds
 const GLYPOON_API_URL = import.meta.env.REACT_APP_GLYPOON_API_URL || "http://localhost:5000"
 
+const computeLetterAvailability = (letters, input) => {
+    let countByLetters = {}
+    for (let i = 0; i < input.length; i++) {
+        let letter = input[i].toLowerCase()
+        if (letter in countByLetters) {
+            countByLetters[letter]++
+        } else {
+            countByLetters[letter] = 1
+        }
+    }
+
+    let letterAvailability = []
+    for (let i = 0; i < letters.length; i++) {
+        let letter = letters[i].toLowerCase()
+        if (letter in countByLetters && countByLetters[letter] > 0) {
+            countByLetters[letter]--
+            letterAvailability.push(false)
+        } else {
+            letterAvailability.push(true)
+        }
+    }
+    return letterAvailability
+}
+
 
 const model = {
     solution: {
@@ -23,6 +47,7 @@ const model = {
     lastSelectedIndex: -1,
     lastSubmissionResult: null,
     lastSubmissionAnswer: "",
+    submissionCount: 0,
     revealConfirmationVisible: false,
     newGameDialogVisible: false,
     // Incremented to ask the answer input to take focus, e.g. once a dialog has
@@ -69,6 +94,7 @@ const model = {
         state.currentInput = ""
         state.lastSelectedIndex = -1
         state.lastSubmissionAnswer = answer
+        state.submissionCount += 1
         if (state.solution.answers.includes(answer) && !state.currentAnswers.includes(answer)) {
             state.lastSubmissionResult = true
             state.currentAnswers = [...state.currentAnswers, answer]
@@ -105,29 +131,35 @@ const model = {
     }),
 
     recalculateLetterAvailability: action((state) => {
-        let countByLetters = {}
-        for (let i = 0; i < state.currentInput.length; i++) {
-            let letter = state.currentInput[i].toLowerCase()
-            if (letter in countByLetters) {
-                countByLetters[letter]++
-            } else {
-                countByLetters[letter] = 1
-            }
-        }
-
-        let letterAvailability = []
-        for (let i = 0; i < state.solution.letters.length; i++) {
-            let letter = state.solution.letters[i].toLowerCase()
-            if (letter in countByLetters && countByLetters[letter] > 0) {
-                countByLetters[letter]--
-                letterAvailability.push(false)
-            } else {
-                letterAvailability.push(true)
-            }
-
-        }
         state.lastSelectedIndex = -1  // This is no longer valid
-        state.letterAvailability = letterAvailability
+        state.letterAvailability = computeLetterAvailability(state.solution.letters, state.currentInput)
+    }),
+
+    typeLetter: action((state, letter) => {
+        const index = state.solution.letters.findIndex((element, i) => element === letter && state.letterAvailability[i])
+        if (index !== -1) {
+            state.currentInput = state.currentInput + letter
+            state.letterAvailability[index] = false
+            state.lastSelectedIndex = index
+        }
+    }),
+
+    deleteLetter: action((state) => {
+        state.currentInput = state.currentInput.slice(0, -1)
+        state.lastSelectedIndex = -1
+        state.letterAvailability = computeLetterAvailability(state.solution.letters, state.currentInput)
+    }),
+
+    shuffleLetters: action((state) => {
+        let order = [...state.solution.letters.keys()].slice(1)
+        for (let i = order.length - 1; i > 0; i--) {
+            const j = Math.floor(Math.random() * (i + 1));
+            [order[i], order[j]] = [order[j], order[i]]
+        }
+        order = [0, ...order]
+        state.solution.letters = order.map(i => state.solution.letters[i])
+        state.letterAvailability = order.map(i => state.letterAvailability[i])
+        state.lastSelectedIndex = order.indexOf(state.lastSelectedIndex)
     }),
 
     setLastSelectedIndex: action((state, value) => {
@@ -153,6 +185,18 @@ const model = {
 
     setNewGameDialogVisible: action((state, value) => {
         state.newGameDialogVisible = value
+    }),
+
+    showNewGameDialog: action((state) => {
+        state.newGameDialogVisible = true
+        if (state.gameState === GameState.RUNNING) {
+            state.gameState = GameState.PAUSED
+        }
+    }),
+
+    showRevealConfirmation: action((state) => {
+        state.revealConfirmationVisible = true
+        state.gameState = GameState.PAUSED
     }),
 
     requestInputFocus: action((state) => {

@@ -1,12 +1,12 @@
 import GameState from '../classes/GameState'
 import PropTypes from 'prop-types'
-import { useState, useRef, useEffect, useMemo } from 'react'
+import { useRef, useEffect, useMemo } from 'react'
 import { useStoreActions, useStoreState } from 'easy-peasy'
+import useSubmissionFeedback from '../hooks/useSubmissionFeedback'
 
 
 const InputBox = () => {
     const letters = useStoreState(store => store.solution.letters)
-    const currentAnswers = useStoreState(store => store.currentAnswers)
     const currentInput = useStoreState(store => store.currentInput)
     const gameState = useStoreState(store => store.gameState)
     const inputFocusRequests = useStoreState(store => store.inputFocusRequests)
@@ -16,8 +16,7 @@ const InputBox = () => {
     const recalculateLetterAvailability = useStoreActions(actions => actions.recalculateLetterAvailability)
 
     const inputBoxRef = useRef(null)
-    const [inputStyles, setInputStyles] = useState([])
-    const [error, setError] = useState("")
+    const { result, error, clearResult } = useSubmissionFeedback()
 
     useEffect(() => {
         if (gameState === GameState.RUNNING) {
@@ -54,31 +53,14 @@ const InputBox = () => {
         recalculateLetterAvailability()
     }
 
-    const lastSubmissionResult = useStoreState(store => store.lastSubmissionResult)
-    const lastSubmissionAnswer = useStoreState(store => store.lastSubmissionAnswer)
-
-    useEffect(() => {
-        if (lastSubmissionResult === true) {
-            setError("")
-            setInputStyles([...inputStyles, "input-box-correct"])
-        } else if (lastSubmissionResult === false) {
-            if (currentAnswers.includes(lastSubmissionAnswer)) {
-                setError(`${lastSubmissionAnswer} was already guessed`)
-            } else {
-                setError(`${lastSubmissionAnswer} was incorrect`)
-            }
-            setInputStyles([...inputStyles, "input-box-wrong"])
-        }
-        // eslint-disable-next-line
-    }, [lastSubmissionResult, lastSubmissionAnswer])
-
     const handleSubmit = (e) => {
         e.preventDefault()
         submitAnswer();
     }
 
-    const resetInputStyles = () => {
-        setInputStyles([])
+    const resultStyles = {
+        correct: "input-box-correct",
+        wrong: "input-box-wrong"
     }
 
     return (
@@ -88,9 +70,9 @@ const InputBox = () => {
                     type="text"
                     placeholder="Answer"
                     value={gameState === GameState.RUNNING ? currentInput : ""}
-                    className={`transition-all input-box ${inputStyles.join(' ')}`}
+                    className={`transition-all input-box ${resultStyles[result] || ""}`}
                     onChange={handleChange}
-                    onAnimationEnd={() => resetInputStyles()}
+                    onAnimationEnd={clearResult}
                     autoCapitalize="off"
                     autoComplete="off"
                     autoCorrect="off"
@@ -101,7 +83,7 @@ const InputBox = () => {
                 />
             </form>
             <div className="h-4 mx-2 my-4">
-                {error.length > 1 && <p className="text-left font-medium text-red-500 dark:text-red-400">{error}</p>}
+                {error && <p className="text-left font-medium text-red-500 dark:text-red-400">{error}</p>}
             </div>
         </div>
     )

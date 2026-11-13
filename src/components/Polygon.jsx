@@ -8,13 +8,13 @@ const polarToCartesian = (radians, distance) => {
     return [x, y]
 }
 
-const Polygon = () => {
+const Polygon = ({ className = 'w-72 h-72' }) => {
     const letters = useStoreState(store => store.solution.letters)
 
     let angleBetweenElements = Math.PI * 2 / (letters.length - 1);
 
     return (
-        <div className='flex-shrink-0 w-72 h-72 polygon' style={{ position: 'relative' }}>
+        <div className={`flex-shrink-0 polygon ${className}`} style={{ position: 'relative' }}>
             <PolygonLetter
                 top={50} left={50}
                 letter={letters[0]}
