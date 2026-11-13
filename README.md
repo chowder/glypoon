@@ -38,6 +38,14 @@ Clone this repository. You will need [`node` and `npm`](https://nodejs.org/en/do
 
 The puzzles are generated daily through a [GitHub Action](https://github.com/chowder/glypoon/actions/workflows/make_puzzle.yml) and checked in to the repository under [`public/puzzle`](https://github.com/chowder/glypoon/tree/main/public/puzzle), which re-triggers the Netlify build.
 
+### Practice Puzzles
+
+Every possible practice puzzle is generated from the corpus by `tools/make_practice_puzzles.py` and checked in under [`public/practice`](https://github.com/chowder/glypoon/tree/main/public/practice), split into shards described by `index.json`. The app fetches a random one from GitHub at runtime. A [GitHub Action](https://github.com/chowder/glypoon/actions/workflows/make_practice_puzzles.yml) regenerates them whenever the corpus or the generator changes on `main`; to regenerate them by hand, run:
+
+```
+python tools/make_practice_puzzles.py -c tools/corpuses/glypoon.txt -o public/practice
+```
+
 ### Corpus Generation
 
 The *Concise Oxford English Dictionary* (COED) corpuses under `tools/corpuses/coed*` were generated with the `tools/dictionary_to_corpus.py` script.
