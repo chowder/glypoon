@@ -16,7 +16,7 @@ function App() {
   const getSystemDarkTheme = () => window.matchMedia("(prefers-color-scheme: dark)").matches
   const [darkMode, setDarkMode] = useState(getSystemDarkTheme())
   const [christmasMode, setChristmasMode] = useState(false)
-  const compact = useMediaQuery("(max-width: 767px)")
+  const compact = useMediaQuery("(max-width: 767px), not all and (any-pointer: fine)")
 
   useEffect(() => {
     const darkThemeMq = window.matchMedia("(prefers-color-scheme: dark)");
