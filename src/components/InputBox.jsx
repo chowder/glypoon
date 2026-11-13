@@ -14,6 +14,7 @@ const InputBox = () => {
     const submitAnswer = useStoreActions(actions => actions.submitAnswer)
     const setCurrentInput = useStoreActions(actions => actions.setCurrentInput)
     const recalculateLetterAvailability = useStoreActions(actions => actions.recalculateLetterAvailability)
+    const shuffleLetters = useStoreActions(actions => actions.shuffleLetters)
 
     const inputBoxRef = useRef(null)
     const { result, error, clearResult } = useSubmissionFeedback()
@@ -53,6 +54,15 @@ const InputBox = () => {
         recalculateLetterAvailability()
     }
 
+    const handleKeyDown = (e) => {
+        if (e.key === ' ') {
+            e.preventDefault()
+            if (gameState === GameState.RUNNING) {
+                shuffleLetters()
+            }
+        }
+    }
+
     const handleSubmit = (e) => {
         e.preventDefault()
         submitAnswer();
@@ -72,6 +82,7 @@ const InputBox = () => {
                     value={gameState === GameState.RUNNING ? currentInput : ""}
                     className={`transition-all input-box ${resultStyles[result] || ""}`}
                     onChange={handleChange}
+                    onKeyDown={handleKeyDown}
                     onAnimationEnd={clearResult}
                     autoCapitalize="off"
                     autoComplete="off"

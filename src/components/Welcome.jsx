@@ -47,30 +47,30 @@ const Welcome = () => {
                         leaveFrom="opacity-100 scale-100"
                         leaveTo="opacity-0 -translate-y-4 sm:translate-y-0 sm:scale-95 "
                     >
-                        <div className="w-full max-w-md p-6 overflow-hidden text-center transition-all transform bg-white shadow-xl rounded-2xl">
+                        <div className="w-full max-w-md p-6 overflow-hidden text-center transition-all transform bg-white dark:bg-gray-700 shadow-xl rounded-2xl">
                             <Dialog.Title
                                 as="h3"
-                                className="text-xl font-medium leading-6 text-gray-900"
+                                className="text-xl font-medium leading-6 text-gray-900 dark:text-gray-50"
                             >
                                 Glypoon
                             </Dialog.Title>
                             <div className="mt-4">
-                                <p className="text-md text-gray-500">
+                                <p className="text-md text-gray-500 dark:text-gray-300">
                                     Create as many words as you can in {Math.floor(gameDuration / 60)} minutes!
                                 </p>
                             </div>
                             <Disclosure>
                                 {({ open }) => (
                                     <>
-                                        <Disclosure.Button className="mt-4 flex justify-between w-full px-4 py-2 text-sm font-medium text-left text-purple-900 bg-purple-100 rounded-lg hover:bg-purple-200 focus:outline-none focus-visible:ring focus-visible:ring-purple-500 focus-visible:ring-opacity-75">
+                                        <Disclosure.Button className="mt-4 flex justify-between w-full px-4 py-2 text-sm font-medium text-left text-purple-900 bg-purple-100 rounded-lg hover:bg-purple-200 dark:text-purple-100 dark:bg-purple-500/20 dark:hover:bg-purple-500/30 focus:outline-none focus-visible:ring focus-visible:ring-purple-500 focus-visible:ring-opacity-75">
                                             <span>Game rules</span>
                                             <ChevronUpIcon className={`${open ? "transform rotate-180" : ""} w-5 h-5 text-purple-500`} />
                                         </Disclosure.Button>
-                                        <Disclosure.Panel className="px-4 pt-4 pb-2 text-sm text-left text-gray-500">
+                                        <Disclosure.Panel className="px-4 pt-4 pb-2 text-sm text-left text-gray-500 dark:text-gray-300">
                                             <ul className="list-disc px-4">
                                                 <li>Each letter may only be used once</li>
                                                 <li>Each word must use the center letter</li>
-                                                <li>The rules for word acceptability can be found <a href="https://github.com/chowder/glypoon/blob/main/RULES.md" target="_blank" rel="noopener noreferrer" className="underline text-blue-500">here</a></li>
+                                                <li>The rules for word acceptability can be found <a href="https://github.com/chowder/glypoon/blob/main/RULES.md" target="_blank" rel="noopener noreferrer" className="underline text-blue-500 dark:text-blue-300">here</a></li>
                                             </ul>
                                         </Disclosure.Panel>
                                     </>
@@ -80,14 +80,14 @@ const Welcome = () => {
                             <div className="mt-5 flex flex-row space-x-4 items-center justify-center">
                                 <button
                                     type="button"
-                                    className="w-full py-2 text-sm font-medium text-blue-900 bg-blue-100 border border-transparent rounded-md hover:bg-blue-200 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500"
+                                    className="w-full py-2 text-sm font-medium text-blue-900 bg-blue-100 border border-transparent rounded-md hover:bg-blue-200 dark:text-blue-100 dark:bg-blue-500/20 dark:hover:bg-blue-500/30 focus:outline-none focus:ring-2 focus:ring-offset-2 dark:focus:ring-offset-gray-700 focus:ring-blue-500"
                                     onClick={handlePractice}
                                 >
                                     Practice
                                 </button>
                                 <button
                                     type="button"
-                                    className="w-full py-2 text-sm font-medium text-green-900 bg-green-100 border border-transparent rounded-md hover:bg-green-200 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-green-500"
+                                    className="w-full py-2 text-sm font-medium text-green-900 bg-green-100 border border-transparent rounded-md hover:bg-green-200 dark:text-green-100 dark:bg-green-500/20 dark:hover:bg-green-500/30 focus:outline-none focus:ring-2 focus:ring-offset-2 dark:focus:ring-offset-gray-700 focus:ring-green-500"
                                     onClick={handlePlay}
                                 >
                                     Play

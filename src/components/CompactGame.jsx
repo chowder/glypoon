@@ -17,6 +17,7 @@ const CompactGame = ({ title, settings }) => {
     const typeLetter = useStoreActions(actions => actions.typeLetter)
     const deleteLetter = useStoreActions(actions => actions.deleteLetter)
     const submitAnswer = useStoreActions(actions => actions.submitAnswer)
+    const shuffleLetters = useStoreActions(actions => actions.shuffleLetters)
 
     const [answersVisible, setAnswersVisible] = useState(false)
 
@@ -41,6 +42,9 @@ const CompactGame = ({ title, settings }) => {
             } else if (e.key === 'Backspace') {
                 e.preventDefault()
                 deleteLetter()
+            } else if (e.key === ' ') {
+                e.preventDefault()
+                shuffleLetters()
             } else if (e.key === 'Enter') {
                 e.preventDefault()
                 if (currentInput.length > 0) {

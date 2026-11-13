@@ -45,6 +45,7 @@ const model = {
     currentInput: "",
     letterAvailability: [],
     letterIds: [],
+    shuffleCount: 0,
     lastSelectedIndex: -1,
     lastSubmissionResult: null,
     lastSubmissionAnswer: "",
@@ -167,6 +168,7 @@ const model = {
         state.solution.letters = order.map(i => state.solution.letters[i])
         state.letterAvailability = order.map(i => state.letterAvailability[i])
         state.letterIds = order.map(i => state.letterIds[i])
+        state.shuffleCount += 1
         state.lastSelectedIndex = order.indexOf(state.lastSelectedIndex)
     }),
 

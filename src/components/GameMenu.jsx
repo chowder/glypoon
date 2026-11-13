@@ -8,6 +8,7 @@ const GameMenu = ({ settings }) => {
     const gameState = useStoreState(store => store.gameState)
     const showNewGameDialog = useStoreActions(actions => actions.showNewGameDialog)
     const showRevealConfirmation = useStoreActions(actions => actions.showRevealConfirmation)
+    const requestInputFocus = useStoreActions(actions => actions.requestInputFocus)
 
     const isRunning = gameState === GameState.RUNNING
 
@@ -24,6 +25,7 @@ const GameMenu = ({ settings }) => {
                 leave="transition ease-in duration-75"
                 leaveFrom="transform opacity-100 scale-100"
                 leaveTo="transform opacity-0 scale-95"
+                afterLeave={() => requestInputFocus()}
             >
                 <Menu.Items className="menu-items">
                     <Menu.Item>

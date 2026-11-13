@@ -1,5 +1,5 @@
 import GameState from "../classes/GameState"
-import {useEffect, useState} from 'react'
+import {useEffect, useRef, useState} from 'react'
 import {useStoreState} from "easy-peasy"
 import {
     useFloating,
@@ -22,6 +22,15 @@ const Answer = ({text, isVisible, isPangram}) => {
 
     const [definition, setDefinition] = useState(null)
     const [isTooltipOpen, setTooltipOpen] = useState(false);
+    const [isNewlyFound, setNewlyFound] = useState(false)
+    const wasVisible = useRef(isVisible)
+
+    useEffect(() => {
+        if (isVisible && !wasVisible.current) {
+            setNewlyFound(true)
+        }
+        wasVisible.current = isVisible
+    }, [isVisible])
 
     const canShowDefinition = isVisible || gameState === GameState.ENDED
 
@@ -111,7 +120,8 @@ const Answer = ({text, isVisible, isPangram}) => {
                 </div>
             }
             <div
-                className={`answer-bg ${color}`}
+                className={`answer-bg ${color} ${isNewlyFound ? "motion-safe:animate-found" : ""}`}
+                onAnimationEnd={() => setNewlyFound(false)}
                 ref={refs.setReference}
                 {...getReferenceProps()}>
                 <p className='answer-text'>{canShowDefinition ? text : ""}</p>
