@@ -51,3 +51,5 @@ python tools/make_practice_puzzles.py -c tools/corpuses/glypoon.txt -o public/pr
 The *Concise Oxford English Dictionary* (COED) corpuses under `tools/corpuses/coed*` were generated with the `tools/dictionary_to_corpus.py` script.
 
 The `tools/corpuses/glypoon.txt` file is the corpus used to generate the daily puzzles. It is built by `tools/build_corpus.py` from the COED dictionary files and the word-by-word review in `tools/word_review/review.tsv` (see [`tools/word_review/README.md`](tools/word_review/README.md)). The older `tools/script.ipynb` notebook is kept for reference only.
+
+The definitions shown for answers come from `tools/definitions/definitions.tsv`, extracted from COED using the sense that makes each word valid and reviewed where extraction may be wrong (see [`tools/definitions/README.md`](tools/definitions/README.md)).

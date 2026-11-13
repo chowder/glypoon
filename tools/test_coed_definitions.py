@@ -24,7 +24,7 @@ class DefinitionTest(unittest.TestCase):
         # Valid as an adjective, not as the past participle of "give".
         self.assertDefinition("given", "specified or stated.")
         self.assertDefinition("seeing", "because; since.")
-        self.assertDefinition("bats", "mad.")
+        self.assertDefinition("bats", "(of a person) mad.")
 
     def test_skips_comparative_senses(self):
         # "better" is valid as a noun/verb, not as the comparative of "good".
@@ -44,8 +44,13 @@ class DefinitionTest(unittest.TestCase):
         self.assertDefinition("adept", "very skilled or proficient.")
         self.assertDefinition("ablution", "(usu. ablutions) an act of washing.")
 
+    def test_nested_inflection_brackets(self):
+        # "(plural billions or (with numeral or quantifying word) same)"
+        self.assertDefinition("billion", "the number equivalent to the product of a thousand and a million; 1,000,000,000 or 10⁹.")
+        self.assertDefinition("knit", "make by interlocking loops of yarn with knitting needles or on a machine.")
+
     def test_set_phrase_senses_come_last(self):
-        senses = [d for _, d in self.coed.senses("given")]
+        senses = [s.definition for s in self.coed.senses("given")]
         self.assertEqual(senses[-1], "(given to) inclined or disposed to.")
 
     def test_follows_cross_references(self):
@@ -53,6 +58,28 @@ class DefinitionTest(unittest.TestCase):
         self.assertDefinition("amir", "a title of various Muslim (mainly Arab) rulers.")
         # "hmm: variant spelling of hem 2": the hesitation sound, not hem 1.
         self.assertIn("clearing the throat", self.coed.definition("hmm"))
+
+    def test_capitalized_senses_come_last(self):
+        # RULES.md needs the word listed without a capital.
+        self.assertDefinition("apostle", "a vigorous and pioneering supporter of an idea or cause.")
+
+    def test_set_phrase_is_kept(self):
+        self.assertDefinition("kilter", "(out of kilter) out of harmony or balance.")
+        self.assertDefinition("dole", "(often on the dole) benefit paid by the state to the unemployed.")
+
+    def test_cross_reference_keeps_part_of_speech_and_sense(self):
+        # "North American term for lift (in sense 1)": the noun, not the verb.
+        self.assertDefinition(
+            "elevator", "a platform or compartment housed in a shaft for raising and lowering people or things."
+        )
+        # "inure: variant spelling of enure" points back to inure: use its next sense.
+        self.assertTrue(self.coed.definition("inure").startswith("(usu. be inured to) accustom"))
+        # The target's pointer back to the word is dropped.
+        self.assertDefinition("clavicle", "either of the pair of bones joining the breastbone to the shoulder blades.")
+
+    def test_drops_related_word_pointers(self):
+        self.assertDefinition("fauna", "the animals of a particular region, habitat, or geological period.")
+        self.assertDefinition("arcana", "secrets; mysteries.")
 
     def test_extra_words(self):
         self.assertDefinition("lots", "a great deal; much.")

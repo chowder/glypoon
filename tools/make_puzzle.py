@@ -1,11 +1,12 @@
 import argparse
 import json
+import os
 import random
 import sys
 from collections import Counter
 from datetime import datetime
 
-from coed_definitions import Definitions
+DEFINITIONS = os.path.join(os.path.dirname(os.path.abspath(__file__)), "definitions", "definitions.tsv")
 
 MIN_NUM_SOLUTIONS = 20
 MAX_NUM_SOLUTIONS = 35
@@ -42,12 +43,23 @@ DIFFICULTY_BY_DAY = {
 }
 
 
+def load_definitions(path=DEFINITIONS):
+    """Map each word to its definition, from definitions/definitions.tsv."""
+    definitions = {}
+    with open(path, encoding="utf-8") as f:
+        for line in f:
+            if line.startswith("#"):
+                continue
+            word, _, definition, _ = line.rstrip("\n").split("\t")
+            definitions[word] = definition
+    return definitions
+
+
 def get_definitions(words):
-    """Map each answer to the COED definition of the sense that makes it valid."""
-    coed = Definitions()
+    known = load_definitions()
     definitions = {}
     for word in words:
-        definitions[word] = coed.definition(word)
+        definitions[word] = known.get(word)
         if definitions[word] is None:
             print(f"No definition found for: {word}")
     return definitions
