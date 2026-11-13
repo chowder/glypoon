@@ -18,8 +18,7 @@ A trial of reviewing each word by hand (by an LLM) against its actual COED entry
 | `A`  | Valid and well known: fine as a **required** puzzle answer |
 | `B`  | Valid but obscure, technical, archaic, regional or a variant spelling: **accept** as a guess, don't require it |
 | `O`  | Valid but offensive or sexual: flag for an owner decision |
-| `R-*` | Breaks a rule: `R-plural`, `R-inflection`, `R-ly`, `R-redirect` (an index entry that only points to another headword, e.g. `hands → hand`) |
-| `P-adj` | Policy question: a participle COED only notes as "[as adjective X]" (e.g. `thatched`, `nauseating`) |
+| `R-*` | Breaks a rule: `R-plural`, `R-inflection`, `R-ly`, `R-redirect` (an index entry that only points to another headword, e.g. `hands → hand`), `R-participle` (see below) |
 
 ## Results
 
@@ -28,8 +27,7 @@ A trial of reviewing each word by hand (by an LLM) against its actual COED entry
 | A (answer) | 332 (83%) | **9** |
 | B (accept only) | **52 (13%)** | 81 |
 | O (offensive) | 2 | 1 |
-| R (rule violation) | **8 (2%)** | 9 |
-| P-adj (policy) | 6 (1.5%) | 0 |
+| R (rule violation) | **14 (3.5%)** | 9 |
 
 Rough estimates for the whole list (small sample, so treat as ballpark):
 
@@ -37,8 +35,8 @@ Rough estimates for the whole list (small sample, so treat as ballpark):
   Examples: surd, tocsin, epitaxy, yttrium, induna, quorate, decoke, lickerish.
 - **About 400 clear rule violations.** Most are index redirect entries for plurals: hands,
   groceries, greetings, sands, clutches, strains, cloaks.
-- **About 300 participle-as-adjective words** that depend on how strictly the rules are read:
-  thatched, stranded, forested, blemished, blanched, nauseating.
+- **336 participles that COED only notes "as adjective"** under the verb (counted exactly, not
+  estimated): thatched, stranded, worried, elated, appalling, sparkling. Now rejected; see below.
 - **About 1,500 well-known words** (very rough; plausible range 700–2,800) out of the ~17,000
   COED words not in the list were wrongly left out. Examples: traipse, peccadillo, whopping,
   workaround, collider, schnauzer, declaw, capon, monopolize. Players currently get told these
@@ -53,7 +51,7 @@ Rough estimates for the whole list (small sample, so treat as ballpark):
    rejects words like traipse and whopping.
 2. **Code catches redirect entries reliably, but can't decide them alone.** All 15 redirect
    entries in the sample were flagged correctly. Only 7 should be rejected, though: `glowing`
-   and `angling` are real adjective/noun senses, and 6 are the policy case above. The right
+   and `angling` are real adjective/noun senses, and 6 are `R-participle`. The right
    setup is to flag them in code and review the flagged ones.
 3. **One rule, read literally, would reject familiar words.** `spaghetti` (COED: "plural noun")
    is disallowed by the "folk" clause in `RULES.md`. Expect similar cases (e.g. scissors,
@@ -71,9 +69,16 @@ Goal: keep today's experience, with fewer edge cases and surprises.
 - **Plural-only nouns (e.g. spaghetti) are allowed.** The "folk" clause in `RULES.md` needs
   updating to match.
 - **Offensive words (`O`) are rejected.**
-- **Participles COED only notes "as adjective" (`P-adj`):** still open. These are *in* the list
-  today. Words COED gives a full adjective entry (abandoned, bloated, reserved) stay either way.
+- **Participles COED only notes "as adjective" are rejected (`R-participle`).** RULES.md allows a
+  verb form only if COED "explicitly lists" it as another part of speech, as with "given", which
+  has its own entry with adjective senses. Words like "thatched" appear only as
+  `verb [often as adjective thatched] cover with thatch` inside the verb's entry, with the
+  verb's definition, so they don't qualify. This removes 336 words that are in the list today,
+  including worried, elated, appalling, muted and strapped. Words with their own adjective entry
+  (abandoned, bloated, reserved, given) stay. These can be detected in code from `dump.txt`:
+  an entry with no part-of-speech marker of its own, a `→` link to another headword, and a body
+  that starts "adjective".
 
-Effect on this sample: 61–67 of the 400 current words would be removed (about 15%) and 9 of the
-100 left-out words added. Scaled up, that's roughly 19,000 words instead of 20,700. After the
+Effect on this sample: 67 of the 400 current words would be removed (about 17%) and 9 of the
+100 left-out words added. Scaled up, that's roughly 18,700 words instead of 20,700. After the
 full run, check that the generator still finds 20–35-answer puzzles on 10-letter days.

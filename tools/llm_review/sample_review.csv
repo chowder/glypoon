@@ -42,8 +42,8 @@ biopiracy,False,B,,noun,False
 bit,True,A,,noun; noun; verb; noun,False
 bivalence,False,B,technical,noun,False
 blackout,True,A,,noun,False
-blanched,True,P-adj,"adjective use of a participle (blanch); valid only if ""as adjective"" uses count",,True
-blemished,True,P-adj,adjective use of a participle (blemish),,True
+blanched,True,R-participle,only noted as [as adjective] under the verb blanch,,True
+blemished,True,R-participle,only noted as [as adjective] under the verb blemish,,True
 blinking,True,B,regional slang,adjective,False
 blister,True,A,,noun; verb,False
 bloated,True,A,,adjective,False
@@ -169,7 +169,7 @@ fluff,True,A,,noun; verb,False
 flyer,True,A,,noun,False
 fog,True,A,,noun; verb; noun,False
 foolscap,True,A,,noun,False
-forested,True,P-adj,adjective use of a participle (forest),,True
+forested,True,R-participle,only noted as [as adjective] under the verb forest,,True
 foretold,False,R-inflection,past tense of foretell,,False
 formulaic,True,A,,adjective,False
 forty,True,A,,cardinal number,False
@@ -291,7 +291,7 @@ mouflon,False,B,,noun,False
 mulberry,True,A,,noun,False
 mush,True,A,,noun; verb; exclamation; verb; noun,False
 nationwide,True,A,,adjective &amp; adverb,False
-nauseating,True,P-adj,"adjective use of a participle (nauseate); valid only if ""as adjective"" uses count",,True
+nauseating,True,R-participle,only noted as [as adjective] under the verb nauseate,,True
 neddy,False,B,,noun,False
 need,True,A,,verb; noun; adverb,False
 neurotic,True,A,,adjective; noun,False
@@ -414,7 +414,7 @@ steatite,False,B,technical,noun,False
 steinbok,False,B,variant spelling,noun,False
 stoneware,True,A,,noun,False
 strains,True,R-redirect,plural of strain,,True
-stranded,True,P-adj,adjective use of a participle (strand),,True
+stranded,True,R-participle,only noted as [as adjective] under the verb strand,,True
 strife,True,A,,noun,False
 structural,True,A,,adjective,False
 studmuffin,False,B,US-only slang,noun,False
@@ -442,7 +442,7 @@ tenure,True,A,,noun; verb,False
 teratology,False,B,technical,noun,False
 terraced,True,A,,adjective,False
 testis,True,B,technical,noun,False
-thatched,True,P-adj,adjective use of a participle (thatch),,True
+thatched,True,R-participle,only noted as [as adjective] under the verb thatch,,True
 theory,True,A,,noun,False
 think,True,A,,verb; noun,False
 thrift,True,A,,noun,False
