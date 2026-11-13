@@ -9,7 +9,11 @@ const GLYPOON_API_URL = process.env.REACT_APP_GLYPOON_API_URL || "http://localho
 const model = {
     solution: {
         answers: [],
-        letters: []
+        letters: [],
+        // Map of answer -> definition (or null if none was found). Older
+        // puzzles don't include definitions, in which case this stays null and
+        // definitions are fetched from the dictionary API instead.
+        definitions: null
     },
     currentAnswers: [],
     gameState: GameState.NOT_STARTED,
@@ -50,6 +54,7 @@ const model = {
     setSolution: action((state, solution) => {
         state.solution.answers = solution.answers
         state.solution.letters = solution.letters
+        state.solution.definitions = solution.definitions || null
 
         let letterAvailability = Array(solution.letters.length)
         letterAvailability.fill(true)
