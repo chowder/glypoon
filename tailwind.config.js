@@ -14,6 +14,8 @@ export default {
         // different colour scales than Tailwind 3 does.
         green: colors.emerald,
         yellow: colors.amber,
+        // Tailwind's actual yellow scale, for places that need a true yellow.
+        lemon: colors.yellow,
         purple: colors.violet,
         blueGray: colors.slate,
       },

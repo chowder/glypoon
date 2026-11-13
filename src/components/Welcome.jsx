@@ -59,6 +59,25 @@ const Welcome = () => {
                                     Create as many words as you can in {Math.floor(gameDuration / 60)} minutes!
                                 </p>
                             </div>
+                            <Disclosure defaultOpen>
+                                {({ open }) => (
+                                    <>
+                                        <Disclosure.Button className="mt-4 flex justify-between w-full px-4 py-2 text-sm font-medium text-left text-lemon-900 bg-lemon-100 rounded-lg hover:bg-lemon-200 dark:text-lemon-100 dark:bg-lemon-400/20 dark:hover:bg-lemon-400/30 focus:outline-none focus-visible:ring focus-visible:ring-lemon-500 focus-visible:ring-opacity-75">
+                                            <span>Updates</span>
+                                            <ChevronUpIcon className={`${open ? "transform rotate-180" : ""} w-5 h-5 text-lemon-600 dark:text-lemon-300`} />
+                                        </Disclosure.Button>
+                                        <Disclosure.Panel className="px-4 pt-4 pb-2 text-sm text-left text-gray-500 dark:text-gray-300">
+                                            <div className="border-l-2 border-lemon-300 dark:border-lemon-400/50 pl-3 space-y-3">
+                                                <p><span className="font-medium text-gray-700 dark:text-gray-100">Hi friends!</span> (especially those at Macquarie)</p>
+                                                <p>I finally gave Glypoon some long-overdue love. AI has made that a lot easier these days.</p>
+                                                <p>I've given the word list a refresh, which should match Polygon's rules much more closely.</p>
+                                                <p>Let me know if you think it's better (or worse!). I'm reachable at <a href="mailto:andrew@cho.io" className="underline text-blue-500 dark:text-blue-300">andrew@cho.io</a>. Hope you've all been well.</p>
+                                                <p className="italic">Andrew</p>
+                                            </div>
+                                        </Disclosure.Panel>
+                                    </>
+                                )}
+                            </Disclosure>
                             <Disclosure>
                                 {({ open }) => (
                                     <>
