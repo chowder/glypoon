@@ -62,10 +62,18 @@ Rough estimates for the whole list (small sample, so treat as ballpark):
    obvious; the hard calls are where A ends and B begins, which is subjective. A second
    independent pass on B/A borderline words would make it more consistent.
 
-## Decisions needed from the owner
+## Owner decisions
 
-- Allow participles that COED only notes "as adjective"? (`P-adj`)
-- Allow COED "plural noun" words such as spaghetti, against the literal rule?
-- Should offensive-but-valid words (`O`) be accepted as guesses, or rejected entirely?
-- Adopt the two-tier model (required answers = `A`, accepted guesses = `A` + `B`)? This needs a
-  small change in `src/classes/GameModel.js` and the puzzle JSON.
+Goal: keep today's experience, with fewer edge cases and surprises.
+
+- **Single list, no two-tier model.** The review takes over the job `words58k` does today:
+  `A` words are in the list, `B` words are out.
+- **Plural-only nouns (e.g. spaghetti) are allowed.** The "folk" clause in `RULES.md` needs
+  updating to match.
+- **Offensive words (`O`) are rejected.**
+- **Participles COED only notes "as adjective" (`P-adj`):** still open. These are *in* the list
+  today. Words COED gives a full adjective entry (abandoned, bloated, reserved) stay either way.
+
+Effect on this sample: 61–67 of the 400 current words would be removed (about 15%) and 9 of the
+100 left-out words added. Scaled up, that's roughly 19,000 words instead of 20,700. After the
+full run, check that the generator still finds 20–35-answer puzzles on 10-letter days.
