@@ -13,7 +13,7 @@ affidavit,True,A,,noun,False
 agleam,True,B,,adjective,False
 alkalic,True,B,technical,adjective,False
 anaemic,True,A,,adjective,False
-angling,True,A,"redirect entry; angling is a noun (the sport), allowed",,True
+angling,True,R-participle,only noted as [as noun] under the verb angle,,True
 aplomb,True,A,,noun,False
 appointed,True,A,,adjective,False
 arrant,True,A,,adjective,False
@@ -189,7 +189,7 @@ gawk,True,A,,verb; noun,False
 gesture,True,A,,noun; verb,False
 ghastly,True,A,,adjective,False
 glazier,True,A,,noun,False
-glowing,True,A,"redirect entry but explicitly an adjective sense, allowed by rules",,True
+glowing,True,R-participle,only noted as [as adjective] under the verb glow,,True
 glycerol,True,A,,noun,False
 going,True,A,,noun; adjective,False
 goodnight,True,A,,exclamation,False

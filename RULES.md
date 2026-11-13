@@ -6,9 +6,9 @@ Answer words must be listed in COED without capital letters. For example, “Moo
 
 Answers must be listed in COED as single words, without hyphens or other punctuation such as apostrophes. For example, “come on” and “come-on” aren’t allowed.
 
-Plural nouns aren’t allowed, even if they’re irregularly formed. For example, “coins”, “monies” and “icemen” aren’t allowed. Neither are words like “folk” which COED lists only as a plural noun. However, if a plural form is explicitly listed in COED as a different part of speech, it is allowed. For example, “bats” (adjective), “lots” (adverb) and “times” (verb meaning “to multiply”) are allowed.
+Plural nouns aren’t allowed, even if they’re irregularly formed. For example, “coins”, “monies” and “icemen” aren’t allowed. However, words that COED lists only as plural nouns, such as “scissors” and “spaghetti”, are allowed, and if a plural form is explicitly listed in COED as a different part of speech, it is allowed. For example, “bats” (adjective), “lots” (adverb) and “times” (verb meaning “to multiply”) are allowed.
 
-Only the base forms of verbs are allowed (the infinitive, without the word “to”), not any variations such as present tense, past tense or participles, even if they’re irregularly formed. For example, “see” is allowed, but not “sees” or “seen”. However, if a verb form is explicitly listed in COED as a different part of speech, it is allowed. For example, “saw” (noun), “seeing” (conjunction or noun) and “given” (adjective, preposition or noun) are allowed.
+Only the base forms of verbs are allowed (the infinitive, without the word “to”), not any variations such as present tense, past tense or participles, even if they’re irregularly formed. For example, “see” is allowed, but not “sees” or “seen”. However, if a verb form is explicitly listed in COED as a different part of speech, it is allowed. For example, “saw” (noun), “seeing” (conjunction or noun) and “given” (adjective, preposition or noun) are allowed. A verb form that COED only notes as being used as an adjective or noun within the verb’s entry (e.g. “thatched” in “thatch: verb [often as adjective thatched]”) does not count as a separate listing, so “thatched”, “worried” and “angling” aren’t allowed.
 
 Agent nouns ending in -er are allowed if they’re listed in COED. For example, “mincer” is allowed, but “mooner” isn’t.
 

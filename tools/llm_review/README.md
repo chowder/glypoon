@@ -24,10 +24,10 @@ A trial of reviewing each word by hand (by an LLM) against its actual COED entry
 
 | | In current list (400) | Not in list (100) |
 |---|---|---|
-| A (answer) | 332 (83%) | **9** |
+| A (answer) | 330 (82.5%) | **9** |
 | B (accept only) | **52 (13%)** | 81 |
 | O (offensive) | 2 | 1 |
-| R (rule violation) | **14 (3.5%)** | 9 |
+| R (rule violation) | **16 (4%)** | 9 |
 
 Rough estimates for the whole list (small sample, so treat as ballpark):
 
@@ -49,10 +49,10 @@ Rough estimates for the whole list (small sample, so treat as ballpark):
 1. **The current list's biggest problem is obscure words, not rule violations.** About 13% of
    required answers would frustrate a reasonable player. `words58k` lets these through and also
    rejects words like traipse and whopping.
-2. **Code catches redirect entries reliably, but can't decide them alone.** All 15 redirect
-   entries in the sample were flagged correctly. Only 7 should be rejected, though: `glowing`
-   and `angling` are real adjective/noun senses, and 6 are `R-participle`. The right
-   setup is to flag them in code and review the flagged ones.
+2. **Code catches redirect entries reliably.** All 15 redirect entries in the sample were
+   flagged correctly. I first marked `glowing` and `angling` as allowed, but COED lists them
+   exactly like `thatched` (`[as adjective glowing]` under "glow"), so under the
+   `R-participle` rule all 15 are rejected and code can decide them alone.
 3. **One rule, read literally, would reject familiar words.** `spaghetti` (COED: "plural noun")
    is disallowed by the "folk" clause in `RULES.md`. Expect similar cases (e.g. scissors,
    trousers). This needs an owner decision.
@@ -79,6 +79,9 @@ Goal: keep today's experience, with fewer edge cases and surprises.
   an entry with no part-of-speech marker of its own, a `→` link to another headword, and a body
   that starts "adjective".
 
-Effect on this sample: 67 of the 400 current words would be removed (about 17%) and 9 of the
-100 left-out words added. Scaled up, that's roughly 18,700 words instead of 20,700. After the
-full run, check that the generator still finds 20–35-answer puzzles on 10-letter days.
+Effect on this sample: 69 of the 400 current words would be removed and 9 of the 100 left-out
+words added. (The full run below was more lenient with obscure words than this pilot.)
+
+## Full run
+
+Done; see [`../word_review/README.md`](../word_review/README.md).
