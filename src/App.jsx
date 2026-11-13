@@ -11,15 +11,36 @@ import useMediaQuery from './hooks/useMediaQuery'
 
 const store = createStore(model)
 
+const readSetting = (key) => {
+  try {
+    const value = localStorage.getItem(`glypoon.${key}`)
+    return value === null ? null : value === "true"
+  } catch (e) {
+    return null
+  }
+}
+
+const writeSetting = (key, value) => {
+  try {
+    localStorage.setItem(`glypoon.${key}`, value)
+  } catch (e) {
+    return
+  }
+}
+
 function App() {
   const getSystemDarkTheme = () => window.matchMedia("(prefers-color-scheme: dark)").matches
-  const [darkMode, setDarkMode] = useState(getSystemDarkTheme())
-  const [christmasMode, setChristmasMode] = useState(false)
+  const [darkMode, setDarkMode] = useState(() => readSetting("darkMode") ?? getSystemDarkTheme())
+  const [christmasMode, setChristmasMode] = useState(() => readSetting("christmasMode") ?? false)
   const compact = useMediaQuery("(max-width: 767px), not all and (any-pointer: fine)")
 
   useEffect(() => {
     const darkThemeMq = window.matchMedia("(prefers-color-scheme: dark)");
-    darkThemeMq.addEventListener('change', (e) => setDarkMode(e.matches))
+    darkThemeMq.addEventListener('change', (e) => {
+      if (readSetting("darkMode") === null) {
+        setDarkMode(e.matches)
+      }
+    })
   }, [])
 
   useEffect(() => {
@@ -27,10 +48,12 @@ function App() {
   }, [darkMode])
 
   const toggleDarkMode = () => {
+    writeSetting("darkMode", !darkMode)
     setDarkMode(!darkMode)
   }
 
   const toggleChristmasMode = () => {
+    writeSetting("christmasMode", !christmasMode)
     setChristmasMode(!christmasMode)
   }
 
