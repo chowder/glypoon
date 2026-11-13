@@ -31,7 +31,7 @@ const Welcome = () => {
                 open={open}
                 onClose={() => {}}
             >
-                <div className="min-h-screen px-8 text-center">
+                <div className="flex min-h-[100dvh] items-center justify-center p-8 text-center">
                     <Transition.Child
                         as={Fragment}
                         leave="ease-in duration-200"
@@ -41,20 +41,13 @@ const Welcome = () => {
                         <Dialog.Overlay className="fixed inset-0 blur-bg" />
                     </Transition.Child>
 
-                    {/* This element is to trick the browser into centering the modal contents. */}
-                    <span
-                        className="inline-block h-screen align-middle"
-                        aria-hidden="true"
-                    >
-                        &#8203;
-                    </span>
                     <Transition.Child
                         as={Fragment}
                         leave="ease-in duration-200"
                         leaveFrom="opacity-100 scale-100"
                         leaveTo="opacity-0 -translate-y-4 sm:translate-y-0 sm:scale-95 "
                     >
-                        <div className="inline-block w-full max-w-md p-6 my-8 overflow-hidden text-center align-middle transition-all transform bg-white shadow-xl rounded-2xl">
+                        <div className="w-full max-w-md p-6 overflow-hidden text-center transition-all transform bg-white shadow-xl rounded-2xl">
                             <Dialog.Title
                                 as="h3"
                                 className="text-xl font-medium leading-6 text-gray-900"
