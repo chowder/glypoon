@@ -28,32 +28,41 @@ Every word that passes the rules was reviewed and given a decision in `review.ts
 
 | | Meaning | In corpus? |
 |---|---|---|
-| `A` | Well known: fair to require as a puzzle answer | yes |
-| `B` | Valid but obscure, technical, archaic, regional, or a rare spelling variant | no |
+| `A` | Well known, or obscure enough that finding it makes a player feel smart (tocsin, surd, quorate, synecdoche) | yes |
+| `B` | Specialist jargon, proper-noun look-alikes (york, henry), regional slang, rare spelling variants | no |
 | `O` | Offensive: slurs, vulgar words, and words whose best-known sense is either | no |
 
-The aim was to keep today's experience: the review replaces `words58k` as the "would a
-reasonable player know this?" test. Common alternative spellings are both kept (`likable` /
+The aim was to keep today's experience, including its level of rareness: the review replaces
+`words58k` as the "is this fair?" test. Common alternative spellings are both kept (`likable` /
 `likeable`, `donut` / `doughnut`) so a player's normal spelling isn't rejected.
+
+Rareness was checked against word frequency (`wordfreq` Zipf scores, where about 3 is a typical
+word and under 2 is rare). The old and new lists have the same share of rare words, with the new
+list leaning slightly more obscure:
+
+| | Rarer than 2.0 | Rarer than 1.5 |
+|---|---|---|
+| Old list | 11.0% | 3.4% |
+| New list | 11.4% | 3.2% |
 
 ## Result
 
 | | Words |
 |---|---|
 | Old list | 20,711 |
-| New list | 20,725 |
-| Removed | 2,673: 932 by rule, 1,722 obscure (`B`), 19 offensive (`O`) |
-| Added | 2,687 well-known words the old list was missing |
+| New list | 22,278 |
+| Removed | 1,560: 932 by rule, 609 jargon/look-alikes/variants (`B`), 19 offensive (`O`) |
+| Added | 3,126 words the old list was missing, from everyday (cookie, daily, people, scissors) to smart (synecdoche, eldritch, scintilla, demesne) |
 
 - **Removed by rule:** hands, groceries, greetings, antennae, bade, worried, thatched,
   committed, appalling.
-- **Removed as obscure:** surd, tocsin, epitaxy, yttrium, quorate, decoke, lickerish, cist.
+- **Removed as `B`:** york, henry, oxford (proper-noun look-alikes), mediaeval, hullo (rare
+  variants), and deep jargon a player couldn't reasonably guess (aldrin, epicycloid, microfarad,
+  effluxion).
 - **Removed as offensive:** spastic, retard, squaw, midget, poof, golliwog, kinky.
-- **Added:** traipse, whopping, workaround, collider, scissors, trousers, caffeine, cookie,
-  daily, deadly, early, people, physics, statistics, online, supply.
 
 Puzzle generation still works on every day of the week. In a simulation, a random starting word
-gives a valid puzzle 56–72% of the time (it was 62–73%), and the generator retries until it gets
+gives a valid puzzle 56–70% of the time (it was 62–73%), and the generator retries until it gets
 one.
 
 ## Changing a decision
