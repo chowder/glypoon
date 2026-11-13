@@ -1,0 +1,501 @@
+word,in_current_list,decision,reason,coed_pos,coed_redirect_entry
+abdomen,True,A,,noun,False
+ablush,False,B,,adjective,False
+absolutism,True,A,,noun,False
+acceptable,True,A,,adjective,False
+accompany,True,A,,verb,False
+acetabulum,False,B,technical,noun,False
+adduce,True,B,,verb,False
+adjure,True,B,,verb,False
+adorable,True,A,,adjective,False
+aesthete,True,A,,noun,False
+affidavit,True,A,,noun,False
+agleam,True,B,,adjective,False
+alkalic,True,B,technical,adjective,False
+anaemic,True,A,,adjective,False
+angling,True,R-participle,only noted as [as noun] under the verb angle,,True
+aplomb,True,A,,noun,False
+appointed,True,A,,adjective,False
+arrant,True,A,,adjective,False
+ascorbate,False,B,technical,noun,False
+ashen,True,A,,adjective; adjective,False
+asp,True,A,,noun,False
+aspirant,True,A,,adjective; noun,False
+asprawl,False,B,,adverb &amp; adjective,False
+astanga,False,B,variant spelling,noun,False
+augur,True,A,,verb; noun,False
+autosome,False,B,technical,noun,False
+backslash,True,A,,noun,False
+backtrack,True,A,,verb,False
+balustrade,True,A,,noun,False
+barefaced,True,A,,adjective,False
+baronet,True,A,,noun,False
+bats,True,B,valid (adjective) but dated slang,adjective,False
+beanpole,True,A,,noun,False
+bedsock,False,B,,noun,False
+begad,False,B,archaic,exclamation,False
+beholden,True,A,,adjective,False
+bell,True,A,,noun; verb; noun; verb,False
+bellyful,True,A,,noun,False
+billow,True,A,,noun; verb,False
+biopiracy,False,B,,noun,False
+bit,True,A,,noun; noun; verb; noun,False
+bivalence,False,B,technical,noun,False
+blackout,True,A,,noun,False
+blanched,True,R-participle,only noted as [as adjective] under the verb blanch,,True
+blemished,True,R-participle,only noted as [as adjective] under the verb blemish,,True
+blinking,True,B,regional slang,adjective,False
+blister,True,A,,noun; verb,False
+bloated,True,A,,adjective,False
+bluster,True,A,,verb; noun,False
+boathouse,True,A,,noun,False
+boost,True,A,,verb; noun,False
+borderer,True,B,,noun,False
+boyfriend,True,A,,noun,False
+brat,True,A,,noun,False
+break,True,A,,verb; noun; noun,False
+breech,True,A,,noun,False
+brew,True,A,,verb; noun,False
+bridgehead,True,A,,noun,False
+brim,True,A,,noun; verb,False
+broom,True,A,,noun,False
+brouhaha,True,A,,noun,False
+brush,True,A,,noun; verb; noun,False
+bugbear,True,A,,noun,False
+bullock,True,A,,noun; verb,False
+busk,True,A,,verb; noun,False
+bustle,True,A,,verb; noun; noun,False
+camcorder,True,A,,noun,False
+camel,True,A,,noun,False
+canister,True,A,,noun,False
+canon,True,A,,noun; noun,False
+canyoning,False,B,,noun,False
+capon,False,A,,noun,False
+carbon,True,A,,noun,False
+cater,True,A,,verb,False
+ceasefire,True,A,,noun,False
+charade,True,A,,noun,False
+checkpoint,True,A,,noun,False
+chef,True,A,,noun; verb,False
+chestnut,True,A,,noun,False
+chieftain,True,A,,noun,False
+chimp,True,A,,noun,False
+chrysotile,False,B,technical,noun,False
+chute,True,A,,noun; noun,False
+cilium,True,B,technical,noun,False
+citrus,True,A,,noun,False
+clamp,True,A,,noun; verb; noun,False
+clement,True,A,,adjective,False
+cloaks,True,R-redirect,plural form (cloaks = cloakroom),,True
+clutches,True,R-redirect,plural of clutch,,True
+coalfield,True,A,,noun,False
+coaxial,True,A,,adjective,False
+cocoon,True,A,,noun; verb,False
+collider,False,A,,noun,False
+colourant,True,B,,noun,False
+comedy,True,A,,noun,False
+complete,True,A,,adjective; verb,False
+comport,True,B,,verb; noun,False
+concur,True,A,,verb,False
+condenser,True,A,,noun,False
+conduct,True,A,,noun; verb,False
+conspiracy,True,A,,noun,False
+contention,True,A,,noun,False
+corporate,True,A,,adjective; noun,False
+costive,True,B,,adjective,False
+crave,True,A,,verb,False
+creep,True,A,,verb; noun,False
+crosier,True,B,variant spelling,noun,False
+cruel,True,A,,adjective,False
+cuddy,False,B,regional,noun,False
+cully,False,B,archaic,noun,False
+curare,True,B,,noun,False
+curative,True,A,,adjective; noun,False
+customer,True,A,,noun,False
+cutlass,True,A,,noun,False
+dais,True,A,,noun,False
+decagon,True,A,,noun,False
+decidua,False,B,technical,noun,False
+declaw,False,A,,verb,False
+decoke,True,B,,verb,False
+decor,True,A,,noun,False
+deduce,True,A,,verb,False
+delivery,True,A,,noun,False
+detective,True,A,,noun,False
+device,True,A,,noun,False
+dihydric,False,B,technical,adjective,False
+diminuendo,True,B,,adverb &amp; adjective; verb,False
+disappear,True,A,,verb,False
+disavow,True,A,,verb,False
+discontent,True,A,,noun,False
+discord,True,A,,noun; verb,False
+disinfest,False,B,,verb,False
+disown,True,A,,verb,False
+displace,True,A,,verb,False
+dispute,True,A,,verb; noun,False
+disyllable,True,B,,noun,False
+diver,True,A,,noun,False
+doge,True,B,,noun,False
+dogfight,True,A,,noun,False
+dominion,True,A,,noun,False
+dope,True,A,,noun; verb; adjective,False
+downfall,True,A,,noun,False
+downturn,True,A,,noun; verb,False
+draught,True,A,,noun; verb; adjective,False
+dwarf,True,A,,noun; verb,False
+embolism,True,A,,noun,False
+ensnare,True,A,,verb,False
+epimerize,False,B,technical,verb,False
+epitaxy,True,B,technical,noun,False
+evacuate,True,A,,verb,False
+even,True,A,,adjective; verb; adverb; noun,False
+eventing,True,B,,noun,False
+excel,True,A,,verb,False
+exclaim,True,A,,verb,False
+famed,True,A,,adjective,False
+family,True,A,,noun; adjective,False
+fax,True,A,,noun; verb,False
+fenestra,False,B,technical,noun,False
+fetid,True,A,,adjective,False
+fibula,True,A,,noun,False
+fireballer,False,B,US-only,noun,False
+flammable,True,A,,adjective,False
+flask,True,A,,noun,False
+flea,True,A,,noun,False
+fleshy,True,A,,adjective,False
+float,True,A,,verb; noun,False
+flounce,True,A,,verb; noun; noun,False
+fluff,True,A,,noun; verb,False
+flyer,True,A,,noun,False
+fog,True,A,,noun; verb; noun,False
+foolscap,True,A,,noun,False
+forested,True,R-participle,only noted as [as adjective] under the verb forest,,True
+foretold,False,R-inflection,past tense of foretell,,False
+formulaic,True,A,,adjective,False
+forty,True,A,,cardinal number,False
+founder,True,A,,noun; noun; verb; noun,False
+fractious,True,A,,adjective,False
+frailty,True,A,,noun,False
+frontier,True,A,,noun,False
+fuliginous,False,B,,adjective,False
+functional,True,A,,adjective,False
+galloway,False,B,,noun,False
+gander,True,A,,noun,False
+garfish,False,B,,noun,False
+garrison,True,A,,noun; verb,False
+gas,True,A,,noun; verb,False
+gaur,False,B,,noun,False
+gawk,True,A,,verb; noun,False
+gesture,True,A,,noun; verb,False
+ghastly,True,A,,adjective,False
+glazier,True,A,,noun,False
+glowing,True,R-participle,only noted as [as adjective] under the verb glow,,True
+glycerol,True,A,,noun,False
+going,True,A,,noun; adjective,False
+goodnight,True,A,,exclamation,False
+gossip,True,A,,noun; verb,False
+grandpa,True,A,,noun,False
+greasewood,False,B,,noun,False
+greetings,True,R-redirect,plural of greeting,,True
+groceries,True,R-redirect,plural of grocery,,True
+grosgrain,False,B,,noun,False
+ground,True,A,,noun; verb,False
+groundless,True,A,,adjective,False
+guenon,False,B,,noun,False
+guess,True,A,,verb; noun,False
+guillotine,True,A,,noun; verb,False
+gut,True,A,,noun; verb,False
+habituate,True,B,,verb,False
+hairpin,True,A,,noun,False
+haji,False,B,,noun,False
+halite,True,B,technical,noun,False
+handicap,True,A,,noun; verb,False
+hands,True,R-redirect,inflected form pointing to hand,,True
+hap,False,B,archaic,noun; verb,False
+hardpan,False,B,technical,noun,False
+hiatus,True,A,,noun,False
+hindbrain,True,B,technical,noun,False
+historic,True,A,,adjective,False
+hobby,True,A,,noun; noun,False
+holism,True,B,,noun,False
+homely,True,A,,adjective,False
+homeowner,True,A,,noun,False
+homonym,True,A,,noun,False
+honest,True,A,,adjective; adverb,False
+honeydew,True,A,,noun,False
+hoodwink,True,A,,verb,False
+hooley,False,B,regional slang,noun,False
+horseback,True,A,,adjective &amp; adverb,False
+horseman,True,A,,noun,False
+hotchpotch,True,A,,noun,False
+hump,True,A,,noun; verb,False
+hyalite,False,B,technical,noun,False
+hypoxia,True,B,technical,noun,False
+immaculate,True,A,,adjective,False
+impetuous,True,A,,adjective,False
+improper,True,A,,adjective,False
+improvise,True,A,,verb,False
+impunity,True,A,,noun,False
+inanimate,True,A,,adjective,False
+inaudible,True,A,,adjective,False
+induna,True,B,regional (S. African),noun,False
+inhibition,True,A,,noun,False
+initiate,True,A,,verb; noun,False
+inoculant,False,B,technical,noun,False
+insentient,False,B,,adjective,False
+interfere,True,A,,verb,False
+intitule,False,B,,verb,False
+irrelevant,True,A,,adjective,False
+isolate,True,A,,verb; noun,False
+jaborandi,False,B,,noun,False
+jingo,True,B,,noun,False
+jug,True,A,,noun; verb,False
+juryman,True,B,,noun,False
+karma,True,A,,noun,False
+kedge,False,B,,verb; noun,False
+kinky,True,O,sexual sense is primary,adjective,False
+lairy,False,B,regional slang,adjective,False
+language,True,A,,noun,False
+laryngitis,True,A,,noun,False
+leadwort,False,B,,noun,False
+leech,True,A,,noun; verb; noun; noun,False
+lepton,True,B,,noun; noun,False
+leukaemia,True,A,,noun,False
+liaise,True,A,,verb,False
+lickerish,True,B,archaic,adjective,False
+ligature,True,A,,noun; verb,False
+lighting,True,A,,noun,False
+lobola,False,B,regional,noun,False
+loveable,True,B,variant spelling of lovable,adjective,False
+lover,True,A,,noun,False
+mackinaw,False,B,US-only,noun,False
+mallow,True,B,,noun,False
+mangonel,False,B,,noun,False
+marcasite,False,B,,noun,False
+maritime,True,A,,adjective,False
+mature,True,A,,adjective; verb,False
+meaty,True,A,,adjective,False
+megaton,True,A,,noun,False
+memorial,True,A,,noun,False
+menagerie,True,A,,noun,False
+mettle,True,A,,noun,False
+midline,True,B,technical,noun,False
+minima,False,R-plural,plural of minimum,,False
+mirepoix,False,B,,noun,False
+misprint,True,A,,noun; verb,False
+monopolize,False,A,-ize spelling; -ise form presumably dropped by words58k,verb,False
+moon,True,A,,noun; verb,False
+morass,True,A,,noun,False
+mortise,True,A,,noun; verb,False
+mouflon,False,B,,noun,False
+mulberry,True,A,,noun,False
+mush,True,A,,noun; verb; exclamation; verb; noun,False
+nationwide,True,A,,adjective &amp; adverb,False
+nauseating,True,R-participle,only noted as [as adjective] under the verb nauseate,,True
+neddy,False,B,,noun,False
+need,True,A,,verb; noun; adverb,False
+neurotic,True,A,,adjective; noun,False
+never,True,A,,adverb,False
+nociceptor,False,B,technical,noun,False
+nonage,False,B,,noun,False
+noun,True,A,,noun,False
+nowhere,True,A,,adverb; pronoun; adjective,False
+nullipara,False,B,technical,noun,False
+numerical,True,A,,adjective,False
+obcordate,False,B,technical,adjective,False
+octane,True,A,,noun,False
+odour,True,A,,noun,False
+omasum,False,B,technical,noun,False
+opacify,False,B,technical,verb,False
+ordinal,True,B,,noun; adjective,False
+oriental,True,O,noun sense often offensive,adjective; noun,False
+orthogonal,True,B,technical,adjective,False
+osmolality,False,B,technical,noun,False
+ossuary,False,B,,noun,False
+ouch,True,A,,exclamation,False
+oust,True,A,,verb,False
+outpace,True,A,,verb,False
+overreact,True,A,,verb,False
+paid,False,R-inflection,past tense of pay,,False
+paper,True,A,,noun; verb,False
+paratha,False,B,,noun,False
+pastern,False,B,,noun,False
+pawnbroker,True,A,,noun,False
+payback,True,A,,noun,False
+peccadillo,False,A,,noun,False
+pegbox,False,B,,noun,False
+penetralia,False,R-plural,plural noun only,plural noun,False
+penthouse,True,A,,noun,False
+perceive,True,A,,verb,False
+permanent,True,A,,adjective; noun,False
+permissive,True,A,,adjective,False
+persiflage,False,B,,noun,False
+pestle,True,A,,noun; verb,False
+phew,True,A,,exclamation,False
+pike,True,A,,noun; noun; verb; noun; noun; verb,False
+pikestaff,True,B,,noun,False
+pinafore,True,A,,noun,False
+pleasantry,True,A,,noun,False
+pliosaur,False,B,,noun,False
+pontes,False,R-plural,plural of pons,,False
+posset,False,B,,noun,False
+potter,True,A,,verb; noun; noun,False
+pounce,True,A,,verb; noun; noun; verb,False
+prehistory,True,A,,noun,False
+prejudge,True,A,,verb,False
+premium,True,A,,noun,False
+preset,True,A,,verb; noun,False
+presuppose,True,A,,verb,False
+pretension,True,A,,noun,False
+price,True,A,,noun; verb,False
+prompt,True,A,,verb; noun; adjective; adverb,False
+property,True,A,,noun,False
+protest,True,A,,noun; verb,False
+pruritus,True,B,technical,noun,False
+putsch,True,A,,noun,False
+pyogenic,False,B,technical,adjective,False
+quorate,True,B,,adjective,False
+quotable,True,A,,adjective,False
+rapeseed,True,A,,noun,False
+raucous,True,A,,adjective,False
+redeemer,True,A,,noun,False
+redraw,True,A,,verb,False
+register,True,A,,noun; verb,False
+reliance,True,A,,noun,False
+relish,True,A,,noun; verb,False
+rendering,True,A,,noun,False
+reprove,True,A,,verb,False
+reserved,True,A,,adjective,False
+resin,True,A,,noun; verb,False
+resite,False,B,,verb,False
+respecify,True,B,,verb,False
+revel,True,A,,verb; noun,False
+reverent,True,A,,adjective,False
+rickey,False,B,US-only,noun,False
+rival,True,A,,noun; verb,False
+rocker,True,A,,noun,False
+rodham,False,B,,noun,False
+rupee,True,A,,noun,False
+rusticate,True,B,,verb,False
+sallow,True,A,,adjective; noun,False
+sands,True,R-redirect,plural of sand,,True
+scatology,False,B,,noun,False
+schnauzer,False,A,,noun,False
+scientist,True,A,,noun,False
+scudo,False,B,,noun,False
+sec,True,B,,abbreviation; noun; adjective,False
+seclusion,True,A,,noun,False
+section,True,A,,noun; verb,False
+seek,True,A,,verb,False
+sensillum,False,B,technical,noun,False
+sentiment,True,A,,noun,False
+sentry,True,A,,noun,False
+sewellel,False,B,,noun,False
+shell,True,A,,noun; verb,False
+shim,False,B,,noun; verb,False
+shit,False,O,vulgar,noun; verb; exclamation,False
+silicate,True,B,technical,noun,False
+sinner,True,A,,noun,False
+skull,True,A,,noun; verb,False
+slightly,False,R-ly,adverb ending in -ly,adverb,False
+slob,True,A,,noun; verb,False
+slog,True,A,,verb; noun,False
+slowdown,True,A,,noun,False
+snap,True,A,,verb; noun; adjective,False
+snarl,True,A,,verb; noun; verb; noun,False
+sociable,True,A,,adjective; noun,False
+spaghetti,True,R-plural,COED lists only as plural noun (rule as written; policy call),plural noun,False
+spermaceti,False,B,,noun,False
+spirt,False,B,variant spelling,verb &amp;noun,False
+spitfire,True,A,,noun,False
+staggers,False,R-plural,plural noun,plural noun,False
+standby,True,A,,noun,False
+steatite,False,B,technical,noun,False
+steinbok,False,B,variant spelling,noun,False
+stoneware,True,A,,noun,False
+strains,True,R-redirect,plural of strain,,True
+stranded,True,R-participle,only noted as [as adjective] under the verb strand,,True
+strife,True,A,,noun,False
+structural,True,A,,adjective,False
+studmuffin,False,B,US-only slang,noun,False
+styli,False,R-plural,plural form of stylus,,False
+sub,True,A,,noun; verb,False
+substation,True,A,,noun,False
+suitor,True,A,,noun,False
+sulky,True,A,,adjective; noun,False
+sump,True,A,,noun,False
+sunset,True,A,,noun,False
+surd,True,B,technical,noun,False
+surge,True,A,,noun; verb,False
+surgery,True,A,,noun,False
+surmise,True,A,,verb; noun,False
+swan,True,A,,noun; verb,False
+switch,True,A,,noun; verb,False
+synapse,True,A,,noun,False
+tactless,True,A,,adjective,False
+tailwind,True,A,,noun,False
+talc,True,A,,noun; verb,False
+tee,True,A,,noun; verb; noun,False
+telephony,True,B,,noun,False
+tenon,True,B,,noun; verb,False
+tenure,True,A,,noun; verb,False
+teratology,False,B,technical,noun,False
+terraced,True,A,,adjective,False
+testis,True,B,technical,noun,False
+thatched,True,R-participle,only noted as [as adjective] under the verb thatch,,True
+theory,True,A,,noun,False
+think,True,A,,verb; noun,False
+thrift,True,A,,noun,False
+throes,False,R-plural,plural noun only,plural noun,False
+tinfoil,True,A,,noun,False
+titre,True,B,technical,noun,False
+tocsin,True,B,archaic,noun,False
+toddy,True,A,,noun,False
+toolbox,True,A,,noun,False
+topsail,False,B,,noun,False
+tow,True,A,,verb; noun; noun,False
+traipse,False,A,,verb; noun,False
+transcribe,True,A,,verb,False
+transgress,True,A,,verb,False
+trestle,True,A,,noun,False
+tribasic,False,B,technical,adjective,False
+trimaran,True,A,,noun,False
+twang,True,A,,noun; verb,False
+typeface,True,A,,noun,False
+unanimous,True,A,,adjective,False
+unashamed,True,A,,adjective,False
+under,True,A,,preposition; adverb,False
+underside,True,A,,noun,False
+understate,True,A,,verb,False
+undismayed,True,A,,adjective,False
+unearned,True,A,,adjective,False
+unisex,True,A,,adjective,False
+unite,True,A,,verb,False
+unlikely,True,A,,adjective,False
+unobliging,True,B,,adjective,False
+unsuitable,True,A,,adjective,False
+untended,True,A,,adjective,False
+unused,True,A,,adjective,False
+unwed,True,A,,adjective,False
+urethra,True,A,,noun,False
+vasectomy,True,A,,noun,False
+venue,True,A,,noun,False
+vespers,True,B,,noun,False
+vilify,True,A,,verb,False
+vivace,False,B,,adverb &amp; adjective,False
+voice,True,A,,noun; verb,False
+volatile,True,A,,adjective; noun,False
+wakame,False,B,,noun,False
+wallaby,True,A,,noun,False
+wattlebird,False,B,,noun,False
+waxpod,False,B,,noun,False
+when,True,A,,interrogative adverb; related adverb; conjunction,False
+whimsy,True,A,,noun,False
+whomever,True,A,,pronoun,False
+whopping,False,A,,adjective,False
+widespread,True,A,,adjective,False
+woodbine,True,B,,noun,False
+workaround,False,A,,noun,False
+worsted,True,B,,noun,False
+wrinkly,True,A,,adjective; noun,False
+yttrium,True,B,technical,noun,False
