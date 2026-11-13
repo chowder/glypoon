@@ -1,0 +1,42 @@
+name: Make Practice Puzzles
+
+# Regenerate every practice puzzle whenever the corpus or the generator changes
+on:
+  push:
+    branches: [main]
+    paths:
+      - tools/corpuses/glypoon.txt
+      - tools/make_practice_puzzles.py
+      - tools/make_puzzle.py
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repo content
+        uses: actions/checkout@v4
+
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Make practice puzzles
+        run: python tools/make_practice_puzzles.py -c tools/corpuses/glypoon.txt -o public/practice
+
+      - name: Commit practice puzzles
+        run: |
+          git add -A public/practice
+          if git diff --cached --quiet; then
+            echo "Practice puzzles are up to date"
+            exit 0
+          fi
+          git config --global user.name "GitHub Action"
+          git config --global user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git commit -m "Regenerate practice puzzles"
+          git push
