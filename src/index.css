@@ -75,6 +75,12 @@
         @apply polygon-letter-base bg-gray-300 dark:bg-gray-500 shadow-inner
     }
 
+    .polygon-letter-move {
+        transition-property: transform, background-color, box-shadow, color;
+        transition-duration: 500ms, 150ms, 150ms, 150ms;
+        transition-timing-function: cubic-bezier(0.65, 0, 0.35, 1);
+    }
+
     .polygon-letter-text {
         @apply text-[length:12.5cqmin] leading-none font-bold text-gray-800 dark:text-gray-50 transition-colors
     }

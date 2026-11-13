@@ -44,6 +44,7 @@ const model = {
     secondsRemaining: GAME_DURATION,
     currentInput: "",
     letterAvailability: [],
+    letterIds: [],
     lastSelectedIndex: -1,
     lastSubmissionResult: null,
     lastSubmissionAnswer: "",
@@ -83,6 +84,7 @@ const model = {
         state.solution.answers = solution.answers
         state.solution.letters = solution.letters
         state.solution.definitions = solution.definitions || null
+        state.letterIds = solution.letters.map((letter, i) => i)
 
         let letterAvailability = Array(solution.letters.length)
         letterAvailability.fill(true)
@@ -159,6 +161,7 @@ const model = {
         order = [0, ...order]
         state.solution.letters = order.map(i => state.solution.letters[i])
         state.letterAvailability = order.map(i => state.letterAvailability[i])
+        state.letterIds = order.map(i => state.letterIds[i])
         state.lastSelectedIndex = order.indexOf(state.lastSelectedIndex)
     }),
 
