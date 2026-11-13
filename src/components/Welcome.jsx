@@ -62,9 +62,9 @@ const Welcome = () => {
                             <Disclosure defaultOpen>
                                 {({ open }) => (
                                     <>
-                                        <Disclosure.Button className="mt-4 flex justify-between w-full px-4 py-2 text-sm font-medium text-left text-amber-900 bg-amber-100 rounded-lg hover:bg-amber-200 dark:text-amber-100 dark:bg-amber-500/20 dark:hover:bg-amber-500/30 focus:outline-none focus-visible:ring focus-visible:ring-amber-500 focus-visible:ring-opacity-75">
+                                        <Disclosure.Button className="mt-4 flex justify-between w-full px-4 py-2 text-sm font-medium text-left text-lemon-900 bg-lemon-100 rounded-lg hover:bg-lemon-200 dark:text-lemon-100 dark:bg-lemon-400/20 dark:hover:bg-lemon-400/30 focus:outline-none focus-visible:ring focus-visible:ring-lemon-500 focus-visible:ring-opacity-75">
                                             <span>Updates</span>
-                                            <ChevronUpIcon className={`${open ? "transform rotate-180" : ""} w-5 h-5 text-amber-500`} />
+                                            <ChevronUpIcon className={`${open ? "transform rotate-180" : ""} w-5 h-5 text-lemon-600 dark:text-lemon-300`} />
                                         </Disclosure.Button>
                                         <Disclosure.Panel className="px-4 pt-4 pb-2 text-sm text-left text-gray-500 dark:text-gray-300 space-y-3">
                                             <p>Hi friends! (especially those at Macquarie)</p>
