@@ -1,6 +1,7 @@
 import PolygonLetter from './PolygonLetter'
 import { useStoreState } from 'easy-peasy'
 import GameState from '../classes/GameState'
+import ShuffleButton from './ShuffleButton'
 
 
 const Polygon = ({ className = 'w-72 h-72' }) => {
@@ -28,6 +29,10 @@ const Polygon = ({ className = 'w-72 h-72' }) => {
                     key={letterIds[index + 1]}
                 />
             })}
+            <ShuffleButton
+                className="icon-button absolute top-2 right-2 h-8 w-8 text-gray-400 dark:text-gray-400 disabled:opacity-40"
+                iconClassName="h-5 w-5"
+            />
         </div>
     )
 }

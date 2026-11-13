@@ -1,6 +1,5 @@
 import { useStoreActions, useStoreState } from 'easy-peasy'
 import GameState from '../classes/GameState'
-import ShuffleButton from './ShuffleButton'
 
 const Controls = ({ onShowAnswers }) => {
     const currentInput = useStoreState(store => store.currentInput)
@@ -33,11 +32,10 @@ const Controls = ({ onShowAnswers }) => {
     }
 
     return (
-        <div className="flex w-full space-x-3">
-            <ShuffleButton className="control-button" iconClassName="h-6 w-6" />
+        <div className="flex w-full">
             <button
                 type="button"
-                className="control-button-primary flex-[2]"
+                className="control-button-primary"
                 onClick={() => submitAnswer()}
                 disabled={!isRunning || isEmpty}
             >

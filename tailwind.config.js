@@ -4,6 +4,9 @@ import colors from 'tailwindcss/colors'
 export default {
   content: ['./index.html', './src/**/*.{js,jsx}'],
   darkMode: 'class',
+  future: {
+    hoverOnlyWhenSupported: true,
+  },
   theme: {
     extend: {
       colors: {

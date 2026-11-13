@@ -6,7 +6,6 @@ import Timer from './Timer'
 import PuzzleHint from './PuzzleHint'
 import Header from './Header'
 import GameMenu from './GameMenu'
-import ShuffleButton from './ShuffleButton'
 import Welcome from './Welcome'
 import Congratulations from './Congratulations'
 import RevealDialog from './RevealDialog'
@@ -68,13 +67,7 @@ const Game = ({ compact, title, settings }) => {
                         </div>
                         <div className="flex w-full flex-col space-y-6 md:flex-row md:justify-start md:space-y-0 md:space-x-6 z-10">
                             <div className="flex flex-col space-y-6 items-center">
-                                <div className="relative">
-                                    <Polygon />
-                                    <ShuffleButton
-                                        className="icon-button absolute top-2 right-2 h-8 w-8 text-gray-400 dark:text-gray-400 disabled:opacity-40"
-                                        iconClassName="h-5 w-5"
-                                    />
-                                </div>
+                                <Polygon />
                                 <InputBox />
                             </div>
                             <Answers />
