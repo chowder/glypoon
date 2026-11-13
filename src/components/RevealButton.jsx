@@ -4,19 +4,13 @@ import GameState from '../classes/GameState'
 const RevealButton = () => {
     const gameState = useStoreState(store => store.gameState)
     const disabled = gameState !== GameState.RUNNING
-    const setRevealConfirmation = useStoreActions(actions => actions.setRevealConfirmation)
-    const setGameState = useStoreActions(actions => actions.setGameState)
-
-    const handleClick = () => {
-        setRevealConfirmation(true)
-        setGameState(GameState.PAUSED)
-    }
+    const showRevealConfirmation = useStoreActions(actions => actions.showRevealConfirmation)
 
     return (
         <button
             className="reveal-button h-9 w-24"
             disabled={disabled}
-            onClick={handleClick}
+            onClick={() => showRevealConfirmation()}
         >
             Solution
         </button>

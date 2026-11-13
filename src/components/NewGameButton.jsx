@@ -1,26 +1,16 @@
-import { useStoreActions, useStoreState } from 'easy-peasy'
-import GameState from '../classes/GameState'
+import { useStoreActions } from 'easy-peasy'
 
-const RevealButton = () => {
-    const setNewGameDialogVisible = useStoreActions(actions => actions.setNewGameDialogVisible)
-    const setGameState = useStoreActions(actions => actions.setGameState)
-    const gameState = useStoreState(store => store.gameState)
-
-    const handleClick = () => {
-        setNewGameDialogVisible(true)
-        if (gameState === GameState.RUNNING) {
-            setGameState(GameState.PAUSED)
-        }
-    }
+const NewGameButton = () => {
+    const showNewGameDialog = useStoreActions(actions => actions.showNewGameDialog)
 
     return (
         <button
             className="reveal-button h-9 w-28 mr-4"
-            onClick={handleClick}
+            onClick={() => showNewGameDialog()}
         >
             New Game
         </button>
     )
 }
 
-export default RevealButton
+export default NewGameButton

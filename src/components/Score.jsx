@@ -1,6 +1,6 @@
 import { useStoreState } from "easy-peasy"
 
-const getScoreDescription = (score) => {
+export const getScoreDescription = (score) => {
     if (score <= 0.5) {
         return undefined
     } else if (score <= 0.75) {

@@ -13,9 +13,10 @@ import GameState from '../classes/GameState'
 import { useStoreActions, useStoreState } from 'easy-peasy'
 import { useMemo, useEffect } from 'react'
 import NewGameDialog from './NewGameDialog'
+import CompactGame from './CompactGame'
 
 
-const Game = () => {
+const Game = ({ compact, title, settings }) => {
     // Fetching the puzzle
     const fetchSolution = useStoreActions(actions => actions.fetchSolution)
 
@@ -47,24 +48,28 @@ const Game = () => {
             <Congratulations />
             <RevealDialog />
             <NewGameDialog />
-            <div className="flex flex-col sm:flex-row sm:justify-between sm:w-full">
-                <PuzzleHint />
-                <div className="mt-4 sm:mt-0">
-                    <NewGameButton />
-                    <RevealButton />
-                </div>
-            </div>
-            <div className="w-full flex px-2 flex-row justify-between space-y-0">
-                <Timer />
-                <Score />
-            </div>
-            <div className="flex w-full flex-col space-y-6 md:flex-row md:justify-start md:space-y-0 md:space-x-6 z-10">
-                <div className="flex flex-col space-y-6 items-center">
-                    <Polygon />
-                    <InputBox />
-                </div>
-                <Answers />
-            </div>
+            {compact ?
+                <CompactGame title={title} settings={settings} /> :
+                <>
+                    <div className="flex flex-col sm:flex-row sm:justify-between sm:w-full">
+                        <PuzzleHint />
+                        <div className="mt-4 sm:mt-0">
+                            <NewGameButton />
+                            <RevealButton />
+                        </div>
+                    </div>
+                    <div className="w-full flex px-2 flex-row justify-between space-y-0">
+                        <Timer />
+                        <Score />
+                    </div>
+                    <div className="flex w-full flex-col space-y-6 md:flex-row md:justify-start md:space-y-0 md:space-x-6 z-10">
+                        <div className="flex flex-col space-y-6 items-center">
+                            <Polygon />
+                            <InputBox />
+                        </div>
+                        <Answers />
+                    </div>
+                </>}
         </>
     )
 }

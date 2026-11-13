@@ -1,10 +1,17 @@
 import { useStoreActions, useStoreState } from "easy-peasy"
 import GameState from "../classes/GameState"
-import { useMemo } from 'react'
+import { useMemo, useRef, useEffect } from 'react'
 
 
 
-const PolygonLetter = ({ top, left, letter, index }) => {
+const closestAngle = (previous, target) => {
+    if (previous === null) {
+        return target
+    }
+    return previous + ((((target - previous) % 360) + 540) % 360) - 180
+}
+
+const PolygonLetter = ({ angle, radius, letter, index }) => {
     const currentInput = useStoreState(store => store.currentInput)
     const gameState = useStoreState(store => store.gameState)
     const lastSelectedIndex = useStoreState(store => store.lastSelectedIndex)
@@ -16,6 +23,13 @@ const PolygonLetter = ({ top, left, letter, index }) => {
     const submitAnswer = useStoreActions(actions => actions.submitAnswer)
 
     const isActive = useMemo(() => letterAvailability[index], [letterAvailability, index])
+
+    const angleRef = useRef(null)
+    const displayAngle = closestAngle(angleRef.current, angle)
+
+    useEffect(() => {
+        angleRef.current = displayAngle
+    }, [displayAngle])
 
     const handleClick = () => {
         if (gameState === GameState.RUNNING) {
@@ -32,15 +46,26 @@ const PolygonLetter = ({ top, left, letter, index }) => {
 
     // TODO: Clean up the CSS here
     return (
-        <div
-            className={`transition-all ${isActive ? "polygon-letter" : "polygon-letter-disabled"} ${!isActive && lastSelectedIndex === index ? "ring-4" : ""} flex items-center justify-center h-16 w-16`}
-            style={{ margin: 'auto', position: 'absolute', top: `${top}%`, left: `${left}%` }}
+        <button
+            type="button"
+            className={`polygon-letter-move motion-reduce:transition-colors ${isActive ? "polygon-letter" : "polygon-letter-disabled"} ${!isActive && lastSelectedIndex === index ? "ring-4" : ""} flex items-center justify-center h-[22%] w-[22%]`}
+            style={{
+                margin: 'auto',
+                position: 'absolute',
+                top: '50%',
+                left: '50%',
+                transform: `translate(-50%, -50%) rotate(${displayAngle}deg) translate(${radius}cqmin) rotate(${-displayAngle}deg)`
+            }}
             onClick={handleClick}
+            disabled={gameState === GameState.ENDED || gameState === GameState.COMPLETE}
+            onMouseDown={(e) => e.preventDefault()}
+            aria-label={gameState === GameState.NOT_STARTED ? "Hidden letter" : letter?.toUpperCase()}
+            aria-pressed={!isActive}
         >
-            <p className={isActive ? "polygon-letter-text" : "polygon-letter-text-disabled"}>
+            <span className={isActive ? "polygon-letter-text" : "polygon-letter-text-disabled"}>
                 {gameState === GameState.NOT_STARTED ? "" : letter?.toUpperCase()}
-            </p>
-        </div>
+            </span>
+        </button>
     )
 }
 

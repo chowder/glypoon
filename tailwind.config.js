@@ -22,11 +22,16 @@ export default {
         bounce: {
           '0%, 100%': { transform: 'translateY(0)' },
           '50%': { transform: 'translateY(-4px)' }
+        },
+        shuffle: {
+          '0%': { transform: 'rotate(0deg)' },
+          '100%': { transform: 'rotate(180deg)' }
         }
       },
       animation: {
         wiggle: 'wiggle 200ms ease-in-out',
-        bounce: 'bounce 300ms ease-in-out'
+        bounce: 'bounce 300ms ease-in-out',
+        shuffle: 'shuffle 500ms cubic-bezier(0.65, 0, 0.35, 1)'
       }
     },
   },

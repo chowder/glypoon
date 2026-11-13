@@ -1,33 +1,31 @@
 import PolygonLetter from './PolygonLetter'
 import { useStoreState } from 'easy-peasy'
+import GameState from '../classes/GameState'
 
 
-const polarToCartesian = (radians, distance) => {
-    let x = Math.cos(radians) * distance
-    let y = Math.sin(radians) * distance
-    return [x, y]
-}
-
-const Polygon = () => {
+const Polygon = ({ className = 'w-72 h-72' }) => {
     const letters = useStoreState(store => store.solution.letters)
+    const letterIds = useStoreState(store => store.letterIds)
+    const gameState = useStoreState(store => store.gameState)
 
-    let angleBetweenElements = Math.PI * 2 / (letters.length - 1);
+    const isOver = gameState === GameState.ENDED || gameState === GameState.COMPLETE
+
+    let angleBetweenElements = 360 / (letters.length - 1);
 
     return (
-        <div className='flex-shrink-0 w-72 h-72 polygon' style={{ position: 'relative' }}>
+        <div className={`flex-shrink-0 polygon transition-opacity duration-500 ${isOver ? "opacity-40" : ""} ${className}`} style={{ position: 'relative' }}>
             <PolygonLetter
-                top={50} left={50}
+                angle={0} radius={0}
                 letter={letters[0]}
                 index={0}
-                key={0}
+                key={letterIds[0]}
             />
             {letters.slice(1).map((element, index) => {
-                let [x, y] = polarToCartesian(angleBetweenElements * index, 32);
                 return <PolygonLetter
-                    top={50 + x} left={50 + y}
+                    angle={90 - angleBetweenElements * index} radius={32}
                     letter={element}
                     index={index + 1}
-                    key={index + 1}
+                    key={letterIds[index + 1]}
                 />
             })}
         </div>

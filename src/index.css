@@ -2,6 +2,13 @@
 @tailwind components;
 @tailwind utilities;
 
+@layer base {
+    html {
+        touch-action: manipulation;
+        -webkit-tap-highlight-color: transparent;
+    }
+}
+
 @layer components {
     .header {
         @apply transition-colors text-5xl font-bold leading-none sm:text-6xl text-gray-900 dark:text-gray-50
@@ -45,7 +52,8 @@
     }
 
     .polygon {
-        @apply rounded-3xl shadow-md bg-white dark:bg-gray-700 transition-colors
+        @apply rounded-3xl shadow-md bg-white dark:bg-gray-700 transition-colors;
+        container-type: size;
     }
 
     .polygon-letter-base {
@@ -67,12 +75,18 @@
         @apply polygon-letter-base bg-gray-300 dark:bg-gray-500 shadow-inner
     }
 
+    .polygon-letter-move {
+        transition-property: transform, background-color, box-shadow, color;
+        transition-duration: 500ms, 150ms, 150ms, 150ms;
+        transition-timing-function: cubic-bezier(0.65, 0, 0.35, 1);
+    }
+
     .polygon-letter-text {
-        @apply text-4xl font-bold text-gray-800 dark:text-gray-50 transition-colors
+        @apply text-[length:12.5cqmin] leading-none font-bold text-gray-800 dark:text-gray-50 transition-colors
     }
 
     .polygon-letter-text-disabled {
-        @apply text-4xl font-bold text-gray-500 dark:text-gray-400 transition-colors
+        @apply text-[length:12.5cqmin] leading-none font-bold text-gray-500 dark:text-gray-400 transition-colors
     }
 
     .answers-container {
@@ -89,5 +103,69 @@
 
     .answer-definition {
         @apply bg-green-500 text-white px-4 py-2 rounded-md shadow-md lg:w-max max-w-xs
+    }
+
+    .compact-header {
+        @apply transition-colors text-3xl font-bold leading-none text-gray-900 dark:text-gray-50
+    }
+
+    .icon-button {
+        @apply flex items-center justify-center h-10 w-10 rounded-full text-gray-700 dark:text-gray-200 hover:bg-gray-200 dark:hover:bg-gray-700 focus:outline-none focus-visible:ring transition-colors
+    }
+
+    .menu-items {
+        @apply absolute right-0 z-20 mt-2 w-56 origin-top-right rounded-2xl bg-white dark:bg-gray-700 shadow-xl ring-1 ring-black ring-opacity-5 focus:outline-none py-2
+    }
+
+    .menu-item {
+        @apply flex w-full items-center px-4 py-3 text-left font-medium text-gray-900 dark:text-gray-50 disabled:opacity-40 transition-colors
+    }
+
+    .progress-track {
+        @apply h-2 w-full rounded-full bg-gray-200 dark:bg-gray-600 overflow-hidden
+    }
+
+    .progress-bar {
+        @apply h-full rounded-full bg-blue-400 dark:bg-blue-500 transition-all duration-500 ease-out
+    }
+
+    .found-words {
+        @apply flex w-full items-center rounded-2xl bg-white dark:bg-gray-700 shadow-md px-3 h-12 focus:outline-none focus-visible:ring transition-colors
+    }
+
+    .found-word {
+        @apply flex-shrink-0 rounded-md px-2.5 py-1 text-sm font-medium text-gray-800 dark:text-gray-50 transition-colors
+    }
+
+    .current-word {
+        @apply font-bold tracking-widest whitespace-nowrap text-gray-900 dark:text-gray-50 transition-colors
+    }
+
+    .current-word-placeholder {
+        @apply text-xl font-medium text-gray-400 dark:text-gray-500 transition-colors
+    }
+
+    .current-word-correct {
+        @apply ease-out duration-300 text-green-500 dark:text-green-400 animate-bounce
+    }
+
+    .current-word-wrong {
+        @apply ease-out duration-300 text-red-500 dark:text-red-400 animate-wiggle
+    }
+
+    .control-button-base {
+        @apply flex flex-1 items-center justify-center h-14 rounded-2xl font-semibold shadow-md active:shadow-inner disabled:opacity-40 focus:outline-none focus-visible:ring transition-colors select-none
+    }
+
+    .control-button {
+        @apply control-button-base bg-white dark:bg-gray-700 text-gray-800 dark:text-gray-50
+    }
+
+    .control-button-primary {
+        @apply control-button-base bg-blue-400 dark:bg-blue-500 text-white
+    }
+
+    .sheet {
+        @apply fixed inset-x-0 bottom-0 flex flex-col max-h-[85dvh] rounded-t-3xl bg-gray-100 dark:bg-gray-800 shadow-xl pb-[env(safe-area-inset-bottom)]
     }
 }

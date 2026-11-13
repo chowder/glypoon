@@ -7,7 +7,7 @@ const NewGameDialog = () => {
     const open = useStoreState(store => store.newGameDialogVisible)
     const gameState = useStoreState(store => store.gameState)
     const setNewGameDialogVisible = useStoreActions(actions => actions.setNewGameDialogVisible)
-    const fetchNewSolution = useStoreActions(actions => actions.fetchNewSolution)
+    const startNewGame = useStoreActions(actions => actions.startNewGame)
     const setGameState = useStoreActions(actions => actions.setGameState)
     const requestInputFocus = useStoreActions(actions => actions.requestInputFocus)
 
@@ -20,8 +20,7 @@ const NewGameDialog = () => {
 
     const handleNewGame = () => {
         setNewGameDialogVisible(false)
-        setGameState(GameState.NOT_STARTED)
-        fetchNewSolution()
+        startNewGame()
     }
 
     return (
@@ -34,7 +33,7 @@ const NewGameDialog = () => {
                 open={open}
                 onClose={handleContinue}
             >
-                <div className="min-h-screen px-8 text-center">
+                <div className="flex min-h-[100dvh] items-center justify-center p-8 text-center">
                     <Transition.Child
                         as={Fragment}
                         enter="ease-out duration-300"
@@ -47,13 +46,6 @@ const NewGameDialog = () => {
                         <Dialog.Overlay className="fixed inset-0 blur-bg" />
                     </Transition.Child>
 
-                    {/* This element is to trick the browser into centering the modal contents. */}
-                    <span
-                        className="inline-block h-screen align-middle"
-                        aria-hidden="true"
-                    >
-                        &#8203;
-                    </span>
                     <Transition.Child
                         as={Fragment}
                         enter="ease-out duration-300"
@@ -63,7 +55,7 @@ const NewGameDialog = () => {
                         leaveFrom="opacity-100 scale-100"
                         leaveTo="opacity-0 scale-95"
                     >
-                        <div className="inline-block w-full max-w-sm p-6 my-8 overflow-hidden text-center align-middle transition-all transform bg-white shadow-xl rounded-2xl">
+                        <div className="w-full max-w-sm p-6 overflow-hidden text-center transition-all transform bg-white shadow-xl rounded-2xl">
                             <Dialog.Title
                                 as="h3"
                                 className="text-xl font-medium leading-6 text-gray-900"
