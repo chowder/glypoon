@@ -88,7 +88,7 @@ const Answer = ({text, isVisible, isPangram}) => {
             return "bg-blue-200 dark:bg-blue-500"
         }
         if (gameState === GameState.ENDED) {
-            return "bg-red-200 dark:bg-indigo-400"
+            return "bg-red-200 dark:bg-red-800"
         }
 
         return "bg-gray-200 dark:bg-gray-600"

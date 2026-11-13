@@ -62,6 +62,11 @@ const model = {
         actions.setSolution(solution)
     }),
 
+    startNewGame: thunk(async actions => {
+        actions.setGameState(GameState.NOT_STARTED)
+        await actions.fetchNewSolution()
+    }),
+
     fetchNewSolution: thunk(async actions => {
         const res = await fetch(`${GLYPOON_API_URL}/get_puzzle`)
         const solution = await res.json()

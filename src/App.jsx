@@ -23,6 +23,10 @@ function App() {
     darkThemeMq.addEventListener('change', (e) => setDarkMode(e.matches))
   }, [])
 
+  useEffect(() => {
+    document.documentElement.classList.toggle("dark", darkMode)
+  }, [darkMode])
+
   const toggleDarkMode = () => {
     setDarkMode(!darkMode)
   }
@@ -48,7 +52,7 @@ function App() {
 
   return (
     <StoreProvider store={store}>
-      <div className={darkMode ? "dark" : ""}>
+      <div>
         <div className="transition-colors ease-in-out min-h-[100dvh] bg-gray-100 dark:bg-gray-800">
           {compact ?
             <Game compact title={title} settings={settings} /> :

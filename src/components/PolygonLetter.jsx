@@ -57,6 +57,7 @@ const PolygonLetter = ({ angle, radius, letter, index }) => {
                 transform: `translate(-50%, -50%) rotate(${displayAngle}deg) translate(${radius}cqmin) rotate(${-displayAngle}deg)`
             }}
             onClick={handleClick}
+            disabled={gameState === GameState.ENDED || gameState === GameState.COMPLETE}
             onMouseDown={(e) => e.preventDefault()}
             aria-label={gameState === GameState.NOT_STARTED ? "Hidden letter" : letter?.toUpperCase()}
             aria-pressed={!isActive}

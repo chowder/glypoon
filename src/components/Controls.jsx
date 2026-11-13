@@ -3,11 +3,12 @@ import { useState } from 'react'
 import { RefreshIcon } from '@heroicons/react/solid'
 import GameState from '../classes/GameState'
 
-const Controls = () => {
+const Controls = ({ onShowAnswers }) => {
     const currentInput = useStoreState(store => store.currentInput)
     const gameState = useStoreState(store => store.gameState)
     const shuffleLetters = useStoreActions(actions => actions.shuffleLetters)
     const submitAnswer = useStoreActions(actions => actions.submitAnswer)
+    const startNewGame = useStoreActions(actions => actions.startNewGame)
 
     const [shuffleCount, setShuffleCount] = useState(0)
 
@@ -18,6 +19,27 @@ const Controls = () => {
 
     const isRunning = gameState === GameState.RUNNING
     const isEmpty = currentInput.length === 0
+
+    if (gameState === GameState.ENDED || gameState === GameState.COMPLETE) {
+        return (
+            <div className="flex w-full space-x-3">
+                <button
+                    type="button"
+                    className="control-button"
+                    onClick={() => startNewGame()}
+                >
+                    New game
+                </button>
+                <button
+                    type="button"
+                    className="control-button-primary"
+                    onClick={onShowAnswers}
+                >
+                    See answers
+                </button>
+            </div>
+        )
+    }
 
     return (
         <div className="flex w-full space-x-3">

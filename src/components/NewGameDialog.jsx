@@ -7,7 +7,7 @@ const NewGameDialog = () => {
     const open = useStoreState(store => store.newGameDialogVisible)
     const gameState = useStoreState(store => store.gameState)
     const setNewGameDialogVisible = useStoreActions(actions => actions.setNewGameDialogVisible)
-    const fetchNewSolution = useStoreActions(actions => actions.fetchNewSolution)
+    const startNewGame = useStoreActions(actions => actions.startNewGame)
     const setGameState = useStoreActions(actions => actions.setGameState)
     const requestInputFocus = useStoreActions(actions => actions.requestInputFocus)
 
@@ -20,8 +20,7 @@ const NewGameDialog = () => {
 
     const handleNewGame = () => {
         setNewGameDialogVisible(false)
-        setGameState(GameState.NOT_STARTED)
-        fetchNewSolution()
+        startNewGame()
     }
 
     return (

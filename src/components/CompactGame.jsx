@@ -21,6 +21,13 @@ const CompactGame = ({ title, settings }) => {
     const [answersVisible, setAnswersVisible] = useState(false)
 
     useEffect(() => {
+        if (gameState === GameState.ENDED) {
+            const timeout = setTimeout(() => setAnswersVisible(true), 800)
+            return () => clearTimeout(timeout)
+        }
+    }, [gameState])
+
+    useEffect(() => {
         const handleKeyDown = (e) => {
             if (gameState !== GameState.RUNNING || e.metaKey || e.ctrlKey || e.altKey) {
                 return
@@ -61,7 +68,7 @@ const CompactGame = ({ title, settings }) => {
             <div className="flex flex-1 min-h-0 w-full items-center justify-center [container-type:size]">
                 <Polygon className="w-[min(100cqw,100cqh,24rem)] h-[min(100cqw,100cqh,24rem)]" />
             </div>
-            <Controls />
+            <Controls onShowAnswers={() => setAnswersVisible(true)} />
             <AnswersSheet open={answersVisible} onClose={() => setAnswersVisible(false)} />
         </div>
     )

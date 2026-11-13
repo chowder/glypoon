@@ -3,10 +3,12 @@ import { Fragment } from 'react'
 import { Dialog, Transition } from '@headlessui/react'
 import { XIcon } from '@heroicons/react/solid'
 import Answers from './Answers'
+import GameState from '../classes/GameState'
 
 const AnswersSheet = ({ open, onClose }) => {
     const currentScore = useStoreState(store => store.currentAnswers.length)
     const totalScore = useStoreState(store => store.solution.answers.length)
+    const gameState = useStoreState(store => store.gameState)
 
     return (
         <Transition show={open} as={Fragment}>
@@ -53,6 +55,17 @@ const AnswersSheet = ({ open, onClose }) => {
                                 <XIcon className="h-6 w-6" />
                             </button>
                         </div>
+                        {gameState === GameState.ENDED &&
+                            <div className="flex flex-row items-center space-x-4 px-6 text-sm font-medium text-gray-600 dark:text-gray-300">
+                                <span className="flex items-center">
+                                    <span className="mr-2 h-3 w-3 rounded-sm bg-blue-200 dark:bg-blue-500" />
+                                    Found
+                                </span>
+                                <span className="flex items-center">
+                                    <span className="mr-2 h-3 w-3 rounded-sm bg-red-200 dark:bg-red-800" />
+                                    Missed
+                                </span>
+                            </div>}
                         <div className="overflow-y-auto">
                             <Answers className="w-full" />
                         </div>
