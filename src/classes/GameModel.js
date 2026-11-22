@@ -66,10 +66,7 @@ const model = {
         definitions: null
     },
     currentAnswers: [],
-    // Whether the daily puzzle or a practice puzzle is being played. Only daily
-    // games are saved for resuming later.
     isPractice: false,
-    // A game of today's puzzle saved from an earlier visit, offered for resuming
     savedSession: null,
     gameState: GameState.NOT_STARTED,
     secondsRemaining: GAME_DURATION,

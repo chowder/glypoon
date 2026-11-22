@@ -1,9 +1,7 @@
 import GameState from './GameState'
 
-// A daily game is saved to localStorage so that it can be resumed after the
-// page is closed. A saved session is only good for the UTC day it was last
-// saved on (a new puzzle is published shortly after midnight UTC) and for the
-// puzzle it was played on.
+// A saved session is only valid on the UTC day it was saved and for the same
+// puzzle, as the new puzzle is published a few minutes after midnight UTC
 
 const SESSION_KEY = 'glypoon.session'
 
@@ -45,8 +43,7 @@ export const saveSession = state => {
         currentAnswers: state.currentAnswers,
         gameState,
     }
-    // The store changes on every keypress, so only write when the session has
-    // actually changed
+    // The store changes on every keypress, so skip writes that change nothing
     const serialized = JSON.stringify(session)
     if (serialized === lastSaved) {
         return
@@ -59,8 +56,6 @@ export const saveSession = state => {
     }
 }
 
-// Returns the saved session for the given puzzle, or null if there is none or
-// it is no longer valid
 export const loadSession = solution => {
     let session
     try {

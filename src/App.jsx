@@ -12,7 +12,6 @@ import useMediaQuery from './hooks/useMediaQuery'
 
 const store = createStore(model)
 
-// Save the daily game whenever it changes, so it can be resumed later
 store.subscribe(() => {
   const state = store.getState()
   if (!state.isPractice) {
