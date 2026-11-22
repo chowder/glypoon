@@ -3,6 +3,7 @@ import ChristmasModeToggle from './components/ChristmasModeToggle'
 import DarkModeToggle from './components/DarkModeToggle'
 import Game from './components/Game'
 import model from './classes/GameModel'
+import GameType from './classes/GameType'
 import { saveSession } from './classes/session'
 import { StoreProvider, createStore } from 'easy-peasy'
 import { useState, useEffect } from 'react'
@@ -14,7 +15,7 @@ const store = createStore(model)
 
 store.subscribe(() => {
   const state = store.getState()
-  if (!state.isPractice) {
+  if (state.gameType === GameType.DAILY) {
     saveSession(state)
   }
 })

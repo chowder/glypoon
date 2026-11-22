@@ -1,5 +1,6 @@
 import { action, thunk } from 'easy-peasy'
 import GameState from './GameState';
+import GameType from './GameType'
 import { loadSession, clearSession } from './session'
 
 const GAME_DURATION = parseInt(import.meta.env.REACT_APP_GAME_DURATION || "600")  // in seconds
@@ -66,7 +67,7 @@ const model = {
         definitions: null
     },
     currentAnswers: [],
-    isPractice: false,
+    gameType: GameType.DAILY,
     savedSession: null,
     gameState: GameState.NOT_STARTED,
     secondsRemaining: GAME_DURATION,
@@ -106,7 +107,7 @@ const model = {
                 if (solution.answers.join() === current && attempt < PRACTICE_FETCH_ATTEMPTS) {
                     continue
                 }
-                actions.setIsPractice(true)
+                actions.setGameType(GameType.PRACTICE)
                 actions.setSolution(solution)
                 break
             } catch (error) {
@@ -119,8 +120,8 @@ const model = {
     }),
 
     // Actions
-    setIsPractice: action((state, value) => {
-        state.isPractice = value
+    setGameType: action((state, value) => {
+        state.gameType = value
     }),
 
     setSavedSession: action((state, value) => {
