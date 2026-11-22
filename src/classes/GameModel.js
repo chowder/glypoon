@@ -1,4 +1,4 @@
-import { action, thunk } from 'easy-peasy'
+import { action, computed, thunk } from 'easy-peasy'
 import GameState from './GameState';
 import GameType from './GameType'
 import { loadSession, clearSession } from './session'
@@ -69,6 +69,7 @@ const model = {
     currentAnswers: [],
     gameType: GameType.DAILY,
     savedSession: null,
+    savedSessionOver: computed(state => state.savedSession !== null && state.savedSession.gameState !== GameState.RUNNING),
     gameState: GameState.NOT_STARTED,
     secondsRemaining: GAME_DURATION,
     currentInput: "",
@@ -135,9 +136,7 @@ const model = {
         }
         state.currentAnswers = session.currentAnswers
         state.secondsRemaining = session.secondsRemaining
-        state.gameState = session.secondsRemaining === 0 && session.gameState === GameState.RUNNING
-            ? GameState.ENDED
-            : session.gameState
+        state.gameState = session.gameState
         state.savedSession = null
     }),
 

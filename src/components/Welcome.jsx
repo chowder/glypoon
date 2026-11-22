@@ -13,8 +13,7 @@ const Welcome = () => {
     const savedSession = useStoreState(store => store.savedSession)
     const resumeSavedSession = useStoreActions(actions => actions.resumeSavedSession)
     const discardSavedSession = useStoreActions(actions => actions.discardSavedSession)
-    const savedGameOver = savedSession !== null &&
-        (savedSession.gameState !== GameState.RUNNING || savedSession.secondsRemaining === 0)
+    const savedSessionOver = useStoreState(store => store.savedSessionOver)
 
     const handlePractice = () => {
         setOpen(false)
@@ -117,7 +116,7 @@ const Welcome = () => {
                                             className="w-full py-2 text-sm font-medium text-green-900 bg-green-100 border border-transparent rounded-md hover:bg-green-200 dark:text-green-100 dark:bg-green-500/20 dark:hover:bg-green-500/30 focus:outline-none focus:ring-2 focus:ring-offset-2 dark:focus:ring-offset-gray-700 focus:ring-green-500"
                                             onClick={handleResume}
                                         >
-                                            {savedGameOver ? "See results" : "Resume"}
+                                            {savedSessionOver ? "See results" : "Resume"}
                                         </button>
                                     </>}
                             </div>

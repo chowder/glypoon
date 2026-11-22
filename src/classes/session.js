@@ -66,10 +66,13 @@ export const loadSession = solution => {
     if (!session || session.day !== todayUtc() || session.puzzle !== puzzleId(solution)) {
         return null
     }
-    const gameState = STORED_STATES[session.gameState]
+    let gameState = STORED_STATES[session.gameState]
     const secondsRemaining = Number(session.secondsRemaining)
     if (!gameState || !Number.isInteger(secondsRemaining) || secondsRemaining < 0 || !Array.isArray(session.currentAnswers)) {
         return null
+    }
+    if (gameState === GameState.RUNNING && secondsRemaining === 0) {
+        gameState = GameState.ENDED
     }
     const currentAnswers = [...new Set(session.currentAnswers)].filter(answer => solution.answers.includes(answer))
     return { gameState, secondsRemaining, currentAnswers }
