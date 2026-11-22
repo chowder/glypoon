@@ -3,6 +3,7 @@ import ChristmasModeToggle from './components/ChristmasModeToggle'
 import DarkModeToggle from './components/DarkModeToggle'
 import Game from './components/Game'
 import model from './classes/GameModel'
+import { saveSession } from './classes/session'
 import { StoreProvider, createStore } from 'easy-peasy'
 import { useState, useEffect } from 'react'
 import Snowfall from 'react-snowfall'
@@ -10,6 +11,14 @@ import useMediaQuery from './hooks/useMediaQuery'
 
 
 const store = createStore(model)
+
+// Save the daily game whenever it changes, so it can be resumed later
+store.subscribe(() => {
+  const state = store.getState()
+  if (!state.isPractice) {
+    saveSession(state)
+  }
+})
 
 const readSetting = (key) => {
   try {

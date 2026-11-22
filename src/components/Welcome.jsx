@@ -10,6 +10,11 @@ const Welcome = () => {
     const fetchNewSolution = useStoreActions(actions => actions.fetchNewSolution)
     const [open, setOpen] = useState(true)
     const requestInputFocus = useStoreActions(actions => actions.requestInputFocus)
+    const savedSession = useStoreState(store => store.savedSession)
+    const resumeSavedSession = useStoreActions(actions => actions.resumeSavedSession)
+    const discardSavedSession = useStoreActions(actions => actions.discardSavedSession)
+    const savedGameOver = savedSession !== null &&
+        (savedSession.gameState !== GameState.RUNNING || savedSession.secondsRemaining === 0)
 
     const handlePractice = () => {
         setOpen(false)
@@ -18,7 +23,13 @@ const Welcome = () => {
 
     const handlePlay = () => {
         setOpen(false)
+        discardSavedSession()
         setGameState(GameState.RUNNING)
+    }
+
+    const handleResume = () => {
+        setOpen(false)
+        resumeSavedSession()
     }
 
     return (
@@ -104,13 +115,30 @@ const Welcome = () => {
                                 >
                                     Practice
                                 </button>
-                                <button
-                                    type="button"
-                                    className="w-full py-2 text-sm font-medium text-green-900 bg-green-100 border border-transparent rounded-md hover:bg-green-200 dark:text-green-100 dark:bg-green-500/20 dark:hover:bg-green-500/30 focus:outline-none focus:ring-2 focus:ring-offset-2 dark:focus:ring-offset-gray-700 focus:ring-green-500"
-                                    onClick={handlePlay}
-                                >
-                                    Play
-                                </button>
+                                {savedSession === null ?
+                                    <button
+                                        type="button"
+                                        className="w-full py-2 text-sm font-medium text-green-900 bg-green-100 border border-transparent rounded-md hover:bg-green-200 dark:text-green-100 dark:bg-green-500/20 dark:hover:bg-green-500/30 focus:outline-none focus:ring-2 focus:ring-offset-2 dark:focus:ring-offset-gray-700 focus:ring-green-500"
+                                        onClick={handlePlay}
+                                    >
+                                        Play
+                                    </button> :
+                                    <>
+                                        <button
+                                            type="button"
+                                            className="w-full py-2 text-sm font-medium text-indigo-900 bg-indigo-100 border border-transparent rounded-md hover:bg-indigo-200 dark:text-indigo-100 dark:bg-indigo-500/20 dark:hover:bg-indigo-500/30 focus:outline-none focus:ring-2 focus:ring-offset-2 dark:focus:ring-offset-gray-700 focus:ring-indigo-500"
+                                            onClick={handlePlay}
+                                        >
+                                            Start over
+                                        </button>
+                                        <button
+                                            type="button"
+                                            className="w-full py-2 text-sm font-medium text-green-900 bg-green-100 border border-transparent rounded-md hover:bg-green-200 dark:text-green-100 dark:bg-green-500/20 dark:hover:bg-green-500/30 focus:outline-none focus:ring-2 focus:ring-offset-2 dark:focus:ring-offset-gray-700 focus:ring-green-500"
+                                            onClick={handleResume}
+                                        >
+                                            {savedGameOver ? "See results" : "Resume"}
+                                        </button>
+                                    </>}
                             </div>
                         </div>
                     </Transition.Child>

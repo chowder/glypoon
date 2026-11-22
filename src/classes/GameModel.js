@@ -1,5 +1,6 @@
 import { action, thunk } from 'easy-peasy'
 import GameState from './GameState';
+import { loadSession, clearSession } from './session'
 
 const GAME_DURATION = parseInt(import.meta.env.REACT_APP_GAME_DURATION || "600")  // in seconds
 const EXTRA_TIME_AMOUNT = parseInt(import.meta.env.REACT_APP_EXTRA_TIME_AMOUNT || "10")  // in seconds
@@ -65,6 +66,11 @@ const model = {
         definitions: null
     },
     currentAnswers: [],
+    // Whether the daily puzzle or a practice puzzle is being played. Only daily
+    // games are saved for resuming later.
+    isPractice: false,
+    // A game of today's puzzle saved from an earlier visit, offered for resuming
+    savedSession: null,
     gameState: GameState.NOT_STARTED,
     secondsRemaining: GAME_DURATION,
     currentInput: "",
@@ -86,6 +92,7 @@ const model = {
         const res = await fetch(`${PUZZLE_BASE_URL}/puzzle/puzzle.json`)
         const solution = await res.json()
         actions.setSolution(solution)
+        actions.setSavedSession(loadSession(solution))
     }),
 
     startNewGame: thunk(async actions => {
@@ -102,6 +109,7 @@ const model = {
                 if (solution.answers.join() === current && attempt < PRACTICE_FETCH_ATTEMPTS) {
                     continue
                 }
+                actions.setIsPractice(true)
                 actions.setSolution(solution)
                 break
             } catch (error) {
@@ -114,6 +122,32 @@ const model = {
     }),
 
     // Actions
+    setIsPractice: action((state, value) => {
+        state.isPractice = value
+    }),
+
+    setSavedSession: action((state, value) => {
+        state.savedSession = value
+    }),
+
+    resumeSavedSession: action((state) => {
+        const session = state.savedSession
+        if (!session) {
+            return
+        }
+        state.currentAnswers = session.currentAnswers
+        state.secondsRemaining = session.secondsRemaining
+        state.gameState = session.secondsRemaining === 0 && session.gameState === GameState.RUNNING
+            ? GameState.ENDED
+            : session.gameState
+        state.savedSession = null
+    }),
+
+    discardSavedSession: action((state) => {
+        clearSession()
+        state.savedSession = null
+    }),
+
     resetGame: action((state) => {
         state.currentAnswers = []
         state.gameState = GameState.RUNNING
